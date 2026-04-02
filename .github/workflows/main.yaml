@@ -1,8 +1,8 @@
-name: Fetch & Strict Google + Download Speed Test
+name: Fetch & Strict Google + Download Speed Test (Every 5 Hours)
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 */5 * * *"     # 每隔 5 小时运行一次（0,5,10,15,20,25点）
   workflow_dispatch:
 
 permissions:
@@ -29,12 +29,12 @@ jobs:
       - name: Deduplicate + 过滤垃圾节点
         run: python3 dedup.py
 
-      - name: Strict Clash Speed Test (Google + 下载速度 + 重命名 + 严格过滤)
+      - name: Strict Clash Speed Test (Google + 下载速度 + 高并发)
         run: |
           curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
           chmod +x clash-speedtest
 
-          echo "开始严格测速（Google访问 + 下载速度 ≥5MB/s + 延迟 ≤500ms）..."
+          echo "开始严格测速（高并发12 + Google访问 + 下载速度 ≥5MB/s + 延迟 ≤500ms）..."
           ./clash-speedtest \
             -c proxies_dedup.yaml \
             -output proxies_tested.yaml \
@@ -44,25 +44,71 @@ jobs:
             -max-latency 500ms \
             -min-download-speed 5 \
             -max-packet-loss 10 \
-            -timeout 15s \
-            -concurrent 4 || echo "测速工具执行异常，使用去重文件"
+            -timeout 10s \
+            -concurrent 12 || echo "测速工具执行异常，使用去重文件"
 
-          # 如果测速后还有有效节点，就使用它；否则回退到去重文件
+          # 检查测速结果
           if [ -f proxies_tested.yaml ] && grep -q "proxies:" proxies_tested.yaml && [ "$(grep -c "server:" proxies_tested.yaml)" -gt 0 ]; then
-            cp proxies_tested.yaml proxies.yaml
-            echo "✅ 严格测速完成，使用过滤后的优质节点"
+            cp proxies_tested.yaml proxies_temp.yaml
+            echo "✅ 测速完成，进行节点名增强（加入延迟）"
           else
-            cp proxies_dedup.yaml proxies.yaml
-            echo "⚠️ 严格过滤后无节点保留，使用去重文件"
+            cp proxies_dedup.yaml proxies_temp.yaml
+            echo "⚠️ 使用去重文件"
           fi
+
+      - name: Enhance node names with latency (国旗 + 速度 + 延迟)
+        run: |
+          cat > enhance_names.py << 'EOF'
+import yaml
+import re
+
+with open('proxies_temp.yaml', encoding='utf-8') as f:
+    data = yaml.safe_load(f) or {}
+
+proxies = data.get('proxies', [])
+
+for p in proxies:
+    if not isinstance(p, dict):
+        continue
+    old_name = p.get('name', '')
+    
+    # 提取已有速度信息
+    speed_match = re.search(r'⬇️\s*([\d.]+)MB/s', old_name)
+    speed_str = speed_match.group(0) if speed_match else ''
+    
+    # 提取延迟（如果测速工具已提供 latency 字段）
+    latency = p.get('latency') or p.get('ping') or 0
+    if isinstance(latency, (int, float)):
+        latency_str = f" | ⚡ {int(latency)}ms"
+    else:
+        latency_str = ""
+    
+    # 构建新名称：国旗 + 速度 + 延迟
+    if speed_str:
+        new_name = old_name.replace(speed_str, f"{speed_str}{latency_str}")
+    else:
+        new_name = f"{old_name}{latency_str}"
+    
+    # 清理可能重复的分隔符
+    new_name = re.sub(r'\s*\|\s*\|', ' |', new_name).strip()
+    p['name'] = new_name
+
+data['proxies'] = proxies
+
+with open('proxies.yaml', 'w', encoding='utf-8') as f:
+    yaml.dump(data, f, allow_unicode=True, sort_keys=False)
+
+print(f"节点名增强完成，共处理 {len(proxies)} 个节点")
+EOF
+          python3 enhance_names.py
 
       - name: Commit changes
         run: |
-          git add proxies.yaml stars.svg raw_proxies.yaml proxies_dedup.yaml || true
+          git add proxies.yaml stars.svg raw_proxies.yaml proxies_dedup.yaml proxies_temp.yaml || true
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update: 严格Google+下载测速 + 国旗+速度重命名 ($(date '+%Y-%m-%d %H:%M:%S'))"
+            git commit -m "Update: 每5小时严格Google+下载测速 + 国旗+速度+延迟命名 ($(date '+%Y-%m-%d %H:%M:%S'))"
             git push
             echo "✅ 提交成功"
           fi
