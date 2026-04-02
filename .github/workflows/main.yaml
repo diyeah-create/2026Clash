@@ -11,6 +11,10 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # 彻底消除 Node.js 20 弃用警告
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
       - uses: actions/checkout@v4
 
@@ -47,7 +51,6 @@ jobs:
             -timeout 10s \
             -concurrent 12 || echo "测速工具执行异常，使用去重文件"
 
-          # 检查测速结果
           if [ -f proxies_tested.yaml ] && grep -q "proxies:" proxies_tested.yaml && [ "$(grep -c "server:" proxies_tested.yaml)" -gt 0 ]; then
             cp proxies_tested.yaml proxies.yaml
             echo "✅ 严格测速完成（高并发），使用过滤后的优质节点"
@@ -56,13 +59,19 @@ jobs:
             echo "⚠️ 严格过滤后无节点保留，使用去重文件"
           fi
 
+      - name: Generate Node Statistics
+        run: python3 generate_stats.py
+
+      - name: Build Full Config with Latest Rules
+        run: python3 build_full_config.py
+
       - name: Commit changes
         run: |
-          git add proxies.yaml stars.svg raw_proxies.yaml proxies_dedup.yaml || true
+          git add proxies.yaml nodes_stats.md stars.svg raw_proxies.yaml proxies_dedup.yaml || true
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update: 严格Google+下载测速（高并发12） + 国旗重命名 ($(date '+%Y-%m-%d %H:%M:%S'))"
+            git commit -m "Update: 严格测速 + 全网最强规则集（Loyalsoldier每日更新）+ 节点统计 ($(date '+%Y-%m-%d %H:%M:%S'))"
             git push
             echo "✅ 提交成功"
           fi
