@@ -1,8 +1,8 @@
-name: Fetch & Strict Google + Download Speed Test
+name: Fetch & Strict Speed Test
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # ← 已改为每30分钟
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -23,79 +23,29 @@ jobs:
         env:
           PROXIES_URL: ${{ secrets.PROXIES_URL }}
         run: |
-          # 拉取本仓库自己的星标图（或跳过）
-          timeout 10 curl -f "https://api.star-history.com/svg?repos=cxddgtb/2026Clash&type=Date" > stars.svg || echo "stars skipped"
+          timeout 10 curl -f "https://api.star-history.com/svg?repos=cxddgtb/2026Clash&type=Date" > stars.svg || true
           curl -f -L "$PROXIES_URL" -o raw_proxies.yaml || { echo "Failed to fetch proxies"; exit 1; }
 
       - name: Deduplicate + 过滤垃圾节点
-        run: |
-          cat > dedup.py << 'EOF'
-import yaml, hashlib, ipaddress
+        run: python3 dedup.py   # 假设 dedup.py 在根目录
 
-with open('raw_proxies.yaml', encoding='utf-8') as f:
-    data = yaml.safe_load(f) or {}
-
-proxies = data.get('proxies', [])
-seen = {}
-unique = []
-
-for p in proxies:
-    if not isinstance(p, dict):
-        continue
-    server = p.get('server', '')
-    name = p.get('name', '')
-    
-    # 过滤明显垃圾节点
-    if not server or server.startswith('127.') or server.startswith('192.168.') or server.startswith('10.'):
-        continue
-    if '防范境外势力渗透' in name or '本地' in name or p.get('uuid') == '00000000-0000-4000-8000-000000000000':
-        continue
-    
-    # 去重 key
-    key = hashlib.md5(f"{p.get('type')}|{server}|{p.get('port')}|{p.get('password') or p.get('uuid')}".encode()).hexdigest()
-    if key not in seen:
-        seen[key] = True
-        unique.append(p)
-
-data['proxies'] = unique
-with open('proxies_dedup.yaml', 'w', encoding='utf-8') as f:
-    yaml.dump(data, f, allow_unicode=True, sort_keys=False)
-
-print(f"去重+过滤: {len(proxies)} → {len(unique)}")
-EOF
-          python3 dedup.py
-
-      - name: Clash Speed Test (Google + 下载速度)
+      - name: Clash Speed Test
         run: |
           curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
           chmod +x clash-speedtest
-
-          echo "开始严格测速..."
-          ./clash-speedtest \
-            -c proxies_dedup.yaml \
-            --test-url "http://www.gstatic.com/generate_204" \
-            --speed-mode download \
-            --timeout 10000 \
-            --concurrent 4 \
-            --max-latency 800 \
-            --rename \
-            --output proxies_tested.yaml || echo "测速工具执行异常"
-
+          ./clash-speedtest -c proxies_dedup.yaml --test-url "http://www.gstatic.com/generate_204" --speed-mode download --timeout 10000 --concurrent 4 --max-latency 800 --rename --output proxies_tested.yaml || echo "测速异常，使用去重文件"
           if [ -f proxies_tested.yaml ] && grep -q "proxies:" proxies_tested.yaml; then
             cp proxies_tested.yaml proxies.yaml
-            echo "✅ 使用测速后的文件"
           else
             cp proxies_dedup.yaml proxies.yaml
-            echo "⚠️ 测速失败，使用去重文件"
           fi
 
       - name: Commit changes
         run: |
           git add proxies.yaml stars.svg raw_proxies.yaml proxies_dedup.yaml || true
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes"
           else
-            git commit -m "Update: strict speed test + dedup + filter junk nodes ($(date '+%Y-%m-%d %H:%M:%S'))"
+            git commit -m "Update: dedup + speed test ($(date '+%Y-%m-%d %H:%M'))"
             git push
-            echo "✅ 提交成功"
           fi
