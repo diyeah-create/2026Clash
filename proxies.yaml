@@ -1,82 +1,6 @@
 proxy-providers: {}
 proxies:
-- name: "\U0001F1FA\U0001F1F8 US 001 | ⬇️ 375.31MB/s"
-  network: ws
-  port: 443
-  server: 135.84.64.222
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F'
-- alterId: 0
-  name: "\U0001F1FA\U0001F1F8 US 002 | ⬇️ 372.33MB/s"
-  network: tcp
-  password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
-  port: 13109
-  server: 104.238.162.6
-  skip-cert-verify: true
-  sni: ord2.edge-command.click
-  tls: true
-  type: trojan
-  udp: true
-- name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 372.28MB/s"
-  network: ws
-  port: 2096
-  server: 192.200.160.238
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F'
-- name: "\U0001F1FA\U0001F1F8 US 004 | ⬇️ 366.83MB/s"
-  network: ws
-  port: 443
-  server: 135.84.64.226
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2%3D'
-- name: "\U0001F1E6\U0001F1F9 AT 001 | ⬇️ 358.75MB/s"
-  network: ws
-  port: 2096
-  server: 212.183.88.238
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540WangCai2%3D'
-- name: "\U0001F1FA\U0001F1F8 US 005 | ⬇️ 353.58MB/s"
-  network: ws
-  port: 2096
-  server: 45.40.147.191
-  servername: sni.my111000.tech
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.my111000.tech
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%40WangCai2%2F
-- name: "\U0001F1FA\U0001F1F8 US 006 | ⬇️ 349.43MB/s"
+- name: "\U0001F1FA\U0001F1F8 US 001 | ⬇️ 281.20MB/s"
   network: ws
   port: 443
   server: 135.84.74.155
@@ -88,95 +12,7 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2%3D'
-- name: "\U0001F1FA\U0001F1F8 US 007 | ⬇️ 344.31MB/s"
-  network: ws
-  port: 443
-  server: 160.153.1.23
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%3D'
-- name: "\U0001F1FA\U0001F1F8 US 008 | ⬇️ 341.60MB/s"
-  network: ws
-  port: 443
-  server: 199.107.164.217
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2'
-- name: "\U0001F1FA\U0001F1F8 US 009 | ⬇️ 323.07MB/s"
-  network: ws
-  port: 443
-  server: 135.84.74.43
-  servername: sni.111000.v6.navy
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: '%2F'
-- name: "\U0001F1EB\U0001F1F7 FR 001 | ⬇️ 320.27MB/s"
-  network: ws
-  port: 2096
-  server: 185.16.110.238
-  servername: sni.jpmj.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
-- name: "\U0001F1FA\U0001F1F8 US 010 | ⬇️ 318.89MB/s"
-  network: ws
-  port: 443
-  server: 135.84.72.18
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-    path: '%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2%3D'
-- name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 318.28MB/s"
-  network: ws
-  port: 2096
-  server: 192.0.54.238
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.jpmj.dev
-    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
-- name: "\U0001F1FA\U0001F1F8 US 012 | ⬇️ 317.96MB/s"
-  network: ws
-  port: 443
-  server: 209.102.207.120
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-- name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 311.99MB/s"
+- name: "\U0001F1FA\U0001F1F8 US 002 | ⬇️ 278.35MB/s"
   network: ws
   port: 443
   server: 135.84.74.118
@@ -188,21 +24,7 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F'
-- flow: ""
-  name: "\U0001F1FA\U0001F1F8 US 014 | ⬇️ 299.17MB/s"
-  network: ws
-  port: 2096
-  server: 45.40.153.191
-  servername: sni.my111000.tech
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.my111000.tech
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%40WangCai2%2F
-- name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 283.47MB/s"
+- name: "\U0001F1FA\U0001F1F8 US 003 | ⬇️ 267.34MB/s"
   network: ws
   port: 443
   server: 135.84.73.100
@@ -215,33 +37,177 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
     path: '%2F'
-- name: "\U0001F1E8\U0001F1E6 CA 001 | ⬇️ 184.20MB/s"
+- name: "\U0001F1FA\U0001F1F8 US 004 | ⬇️ 263.67MB/s"
   network: ws
-  port: 80
-  server: 104.19.151.106
-  tls: false
-  type: vless
-  uuid: 73d17f62-d0c0-4c90-903c-a2b3f3806cca
-  ws-opts:
-    headers:
-      Host: fragrant-tooth-a5b7.cajeba6448.workers.dev
-    path: '%2F'
-- name: "\U0001F1E8\U0001F1E6 CA 002 | ⬇️ 170.17MB/s"
-  network: ws
-  port: 80
-  server: cf.0sm.com
+  port: 2096
+  server: 45.40.147.191
+  servername: sni.my111000.tech
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vless
-  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
-    path: '%2F%3Fed%3D2048'
-- name: "\U0001F1E8\U0001F1E6 CA 003 | ⬇️ 158.74MB/s"
+      Host: sni.my111000.tech
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%40WangCai2%2F
+- name: "\U0001F1FA\U0001F1F8 US 005 | ⬇️ 261.45MB/s"
+  network: ws
+  port: 2096
+  server: 192.200.160.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F'
+- name: "\U0001F1FA\U0001F1F8 US 006 | ⬇️ 258.16MB/s"
+  network: ws
+  port: 443
+  server: 135.84.64.226
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2%3D'
+- name: "\U0001F1FA\U0001F1F8 US 007 | ⬇️ 256.96MB/s"
+  network: ws
+  port: 443
+  server: 135.84.64.222
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F'
+- name: "\U0001F1EB\U0001F1F7 FR 001 | ⬇️ 256.57MB/s"
+  network: ws
+  port: 2096
+  server: 185.16.110.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2'
+- name: "\U0001F1E6\U0001F1F9 AT 001 | ⬇️ 240.15MB/s"
+  network: ws
+  port: 2096
+  server: 212.183.88.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2B%2540WangCai2%3D'
+- name: "\U0001F1FA\U0001F1F8 US 008 | ⬇️ 239.43MB/s"
+  network: ws
+  port: 443
+  server: 135.84.74.43
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+    path: '%2F'
+- name: "\U0001F1FA\U0001F1F8 US 009 | ⬇️ 237.61MB/s"
+  network: ws
+  port: 443
+  server: 160.153.1.23
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2%3D'
+- flow: ""
+  name: "\U0001F1FA\U0001F1F8 US 010 | ⬇️ 235.92MB/s"
+  network: ws
+  port: 2096
+  server: 45.40.153.191
+  servername: sni.my111000.tech
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.my111000.tech
+    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%40WangCai2%2F
+- name: "\U0001F1FA\U0001F1F8 US 011 | ⬇️ 230.39MB/s"
+  network: ws
+  port: 2096
+  server: 192.0.54.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: '%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40wangcai2'
+- name: "\U0001F1FA\U0001F1F8 US 012 | ⬇️ 213.65MB/s"
+  network: ws
+  port: 443
+  server: 199.107.164.217
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+- name: "\U0001F1FA\U0001F1F8 US 013 | ⬇️ 208.94MB/s"
+  network: ws
+  port: 443
+  server: 135.84.72.18
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: '%2F%3FTelegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3%2540WangCai2%3D'
+- name: "\U0001F1FA\U0001F1F8 US 014 | ⬇️ 205.09MB/s"
+  network: ws
+  port: 443
+  server: 209.102.207.120
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+- name: "\U0001F1E8\U0001F1E6 CA 001 | ⬇️ 159.28MB/s"
   network: ws
   port: 80
-  server: 172.66.47.45
+  server: 104.17.156.229
   tls: false
   type: vless
   uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
@@ -249,91 +215,27 @@ proxies:
     headers:
       Host: vip.yaml7.ggff.net
     path: '%2F'
-- name: "\U0001F1E8\U0001F1E6 CA 004 | ⬇️ 154.46MB/s"
+- name: "\U0001F1E8\U0001F1E6 CA 002 | ⬇️ 142.34MB/s"
   network: ws
-  port: 2082
-  server: 104.18.2.11
+  port: 2086
+  server: 104.21.89.4
   tls: false
   type: vless
-  uuid: cb213db5-803d-49dd-a7e2-46d938af0751
+  uuid: 636de463-b509-4631-adc6-400b21733278
   ws-opts:
     headers:
-      Host: amiroo-l43dac88-v2.amiroo-d8b.workers.dev
-    path: /
-- name: "\U0001F1E8\U0001F1E6 CA 005 | ⬇️ 146.94MB/s"
-  network: ws
-  port: 8080
-  server: 198.41.222.50
-  tls: false
-  type: vless
-  uuid: 27950cc1-85b4-4ecc-ad3a-4507360504af
-  ws-opts:
-    headers:
-      Host: 031.electrocellco-cf-031.workers.dev
-    path: /eyJqdW5rIjoiQjE1UDBKNGN6UnEzNjg2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0=
-- name: "\U0001F1E8\U0001F1E6 CA 006 | ⬇️ 145.72MB/s"
-  network: ws
-  port: 80
-  server: 104.16.164.44
-  tls: false
-  type: vless
-  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
-  ws-opts:
-    headers:
-      Host: amirvpn.amirhm00100.workers.dev
-    path: '%2F'
-- client-fingerprint: randomized
-  name: "\U0001F1E8\U0001F1E6 CA 007 | ⬇️ 141.34MB/s"
-  network: ws
-  port: 2095
-  server: www.whatismyip.net
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  ws-opts:
-    headers:
-      Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
-    path: '%2F'
-- name: "\U0001F1E8\U0001F1E6 CA 008 | ⬇️ 140.26MB/s"
-  network: ws
-  port: 80
-  server: 104.16.30.239
-  tls: false
-  type: vless
-  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
-  ws-opts:
-    headers:
-      Host: amirvpn.amirhm00100.workers.dev
-    path: '%2F'
+      Host: index.harmony610.workers.dev
+    path: '%2Fl5s2vgexcus7b8c4'
+- name: "\U0001F1FA\U0001F1F8 US 015 | ⬇️ 130.78MB/s"
+  password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
+  port: 13109
+  server: 104.238.162.6
+  skip-cert-verify: false
+  sni: ord2.edge-command.click
+  type: trojan
 - alpn:
   - http/1.1
-  name: "\U0001F1F7\U0001F1FA RU 001 | ⬇️ 140.09MB/s"
-  network: ws
-  port: 443
-  server: 45.67.215.233
-  servername: 057.ElecTRocElLco-Cf-057.wOrKeRs.dEv
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 20e295db-a6af-4006-bfd6-91453f169968
-  ws-opts:
-    headers:
-      Host: 057.electrocellco-cf-057.workers.dev
-    path: '%2FeyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D'
-- name: "\U0001F1E8\U0001F1E6 CA 009 | ⬇️ 120.42MB/s"
-  network: ws
-  port: 80
-  server: 104.18.237.216
-  tls: false
-  type: vless
-  uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
-  ws-opts:
-    headers:
-      Host: sfsl.ardomains1.dpdns.org
-- alpn:
-  - http/1.1
-  name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 112.09MB/s"
+  name: "\U0001F1FA\U0001F1F8 US 016 | ⬇️ 127.80MB/s"
   network: ws
   port: 443
   server: 63.141.128.22
@@ -346,46 +248,57 @@ proxies:
     headers:
       Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
     path: '%2FeyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D'
-- name: "\U0001F3F3️ IR 001 | ⬇️ 80.81MB/s"
+- client-fingerprint: randomized
+  name: "\U0001F1E8\U0001F1E6 CA 003 | ⬇️ 121.32MB/s"
   network: ws
-  port: 80
-  server: 45.131.4.192
+  port: 2095
+  server: www.whatismyip.net
+  skip-cert-verify: true
   tls: false
   type: vless
-  uuid: 5f4845b4-11dc-41d6-9508-4ff6a02e36c1
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   ws-opts:
     headers:
-      Host: silent-paper-fa57.fipiyag989.workers.dev
-    path: '%2FCczu8jOo6HDo%3Fed%3D2560'
-- name: "\U0001F1E8\U0001F1E6 CA 010 | ⬇️ 79.61MB/s"
-  network: ws
-  port: 80
-  server: 104.17.152.254
-  tls: false
-  type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  ws-opts:
-    headers:
-      Host: vip.yaml7.ggff.net
+      Host: cnm-fangbinxing-nmsl.fangbinxing-wcnm.workers.dev
     path: '%2F'
-- name: "\U0001F1FA\U0001F1F8 US 017 | ⬇️ 67.53MB/s"
+- name: "\U0001F1E8\U0001F1E6 CA 004 | ⬇️ 88.88MB/s"
+  network: ws
+  port: 8080
+  server: 198.41.222.50
+  tls: false
+  type: vless
+  uuid: 27950cc1-85b4-4ecc-ad3a-4507360504af
+  ws-opts:
+    headers:
+      Host: 031.electrocellco-cf-031.workers.dev
+    path: /eyJqdW5rIjoiQjE1UDBKNGN6UnEzNjg2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0=
+- name: "\U0001F1E8\U0001F1E6 CA 005 | ⬇️ 75.08MB/s"
+  network: ws
+  port: 2086
+  server: 172.67.203.94
+  tls: false
+  type: vless
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  ws-opts:
+    headers:
+      Host: iioo.iioou.workers.dev
+    path: '%2F'
+- name: "\U0001F1FA\U0001F1F8 US 017 | ⬇️ 50.95MB/s"
   password: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
   port: 443
   server: n1.chateditimage.com
   sni: n1.chateditimage.com
   type: trojan
-- name: "\U0001F1E8\U0001F1E6 CA 011 | ⬇️ 67.28MB/s"
-  network: ws
-  port: 80
-  server: 104.18.173.174
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 018 | ⬇️ 44.56MB/s"
+  network: tcp
+  port: "180"
+  server: 82.198.246.250
   tls: false
-  type: vless
-  uuid: 53342b53-157e-4475-9f3a-40439434e689
-  ws-opts:
-    headers:
-      Host: c.iamdt.dpdns.org
-    path: '%2F%3Fed%3D2048'
-- name: "\U0001F1FA\U0001F1F8 US 018 | ⬇️ 64.63MB/s"
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: "\U0001F1FA\U0001F1F8 US 019 | ⬇️ 44.50MB/s"
   password: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
   port: 443
   server: n2.chateditimage.com
@@ -393,72 +306,35 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: "\U0001F1FA\U0001F1F8 US 019 | ⬇️ 64.30MB/s"
-  password: hbGrpfvNrJsUmKmPbR3iY2
+  name: "\U0001F1EC\U0001F1E7 GB 001 | ⬇️ 41.85MB/s"
+  password: 1kVr0KATIJI7mwOF
   port: 443
-  server: tinkered-pennies-puppies.freesocks.work
+  server: admin.c1.havij.co
   skip-cert-verify: true
   tls: true
   type: ss
-- client-fingerprint: ios
-  grpc-opts:
-    grpc-service-name: ssp
-  name: "\U0001F1FA\U0001F1F8 US 020 | ⬇️ 51.84MB/s"
-  network: grpc
-  port: 443
-  server: s844.ccgfw.top
-  servername: u710947u4b6fs844.ccgfw.top
-  tls: true
-  type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 47.76MB/s"
-  network: tcp
-  port: 443
-  server: s173.okgg.top
-  servername: u710947ua226s173.okgg.top
-  tls: true
-  type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
 - alterId: 0
-  cipher: auto
-  name: "\U0001F1FA\U0001F1F8 US 022 | ⬇️ 47.27MB/s"
-  network: tcp
-  port: "180"
-  server: 82.198.246.250
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: "\U0001F1F8\U0001F1EA SE 001 | ⬇️ 37.28MB/s"
-  port: 10121
-  reality-opts:
-    public-key: 4DdA8dBVn5zB_UTbgBY45YqM0HU8zrjXYdzg3-wz5Rg
-    short-id: 9c2a7d4e5f18b6a3
-  server: 150.241.83.152
-  servername: apple.com
-  skip-cert-verify: false
+  cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EC\U0001F1E7 GB 002 | ⬇️ 41.47MB/s"
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: admin.c1.webramz.co
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
-- name: "\U0001F1FA\U0001F1F8 US 023 | ⬇️ 32.07MB/s"
-  network: ws
-  port: 80
-  server: 162.159.38.62
-  tls: false
-  type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  ws-opts:
-    headers:
-      Host: vip.yaml7.ggff.net
-    path: '%2F'
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: "\U0001F1EC\U0001F1E7 GB 003 | ⬇️ 41.45MB/s"
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alpn:
   - h2
   flow: ""
-  name: "\U0001F1EC\U0001F1E7 GB 001 | ⬇️ 31.55MB/s"
+  name: "\U0001F1EC\U0001F1E7 GB 004 | ⬇️ 36.71MB/s"
   network: tcp
   port: 8443
   server: 152.233.28.198
@@ -467,46 +343,7 @@ proxies:
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- name: "\U0001F1FA\U0001F1F8 US 024 | ⬇️ 31.28MB/s"
-  network: ws
-  port: 80
-  server: 162.159.45.207
-  tls: false
-  type: vless
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  ws-opts:
-    headers:
-      Host: vip.yaml7.ggff.net
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: "\U0001F1F3\U0001F1F1 NL 001 | ⬇️ 30.64MB/s"
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.194
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: "\U0001F1E9\U0001F1EA DE 001 | ⬇️ 28.76MB/s"
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.199
-  skip-cert-verify: true
-  sni: fra4.chasem2026sud.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: "\U0001F1E9\U0001F1EA DE 002 | ⬇️ 28.60MB/s"
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.3
-  skip-cert-verify: true
-  sni: fra34.chasem2026sud.com
-  tls: true
-  type: trojan
-  udp: true
-- name: "\U0001F1F3\U0001F1F1 NL 002 | ⬇️ 28.33MB/s"
+- name: "\U0001F1F3\U0001F1F1 NL 001 | ⬇️ 35.22MB/s"
   port: 8443
   server: 195.181.173.199
   servername: ams1.fromblancwithlove.com
@@ -515,49 +352,143 @@ proxies:
   type: vless
   udp: true
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- flow: ""
-  name: "\U0001F1F3\U0001F1F1 荷兰 | vless | 01"
-  network: ws
-  port: 80
-  server: 146.103.102.82
-  tls: false
-  type: vless
-  uuid: e08f1ad7-0c60-446d-baec-08b3b69bb3d0
-  ws-opts:
-    path: '%2FgetWorkerUpdates'
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: "\U0001F1FA\U0001F1F8 美国 | vless | 149"
+- name: "\U0001F1EC\U0001F1E7 GB 005 | ⬇️ 33.43MB/s"
   network: tcp
-  port: 443
-  server: s720.okgfw.top
-  servername: u710947ue091s720.okgfw.top
+  port: 8443
+  server: uk1.fromblancwithlove.com
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+- name: "\U0001F1EB\U0001F1F7 FR 002 | ⬇️ 31.03MB/s"
+  network: ws
+  port: 8443
+  server: 31.59.121.227
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+- flow: xtls-rprx-vision
+  name: "\U0001F1EB\U0001F1EE FI 001 | ⬇️ 30.50MB/s"
+  network: tcp
+  port: 443
+  server: 185.93.105.107
+  servername: sub.sbrf-cdn342.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: c4f2dee2-14e3-4c02-91e9-31c7917e239c
+- cipher: aes-256-cfb
+  name: "\U0001F1F2\U0001F1F9 MT 001 | ⬇️ 23.52MB/s"
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 171.22.254.17
+  type: ss
+  udp: true
+- name: "\U0001F1F9\U0001F1F7 TR 001 | ⬇️ 22.93MB/s"
+  network: tcp
+  port: 56126
+  server: 185.72.9.200
+  tls: false
+  type: vless
+  uuid: 9bde09b3-09b5-4d7a-b5fd-3fae8dfeed5a
+- name: "\U0001F1EC\U0001F1E7 GB 006 | ⬇️ 18.45MB/s"
+  network: ws
+  port: 443
+  server: 57.129.137.241
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+- flow: ""
+  name: "\U0001F1E9\U0001F1F0 DK 001 | ⬇️ 18.37MB/s"
+  network: ws
+  port: 15855
+  server: 45.148.31.0
+  tls: false
+  type: vless
+  uuid: e4fc4761-154f-490e-bbaa-b4fa193f1073
+  ws-opts:
+    path: '%2F'
+- name: "\U0001F1EC\U0001F1E7 GB 007 | ⬇️ 17.56MB/s"
+  network: ws
+  port: 8443
+  server: 57.128.181.219
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+- name: "\U0001F1EC\U0001F1E7 GB 008 | ⬇️ 17.26MB/s"
+  network: ws
+  port: 8443
+  server: 57.128.181.18
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+- name: "\U0001F1EC\U0001F1E7 GB 009 | ⬇️ 17.16MB/s"
+  network: ws
+  port: 443
+  server: 57.129.137.81
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
 - alterId: 0
   cipher: auto
-  name: "\U0001F1EC\U0001F1E7 英国 | vmess | 05"
+  name: "\U0001F1EC\U0001F1E7 GB 010 | ⬇️ 16.71MB/s"
   network: tcp
   port: "22324"
   server: 66.163.117.58
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- flow: ""
-  name: "\U0001F1F3\U0001F1F1 荷兰 | vless | 67"
+- name: "\U0001F1EC\U0001F1E7 GB 011 | ⬇️ 15.76MB/s"
   network: ws
-  port: 80
-  server: nl-90w-c.southnetworks.cloud
-  tls: false
+  port: 8443
+  server: 57.128.176.82
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: e08f1ad7-0c60-446d-baec-08b3b69bb3d0
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
-    path: '%2FgetWorkerUpdates'
+    headers:
+      Host: sni.111000.indevs.in
+    path: '%2F%3Fed'
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F8 US 020 | ⬇️ 11.19MB/s"
+  network: tcp
+  port: "180"
+  server: 82.198.246.46
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alpn:
   - h2
   flow: xtls-rprx-vision
-  name: "\U0001F1FA\U0001F1F8 美国 | vless | 111"
+  name: "\U0001F1FA\U0001F1F8 US 021 | ⬇️ 9.92MB/s"
   network: tcp
   port: 443
   server: 5.8.18.147
@@ -565,20 +496,32 @@ proxies:
   tls: true
   type: vless
   uuid: 6053689d-39d6-4005-b1bd-c0dce854f429
-- name: NL_speednode_0030
-  password: strong-secret-pass-777
-  port: 4443
-  server: 94.131.105.125
-  skip-cert-verify: true
-  sni: 94.131.105.125
-  type: trojan
-  udp: true
+- client-fingerprint: ios
+  grpc-opts:
+    grpc-service-name: ssp
+  name: "\U0001F1FA\U0001F1F8 美国 | vless | 146"
+  network: grpc
+  port: 443
+  server: s843.ccgfw.top
+  servername: u710947u8fe3s843.ccgfw.top
+  tls: true
+  type: vless
+  uuid: 424e7cc4-df34-3518-9c7b-401db4ece90a
 - alterId: 0
   cipher: auto
-  name: DE36｜机房｜低风险
+  name: "\U0001F1F7\U0001F1FA 俄罗斯 | vmess | 04"
   network: tcp
-  port: "180"
-  server: 82.198.246.97
+  port: 39651
+  server: 45.89.52.207
   tls: false
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: "\U0001F1FA\U0001F1F8US美国21 280.8KB/s"
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
