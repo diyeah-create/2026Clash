@@ -1,4 +1,4 @@
-name: Fetch & Strict Speed Test
+name: Fetch & Strict Google + Download Speed Test
 
 on:
   schedule:
@@ -27,25 +27,42 @@ jobs:
           curl -f -L "$PROXIES_URL" -o raw_proxies.yaml || { echo "Failed to fetch proxies"; exit 1; }
 
       - name: Deduplicate + 过滤垃圾节点
-        run: python3 dedup.py   # 假设 dedup.py 在根目录
+        run: python3 dedup.py
 
-      - name: Clash Speed Test
+      - name: Strict Clash Speed Test (Google + 下载速度 + 重命名 + 严格过滤)
         run: |
           curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
           chmod +x clash-speedtest
-          ./clash-speedtest -c proxies_dedup.yaml --test-url "http://www.gstatic.com/generate_204" --speed-mode download --timeout 10000 --concurrent 4 --max-latency 800 --rename --output proxies_tested.yaml || echo "测速异常，使用去重文件"
-          if [ -f proxies_tested.yaml ] && grep -q "proxies:" proxies_tested.yaml; then
+
+          echo "开始严格测速（Google访问 + 下载速度 ≥5MB/s + 延迟 ≤500ms）..."
+          ./clash-speedtest \
+            -c proxies_dedup.yaml \
+            -output proxies_tested.yaml \
+            -rename \
+            -speed-mode download \
+            -server-url "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg" \
+            -max-latency 500ms \
+            -min-download-speed 5 \
+            -max-packet-loss 10 \
+            -timeout 15s \
+            -concurrent 4 || echo "测速工具执行异常，使用去重文件"
+
+          # 如果测速后还有有效节点，就使用它；否则回退到去重文件
+          if [ -f proxies_tested.yaml ] && grep -q "proxies:" proxies_tested.yaml && [ "$(grep -c "server:" proxies_tested.yaml)" -gt 0 ]; then
             cp proxies_tested.yaml proxies.yaml
+            echo "✅ 严格测速完成，使用过滤后的优质节点"
           else
             cp proxies_dedup.yaml proxies.yaml
+            echo "⚠️ 严格过滤后无节点保留，使用去重文件"
           fi
 
       - name: Commit changes
         run: |
           git add proxies.yaml stars.svg raw_proxies.yaml proxies_dedup.yaml || true
           if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No changes to commit"
           else
-            git commit -m "Update: dedup + speed test ($(date '+%Y-%m-%d %H:%M'))"
+            git commit -m "Update: 严格Google+下载测速 + 国旗+速度重命名 ($(date '+%Y-%m-%d %H:%M:%S'))"
             git push
+            echo "✅ 提交成功"
           fi
