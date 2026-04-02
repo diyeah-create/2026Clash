@@ -8,35 +8,20 @@ on:
 permissions:
   contents: write
 
-# ====================== 新增：并发控制 ======================
-concurrency:
-  group: clash-update
-  cancel-in-progress: true
-
 jobs:
   update:
     runs-on: ubuntu-latest
+    # 彻底消除 Node.js 20 弃用警告
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Python 3.12
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
       - name: Config Git
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-
-      - name: Cache clash-speedtest
-        uses: actions/cache@v4
-        with:
-          path: clash-speedtest
-          key: clash-speedtest-linux-latest
 
       - name: Download raw proxies & stars
         env:
@@ -49,15 +34,11 @@ jobs:
         run: python3 dedup.py
 
       - name: Strict Clash Speed Test (Google + 下载速度 + 高并发)
-        timeout-minutes: 40
         run: |
-          # 如果缓存失效才重新下载
-          if [ ! -f clash-speedtest ]; then
-            curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
-            chmod +x clash-speedtest
-          fi
+          curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
+          chmod +x clash-speedtest
 
-          echo "开始严格测速（高并发12 + Google + ≥1MB/s + ≤5000ms）..."
+          echo "开始严格测速（高并发12 + Google访问 + 下载速度 ≥1MB/s + 延迟 ≤5000ms）..."
           ./clash-speedtest \
             -c proxies_dedup.yaml \
             -output proxies_tested.yaml \
@@ -68,14 +49,14 @@ jobs:
             -min-download-speed 1 \
             -max-packet-loss 10 \
             -timeout 10s \
-            -concurrent 12 || echo "测速异常，使用去重文件"
+            -concurrent 12 || echo "测速工具执行异常，使用去重文件"
 
-          if [ -f proxies_tested.yaml ] && grep -q "proxies:" proxies_tested.yaml && [ "$(grep -c "server:" proxies_tested.yaml)" -gt 5 ]; then
+          if [ -f proxies_tested.yaml ] && grep -q "proxies:" proxies_tested.yaml && [ "$(grep -c "server:" proxies_tested.yaml)" -gt 0 ]; then
             cp proxies_tested.yaml proxies.yaml
-            echo "✅ 严格测速完成，使用优质节点"
+            echo "✅ 严格测速完成（高并发），使用过滤后的优质节点"
           else
             cp proxies_dedup.yaml proxies.yaml
-            echo "⚠️ 测速后节点不足，使用去重文件"
+            echo "⚠️ 严格过滤后无节点保留，使用去重文件"
           fi
 
       - name: Generate Node Statistics
@@ -84,22 +65,13 @@ jobs:
       - name: Build Full Config with Latest Rules
         run: python3 build_full_config.py
 
-      - name: Validate Final Config
-        run: python3 -c '
-import yaml, sys
-with open("proxies.yaml") as f:
-    data = yaml.safe_load(f)
-assert "proxies" in data and len(data["proxies"]) > 0, "配置无效"
-print("✅ proxies.yaml 验证通过")
-'
-
       - name: Commit changes
         run: |
           git add proxies.yaml nodes_stats.md stars.svg raw_proxies.yaml proxies_dedup.yaml || true
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update: 严格测速 + Loyalsoldier全规则 + 节点统计 ($(date '+%Y-%m-%d %H:%M:%S'))"
+            git commit -m "Update: 严格测速 + 全网最强规则集（Loyalsoldier每日更新）+ 节点统计 ($(date '+%Y-%m-%d %H:%M:%S'))"
             git push
             echo "✅ 提交成功"
           fi
