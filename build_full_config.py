@@ -32,11 +32,6 @@ config = {
             'proxies': [p['name'] for p in proxies]
         },
         {
-            'name': 'DIRECT',
-            'type': 'select',
-            'proxies': ['DIRECT']
-        },
-        {
             'name': 'PROXY',
             'type': 'select',
             'proxies': ['自动选择', '手动选择', 'DIRECT']
