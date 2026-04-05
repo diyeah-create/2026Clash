@@ -11,7 +11,6 @@ else:
 
 proxies = data.get('proxies', [])
 
-# 过滤低延迟节点
 MAX_LATENCY_MS = 8000
 filtered = [p for p in proxies if isinstance(p.get('latency'), (int, float)) and p.get('latency') <= MAX_LATENCY_MS]
 
