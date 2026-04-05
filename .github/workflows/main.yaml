@@ -33,7 +33,7 @@ jobs:
       - name: Deduplicate + 防重名
         run: python3 dedup.py
 
-      - name: Strict Clash Speed Test（双阶段：先 fast 全测延迟 → 再只测低延迟节点的下载速度）
+      - name: Strict Clash Speed Test（极致双阶段：先 fast 全测延迟 → 再只测 <5000ms 节点的下载速度）
         run: |
           curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
           chmod +x clash-speedtest
@@ -45,15 +45,15 @@ jobs:
             -rename \
             -speed-mode fast \
             -server-url "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg" \
-            -max-latency 10000ms \
-            -max-packet-loss 40 \
-            -timeout 5s \
-            -concurrent 12 || echo "第一阶段失败，使用去重文件作为 fallback"
+            -max-latency 20000ms \     # 超宽松，让更多节点通过第一阶段
+            -max-packet-loss 60 \
+            -timeout 4s \
+            -concurrent 15 || echo "第一阶段失败，使用去重文件"
 
-          # 过滤低延迟节点
-          python3 filter_low_latency.py || echo "过滤脚本异常，使用全部去重节点"
+          # 过滤 <5000ms 节点
+          python3 filter_low_latency.py || echo "过滤脚本异常，使用全部节点"
 
-          echo "=== 第二阶段：download 模式（仅对低延迟节点测下载速度）==="
+          echo "=== 第二阶段：download 模式（仅对 <5000ms 节点测下载速度）==="
           ./clash-speedtest \
             -c low_latency.yaml \
             -output proxies_tested.yaml \
@@ -61,17 +61,23 @@ jobs:
             -speed-mode download \
             -server-url "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg" \
             -min-download-speed 0.3 \
-            -max-packet-loss 30 \
-            -timeout 8s \
-            -concurrent 8 || echo "第二阶段失败，使用第一阶段结果"
+            -max-packet-loss 40 \
+            -timeout 7s \
+            -concurrent 10 || echo "第二阶段失败，使用第一阶段结果"
 
-          # 最终判断
-          if [ -f proxies_tested.yaml ] && [ "$(grep -c "server:" proxies_tested.yaml 2>/dev/null || echo 0)" -gt 10 ]; then
-            cp proxies_tested.yaml proxies.yaml
-            echo "✅ 双阶段测速完成！保留全部优质节点"
+          # 健壮判断（修复 integer expression 错误）
+          if [ -f proxies_tested.yaml ]; then
+            count=$(grep -c "server:" proxies_tested.yaml 2>/dev/null || echo 0)
+            if [ "$count" -gt 10 ]; then
+              cp proxies_tested.yaml proxies.yaml
+              echo "✅ 双阶段测速完成！保留全部优质节点（<5000ms + 下载速度合格）"
+            else
+              cp proxies_dedup.yaml proxies.yaml
+              echo "⚠️ 测速后优质节点不足，使用去重文件"
+            fi
           else
             cp proxies_dedup.yaml proxies.yaml
-            echo "⚠️ 测速后节点不足，使用去重文件"
+            echo "⚠️ proxies_tested.yaml 不存在，使用去重文件"
           fi
 
       - name: Enhance Node Names（添加延迟显示）
