@@ -7,7 +7,7 @@ proxies = data.get('proxies', [])
 
 print(f"原始节点数量: {len(proxies)}")
 
-# 终极去重：核心参数哈希（完全忽略 name）
+# 终极去重：核心参数哈希（彻底消灭 duplicate name）
 def get_proxy_key(p):
     core = {
         'type': p.get('type'),
@@ -29,7 +29,7 @@ for p in proxies:
 
 print(f"哈希严格去重后: {len(deduped)} 个节点")
 
-# 强制全局唯一名称（彻底消灭 duplicate name）
+# 强制全局唯一名称
 final_proxies = []
 name_set = set()
 for i, p in enumerate(deduped):
@@ -46,4 +46,4 @@ for i, p in enumerate(deduped):
 with open('proxies_dedup.yaml', 'w', encoding='utf-8') as f:
     yaml.dump({'proxies': final_proxies}, f, allow_unicode=True, sort_keys=False)
 
-print(f"✅ 终极去重 + 强制唯一名称完成！共 {len(final_proxies)} 个节点 → proxies_dedup.yaml")
+print(f"✅ 终极去重完成！共 {len(final_proxies)} 个节点 → proxies_dedup.yaml")
