@@ -33,26 +33,25 @@ jobs:
       - name: Deduplicate + 防重名
         run: python3 dedup.py
 
-      - name: Strict Clash Speed Test（极速版）
+      - name: Strict Clash Speed Test（极速 fast 模式 + 保留全部节点）
         run: |
           curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
           chmod +x clash-speedtest
-          echo "开始极速测速（节点已限 300 个）..."
+          echo "开始极速测速（fast 模式：只测延迟 + 高并发）..."
           ./clash-speedtest \
             -c proxies_dedup.yaml \
             -output proxies_tested.yaml \
             -rename \
-            -speed-mode download \
+            -speed-mode fast \
             -server-url "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg" \
-            -max-latency 5000ms \
-            -min-download-speed 0.3 \
-            -max-packet-loss 25 \
-            -timeout 6s \
-            -concurrent 4 || echo "⚠️ 测速异常，使用去重文件"
+            -max-latency 8000ms \
+            -max-packet-loss 30 \
+            -timeout 5s \
+            -concurrent 10 || echo "⚠️ 测速异常，使用去重文件"
           
           if [ -f proxies_tested.yaml ] && [ "$(grep -c "server:" proxies_tested.yaml 2>/dev/null || echo 0)" -gt 5 ]; then
             cp proxies_tested.yaml proxies.yaml
-            echo "✅ 测速完成，保留优质节点"
+            echo "✅ 极速测速完成（fast 模式），保留全部优质节点"
           else
             cp proxies_dedup.yaml proxies.yaml
             echo "⚠️ 测速后节点不足，使用去重文件"
