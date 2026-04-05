@@ -26,22 +26,26 @@ dns:
     - 172.16.0.0/12
     - 192.168.0.0/16
 proxies:
-- cipher: none
-  name: 🇨🇦 CA 001 | ⬇️ 209.26MB/s
-  password: 3e96ef7d-8637-42c2-ac73-75182196e755
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: mfvpn.fuchen.indevs.in
-    mode: websocket
-    mux: false
-    path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
-    tls: true
-  port: 443
-  server: store.ubi.com
-  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇨🇳 CN 001 | ⬇️ 237.52MB/s
+  network: ws
+  port: 2096
+  server: 77.105.163.138
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
   udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/46.0.2490.71 Safari/537.36
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+  xudp: true
 - cipher: none
-  name: 🇺🇸 US 001 | ⬇️ 205.04MB/s
+  name: 🇺🇸 US 001 | ⬇️ 185.84MB/s
   password: 3e96ef7d-8637-42c2-ac73-75182196e755
   plugin: v2ray-plugin
   plugin-opts:
@@ -54,59 +58,53 @@ proxies:
   server: 199.181.197.38
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 002 | ⬇️ 183.54MB/s
-  network: tcp
-  port: '180'
-  server: 82.198.246.250
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 003 | ⬇️ 157.39MB/s
-  port: 180
-  server: 82.198.246.46
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: none
+  name: 🇨🇦 CA 001 | ⬇️ 183.94MB/s
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: mfvpn.fuchen.indevs.in
+    mode: websocket
+    mux: false
+    path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+    tls: true
+  port: 443
+  server: store.ubi.com
+  type: ss
   udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸 US 004 | ⬇️ 120.94MB/s
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 005 | ⬇️ 100.40MB/s
-  network: ws
-  port: '2053'
-  server: usaapp1.jisuyun.top
-  servername: usaapp1.jisuyun.top
-  tls: true
-  type: vmess
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  ws-opts:
-    headers:
-      Host: usaapp1.jisuyun.top
-    path: /usavm
-- name: 🇺🇸 US 006 | ⬇️ 59.16MB/s
+- name: 🇺🇸 US 002 | ⬇️ 145.45MB/s
   password: WwipNOSqUh49CEapMmIrv6m6AZLf-EC0+T
   port: 13109
   server: 104.238.162.6
   sni: ord2.edge-command.click
   type: trojan
-- name: 🇺🇸 US 007 | ⬇️ 46.48MB/s
+- name: 🇨🇦 CA 002 | ⬇️ 121.31MB/s
+  network: ws
+  port: 80
+  server: cf.0sm.com
+  tls: false
+  type: vless
+  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+  ws-opts:
+    headers:
+      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+    path: /?ed=2048
+- name: 🇨🇦 CA 003 | ⬇️ 75.64MB/s
+  network: ws
+  port: 8080
+  server: 198.41.222.50
+  servername: 198.41.222.50
+  type: vless
+  udp: true
+  uuid: c9b45f2f-6cbe-4a86-b4d2-a327f4055a59
+  ws-opts:
+    headers:
+      Host: 001.electrocellco-cf-001.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /eyJqdW5rIjoiRzBvTDBuZEFVIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0=?ed=2560
+  xudp: true
+- name: 🇺🇸 US 003 | ⬇️ 43.45MB/s
   password: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
   port: 443
   server: n1.chateditimage.com
@@ -114,67 +112,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US 008 | ⬇️ 42.62MB/s
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: 🇯🇵 JP 001 | ⬇️ 25.03MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60001
-  server: jpaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 🇯🇵 JP 002 | ⬇️ 25.00MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60005
-  server: jpaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 🇯🇵 JP 003 | ⬇️ 24.88MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60006
-  server: jpaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 🇯🇵 JP 004 | ⬇️ 23.32MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60002
-  server: jpaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 🇭🇰 HK 001 | ⬇️ 22.41MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60005
-  server: hkaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 001 | ⬇️ 21.55MB/s
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: 51.11.132.77
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: 🇯🇵 JP 005 | ⬇️ 21.44MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60003
-  server: hkaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 002 | ⬇️ 21.37MB/s
+  name: 🇬🇧 GB 001 | ⬇️ 39.59MB/s
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a1.samanehha.co
@@ -183,116 +121,43 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 003 | ⬇️ 20.88MB/s
-  password: 1kVr0KATIJI7mwOF
-  port: 443
-  server: admin.c1.havij.co
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- name: 🇰🇷 KR 001 | ⬇️ 20.29MB/s
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 004 | ⬇️ 20.13MB/s
+  name: 🇬🇧 GB 002 | ⬇️ 39.48MB/s
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a2.samanehha.co
   skip-cert-verify: true
   tls: true
   type: ss
-- name: 🇳🇱 NL 001 | ⬇️ 19.94MB/s
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 003 | ⬇️ 39.16MB/s
+  password: 1kVr0KATIJI7mwOF
+  port: 443
+  server: admin.c1.havij.co
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: 🇳🇱 NL 001 | ⬇️ 35.42MB/s
   password: uThbm8eGmXZ7GKqnWy
   port: 443
   server: nl-4.tr202507.com
   sni: nl-4.tr202507.com
   type: trojan
-- name: 🇳🇱 NL 002 | ⬇️ 19.71MB/s
+- name: 🇳🇱 NL 002 | ⬇️ 35.08MB/s
   password: M08tvzYWtUEJNtbpHp
   port: 443
   server: nl-4.tr202512.com
   sni: nl-4.tr202512.com
   type: trojan
-- alterId: 0
-  name: 🏳️ AL 001 | ⬇️ 19.68MB/s
-  password: MeaDiUmPlkWbZJ2BON8tz
-  port: 28259
-  server: 78.159.131.12
-  skip-cert-verify: true
-  sni: ads.x5.ru
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇳🇱 NL 003 | ⬇️ 19.65MB/s
-  password: strong-secret-pass-777
-  port: 4443
-  server: 94.131.105.125
-  skip-cert-verify: true
-  sni: 94.131.105.125
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 004 | ⬇️ 19.56MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.202
-  type: ss
 - cipher: aes-256-cfb
-  name: 🇳🇱 NL 005 | ⬇️ 19.36MB/s
+  name: 🇳🇱 NL 003 | ⬇️ 33.95MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.17.169
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 006 | ⬇️ 19.34MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.35
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 007 | ⬇️ 19.28MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.194
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  name: 🇬🇧 GB 005 | ⬇️ 19.25MB/s
-  port: 8443
-  server: 152.233.28.198
-  servername: uk1.fromblancwithlove.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- name: 🇨🇳 TW 001 | ⬇️ 19.25MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 🇯🇵 JP 006 | ⬇️ 19.15MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60006
-  server: hkaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 🇳🇱 NL 008 | ⬇️ 19.05MB/s
+  name: 🇳🇱 NL 004 | ⬇️ 33.35MB/s
   port: 443
   reality-opts:
     public-key: j5sQbSLF4SeU7XHU27W56ZuveT-O6HwxX2wi5neM4UM
@@ -304,14 +169,29 @@ proxies:
   type: vless
   udp: true
   uuid: b605b776-b676-430e-8957-00f1e0166bee
-- name: 🇭🇰 HK 002 | ⬇️ 18.99MB/s
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 921
-  server: 16.162.33.118
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+- alterId: 0
+  name: 🏳️ AL 001 | ⬇️ 33.05MB/s
+  password: MeaDiUmPlkWbZJ2BON8tz
+  port: 28259
+  server: 78.159.131.12
+  skip-cert-verify: true
+  sni: ads.x5.ru
+  tls: true
   type: trojan
-- name: 🇬🇧 GB 006 | ⬇️ 18.88MB/s
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 005 | ⬇️ 32.55MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 006 | ⬇️ 32.40MB/s
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 193.29.139.206
+  type: ss
+- name: 🇬🇧 GB 004 | ⬇️ 31.91MB/s
   port: 8443
   server: uk1.fromblancwithlove.com
   skip-cert-verify: true
@@ -319,19 +199,18 @@ proxies:
   type: vless
   udp: true
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- name: 🏳️ AL 002 | ⬇️ 18.57MB/s
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 185.177.238.87
+- alpn:
+  - h2
+  name: 🇬🇧 GB 005 | ⬇️ 31.40MB/s
+  port: 8443
+  server: 152.233.28.198
+  servername: uk1.fromblancwithlove.com
   skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
-- name: 🏳️ AL 003 | ⬇️ 18.30MB/s
+  tls: true
+  type: vless
+  udp: true
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+- name: 🏳️ AL 002 | ⬇️ 29.60MB/s
   network: ws
   password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
   port: 2083
@@ -343,7 +222,7 @@ proxies:
     headers:
       Host: xo.e0f.cx
     path: '%2Ftrojan-ws'
-- name: 🇩🇪 DE 001 | ⬇️ 18.00MB/s
+- name: 🇩🇪 DE 001 | ⬇️ 29.15MB/s
   network: ws
   password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
   port: 2083
@@ -355,14 +234,19 @@ proxies:
     headers:
       Host: xo.e0f.cx
     path: '%2Ftrojan-ws'
-- name: 🇭🇰 HK 003 | ⬇️ 17.79MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60004
-  server: hkaws.ccwink.photos
+- name: 🇳🇱 NL 007 | ⬇️ 28.97MB/s
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 145.249.115.115
   skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 🇩🇪 DE 002 | ⬇️ 17.41MB/s
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: '%2Ftrojan-ws'
+- name: 🇩🇪 DE 002 | ⬇️ 28.48MB/s
   network: ws
   port: 4001
   server: 185.94.29.156
@@ -376,21 +260,61 @@ proxies:
     headers:
       Host: sub.mot.ip-ddns.com
     path: /
-- name: 🇬🇧 GB 007 | ⬇️ 17.11MB/s
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇳🇱 NL 008 | ⬇️ 26.96MB/s
   network: ws
-  port: 7443
-  server: 222.167.202.4
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: false
+  port: 443
+  server: 188.253.26.128
+  servername: sni.111000.dynv6.net
   tls: true
   type: vless
   udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.4:7443
-- name: 🇬🇧 GB 008 | ⬇️ 16.95MB/s
+      Host: sni.111000.dynv6.net
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Chrome/12.0.742.100 Safari/534.30
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+  xudp: true
+- name: 🇦🇹 AT 001 | ⬇️ 25.94MB/s
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 87.251.69.71
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: /trojan-ws
+- name: 🇵🇱 PL 001 | ⬇️ 25.74MB/s
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 144.31.5.132
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: '%2Ftrojan-ws'
+- name: 🇨🇭 CH 001 | ⬇️ 25.74MB/s
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 95.85.239.225
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: '%2Ftrojan-ws'
+- name: 🇬🇧 GB 006 | ⬇️ 25.67MB/s
   network: ws
   port: 7443
   server: 222.167.202.10
@@ -404,21 +328,19 @@ proxies:
     headers:
       Host: 2026.hhhhh.eu.org
     path: /222.167.202.10:7443
-- name: 🇬🇧 GB 009 | ⬇️ 16.92MB/s
+- name: 🇨🇭 CH 002 | ⬇️ 25.59MB/s
   network: ws
-  port: 7443
-  server: 222.167.202.16
-  servername: 2026.hhhhh.eu.org
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 95.85.239.4
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  sni: xo.e0f.cx
+  type: trojan
   ws-opts:
     headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.16:7443
-- name: 🇬🇧 GB 010 | ⬇️ 16.90MB/s
+      Host: xo.e0f.cx
+    path: '%2Ftrojan-ws'
+- name: 🇬🇧 GB 007 | ⬇️ 25.42MB/s
   network: ws
   port: 7443
   server: 222.167.202.6
@@ -432,10 +354,10 @@ proxies:
     headers:
       Host: 2026.hhhhh.eu.org
     path: /222.167.202.6:7443
-- name: 🇬🇧 GB 011 | ⬇️ 16.83MB/s
+- name: 🇬🇧 GB 008 | ⬇️ 25.37MB/s
   network: ws
   port: 7443
-  server: 222.167.202.60
+  server: 222.167.202.4
   servername: 2026.hhhhh.eu.org
   skip-cert-verify: false
   tls: true
@@ -445,98 +367,8 @@ proxies:
   ws-opts:
     headers:
       Host: 2026.hhhhh.eu.org
-    path: /222.167.202.60:7443
-- name: 🇨🇭 CH 001 | ⬇️ 16.82MB/s
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 95.85.239.225
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: '%2Ftrojan-ws'
-- name: HK_speednode_0040
-  network: ws
-  port: 7443
-  server: 222.167.202.23
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.23:7443
-- name: HK_speednode_0045
-  network: ws
-  port: 7443
-  server: 222.167.202.2
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.2:7443
-- name: HK_speednode_0044
-  network: ws
-  port: 7443
-  server: 222.167.202.14
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.14:7443
-- alterId: 0
-  name: br|feba|puddincat07@Telegram
-  password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
-  port: 26593
-  server: 216.238.102.254
-  skip-cert-verify: true
-  sni: sao2.cdn-graph.click
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 125
-  network: ws
-  port: 80
-  server: e8faf291-tbdts0-tcdmjc-1gevg.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: e8faf291-tbdts0-tcdmjc-1gevg.hkt.gotochinatown.net
-    path: /
-- name: 🇷🇺 俄罗斯 | trojan | 11
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 145.249.115.115
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: '%2Ftrojan-ws'
-- name: HK_speednode_0055
+    path: /222.167.202.4:7443
+- name: 🇬🇧 GB 009 | ⬇️ 25.26MB/s
   network: ws
   port: 7443
   server: 222.167.202.22
@@ -550,34 +382,147 @@ proxies:
     headers:
       Host: 2026.hhhhh.eu.org
     path: /222.167.202.22:7443
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 127
+- name: 🇬🇧 GB 010 | ⬇️ 25.15MB/s
   network: ws
-  port: 80
-  server: dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
+  port: 7443
+  server: 222.167.202.16
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   ws-opts:
     headers:
-      Host: dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net
-    path: /
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.16:7443
+- name: 🇬🇧 GB 011 | ⬇️ 24.91MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.60
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-opts:
+    headers:
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.60:7443
+- name: 🇬🇧 GB 012 | ⬇️ 24.87MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.23
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-opts:
+    headers:
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.23:7443
+- name: 🇬🇧 GB 013 | ⬇️ 24.79MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.14
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-opts:
+    headers:
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.14:7443
+- name: 🇬🇧 GB 014 | ⬇️ 24.65MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.21
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-opts:
+    headers:
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.21:7443
+- name: 🇬🇧 GB 015 | ⬇️ 23.82MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.47
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-opts:
+    headers:
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.47:7443
 - alterId: 0
-  cipher: auto
-  name: 🇬🇧 英国 | vmess | 04
-  network: tcp
-  port: '22324'
-  server: 66.163.117.58
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 🇦🇹 奥地利 | trojan | 13
+  name: 🇧🇷 BR 001 | ⬇️ 23.73MB/s
+  password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
+  port: 26593
+  server: 216.238.102.254
+  skip-cert-verify: true
+  sni: sao2.cdn-graph.click
+  tls: true
+  type: trojan
+  udp: true
+- name: 🇬🇧 GB 016 | ⬇️ 23.53MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.45
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-opts:
+    headers:
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.45:7443
+- name: 🇬🇧 GB 017 | ⬇️ 23.23MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.2
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-opts:
+    headers:
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.2:7443
+- name: 🇬🇧 GB 018 | ⬇️ 23.09MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.31
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  ws-opts:
+    headers:
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.31:7443
+- name: 🇨🇱 CL 001 | ⬇️ 22.68MB/s
   network: ws
   password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
   port: 2083
-  server: 87.251.69.71
+  server: 38.180.176.115
   skip-cert-verify: true
   sni: xo.e0f.cx
   type: trojan
@@ -585,28 +530,35 @@ proxies:
     headers:
       Host: xo.e0f.cx
     path: /trojan-ws
-- name: 🇸🇬 新加坡 | trojan | 46
-  network: ws
-  password: 13c169be-8592-4eaa-94cb-69c859e7d987
-  port: 443
-  server: ubu.okaoclax.me
+- name: 🇳🇴 NO 001 | ⬇️ 22.12MB/s
+  password: wp9IsiY82uQhcmgNC1eoBM
+  port: 12420
+  server: 80.173.231.254
+  sni: www.semanticstaplegun.click
   type: trojan
+- name: 🇬🇧 GB 019 | ⬇️ 21.58MB/s
+  network: ws
+  port: 7443
+  server: 222.167.202.70
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   ws-opts:
     headers:
-      Host: ubu.okaoclax.me
-    path: '%2Ftrojan-ws'
-- name: 🇵🇱 波兰 | trojan | 07
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 144.31.5.132
+      Host: 2026.hhhhh.eu.org
+    path: /222.167.202.70:7443
+- alterId: 0
+  name: 🇪🇸ES西班牙2
+  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
+  port: 26279
+  server: 80.173.230.196
   skip-cert-verify: true
-  sni: xo.e0f.cx
+  tls: true
   type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: '%2Ftrojan-ws'
+  udp: true
 - name: HK_speednode_0051
   network: ws
   port: 7443
@@ -621,36 +573,77 @@ proxies:
     headers:
       Host: 2026.hhhhh.eu.org
     path: /222.167.202.35:7443
-- name: HK_speednode_0041
-  network: ws
-  port: 7443
-  server: 222.167.202.21
-  servername: 2026.hhhhh.eu.org
+- alterId: 0
+  cipher: auto
+  name: 🇷🇺 俄罗斯 | vmess | 05
+  network: tcp
+  port: 39651
+  server: 45.89.52.207
+  tls: false
+  type: vmess
+  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
+- name: 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_a6c8ccc1
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 60004
+  server: hkaws.ccwink.photos
   skip-cert-verify: true
-  tls: true
-  type: vless
+  type: anytls
   udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+- alterId: '0'
+  cipher: auto
+  name: 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_37b5e444
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
   ws-opts:
     headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.21:7443
-- name: 🇨🇭 瑞士 | trojan | 05
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🔴🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_d5aa4dea
+  network: ws
+  port: 16622
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
+  ws-opts:
+    headers:
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- name: 🇦🇷 阿根廷 | trojan | 02
   network: ws
   password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
   port: 2083
-  server: 95.85.239.4
+  server: 149.33.19.105
   skip-cert-verify: true
   sni: xo.e0f.cx
   type: trojan
   ws-opts:
     headers:
       Host: xo.e0f.cx
-    path: '%2Ftrojan-ws'
-- name: HK_speednode_0049
+    path: /trojan-ws
+- name: 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_8197ce59
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 60001
+  server: hkaws.ccwink.photos
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- name: HK_speednode_0057
   network: ws
   port: 7443
-  server: 222.167.202.31
+  server: 222.167.202.50
   servername: 2026.hhhhh.eu.org
   skip-cert-verify: false
   tls: true
@@ -660,7 +653,66 @@ proxies:
   ws-opts:
     headers:
       Host: 2026.hhhhh.eu.org
-    path: /222.167.202.31:7443
+    path: /222.167.202.50:7443
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 英国 | vmess | 04
+  network: tcp
+  port: '22324'
+  server: 66.163.117.58
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_1cbdc2d6
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 60005
+  server: jpaws.ccwink.photos
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- name: 🟢🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001_2e41ab5f
+  password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+  port: 443
+  server: 01925010-t9zts0-tan99f-1rdqg.de.oshuawei.com
+  sni: 01925010-t9zts0-tan99f-1rdqg.de.oshuawei.com
+  tls: true
+  type: http
+  username: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+- name: 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_99c3c7aa
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 60002
+  server: jpaws.ccwink.photos
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- name: 🇺🇦 乌克兰 | trojan | 03
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 130.0.234.160
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: /trojan-ws
+- alterId: '0'
+  cipher: auto
+  name: 🔴🇸🇬[🎬🤖📺🎪]_github.com/Ruk1ng001_b371236e
+  network: ws
+  port: 16618
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
+  ws-opts:
+    headers:
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - name: HK_speednode_0052
   network: ws
   port: 7443
@@ -675,132 +727,67 @@ proxies:
     headers:
       Host: 2026.hhhhh.eu.org
     path: /222.167.202.33:7443
-- alterId: 2
+- alterId: '0'
   cipher: auto
-  name: 🇭🇰 香港 | vmess | 124
+  name: 🔴🇮🇳[🎬🤖📺📦]_github.com/Ruk1ng001_c044864b
   network: ws
-  port: 80
-  server: 040f3ec5-t70f40-ta64ri-1qzi1.hkt.gotochinatown.net
-  servername: 040f3ec5-t70f40-ta64ri-1qzi1.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 8f99107c-f091-11ee-9935-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 040f3ec5-t70f40-ta64ri-1qzi1.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 54
-  network: ws
-  port: 80
-  server: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 131
-  network: ws
-  port: 80
-  server: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net
-    path: /
-- name: HK_speednode_0039
-  network: ws
-  port: 7443
-  server: 222.167.202.52
-  servername: 2026.hhhhh.eu.org
+  port: 16626
+  server: planb.mojcn.com
   skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.52:7443
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 126
-  network: ws
-  port: 80
-  server: c309eb1e-tbn340-td3l0d-1lkt0.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
   tls: false
   type: vmess
-  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
   ws-opts:
     headers:
-      Host: c309eb1e-tbn340-td3l0d-1lkt0.hkt.gotochinatown.net
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
     path: /
-- name: HK_speednode_0048
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_133530ea
   network: ws
-  port: 7443
-  server: 222.167.202.47
-  servername: 2026.hhhhh.eu.org
+  port: 16616
+  server: planb.mojcn.com
   skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.47:7443
-- cipher: aes-256-cfb
-  name: xx|9ed7|puddincat07@Telegram
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 74
-  network: ws
-  port: 80
-  server: dad1138f-tbdts0-tdt3k0-jx5r.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
   tls: false
   type: vmess
-  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
   ws-opts:
     headers:
-      Host: dad1138f-tbdts0-tdt3k0-jx5r.hkt.gotochinatown.net
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
     path: /
-- alterId: 0
+  xudp: true
+- alterId: '0'
   cipher: auto
-  name: 🇭🇰 香港 | vmess | 112
+  name: 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_dc44f64c
   network: ws
-  port: 443
-  server: n1761296880.lie5d.cyou
-  servername: n1761296880.lie5d.cyou
-  tls: true
+  port: 16618
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
   type: vmess
-  uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
   ws-opts:
     headers:
-      Host: n1761296880.lie5d.cyou
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
     path: /
-- alterId: 0
-  name: 🇪🇸ES西班牙2
-  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
-  port: 26279
-  server: 80.173.230.196
+  xudp: true
+- name: 🇭🇰 香港4|@ripaojiedian
+  password: BxceQaOe
+  port: 6313
+  server: 35.77.89.219
   skip-cert-verify: true
-  tls: true
+  sni: t.me%2Fripaojiedian
   type: trojan
+- name: 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_17604b36
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 60003
+  server: hkaws.ccwink.photos
+  skip-cert-verify: true
+  type: anytls
   udp: true
 - name: HK_speednode_0050
   network: ws
@@ -816,20 +803,274 @@ proxies:
     headers:
       Host: 2026.hhhhh.eu.org
     path: /222.167.202.32:7443
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 🇭🇰 香港 | vmess | 118
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
+  name: 🔴🇹🇼[🎬🤖📺🎪]_github.com/Ruk1ng001_b46e7b27
+  network: ws
+  port: 16616
+  server: m.cnmjin.net
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇳🇴 挪威 | trojan | 02
-  password: wp9IsiY82uQhcmgNC1eoBM
-  port: 12420
-  server: 80.173.231.254
-  sni: www.semanticstaplegun.click
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
+  ws-opts:
+    headers:
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- name: 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_7f593a24
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 60001
+  server: jpaws.ccwink.photos
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | trojan | 01
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 91.184.250.116
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: /trojan-ws
+- name: 🇦🇱 阿尔巴尼亚 | trojan | 02
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 185.177.238.87
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: /trojan-ws
+- name: 11,12|香港3|@ripaojiedian
+  network: tcp
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 921
+  server: 16.162.33.118
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_f74c5c39
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: test
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 韩国 | vmess | 22
+  network: ws
+  port: 443
+  server: chuncheon03.zgjok.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 81d5cac4-d039-4874-9a20-c391f580012d
+  ws-opts:
+    headers:
+      Host: chuncheon03.zgjok.com
+    path: /
+- alterId: '2'
+  cipher: auto
+  name: 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_636c07c2
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
+  xudp: true
+- name: 🇰🇿 哈萨克斯坦 | trojan | 05
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 149.33.0.109
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: /trojan-ws
+- alterId: '0'
+  cipher: auto
+  name: 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_71f6feb9
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
+  ws-opts:
+    headers:
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: ⚪🏳️_github.com/Ruk1ng001_107846a4
+  network: ws
+  port: 443
+  server: 173.212.207.89
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 127
+  network: ws
+  port: 80
+  server: dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  tls: false
+  type: vmess
+  uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: za|d73f|puddincat07@Telegram
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 156.38.168.58
+  type: ss
+- name: 🟢🇲🇴[🎬🤖📺🎭]_github.com/Ruk1ng001_9e3e295c
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 60006
+  server: hkaws.ccwink.photos
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- alterId: 0
+  name: 🇬🇧GB英国 606.9KB/s
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.20
+  skip-cert-verify: true
+  sni: fra35.chasem2026sud.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 🇬🇧 英国 | trojan | 41
+  network: tcp
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.3
+  sni: fra34.chasem2026sud.com
+  type: trojan
+- alterId: 0
+  name: 🇬🇧GB英国2 629.5KB/s
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  port: 10369
+  server: 82.26.155.199
+  skip-cert-verify: true
+  sni: fra4.chasem2026sud.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_48ad3a83
+  network: ws
+  port: 16632
+  server: planb.mojcn.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 861f9ab1-8191-42d6-9586-a2465fa92480
+  ws-opts:
+    headers:
+      Host: 9e3d3e5074b0178dc40cdd3a1e9717ca.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🟢🇰🇷[🤖📺🎭🎪]_github.com/Ruk1ng001_c08dab37
+  network: tcp
+  port: 19001
+  reality-opts:
+    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
+    short-id: ''
+  server: krp01.jumperservice.com
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6eeb820e-89ef-4b60-9060-ddcaea0580f0
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: ⚪🏳️_github.com/Ruk1ng001_5a3bda55
+  network: ws
+  port: 443
+  server: 94.159.98.113
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile
+        Safari/537.36
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+  xudp: true
+- name: 🇳🇴 挪威 | trojan | 03
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 148.135.195.95
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: '%2Ftrojan-ws'
+- name: 🟢🇭🇰_github.com/Ruk1ng001_5fbfaf6a
+  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+  port: 60005
+  server: hkaws.ccwink.photos
+  skip-cert-verify: true
+  type: anytls
+  udp: true
+- name: 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_5c2a0088
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4937
+  server: 160.16.72.205
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - alterId: 2
   cipher: auto
@@ -845,10 +1086,10 @@ proxies:
     headers:
       Host: 7d1c5b1e-t8nog0-ta42cg-1phla.hkt.gotochinatown.net
     path: /
-- name: HK_speednode_0057
+- name: HK_speednode_0039
   network: ws
   port: 7443
-  server: 222.167.202.50
+  server: 222.167.202.52
   servername: 2026.hhhhh.eu.org
   skip-cert-verify: false
   tls: true
@@ -858,38 +1099,256 @@ proxies:
   ws-opts:
     headers:
       Host: 2026.hhhhh.eu.org
-    path: /222.167.202.50:7443
-- name: HK_speednode_0047
-  network: ws
-  port: 7443
-  server: 222.167.202.70
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.70:7443
-- name: 🇸🇪 瑞典 | trojan | 11
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 188.126.76.159
+    path: /222.167.202.52:7443
+- name: 🇯🇵 日本 | trojan | 13
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4937
+  server: 160.16.106.99
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 0
+  name: 🇸🇬SG新加坡 1.0MB/s
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4674
+  server: 160.16.72.205
   skip-cert-verify: true
-  sni: xo.e0f.cx
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_581febf4
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.59
+  type: ss
+- name: 🇯🇵 日本 | trojan | 07
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4674
+  server: 160.16.124.17
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇯🇵 日本 | trojan | 11
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4674
+  server: 160.16.85.33
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.251
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.41
+  type: ss
+  udp: true
+- name: 🇯🇵 日本 | trojan | 04
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 4674
+  server: 160.16.106.99
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇯🇵 日本 | trojan | 03
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 3057
+  server: 160.16.132.38
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_37825361
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.225
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_612a660b
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.130
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.13
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.203
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_f54b155d
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.237
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e82164f4
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.197
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.233
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.235
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.81
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e0358308
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.187
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[📺🎪✨]_github.com/Ruk1ng001_3UPXtKVH
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.53
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.137
+  type: ss
+  udp: true
+- name: 🇸🇬 新加坡 | trojan | 46
+  network: ws
+  password: 13c169be-8592-4eaa-94cb-69c859e7d987
+  port: 443
+  server: ubu.okaoclax.me
   type: trojan
   ws-opts:
     headers:
-      Host: xo.e0f.cx
+      Host: ubu.okaoclax.me
     path: '%2Ftrojan-ws'
-- name: 🇪🇪 爱沙尼亚 | trojan | 01
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I3akHAo2
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.42
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.12
+  type: ss
+  udp: true
+- name: NL_speednode_0062
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
+  skip-cert-verify: true
+  sni: 94.131.105.125
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_099a3cbe
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.67
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.39
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 | vmess | 133
+  network: ws
+  port: '2053'
+  server: usaapp1.jisuyun.top
+  servername: usaapp1.jisuyun.top
+  tls: true
+  type: vmess
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  ws-opts:
+    headers:
+      Host: usaapp1.jisuyun.top
+    path: /usavm
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4HLcYZjM
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.180
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.209
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_14b2d8d7
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.227
+  type: ss
+  udp: true
+- name: 🇯🇵 日本 | trojan | 14
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 3057
+  server: 160.16.106.99
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_TK6aYZMy
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.46
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.121
+  type: ss
+- name: 🇯🇵 日本 | trojan | 09
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+  port: 2001
+  server: 160.16.106.99
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_p7erOl04
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.218
+  type: ss
+- name: 🇦🇲 亚美尼亚 | trojan | 01
   network: ws
   password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
   port: 2083
-  server: 91.184.250.116
+  server: 170.168.102.234
   skip-cert-verify: true
   sni: xo.e0f.cx
   type: trojan
@@ -897,64 +1356,204 @@ proxies:
     headers:
       Host: xo.e0f.cx
     path: /trojan-ws
+- name: 13|AT_speednode_0001
+  network: ws
+  password: trojan
+  port: 8888
+  server: 152.53.45.251
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_4693c526
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bdcfa6a
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.183
+  type: ss
+  udp: true
+- name: 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  password: mrwdfNTD8M79LCukCieldrqZWqs=
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: true
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6hJkZwUo
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.17
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_18c69002
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.119
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.190
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_dcee8b24
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.26
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca685ba1
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.38
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_38bb1944
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.75
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.61
+  type: ss
+- name: 🇬🇧 英国 | trojan | 44
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 5.83.218.19
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: '%2Ftrojan-ws'
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.84
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.182
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_C6YA1BLt
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.33
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7O0BpZaP
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.173
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4e34f1cf
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.250
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_555751af
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.5
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国 | vmess | 03
+  network: tcp
+  port: '180'
+  server: 82.198.246.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.233
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.178
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pnyqVvES
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.128
+  server: 103.186.154.49
   type: ss
-- client-fingerprint: chrome
-  encryption: none
-  name: ⚪🏳️_github.com/Ruk1ng001_7c75986f
-  network: ws
-  port: 8443
-  server: 66.151.40.21
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-  xudp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_546e1e33
-  network: ws
-  port: 80
-  server: 908a74e2-t8pj40-t9so47-1pr35.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 908a74e2-t8pj40-t9so47-1pr35.hkt.gotochinatown.net
-    path: /
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_113e1074
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d2fa8027
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.229
+  server: 103.186.155.32
   type: ss
   udp: true
-- name: 🇨🇱 智利 | trojan | 02
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_51b98498
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.253
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.219
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.35
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.194
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.240
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: xx|2d80|puddincat07@Telegram
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg007147vhp.cybervena.com
+  type: ss
+- name: 🇮🇳 印度 | trojan | 06
   network: ws
   password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
   port: 2083
-  server: 38.180.176.115
+  server: 86.107.100.13
   skip-cert-verify: true
   sni: xo.e0f.cx
   type: trojan
@@ -968,105 +1567,127 @@ proxies:
   port: 38388
   server: 103.186.155.235
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇷🇺 俄罗斯 | vmess | 05
-  network: tcp
-  port: 39651
-  server: 45.89.52.207
-  tls: false
-  type: vmess
-  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.203
-  type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: xx|9d49|puddincat07@Telegram
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      host: hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 62
-  network: ws
-  port: 80
-  server: 451e6242-t70f40-t8kgw8-jjv2.hkt.gotochinatown.net
-  servername: 451e6242-t70f40-t8kgw8-jjv2.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
-  ws-opts:
-    headers:
-      Host: 451e6242-t70f40-t8kgw8-jjv2.hkt.gotochinatown.net
-    path: /
-- cipher: aes-256-gcm
-  name: cl|0640|puddincat07@Telegram
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 38.54.20.59
-  type: ss
-- name: 🇯🇵 日本3|@ripaojiedian
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4937
-  server: 160.16.72.205
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: TR_speednode_0064
+  port: 8443
+  reality-opts:
+    public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
+    short-id: 6ea3daaac3d6bede
+  server: 188.132.184.148
+  servername: greenpepper.ir
   skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: za|dd62|puddincat07@Telegram
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  port: 16233
-  server: 102.133.165.160
-  type: ss
-- name: 🇯🇵 日本 | trojan | 13
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4937
-  server: 160.16.106.99
-  sni: www.nintendogames.net
-  type: trojan
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6cbf3e4-b7ca-a4b2-0b04-eacbdc28bc5a
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3a97100b
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.42
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.251
+  server: 103.186.155.133
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Ti2Juczf
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.26
+  server: 103.186.155.229
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_57a93035
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.47
+  server: 103.186.154.242
+  type: ss
+- client-fingerprint: chrome
+  name: 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_07335137
+  network: ws
+  port: 10035
+  server: 27.119.233.90
+  servername: snippet.danfeng.theworkpc.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.theworkpc.com
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /danfeng?ed=2560
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.66
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_872cf8f4
+  name: 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_0iSLElcv
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.237
+  server: 103.186.155.204
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.225
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_824b32e0
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.55
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_bdbfd591
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg007117fb8.cybervena.com
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.234
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f4212ff6
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.80
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.245
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_CU41Ruk7
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.239
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.30
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.37
   type: ss
 - cipher: aes-256-cfb
   name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
@@ -1074,261 +1695,23 @@ proxies:
   port: 38388
   server: 103.186.155.224
   type: ss
-- name: 🇯🇵 日本 | trojan | 11
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4674
-  server: 160.16.85.33
-  sni: www.nintendogames.net
-  type: trojan
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d3bccd1c
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.254
+  server: 103.186.155.122
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_87f48738
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.240
-  type: ss
-- name: 🇺🇦 乌克兰 | trojan | 03
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 130.0.234.160
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.66
-  type: ss
-- name: 🇯🇵 日本 | trojan | 07
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4674
-  server: 160.16.124.17
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_baf40cf1
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.185
-  type: ss
-  udp: true
-- alterId: 0
-  name: 🇸🇬SG新加坡 1.0MB/s
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4674
-  server: 160.16.72.205
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇯🇵 日本 | trojan | 04
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 4674
-  server: 160.16.106.99
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: aes-256-cfb
-  name: VN_speednode_0075
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.80
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.41
-  type: ss
-  udp: true
-- name: 🇯🇵 日本 | trojan | 03
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 3057
-  server: 160.16.132.38
-  sni: www.nintendogames.net
-  type: trojan
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🔴🇺🇸[🎬🤖📺🎪]_github.com/Ruk1ng001_f342941c
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.124
-  type: ss
-- name: 🇯🇵 日本 | trojan | 09
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 2001
-  server: 160.16.106.99
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_2FyQs9Jd
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.71
+  server: 103.186.154.45
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b9bc956
+  name: 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_rSvEyBEt
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.230
-  type: ss
-  udp: true
-- alterId: 0
-  name: 🇬🇧GB英国 606.9KB/s
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.20
-  skip-cert-verify: true
-  sni: fra35.chasem2026sud.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 🇬🇧GB英国2 629.5KB/s
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.199
-  skip-cert-verify: true
-  sni: fra4.chasem2026sud.com
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇬🇧 英国 | trojan | 41
-  network: tcp
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.3
-  sni: fra34.chasem2026sud.com
-  type: trojan
-- name: 🇭🇰 香港 | trojan | 94
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 192.142.4.232
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
-- name: 🇰🇿 哈萨克斯坦 | trojan | 05
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 149.33.0.109
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_84613330
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.121
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_ae657804
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.187
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_JEYZeebo
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.75
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.192
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jvkOkCPM
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.76
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_581febf4
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.59
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.233
-  type: ss
-- client-fingerprint: chrome
-  name: 🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_3cdd96b3
-  network: ws
-  port: 23791
-  server: 106.246.54.30
-  servername: snippet.danfeng.loc.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.loc.cc
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;
-        wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84
-        Mobile Safari/537.36
-    path: /danfeng?ed=2560
-  xudp: true
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 119
-  network: tcp
-  port: '30829'
-  server: v29.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖🎪📦]_github.com/Ruk1ng001_94cfe604
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.69
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c9edb6f2
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.46
+  server: 103.186.154.186
   type: ss
 - name: 🇸🇬 新加坡 | trojan | 24
   network: ws
@@ -1343,54 +1726,392 @@ proxies:
       Host: xo.e0f.cx
     path: /trojan-ws
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I61kwRit
+  name: 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.69
+  type: ss
+- client-fingerprint: chrome
+  name: 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_2b416a26
+  network: ws
+  port: 30047
+  server: 211.194.210.183
+  servername: snippet.danfeng.loc.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.loc.cc
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /danfeng?ed=2560
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_rT8TKIqy
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.47
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.203
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.226
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_d58e39ee
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.22
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 125
+  network: ws
+  port: 80
+  server: e8faf291-tbdts0-tcdmjc-1gevg.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  tls: false
+  type: vmess
+  uuid: f02ee2b4-d760-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: e8faf291-tbdts0-tcdmjc-1gevg.hkt.gotochinatown.net
+    path: /
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.224
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.209
   type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_7bf7c18e
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.204
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_ufmzIgW2
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.233
-  type: ss
-- client-fingerprint: chrome
-  encryption: none
-  name: ⚪🏳️_github.com/Ruk1ng001_5a3c5f90
-  network: ws
-  port: 2053
-  server: 162.19.243.8
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
   udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.76
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.192
+  type: ss
+- name: 🇸🇪 瑞典 | trojan | 11
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 188.126.76.159
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
   ws-opts:
     headers:
-      Host: sni.111000.indevs.in
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-  xudp: true
+      Host: xo.e0f.cx
+    path: '%2Ftrojan-ws'
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.12
+  server: 103.186.155.50
   type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cf329640
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d7306a09
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.73
+  type: ss
+- name: 🇭🇰 香港 | trojan | 94
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 192.142.4.232
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: /trojan-ws
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_w3nxUfL4
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.155.33
   type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_FJndkQtc
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.12
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 126
+  network: ws
+  port: 80
+  server: c309eb1e-tbn340-td3l0d-1lkt0.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  tls: false
+  type: vmess
+  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: c309eb1e-tbn340-td3l0d-1lkt0.hkt.gotochinatown.net
+    path: /
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.214
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.60
+  type: ss
+- cipher: aes-256-cfb
+  name: VN_speednode_0074
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.172
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US美国16 11.4MB/s
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: 🇿🇦 南非 | trojan | 04
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 160.119.251.210
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: /trojan-ws
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xFuSnSbx
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.230
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7b62b77
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.62
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.124
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.254
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_4ccbbee6
+  port: 180
+  server: 82.198.246.46
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.42
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.185
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.231
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.246
+  type: ss
+  udp: true
+- alterId: '2'
+  cipher: auto
+  name: 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_5d811b07
+  network: ws
+  port: 80
+  server: ef60a465-t9ops0-tcmken-19les.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ninYLbxC
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.127
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_qQn5bPvw
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.102
+  type: ss
+- name: 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_3a8516c4
+  password: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  port: 5228
+  server: ef3a7852-t9zts0-tcop2n-tl32.cm4.oshuawei.com
+  sni: ef3a7852-t9zts0-tcop2n-tl32.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 62
+  network: ws
+  port: 80
+  server: 451e6242-t70f40-t8kgw8-jjv2.hkt.gotochinatown.net
+  servername: 451e6242-t70f40-t8kgw8-jjv2.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+  ws-opts:
+    headers:
+      Host: 451e6242-t70f40-t8kgw8-jjv2.hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇮🇳 印度 | vmess | 05
+  network: ws
+  port: '80'
+  server: 152.67.8.205
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: WS-穿透
+  network: ws
+  port: 36548
+  server: 103.143.238.196
+  tls: false
+  type: vmess
+  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+  ws-opts:
+    headers:
+      Host: www.cloudflare.com
+    path: /vmessws
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 52
+  network: ws
+  port: 80
+  server: c4ced910-t70f40-tdahby-1tnab.hkt.gotochinatown.net
+  servername: c4ced910-t70f40-tdahby-1tnab.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: ca9c0c54-1513-11f0-8a7b-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: c4ced910-t70f40-tdahby-1tnab.hkt.gotochinatown.net
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 112
+  network: ws
+  port: 443
+  server: n1761296880.lie5d.cyou
+  servername: n1761296880.lie5d.cyou
+  tls: true
+  type: vmess
+  uuid: 1effac4a-cdb8-4717-a10c-da97263c802c
+  ws-opts:
+    headers:
+      Host: n1761296880.lie5d.cyou
+    path: /
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.2
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 | vmess | 92
+  network: ws
+  port: 443
+  server: 209.126.84.189
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  ws-opts:
+    headers:
+      Host: 209.126.84.189
+    path: /vmessws
 - client-fingerprint: chrome
   name: 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
   network: ws
@@ -1408,6 +2129,189 @@ proxies:
         (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
     path: /?ed=2560&Telegram🇨🇳+@WangCai2
   xudp: true
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: 🔴🇳🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_d7242d73
+  password: afa31ea7-0b97-4bc9-b043-daaeca4aef70
+  port: 1443
+  server: 87.229.95.140
+  sni: dk1.587458.xyz
+  type: tuic
+  udp: true
+  uuid: afa31ea7-0b97-4bc9-b043-daaeca4aef70
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 47
+  network: ws
+  port: 80
+  server: 0e8cb90a-t70f40-tbdyji-ach1.hkt.gotochinatown.net
+  servername: 0e8cb90a-t70f40-tbdyji-ach1.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: b9c9905c-1627-11ec-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 0e8cb90a-t70f40-tbdyji-ach1.hkt.gotochinatown.net
+    path: /
+- name: 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_8ee3e671
+  password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+  port: 5228
+  server: f159f9f8-t9zts0-tan99f-1rdqg.cm4.oshuawei.com
+  sni: f159f9f8-t9zts0-tan99f-1rdqg.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+- name: 🇸🇪 瑞典 | trojan | 06
+  network: ws
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  port: 2083
+  server: 194.87.30.69
+  skip-cert-verify: true
+  sni: xo.e0f.cx
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xo.e0f.cx
+    path: '%2Ftrojan-ws'
+- name: 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_56a0aa62
+  password: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  port: 27233
+  server: ef3a7852-t9zts0-tcop2n-tl32.cm4.oshuawei.com
+  sni: ef3a7852-t9zts0-tcop2n-tl32.cm4.oshuawei.com
+  tls: true
+  type: http
+  username: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: ⚡ TCP-高速
+  port: 28384
+  server: 103.143.238.196
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_9c211d65
+  network: ws
+  port: 80
+  server: c8b73bb9-t8wxs0-tasors-1tdqt.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  name: hk|7b71|puddincat07@Telegram
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.253
+  skip-cert-verify: true
+  sni: 58.152.25.253
+  tls: true
+  type: trojan
+  udp: true
+- alterId: '2'
+  cipher: auto
+  name: 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_79d5bbce
+  network: ws
+  port: 80
+  server: 02f1afb7-t8lts0-tiaexf-ufc0.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 02f1afb7-t8lts0-tiaexf-ufc0.hkt.gotochinatown.net
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: WSS-隐蔽
+  network: ws
+  port: 21879
+  server: 103.143.238.196
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+  ws-opts:
+    headers:
+      Host: www.cloudflare.com
+    path: /vmesswss
+- cipher: aes-256-cfb
+  name: 🔴🇵🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_c20a7d27
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 217.30.10.70
+  type: ss
+  udp: true
+- name: 🔴🇲🇾[🎬🤖📺🔍]_github.com/Ruk1ng001_6b0dd083
+  password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+  port: 31233
+  server: 052f8a66-t9zts0-tan99f-1rdqg.my.oshuawei.com
+  sni: 052f8a66-t9zts0-tan99f-1rdqg.my.oshuawei.com
+  tls: true
+  type: http
+  username: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.116
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 74
+  network: ws
+  port: 80
+  server: dad1138f-tbdts0-tdt3k0-jx5r.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  tls: false
+  type: vmess
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  ws-opts:
+    headers:
+      Host: dad1138f-tbdts0-tdt3k0-jx5r.hkt.gotochinatown.net
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: nl|e333|puddincat07@Telegram
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.179
+  type: ss
+- name: 🔴🇹🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_8b0d80e0
+  password: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  port: 32232
+  server: e4a7f5a9-t9zts0-tcop2n-tl32.id.oshuawei.com
+  sni: e4a7f5a9-t9zts0-tcop2n-tl32.id.oshuawei.com
+  tls: true
+  type: http
+  username: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 54
+  network: ws
+  port: 80
+  server: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  tls: false
+  type: vmess
+  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
+    path: /
 - name: DE_speednode_0033
   network: ws
   port: 4002
@@ -1422,471 +2326,69 @@ proxies:
     headers:
       Host: sub.mot.ip-ddns.com
     path: /
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_01aa8f8c
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.53
-  type: ss
-  udp: true
-- name: 🇳🇴 挪威 | trojan | 03
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 148.135.195.95
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: '%2Ftrojan-ws'
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_2728799d
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.186
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Fmo1co0P
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.67
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.37
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c92dea43
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.30
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a57b88c8
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.218
-  type: ss
-- alterId: 0
-  name: hk|7b71|puddincat07@Telegram
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.253
-  skip-cert-verify: true
-  sni: 58.152.25.253
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇯🇵 日本 | trojan | 14
-  password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 3057
-  server: 160.16.106.99
-  sni: www.nintendogames.net
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.203
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8c6fdbbb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.183
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.116
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.182
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.209
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.13
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_dd1a5baa
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.133
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_gGoeHr5U
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.15
-  type: ss
-- client-fingerprint: chrome
-  name: 🔴🇰🇷[🎬🤖📺📦]_github.com/Ruk1ng001_2b416a26
-  network: ws
-  port: 30047
-  server: 211.194.210.183
-  servername: snippet.danfeng.loc.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.loc.cc
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /danfeng?ed=2560
-  xudp: true
-- name: 🇮🇳 印度 | trojan | 06
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 86.107.100.13
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1e11f7da
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.49
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.50
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0cce614
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.130
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港 | vmess | 129
-  network: ws
-  port: 80
-  server: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: 28213b50-7ed5-11ee-add6-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
-    path: /
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.214
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: VN_speednode_0074
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.172
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇮🇳 印度 | vmess | 05
-  network: ws
-  port: '80'
-  server: 152.67.8.205
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.45
-  type: ss
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: TR_speednode_0064
-  port: 8443
-  reality-opts:
-    public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
-    short-id: 6ea3daaac3d6bede
-  server: 188.132.184.148
-  servername: greenpepper.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6cbf3e4-b7ca-a4b2-0b04-eacbdc28bc5a
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.60
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.242
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.235
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9ccf02db
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.33
-  type: ss
-- name: 14|AT_speednode_0001
-  network: ws
-  password: trojan
-  port: 8888
-  server: 152.53.45.251
-  skip-cert-verify: false
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_106b5f08
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.17
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.2
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_37825361
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.225
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🔴🇰🇷[📺🎭🎪✨]_github.com/Ruk1ng001_d80913da
-  network: ws
-  port: 30050
-  server: 210.111.173.152
-  servername: snippet.danfeng.theworkpc.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.theworkpc.com
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
-    path: /danfeng?ed=2560
-  xudp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.190
-  type: ss
-- name: 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_8197ce59
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60001
-  server: hkaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 🇿🇦 南非 | trojan | 04
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 160.119.251.210
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_623fb4e5
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.227
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_77a4049c
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.81
-  type: ss
-  udp: true
-- name: 🇦🇲 亚美尼亚 | trojan | 01
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 170.168.102.234
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 001 | ⬇️ 3.40MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.250
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 002 | ⬇️ 3.34MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.122
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 003 | ⬇️ 3.20MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.5
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 004 | ⬇️ 3.19MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.22
-  type: ss
-- name: 🇸🇪 SE 001 | ⬇️ 2.91MB/s
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 194.87.30.69
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: '%2Ftrojan-ws'
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 004 | ⬇️ 2.85MB/s
-  network: ws
-  port: 36548
-  server: 103.143.238.196
-  tls: false
-  type: vmess
-  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
-  ws-opts:
-    headers:
-      Host: www.cloudflare.com
-    path: /vmessws
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 005 | ⬇️ 2.70MB/s
-  network: ws
-  port: 21879
-  server: 103.143.238.196
-  servername: www.cloudflare.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
-  ws-opts:
-    headers:
-      Host: www.cloudflare.com
-    path: /vmesswss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 005 | ⬇️ 2.63MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.194
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 HK 006 | ⬇️ 2.47MB/s
-  network: ws
-  port: 80
-  server: 0e8cb90a-t70f40-tbdyji-ach1.hkt.gotochinatown.net
-  servername: 0e8cb90a-t70f40-tbdyji-ach1.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: b9c9905c-1627-11ec-a0fc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 0e8cb90a-t70f40-tbdyji-ach1.hkt.gotochinatown.net
-    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 🇭🇰 HK 007 | ⬇️ 2.46MB/s
+  name: 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_f2de12fe
   network: ws
   port: 80
-  server: cf882171-t8v340-t8ygh3-81nv.hkt.gotochinatown.net
+  server: 1dacb9ee-t8nog0-tpw4i4-1pckg.hkt.gotochinatown.net
   tls: false
   type: vmess
   udp: true
-  uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
+  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 HK 008 | ⬇️ 2.45MB/s
+  name: 🇭🇰 香港 | vmess | 124
   network: ws
   port: 80
-  server: 4f7c7632-t63340-t7hjku-1rgxu.hkt.gotochinatown.net
-  servername: 4f7c7632-t63340-t7hjku-1rgxu.hkt.gotochinatown.net
+  server: 040f3ec5-t70f40-ta64ri-1qzi1.hkt.gotochinatown.net
+  servername: 040f3ec5-t70f40-ta64ri-1qzi1.hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
+  uuid: 8f99107c-f091-11ee-9935-f23c9164ca5d
   ws-opts:
     headers:
-      Host: 4f7c7632-t63340-t7hjku-1rgxu.hkt.gotochinatown.net
+      Host: 040f3ec5-t70f40-ta64ri-1qzi1.hkt.gotochinatown.net
     path: /
 - alterId: 2
   cipher: auto
-  name: 🇭🇰 HK 009 | ⬇️ 2.45MB/s
+  name: 🇭🇰 香港 | vmess | 119
+  network: tcp
+  port: '30829'
+  server: v29.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🔴🇰🇷[📺🔍]_github.com/Ruk1ng001_48b81d1a
+  password: ''
+  port: 1090
+  server: 121.169.46.116
+  type: socks5
+  username: Og%3D%3D
+- alterId: '2'
+  cipher: auto
+  name: 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_f76bf595
+  network: ws
+  port: 80
+  server: 2240720f-t70f40-t95ncr-1slop.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 520b9126-9870-11ef-81b0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 2240720f-t70f40-t95ncr-1slop.hkt.gotochinatown.net
+    path: /
+  xudp: true
+- alterId: 2
+  cipher: auto
+  name: 🇭🇰 香港 | vmess | 42
   network: ws
   port: 80
   server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
@@ -1898,139 +2400,23 @@ proxies:
     headers:
       Host: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
     path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 HK 010 | ⬇️ 2.45MB/s
-  network: ws
-  port: 80
-  server: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
-  servername: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 5545a4de-t8lts0-tasors-1tdqt.hkt.gotochinatown.net
-    path: /
 - alterId: '2'
   cipher: auto
-  name: 🇭🇰 HK 011 | ⬇️ 2.44MB/s
+  name: 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_4da46655
   network: ws
   port: 80
-  server: 168ec8b9-t70f40-tiqsce-t6fv.hkt.gotochinatown.net
+  server: eb552654-t6r5s0-te0v28-1mh67.hkt.gotochinatown.net
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
+  uuid: e1c7fbbc-96b6-11ef-8563-f23c913c8d2b
   ws-opts:
     headers:
-      Host: 168ec8b9-t70f40-tiqsce-t6fv.hkt.gotochinatown.net
+      Host: eb552654-t6r5s0-te0v28-1mh67.hkt.gotochinatown.net
     path: /
   xudp: true
-- name: 🇦🇷 AR 001 | ⬇️ 2.37MB/s
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 149.33.19.105
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: /trojan-ws
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 HK 012 | ⬇️ 2.35MB/s
-  network: ws
-  port: 80
-  server: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
-  servername: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: dcbaee4d-2204-11ed-b659-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: d7d6992d-t5bb40-tdvaex-1ixuf.hkt.gotochinatown.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 013 | ⬇️ 2.30MB/s
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇵🇱 PL 001 | ⬇️ 2.27MB/s
-  password: JdmRK9gMEqFgs8nP
-  port: 9003
-  server: 217.30.10.70
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 014 | ⬇️ 1.96MB/s
-  port: 28384
-  server: 103.143.238.196
-  servername: www.cloudflare.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 015 | ⬇️ 1.82MB/s
-  network: ws
-  port: 80
-  server: b27978e1-t8wxs0-tcinla-hrtf.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 HK 016 | ⬇️ 1.80MB/s
-  network: ws
-  port: 80
-  server: c4ced910-t70f40-tdahby-1tnab.hkt.gotochinatown.net
-  servername: c4ced910-t70f40-tdahby-1tnab.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  uuid: ca9c0c54-1513-11f0-8a7b-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: c4ced910-t70f40-tdahby-1tnab.hkt.gotochinatown.net
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 HK 017 | ⬇️ 1.78MB/s
-  network: ws
-  port: 80
-  server: d9ba656d-t66sg0-t7mzec-yjq0.hkt.gotochinatown.net
-  servername: broadcastlv.chat.bilibili.com
-  tls: false
-  type: vmess
-  uuid: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: d9ba656d-t66sg0-t7mzec-yjq0.hkt.gotochinatown.net
-    path: /
-- name: 🇰🇷 KR 002 | ⬇️ 1.58MB/s
-  password: ''
-  port: 1090
-  server: 121.169.46.116
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: 🇳🇱 NL 009 | ⬇️ 1.52MB/s
+- name: CH_speednode_0004
   network: ws
   port: 4433
   server: 138.226.240.199
@@ -2044,69 +2430,7 @@ proxies:
     headers:
       Host: sub.mot.ip-ddns.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 009 | ⬇️ 1.51MB/s
-  network: ws
-  port: 443
-  server: 209.126.84.189
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  ws-opts:
-    headers:
-      Host: 209.126.84.189
-    path: /vmessws
-- name: 🇮🇳 IN 001 | ⬇️ 1.40MB/s
-  password: ''
-  port: 1080
-  server: 139.59.24.173
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: 🇬🇧 GB 012 | ⬇️ 1.22MB/s
-  network: ws
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  port: 2083
-  server: 5.83.218.19
-  skip-cert-verify: true
-  sni: xo.e0f.cx
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xo.e0f.cx
-    path: '%2Ftrojan-ws'
-- name: 🇬🇧 GB 013 | ⬇️ 0.95MB/s
-  network: ws
-  port: 7443
-  server: 222.167.202.45
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  ws-opts:
-    headers:
-      Host: 2026.hhhhh.eu.org
-    path: /222.167.202.45:7443
-- name: 🇺🇸 US 010 | ⬇️ 0.83MB/s
-  password: gs4BXwT6SW
-  port: 10988
-  server: 154.26.192.123
-  skip-cert-verify: false
-  tls: false
-  type: http
-  username: fQ67Dpe5dU
-- name: 🇯🇵 JP 007 | ⬇️ 0.83MB/s
-  password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
-  port: 60004
-  server: jpaws.ccwink.photos
-  skip-cert-verify: true
-  type: anytls
-  udp: true
-- name: 🇪🇪 EE 001 | ⬇️ 0.69MB/s
+- name: 🇪🇪 爱沙尼亚 | trojan | 02
   network: ws
   password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
   port: 2083
@@ -2118,485 +2442,616 @@ proxies:
     headers:
       Host: xo.e0f.cx
     path: /trojan-ws
-- alterId: 2
+- alterId: '2'
   cipher: auto
-  name: 🇭🇰 HK 018 | ⬇️ 0.65MB/s
+  name: 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_dc676fed
+  network: ws
+  port: 80
+  server: 24cb43a0-t8pj40-thiwul-1gcq2.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 759bf004-6137-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 24cb43a0-t8pj40-thiwul-1gcq2.hkt.gotochinatown.net
+    path: /
+  xudp: true
+- auth: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  name: 🇸🇬 SG 001 | ⬇️ 0.92MB/s
+  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  port: 2056
+  server: sg1.shiyuandian.shop
+  skip-cert-verify: true
+  sni: sg1.shiyuandian.shop
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 001 | ⬇️ 0.85MB/s
   network: tcp
-  port: '30836'
-  server: v36.hdacd.com
+  port: '30830'
+  server: v30.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 006 | ⬇️ 0.61MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.180
-  type: ss
-- name: 🇺🇸 US 011 | ⬇️ 0.39MB/s
-  password: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
-  port: 443
-  server: n2.chateditimage.com
-  sni: n2.chateditimage.com
-  type: trojan
-- name: 🇺🇸 US 012 | ⬇️ 0.39MB/s
+- name: 🇺🇸 US 004 | ⬇️ 0.81MB/s
   password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
   port: 26650
   server: 166.88.197.60
   sni: sea9.firewallcontract.click
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 002 | ⬇️ 0.75MB/s
+  port: 30812
+  server: v12.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇺🇸 US 005 | ⬇️ 0.70MB/s
+  password: gs4BXwT6SW
+  port: 10988
+  server: 154.26.192.123
+  skip-cert-verify: false
+  tls: false
+  type: http
+  username: fQ67Dpe5dU
+- name: 🇨🇳 CN 002 | ⬇️ 0.65MB/s
+  password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+  port: 31433
+  server: 701489ed-t9zts0-tan99f-1rdqg.kr.oshuawei.com
+  sni: 701489ed-t9zts0-tan99f-1rdqg.kr.oshuawei.com
+  tls: true
+  type: http
+  username: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+- name: 🇺🇸 US 006 | ⬇️ 0.57MB/s
+  password: de7d6444-a7a8-4b3a-bf26-bc6939bb0279
+  port: 443
+  server: n2.chateditimage.com
+  sni: n2.chateditimage.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ MA 001 | ⬇️ 0.44MB/s
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 154.70.207.97
+  type: ss
 proxy-groups:
 - name: 自动选择
   type: url-test
   proxies:
-  - 🇨🇦 CA 001 | ⬇️ 209.26MB/s
-  - 🇺🇸 US 001 | ⬇️ 205.04MB/s
-  - 🇺🇸 US 002 | ⬇️ 183.54MB/s
-  - 🇺🇸 US 003 | ⬇️ 157.39MB/s
-  - 🇺🇸 US 004 | ⬇️ 120.94MB/s
-  - 🇺🇸 US 005 | ⬇️ 100.40MB/s
-  - 🇺🇸 US 006 | ⬇️ 59.16MB/s
-  - 🇺🇸 US 007 | ⬇️ 46.48MB/s
-  - 🇺🇸 US 008 | ⬇️ 42.62MB/s
-  - 🇯🇵 JP 001 | ⬇️ 25.03MB/s
-  - 🇯🇵 JP 002 | ⬇️ 25.00MB/s
-  - 🇯🇵 JP 003 | ⬇️ 24.88MB/s
-  - 🇯🇵 JP 004 | ⬇️ 23.32MB/s
-  - 🇭🇰 HK 001 | ⬇️ 22.41MB/s
-  - 🇬🇧 GB 001 | ⬇️ 21.55MB/s
-  - 🇯🇵 JP 005 | ⬇️ 21.44MB/s
-  - 🇬🇧 GB 002 | ⬇️ 21.37MB/s
-  - 🇬🇧 GB 003 | ⬇️ 20.88MB/s
-  - 🇰🇷 KR 001 | ⬇️ 20.29MB/s
-  - 🇬🇧 GB 004 | ⬇️ 20.13MB/s
-  - 🇳🇱 NL 001 | ⬇️ 19.94MB/s
-  - 🇳🇱 NL 002 | ⬇️ 19.71MB/s
-  - 🏳️ AL 001 | ⬇️ 19.68MB/s
-  - 🇳🇱 NL 003 | ⬇️ 19.65MB/s
-  - 🇳🇱 NL 004 | ⬇️ 19.56MB/s
-  - 🇳🇱 NL 005 | ⬇️ 19.36MB/s
-  - 🇳🇱 NL 006 | ⬇️ 19.34MB/s
-  - 🇳🇱 NL 007 | ⬇️ 19.28MB/s
-  - 🇬🇧 GB 005 | ⬇️ 19.25MB/s
-  - 🇨🇳 TW 001 | ⬇️ 19.25MB/s
-  - 🇯🇵 JP 006 | ⬇️ 19.15MB/s
-  - 🇳🇱 NL 008 | ⬇️ 19.05MB/s
-  - 🇭🇰 HK 002 | ⬇️ 18.99MB/s
-  - 🇬🇧 GB 006 | ⬇️ 18.88MB/s
-  - 🏳️ AL 002 | ⬇️ 18.57MB/s
-  - 🏳️ AL 003 | ⬇️ 18.30MB/s
-  - 🇩🇪 DE 001 | ⬇️ 18.00MB/s
-  - 🇭🇰 HK 003 | ⬇️ 17.79MB/s
-  - 🇩🇪 DE 002 | ⬇️ 17.41MB/s
-  - 🇬🇧 GB 007 | ⬇️ 17.11MB/s
-  - 🇬🇧 GB 008 | ⬇️ 16.95MB/s
-  - 🇬🇧 GB 009 | ⬇️ 16.92MB/s
-  - 🇬🇧 GB 010 | ⬇️ 16.90MB/s
-  - 🇬🇧 GB 011 | ⬇️ 16.83MB/s
-  - 🇨🇭 CH 001 | ⬇️ 16.82MB/s
-  - HK_speednode_0040
-  - HK_speednode_0045
-  - HK_speednode_0044
-  - br|feba|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 125
-  - 🇷🇺 俄罗斯 | trojan | 11
-  - HK_speednode_0055
-  - 🇭🇰 香港 | vmess | 127
-  - 🇬🇧 英国 | vmess | 04
-  - 🇦🇹 奥地利 | trojan | 13
-  - 🇸🇬 新加坡 | trojan | 46
-  - 🇵🇱 波兰 | trojan | 07
-  - HK_speednode_0051
-  - HK_speednode_0041
-  - 🇨🇭 瑞士 | trojan | 05
-  - HK_speednode_0049
-  - HK_speednode_0052
-  - 🇭🇰 香港 | vmess | 124
-  - 🇭🇰 香港 | vmess | 54
-  - 🇭🇰 香港 | vmess | 131
-  - HK_speednode_0039
-  - 🇭🇰 香港 | vmess | 126
-  - HK_speednode_0048
-  - xx|9ed7|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 74
-  - 🇭🇰 香港 | vmess | 112
+  - 🇨🇳 CN 001 | ⬇️ 237.52MB/s
+  - 🇺🇸 US 001 | ⬇️ 185.84MB/s
+  - 🇨🇦 CA 001 | ⬇️ 183.94MB/s
+  - 🇺🇸 US 002 | ⬇️ 145.45MB/s
+  - 🇨🇦 CA 002 | ⬇️ 121.31MB/s
+  - 🇨🇦 CA 003 | ⬇️ 75.64MB/s
+  - 🇺🇸 US 003 | ⬇️ 43.45MB/s
+  - 🇬🇧 GB 001 | ⬇️ 39.59MB/s
+  - 🇬🇧 GB 002 | ⬇️ 39.48MB/s
+  - 🇬🇧 GB 003 | ⬇️ 39.16MB/s
+  - 🇳🇱 NL 001 | ⬇️ 35.42MB/s
+  - 🇳🇱 NL 002 | ⬇️ 35.08MB/s
+  - 🇳🇱 NL 003 | ⬇️ 33.95MB/s
+  - 🇳🇱 NL 004 | ⬇️ 33.35MB/s
+  - 🏳️ AL 001 | ⬇️ 33.05MB/s
+  - 🇳🇱 NL 005 | ⬇️ 32.55MB/s
+  - 🇳🇱 NL 006 | ⬇️ 32.40MB/s
+  - 🇬🇧 GB 004 | ⬇️ 31.91MB/s
+  - 🇬🇧 GB 005 | ⬇️ 31.40MB/s
+  - 🏳️ AL 002 | ⬇️ 29.60MB/s
+  - 🇩🇪 DE 001 | ⬇️ 29.15MB/s
+  - 🇳🇱 NL 007 | ⬇️ 28.97MB/s
+  - 🇩🇪 DE 002 | ⬇️ 28.48MB/s
+  - 🇳🇱 NL 008 | ⬇️ 26.96MB/s
+  - 🇦🇹 AT 001 | ⬇️ 25.94MB/s
+  - 🇵🇱 PL 001 | ⬇️ 25.74MB/s
+  - 🇨🇭 CH 001 | ⬇️ 25.74MB/s
+  - 🇬🇧 GB 006 | ⬇️ 25.67MB/s
+  - 🇨🇭 CH 002 | ⬇️ 25.59MB/s
+  - 🇬🇧 GB 007 | ⬇️ 25.42MB/s
+  - 🇬🇧 GB 008 | ⬇️ 25.37MB/s
+  - 🇬🇧 GB 009 | ⬇️ 25.26MB/s
+  - 🇬🇧 GB 010 | ⬇️ 25.15MB/s
+  - 🇬🇧 GB 011 | ⬇️ 24.91MB/s
+  - 🇬🇧 GB 012 | ⬇️ 24.87MB/s
+  - 🇬🇧 GB 013 | ⬇️ 24.79MB/s
+  - 🇬🇧 GB 014 | ⬇️ 24.65MB/s
+  - 🇬🇧 GB 015 | ⬇️ 23.82MB/s
+  - 🇧🇷 BR 001 | ⬇️ 23.73MB/s
+  - 🇬🇧 GB 016 | ⬇️ 23.53MB/s
+  - 🇬🇧 GB 017 | ⬇️ 23.23MB/s
+  - 🇬🇧 GB 018 | ⬇️ 23.09MB/s
+  - 🇨🇱 CL 001 | ⬇️ 22.68MB/s
+  - 🇳🇴 NO 001 | ⬇️ 22.12MB/s
+  - 🇬🇧 GB 019 | ⬇️ 21.58MB/s
   - 🇪🇸ES西班牙2
-  - HK_speednode_0050
-  - 🇭🇰 香港 | vmess | 118
-  - 🇳🇴 挪威 | trojan | 02
-  - 🇭🇰 香港 | vmess | 69
-  - HK_speednode_0057
-  - HK_speednode_0047
-  - 🇸🇪 瑞典 | trojan | 11
-  - 🇪🇪 爱沙尼亚 | trojan | 01
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_4693c526
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  - ⚪🏳️_github.com/Ruk1ng001_7c75986f
-  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_546e1e33
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_113e1074
-  - 🇨🇱 智利 | trojan | 02
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9886ca
+  - HK_speednode_0051
   - 🇷🇺 俄罗斯 | vmess | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
-  - xx|9d49|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 62
-  - cl|0640|puddincat07@Telegram
-  - 🇯🇵 日本3|@ripaojiedian
-  - za|dd62|puddincat07@Telegram
-  - 🇯🇵 日本 | trojan | 13
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Ti2Juczf
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_872cf8f4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
-  - 🇯🇵 日本 | trojan | 11
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_87f48738
+  - 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_a6c8ccc1
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_37b5e444
+  - 🔴🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_d5aa4dea
+  - 🇦🇷 阿根廷 | trojan | 02
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_8197ce59
+  - HK_speednode_0057
+  - 🇬🇧 英国 | vmess | 04
+  - 🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_1cbdc2d6
+  - 🟢🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001_2e41ab5f
+  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_99c3c7aa
   - 🇺🇦 乌克兰 | trojan | 03
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
-  - 🇯🇵 日本 | trojan | 07
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_baf40cf1
-  - 🇸🇬SG新加坡 1.0MB/s
-  - 🇯🇵 日本 | trojan | 04
-  - VN_speednode_0075
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
-  - 🇯🇵 日本 | trojan | 03
-  - 🔴🇺🇸[🎬🤖📺🎪]_github.com/Ruk1ng001_f342941c
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
-  - 🇯🇵 日本 | trojan | 09
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_2FyQs9Jd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b9bc956
-  - 🇬🇧GB英国 606.9KB/s
-  - 🇬🇧GB英国2 629.5KB/s
-  - 🇬🇧 英国 | trojan | 41
-  - 🇭🇰 香港 | trojan | 94
+  - 🔴🇸🇬[🎬🤖📺🎪]_github.com/Ruk1ng001_b371236e
+  - HK_speednode_0052
+  - 🔴🇮🇳[🎬🤖📺📦]_github.com/Ruk1ng001_c044864b
+  - 🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_133530ea
+  - 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_dc44f64c
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_17604b36
+  - HK_speednode_0050
+  - 🔴🇹🇼[🎬🤖📺🎪]_github.com/Ruk1ng001_b46e7b27
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_7f593a24
+  - 🇪🇪 爱沙尼亚 | trojan | 01
+  - 🇦🇱 阿尔巴尼亚 | trojan | 02
+  - 11,12|香港3|@ripaojiedian
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_f74c5c39
+  - 🇰🇷 韩国 | vmess | 22
+  - 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_636c07c2
   - 🇰🇿 哈萨克斯坦 | trojan | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_84613330
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_ae657804
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_JEYZeebo
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jvkOkCPM
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_581febf4
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
-  - 🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_3cdd96b3
-  - 🇭🇰 香港 | vmess | 119
-  - 🟢🇻🇳[🤖🎪📦]_github.com/Ruk1ng001_94cfe604
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c9edb6f2
-  - 🇸🇬 新加坡 | trojan | 24
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I61kwRit
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_7bf7c18e
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_ufmzIgW2
-  - ⚪🏳️_github.com/Ruk1ng001_5a3c5f90
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cf329640
-  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
-  - DE_speednode_0033
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_01aa8f8c
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_71f6feb9
+  - ⚪🏳️_github.com/Ruk1ng001_107846a4
+  - 🇭🇰 香港 | vmess | 127
+  - za|d73f|puddincat07@Telegram
+  - 🟢🇲🇴[🎬🤖📺🎭]_github.com/Ruk1ng001_9e3e295c
+  - 🇬🇧GB英国 606.9KB/s
+  - 🇬🇧 英国 | trojan | 41
+  - 🇬🇧GB英国2 629.5KB/s
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_48ad3a83
+  - 🟢🇰🇷[🤖📺🎭🎪]_github.com/Ruk1ng001_c08dab37
+  - ⚪🏳️_github.com/Ruk1ng001_5a3bda55
   - 🇳🇴 挪威 | trojan | 03
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_2728799d
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Fmo1co0P
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c92dea43
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a57b88c8
-  - hk|7b71|puddincat07@Telegram
-  - 🇯🇵 日本 | trojan | 14
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8c6fdbbb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
-  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_dd1a5baa
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_gGoeHr5U
-  - 🔴🇰🇷[🎬🤖📺📦]_github.com/Ruk1ng001_2b416a26
-  - 🇮🇳 印度 | trojan | 06
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1e11f7da
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0cce614
-  - 🇭🇰 香港 | vmess | 129
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
-  - VN_speednode_0074
-  - 🇮🇳 印度 | vmess | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
-  - TR_speednode_0064
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9ccf02db
-  - 14|AT_speednode_0001
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_106b5f08
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  - 🟢🇭🇰_github.com/Ruk1ng001_5fbfaf6a
+  - 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_5c2a0088
+  - 🇭🇰 香港 | vmess | 69
+  - HK_speednode_0039
+  - 🇯🇵 日本 | trojan | 13
+  - 🇸🇬SG新加坡 1.0MB/s
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_581febf4
+  - 🇯🇵 日本 | trojan | 07
+  - 🇯🇵 日本 | trojan | 11
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
+  - 🇯🇵 日本 | trojan | 04
+  - 🇯🇵 日本 | trojan | 03
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_37825361
-  - 🔴🇰🇷[📺🎭🎪✨]_github.com/Ruk1ng001_d80913da
-  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
-  - 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_8197ce59
-  - 🇿🇦 南非 | trojan | 04
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_623fb4e5
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_77a4049c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_612a660b
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_f54b155d
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e82164f4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e0358308
+  - 🟢🇻🇳[📺🎪✨]_github.com/Ruk1ng001_3UPXtKVH
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
+  - 🇸🇬 新加坡 | trojan | 46
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I3akHAo2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
+  - NL_speednode_0062
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_099a3cbe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  - 🇺🇸 美国 | vmess | 133
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4HLcYZjM
+  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_14b2d8d7
+  - 🇯🇵 日本 | trojan | 14
+  - 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_TK6aYZMy
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  - 🇯🇵 日本 | trojan | 09
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_p7erOl04
   - 🇦🇲 亚美尼亚 | trojan | 01
-  - 🇻🇳 VN 001 | ⬇️ 3.40MB/s
-  - 🇻🇳 VN 002 | ⬇️ 3.34MB/s
-  - 🇻🇳 VN 003 | ⬇️ 3.20MB/s
-  - 🇻🇳 VN 004 | ⬇️ 3.19MB/s
-  - 🇸🇪 SE 001 | ⬇️ 2.91MB/s
-  - 🇭🇰 HK 004 | ⬇️ 2.85MB/s
-  - 🇭🇰 HK 005 | ⬇️ 2.70MB/s
-  - 🇻🇳 VN 005 | ⬇️ 2.63MB/s
-  - 🇭🇰 HK 006 | ⬇️ 2.47MB/s
-  - 🇭🇰 HK 007 | ⬇️ 2.46MB/s
-  - 🇭🇰 HK 008 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 009 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 010 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 011 | ⬇️ 2.44MB/s
-  - 🇦🇷 AR 001 | ⬇️ 2.37MB/s
-  - 🇭🇰 HK 012 | ⬇️ 2.35MB/s
-  - 🇭🇰 HK 013 | ⬇️ 2.30MB/s
-  - 🇵🇱 PL 001 | ⬇️ 2.27MB/s
-  - 🇭🇰 HK 014 | ⬇️ 1.96MB/s
-  - 🇭🇰 HK 015 | ⬇️ 1.82MB/s
-  - 🇭🇰 HK 016 | ⬇️ 1.80MB/s
-  - 🇭🇰 HK 017 | ⬇️ 1.78MB/s
-  - 🇰🇷 KR 002 | ⬇️ 1.58MB/s
-  - 🇳🇱 NL 009 | ⬇️ 1.52MB/s
-  - 🇺🇸 US 009 | ⬇️ 1.51MB/s
-  - 🇮🇳 IN 001 | ⬇️ 1.40MB/s
-  - 🇬🇧 GB 012 | ⬇️ 1.22MB/s
-  - 🇬🇧 GB 013 | ⬇️ 0.95MB/s
-  - 🇺🇸 US 010 | ⬇️ 0.83MB/s
-  - 🇯🇵 JP 007 | ⬇️ 0.83MB/s
-  - 🇪🇪 EE 001 | ⬇️ 0.69MB/s
-  - 🇭🇰 HK 018 | ⬇️ 0.65MB/s
-  - 🇻🇳 VN 006 | ⬇️ 0.61MB/s
-  - 🇺🇸 US 011 | ⬇️ 0.39MB/s
-  - 🇺🇸 US 012 | ⬇️ 0.39MB/s
+  - 13|AT_speednode_0001
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bdcfa6a
+  - 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6hJkZwUo
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_18c69002
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
+  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_dcee8b24
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca685ba1
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_38bb1944
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
+  - 🇬🇧 英国 | trojan | 44
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_C6YA1BLt
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7O0BpZaP
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4e34f1cf
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_555751af
+  - 🇩🇪 德国 | vmess | 03
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pnyqVvES
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d2fa8027
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_51b98498
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
+  - 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  - xx|2d80|puddincat07@Telegram
+  - 🇮🇳 印度 | trojan | 06
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9886ca
+  - TR_speednode_0064
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3a97100b
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_57a93035
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_07335137
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_0iSLElcv
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_824b32e0
+  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_bdbfd591
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f4212ff6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_CU41Ruk7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d3bccd1c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_rSvEyBEt
+  - 🇸🇬 新加坡 | trojan | 24
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_2b416a26
+  - 🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_rT8TKIqy
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_d58e39ee
+  - 🇭🇰 香港 | vmess | 125
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
+  - 🇸🇪 瑞典 | trojan | 11
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d7306a09
+  - 🇭🇰 香港 | trojan | 94
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_w3nxUfL4
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_FJndkQtc
+  - 🇭🇰 香港 | vmess | 126
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
+  - VN_speednode_0074
+  - 🇺🇸US美国16 11.4MB/s
+  - 🇿🇦 南非 | trojan | 04
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xFuSnSbx
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7b62b77
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
+  - 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_4ccbbee6
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
+  - 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_5d811b07
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ninYLbxC
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_qQn5bPvw
+  - 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_3a8516c4
+  - 🇭🇰 香港 | vmess | 62
+  - 🇮🇳 印度 | vmess | 05
+  - WS-穿透
+  - 🇭🇰 香港 | vmess | 52
+  - 🇭🇰 香港 | vmess | 112
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  - 🇺🇸 美国 | vmess | 92
+  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
+  - 🔴🇳🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_d7242d73
+  - 🇭🇰 香港 | vmess | 47
+  - 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_8ee3e671
+  - 🇸🇪 瑞典 | trojan | 06
+  - 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_56a0aa62
+  - ⚡ TCP-高速
+  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_9c211d65
+  - hk|7b71|puddincat07@Telegram
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_79d5bbce
+  - WSS-隐蔽
+  - 🔴🇵🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_c20a7d27
+  - 🔴🇲🇾[🎬🤖📺🔍]_github.com/Ruk1ng001_6b0dd083
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
+  - 🇭🇰 香港 | vmess | 74
+  - nl|e333|puddincat07@Telegram
+  - 🔴🇹🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_8b0d80e0
+  - 🇭🇰 香港 | vmess | 54
+  - DE_speednode_0033
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_f2de12fe
+  - 🇭🇰 香港 | vmess | 124
+  - 🇭🇰 香港 | vmess | 119
+  - 🔴🇰🇷[📺🔍]_github.com/Ruk1ng001_48b81d1a
+  - 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_f76bf595
+  - 🇭🇰 香港 | vmess | 42
+  - 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_4da46655
+  - CH_speednode_0004
+  - 🇪🇪 爱沙尼亚 | trojan | 02
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_dc676fed
+  - 🇸🇬 SG 001 | ⬇️ 0.92MB/s
+  - 🇭🇰 HK 001 | ⬇️ 0.85MB/s
+  - 🇺🇸 US 004 | ⬇️ 0.81MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.75MB/s
+  - 🇺🇸 US 005 | ⬇️ 0.70MB/s
+  - 🇨🇳 CN 002 | ⬇️ 0.65MB/s
+  - 🇺🇸 US 006 | ⬇️ 0.57MB/s
+  - 🏳️ MA 001 | ⬇️ 0.44MB/s
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
 - name: 低延迟
   type: url-test
   proxies:
-  - 🇨🇦 CA 001 | ⬇️ 209.26MB/s
-  - 🇺🇸 US 001 | ⬇️ 205.04MB/s
-  - 🇺🇸 US 002 | ⬇️ 183.54MB/s
-  - 🇺🇸 US 003 | ⬇️ 157.39MB/s
-  - 🇺🇸 US 004 | ⬇️ 120.94MB/s
-  - 🇺🇸 US 005 | ⬇️ 100.40MB/s
-  - 🇺🇸 US 006 | ⬇️ 59.16MB/s
-  - 🇺🇸 US 007 | ⬇️ 46.48MB/s
-  - 🇺🇸 US 008 | ⬇️ 42.62MB/s
-  - 🇯🇵 JP 001 | ⬇️ 25.03MB/s
-  - 🇯🇵 JP 002 | ⬇️ 25.00MB/s
-  - 🇯🇵 JP 003 | ⬇️ 24.88MB/s
-  - 🇯🇵 JP 004 | ⬇️ 23.32MB/s
-  - 🇭🇰 HK 001 | ⬇️ 22.41MB/s
-  - 🇬🇧 GB 001 | ⬇️ 21.55MB/s
-  - 🇯🇵 JP 005 | ⬇️ 21.44MB/s
-  - 🇬🇧 GB 002 | ⬇️ 21.37MB/s
-  - 🇬🇧 GB 003 | ⬇️ 20.88MB/s
-  - 🇰🇷 KR 001 | ⬇️ 20.29MB/s
-  - 🇬🇧 GB 004 | ⬇️ 20.13MB/s
-  - 🇳🇱 NL 001 | ⬇️ 19.94MB/s
-  - 🇳🇱 NL 002 | ⬇️ 19.71MB/s
-  - 🏳️ AL 001 | ⬇️ 19.68MB/s
-  - 🇳🇱 NL 003 | ⬇️ 19.65MB/s
-  - 🇳🇱 NL 004 | ⬇️ 19.56MB/s
-  - 🇳🇱 NL 005 | ⬇️ 19.36MB/s
-  - 🇳🇱 NL 006 | ⬇️ 19.34MB/s
-  - 🇳🇱 NL 007 | ⬇️ 19.28MB/s
-  - 🇬🇧 GB 005 | ⬇️ 19.25MB/s
-  - 🇨🇳 TW 001 | ⬇️ 19.25MB/s
-  - 🇯🇵 JP 006 | ⬇️ 19.15MB/s
-  - 🇳🇱 NL 008 | ⬇️ 19.05MB/s
-  - 🇭🇰 HK 002 | ⬇️ 18.99MB/s
-  - 🇬🇧 GB 006 | ⬇️ 18.88MB/s
-  - 🏳️ AL 002 | ⬇️ 18.57MB/s
-  - 🏳️ AL 003 | ⬇️ 18.30MB/s
-  - 🇩🇪 DE 001 | ⬇️ 18.00MB/s
-  - 🇭🇰 HK 003 | ⬇️ 17.79MB/s
-  - 🇩🇪 DE 002 | ⬇️ 17.41MB/s
-  - 🇬🇧 GB 007 | ⬇️ 17.11MB/s
-  - 🇬🇧 GB 008 | ⬇️ 16.95MB/s
-  - 🇬🇧 GB 009 | ⬇️ 16.92MB/s
-  - 🇬🇧 GB 010 | ⬇️ 16.90MB/s
-  - 🇬🇧 GB 011 | ⬇️ 16.83MB/s
-  - 🇨🇭 CH 001 | ⬇️ 16.82MB/s
-  - HK_speednode_0040
-  - HK_speednode_0045
-  - HK_speednode_0044
-  - br|feba|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 125
-  - 🇷🇺 俄罗斯 | trojan | 11
-  - HK_speednode_0055
-  - 🇭🇰 香港 | vmess | 127
-  - 🇬🇧 英国 | vmess | 04
-  - 🇦🇹 奥地利 | trojan | 13
-  - 🇸🇬 新加坡 | trojan | 46
-  - 🇵🇱 波兰 | trojan | 07
-  - HK_speednode_0051
-  - HK_speednode_0041
-  - 🇨🇭 瑞士 | trojan | 05
-  - HK_speednode_0049
-  - HK_speednode_0052
-  - 🇭🇰 香港 | vmess | 124
-  - 🇭🇰 香港 | vmess | 54
-  - 🇭🇰 香港 | vmess | 131
-  - HK_speednode_0039
-  - 🇭🇰 香港 | vmess | 126
-  - HK_speednode_0048
-  - xx|9ed7|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 74
-  - 🇭🇰 香港 | vmess | 112
+  - 🇨🇳 CN 001 | ⬇️ 237.52MB/s
+  - 🇺🇸 US 001 | ⬇️ 185.84MB/s
+  - 🇨🇦 CA 001 | ⬇️ 183.94MB/s
+  - 🇺🇸 US 002 | ⬇️ 145.45MB/s
+  - 🇨🇦 CA 002 | ⬇️ 121.31MB/s
+  - 🇨🇦 CA 003 | ⬇️ 75.64MB/s
+  - 🇺🇸 US 003 | ⬇️ 43.45MB/s
+  - 🇬🇧 GB 001 | ⬇️ 39.59MB/s
+  - 🇬🇧 GB 002 | ⬇️ 39.48MB/s
+  - 🇬🇧 GB 003 | ⬇️ 39.16MB/s
+  - 🇳🇱 NL 001 | ⬇️ 35.42MB/s
+  - 🇳🇱 NL 002 | ⬇️ 35.08MB/s
+  - 🇳🇱 NL 003 | ⬇️ 33.95MB/s
+  - 🇳🇱 NL 004 | ⬇️ 33.35MB/s
+  - 🏳️ AL 001 | ⬇️ 33.05MB/s
+  - 🇳🇱 NL 005 | ⬇️ 32.55MB/s
+  - 🇳🇱 NL 006 | ⬇️ 32.40MB/s
+  - 🇬🇧 GB 004 | ⬇️ 31.91MB/s
+  - 🇬🇧 GB 005 | ⬇️ 31.40MB/s
+  - 🏳️ AL 002 | ⬇️ 29.60MB/s
+  - 🇩🇪 DE 001 | ⬇️ 29.15MB/s
+  - 🇳🇱 NL 007 | ⬇️ 28.97MB/s
+  - 🇩🇪 DE 002 | ⬇️ 28.48MB/s
+  - 🇳🇱 NL 008 | ⬇️ 26.96MB/s
+  - 🇦🇹 AT 001 | ⬇️ 25.94MB/s
+  - 🇵🇱 PL 001 | ⬇️ 25.74MB/s
+  - 🇨🇭 CH 001 | ⬇️ 25.74MB/s
+  - 🇬🇧 GB 006 | ⬇️ 25.67MB/s
+  - 🇨🇭 CH 002 | ⬇️ 25.59MB/s
+  - 🇬🇧 GB 007 | ⬇️ 25.42MB/s
+  - 🇬🇧 GB 008 | ⬇️ 25.37MB/s
+  - 🇬🇧 GB 009 | ⬇️ 25.26MB/s
+  - 🇬🇧 GB 010 | ⬇️ 25.15MB/s
+  - 🇬🇧 GB 011 | ⬇️ 24.91MB/s
+  - 🇬🇧 GB 012 | ⬇️ 24.87MB/s
+  - 🇬🇧 GB 013 | ⬇️ 24.79MB/s
+  - 🇬🇧 GB 014 | ⬇️ 24.65MB/s
+  - 🇬🇧 GB 015 | ⬇️ 23.82MB/s
+  - 🇧🇷 BR 001 | ⬇️ 23.73MB/s
+  - 🇬🇧 GB 016 | ⬇️ 23.53MB/s
+  - 🇬🇧 GB 017 | ⬇️ 23.23MB/s
+  - 🇬🇧 GB 018 | ⬇️ 23.09MB/s
+  - 🇨🇱 CL 001 | ⬇️ 22.68MB/s
+  - 🇳🇴 NO 001 | ⬇️ 22.12MB/s
+  - 🇬🇧 GB 019 | ⬇️ 21.58MB/s
   - 🇪🇸ES西班牙2
-  - HK_speednode_0050
-  - 🇭🇰 香港 | vmess | 118
-  - 🇳🇴 挪威 | trojan | 02
-  - 🇭🇰 香港 | vmess | 69
-  - HK_speednode_0057
-  - HK_speednode_0047
-  - 🇸🇪 瑞典 | trojan | 11
-  - 🇪🇪 爱沙尼亚 | trojan | 01
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_4693c526
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  - ⚪🏳️_github.com/Ruk1ng001_7c75986f
-  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_546e1e33
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_113e1074
-  - 🇨🇱 智利 | trojan | 02
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9886ca
+  - HK_speednode_0051
   - 🇷🇺 俄罗斯 | vmess | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
-  - xx|9d49|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 62
-  - cl|0640|puddincat07@Telegram
-  - 🇯🇵 日本3|@ripaojiedian
-  - za|dd62|puddincat07@Telegram
-  - 🇯🇵 日本 | trojan | 13
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Ti2Juczf
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_872cf8f4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
-  - 🇯🇵 日本 | trojan | 11
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_87f48738
+  - 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_a6c8ccc1
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_37b5e444
+  - 🔴🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_d5aa4dea
+  - 🇦🇷 阿根廷 | trojan | 02
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_8197ce59
+  - HK_speednode_0057
+  - 🇬🇧 英国 | vmess | 04
+  - 🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_1cbdc2d6
+  - 🟢🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001_2e41ab5f
+  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_99c3c7aa
   - 🇺🇦 乌克兰 | trojan | 03
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
-  - 🇯🇵 日本 | trojan | 07
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_baf40cf1
-  - 🇸🇬SG新加坡 1.0MB/s
-  - 🇯🇵 日本 | trojan | 04
-  - VN_speednode_0075
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
-  - 🇯🇵 日本 | trojan | 03
-  - 🔴🇺🇸[🎬🤖📺🎪]_github.com/Ruk1ng001_f342941c
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
-  - 🇯🇵 日本 | trojan | 09
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_2FyQs9Jd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b9bc956
-  - 🇬🇧GB英国 606.9KB/s
-  - 🇬🇧GB英国2 629.5KB/s
-  - 🇬🇧 英国 | trojan | 41
-  - 🇭🇰 香港 | trojan | 94
+  - 🔴🇸🇬[🎬🤖📺🎪]_github.com/Ruk1ng001_b371236e
+  - HK_speednode_0052
+  - 🔴🇮🇳[🎬🤖📺📦]_github.com/Ruk1ng001_c044864b
+  - 🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_133530ea
+  - 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_dc44f64c
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_17604b36
+  - HK_speednode_0050
+  - 🔴🇹🇼[🎬🤖📺🎪]_github.com/Ruk1ng001_b46e7b27
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_7f593a24
+  - 🇪🇪 爱沙尼亚 | trojan | 01
+  - 🇦🇱 阿尔巴尼亚 | trojan | 02
+  - 11,12|香港3|@ripaojiedian
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_f74c5c39
+  - 🇰🇷 韩国 | vmess | 22
+  - 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_636c07c2
   - 🇰🇿 哈萨克斯坦 | trojan | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_84613330
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_ae657804
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_JEYZeebo
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jvkOkCPM
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_581febf4
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
-  - 🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_3cdd96b3
-  - 🇭🇰 香港 | vmess | 119
-  - 🟢🇻🇳[🤖🎪📦]_github.com/Ruk1ng001_94cfe604
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c9edb6f2
-  - 🇸🇬 新加坡 | trojan | 24
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I61kwRit
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_7bf7c18e
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_ufmzIgW2
-  - ⚪🏳️_github.com/Ruk1ng001_5a3c5f90
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cf329640
-  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
-  - DE_speednode_0033
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_01aa8f8c
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_71f6feb9
+  - ⚪🏳️_github.com/Ruk1ng001_107846a4
+  - 🇭🇰 香港 | vmess | 127
+  - za|d73f|puddincat07@Telegram
+  - 🟢🇲🇴[🎬🤖📺🎭]_github.com/Ruk1ng001_9e3e295c
+  - 🇬🇧GB英国 606.9KB/s
+  - 🇬🇧 英国 | trojan | 41
+  - 🇬🇧GB英国2 629.5KB/s
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_48ad3a83
+  - 🟢🇰🇷[🤖📺🎭🎪]_github.com/Ruk1ng001_c08dab37
+  - ⚪🏳️_github.com/Ruk1ng001_5a3bda55
   - 🇳🇴 挪威 | trojan | 03
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_2728799d
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Fmo1co0P
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c92dea43
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a57b88c8
-  - hk|7b71|puddincat07@Telegram
-  - 🇯🇵 日本 | trojan | 14
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8c6fdbbb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
-  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_dd1a5baa
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_gGoeHr5U
-  - 🔴🇰🇷[🎬🤖📺📦]_github.com/Ruk1ng001_2b416a26
-  - 🇮🇳 印度 | trojan | 06
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1e11f7da
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0cce614
-  - 🇭🇰 香港 | vmess | 129
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
-  - VN_speednode_0074
-  - 🇮🇳 印度 | vmess | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
-  - TR_speednode_0064
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9ccf02db
-  - 14|AT_speednode_0001
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_106b5f08
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  - 🟢🇭🇰_github.com/Ruk1ng001_5fbfaf6a
+  - 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_5c2a0088
+  - 🇭🇰 香港 | vmess | 69
+  - HK_speednode_0039
+  - 🇯🇵 日本 | trojan | 13
+  - 🇸🇬SG新加坡 1.0MB/s
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_581febf4
+  - 🇯🇵 日本 | trojan | 07
+  - 🇯🇵 日本 | trojan | 11
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
+  - 🇯🇵 日本 | trojan | 04
+  - 🇯🇵 日本 | trojan | 03
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_37825361
-  - 🔴🇰🇷[📺🎭🎪✨]_github.com/Ruk1ng001_d80913da
-  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
-  - 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_8197ce59
-  - 🇿🇦 南非 | trojan | 04
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_623fb4e5
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_77a4049c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_612a660b
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_f54b155d
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e82164f4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e0358308
+  - 🟢🇻🇳[📺🎪✨]_github.com/Ruk1ng001_3UPXtKVH
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
+  - 🇸🇬 新加坡 | trojan | 46
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I3akHAo2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
+  - NL_speednode_0062
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_099a3cbe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  - 🇺🇸 美国 | vmess | 133
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4HLcYZjM
+  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_14b2d8d7
+  - 🇯🇵 日本 | trojan | 14
+  - 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_TK6aYZMy
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  - 🇯🇵 日本 | trojan | 09
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_p7erOl04
   - 🇦🇲 亚美尼亚 | trojan | 01
-  - 🇻🇳 VN 001 | ⬇️ 3.40MB/s
-  - 🇻🇳 VN 002 | ⬇️ 3.34MB/s
-  - 🇻🇳 VN 003 | ⬇️ 3.20MB/s
-  - 🇻🇳 VN 004 | ⬇️ 3.19MB/s
-  - 🇸🇪 SE 001 | ⬇️ 2.91MB/s
-  - 🇭🇰 HK 004 | ⬇️ 2.85MB/s
-  - 🇭🇰 HK 005 | ⬇️ 2.70MB/s
-  - 🇻🇳 VN 005 | ⬇️ 2.63MB/s
-  - 🇭🇰 HK 006 | ⬇️ 2.47MB/s
-  - 🇭🇰 HK 007 | ⬇️ 2.46MB/s
-  - 🇭🇰 HK 008 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 009 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 010 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 011 | ⬇️ 2.44MB/s
-  - 🇦🇷 AR 001 | ⬇️ 2.37MB/s
-  - 🇭🇰 HK 012 | ⬇️ 2.35MB/s
-  - 🇭🇰 HK 013 | ⬇️ 2.30MB/s
-  - 🇵🇱 PL 001 | ⬇️ 2.27MB/s
-  - 🇭🇰 HK 014 | ⬇️ 1.96MB/s
-  - 🇭🇰 HK 015 | ⬇️ 1.82MB/s
-  - 🇭🇰 HK 016 | ⬇️ 1.80MB/s
-  - 🇭🇰 HK 017 | ⬇️ 1.78MB/s
-  - 🇰🇷 KR 002 | ⬇️ 1.58MB/s
-  - 🇳🇱 NL 009 | ⬇️ 1.52MB/s
-  - 🇺🇸 US 009 | ⬇️ 1.51MB/s
-  - 🇮🇳 IN 001 | ⬇️ 1.40MB/s
-  - 🇬🇧 GB 012 | ⬇️ 1.22MB/s
-  - 🇬🇧 GB 013 | ⬇️ 0.95MB/s
-  - 🇺🇸 US 010 | ⬇️ 0.83MB/s
-  - 🇯🇵 JP 007 | ⬇️ 0.83MB/s
-  - 🇪🇪 EE 001 | ⬇️ 0.69MB/s
-  - 🇭🇰 HK 018 | ⬇️ 0.65MB/s
-  - 🇻🇳 VN 006 | ⬇️ 0.61MB/s
-  - 🇺🇸 US 011 | ⬇️ 0.39MB/s
-  - 🇺🇸 US 012 | ⬇️ 0.39MB/s
+  - 13|AT_speednode_0001
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bdcfa6a
+  - 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6hJkZwUo
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_18c69002
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
+  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_dcee8b24
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca685ba1
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_38bb1944
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
+  - 🇬🇧 英国 | trojan | 44
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_C6YA1BLt
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7O0BpZaP
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4e34f1cf
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_555751af
+  - 🇩🇪 德国 | vmess | 03
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pnyqVvES
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d2fa8027
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_51b98498
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
+  - 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  - xx|2d80|puddincat07@Telegram
+  - 🇮🇳 印度 | trojan | 06
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9886ca
+  - TR_speednode_0064
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3a97100b
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_57a93035
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_07335137
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_0iSLElcv
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_824b32e0
+  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_bdbfd591
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f4212ff6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_CU41Ruk7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d3bccd1c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_rSvEyBEt
+  - 🇸🇬 新加坡 | trojan | 24
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_2b416a26
+  - 🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_rT8TKIqy
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_d58e39ee
+  - 🇭🇰 香港 | vmess | 125
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
+  - 🇸🇪 瑞典 | trojan | 11
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d7306a09
+  - 🇭🇰 香港 | trojan | 94
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_w3nxUfL4
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_FJndkQtc
+  - 🇭🇰 香港 | vmess | 126
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
+  - VN_speednode_0074
+  - 🇺🇸US美国16 11.4MB/s
+  - 🇿🇦 南非 | trojan | 04
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xFuSnSbx
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7b62b77
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
+  - 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_4ccbbee6
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
+  - 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_5d811b07
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ninYLbxC
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_qQn5bPvw
+  - 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_3a8516c4
+  - 🇭🇰 香港 | vmess | 62
+  - 🇮🇳 印度 | vmess | 05
+  - WS-穿透
+  - 🇭🇰 香港 | vmess | 52
+  - 🇭🇰 香港 | vmess | 112
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  - 🇺🇸 美国 | vmess | 92
+  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
+  - 🔴🇳🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_d7242d73
+  - 🇭🇰 香港 | vmess | 47
+  - 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_8ee3e671
+  - 🇸🇪 瑞典 | trojan | 06
+  - 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_56a0aa62
+  - ⚡ TCP-高速
+  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_9c211d65
+  - hk|7b71|puddincat07@Telegram
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_79d5bbce
+  - WSS-隐蔽
+  - 🔴🇵🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_c20a7d27
+  - 🔴🇲🇾[🎬🤖📺🔍]_github.com/Ruk1ng001_6b0dd083
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
+  - 🇭🇰 香港 | vmess | 74
+  - nl|e333|puddincat07@Telegram
+  - 🔴🇹🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_8b0d80e0
+  - 🇭🇰 香港 | vmess | 54
+  - DE_speednode_0033
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_f2de12fe
+  - 🇭🇰 香港 | vmess | 124
+  - 🇭🇰 香港 | vmess | 119
+  - 🔴🇰🇷[📺🔍]_github.com/Ruk1ng001_48b81d1a
+  - 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_f76bf595
+  - 🇭🇰 香港 | vmess | 42
+  - 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_4da46655
+  - CH_speednode_0004
+  - 🇪🇪 爱沙尼亚 | trojan | 02
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_dc676fed
+  - 🇸🇬 SG 001 | ⬇️ 0.92MB/s
+  - 🇭🇰 HK 001 | ⬇️ 0.85MB/s
+  - 🇺🇸 US 004 | ⬇️ 0.81MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.75MB/s
+  - 🇺🇸 US 005 | ⬇️ 0.70MB/s
+  - 🇨🇳 CN 002 | ⬇️ 0.65MB/s
+  - 🇺🇸 US 006 | ⬇️ 0.57MB/s
+  - 🏳️ MA 001 | ⬇️ 0.44MB/s
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 30
@@ -2604,547 +3059,594 @@ proxy-groups:
   type: load-balance
   strategy: consistent-hashing
   proxies:
-  - 🇨🇦 CA 001 | ⬇️ 209.26MB/s
-  - 🇺🇸 US 001 | ⬇️ 205.04MB/s
-  - 🇺🇸 US 002 | ⬇️ 183.54MB/s
-  - 🇺🇸 US 003 | ⬇️ 157.39MB/s
-  - 🇺🇸 US 004 | ⬇️ 120.94MB/s
-  - 🇺🇸 US 005 | ⬇️ 100.40MB/s
-  - 🇺🇸 US 006 | ⬇️ 59.16MB/s
-  - 🇺🇸 US 007 | ⬇️ 46.48MB/s
-  - 🇺🇸 US 008 | ⬇️ 42.62MB/s
-  - 🇯🇵 JP 001 | ⬇️ 25.03MB/s
-  - 🇯🇵 JP 002 | ⬇️ 25.00MB/s
-  - 🇯🇵 JP 003 | ⬇️ 24.88MB/s
-  - 🇯🇵 JP 004 | ⬇️ 23.32MB/s
-  - 🇭🇰 HK 001 | ⬇️ 22.41MB/s
-  - 🇬🇧 GB 001 | ⬇️ 21.55MB/s
-  - 🇯🇵 JP 005 | ⬇️ 21.44MB/s
-  - 🇬🇧 GB 002 | ⬇️ 21.37MB/s
-  - 🇬🇧 GB 003 | ⬇️ 20.88MB/s
-  - 🇰🇷 KR 001 | ⬇️ 20.29MB/s
-  - 🇬🇧 GB 004 | ⬇️ 20.13MB/s
-  - 🇳🇱 NL 001 | ⬇️ 19.94MB/s
-  - 🇳🇱 NL 002 | ⬇️ 19.71MB/s
-  - 🏳️ AL 001 | ⬇️ 19.68MB/s
-  - 🇳🇱 NL 003 | ⬇️ 19.65MB/s
-  - 🇳🇱 NL 004 | ⬇️ 19.56MB/s
-  - 🇳🇱 NL 005 | ⬇️ 19.36MB/s
-  - 🇳🇱 NL 006 | ⬇️ 19.34MB/s
-  - 🇳🇱 NL 007 | ⬇️ 19.28MB/s
-  - 🇬🇧 GB 005 | ⬇️ 19.25MB/s
-  - 🇨🇳 TW 001 | ⬇️ 19.25MB/s
-  - 🇯🇵 JP 006 | ⬇️ 19.15MB/s
-  - 🇳🇱 NL 008 | ⬇️ 19.05MB/s
-  - 🇭🇰 HK 002 | ⬇️ 18.99MB/s
-  - 🇬🇧 GB 006 | ⬇️ 18.88MB/s
-  - 🏳️ AL 002 | ⬇️ 18.57MB/s
-  - 🏳️ AL 003 | ⬇️ 18.30MB/s
-  - 🇩🇪 DE 001 | ⬇️ 18.00MB/s
-  - 🇭🇰 HK 003 | ⬇️ 17.79MB/s
-  - 🇩🇪 DE 002 | ⬇️ 17.41MB/s
-  - 🇬🇧 GB 007 | ⬇️ 17.11MB/s
-  - 🇬🇧 GB 008 | ⬇️ 16.95MB/s
-  - 🇬🇧 GB 009 | ⬇️ 16.92MB/s
-  - 🇬🇧 GB 010 | ⬇️ 16.90MB/s
-  - 🇬🇧 GB 011 | ⬇️ 16.83MB/s
-  - 🇨🇭 CH 001 | ⬇️ 16.82MB/s
-  - HK_speednode_0040
-  - HK_speednode_0045
-  - HK_speednode_0044
-  - br|feba|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 125
-  - 🇷🇺 俄罗斯 | trojan | 11
-  - HK_speednode_0055
-  - 🇭🇰 香港 | vmess | 127
-  - 🇬🇧 英国 | vmess | 04
-  - 🇦🇹 奥地利 | trojan | 13
-  - 🇸🇬 新加坡 | trojan | 46
-  - 🇵🇱 波兰 | trojan | 07
-  - HK_speednode_0051
-  - HK_speednode_0041
-  - 🇨🇭 瑞士 | trojan | 05
-  - HK_speednode_0049
-  - HK_speednode_0052
-  - 🇭🇰 香港 | vmess | 124
-  - 🇭🇰 香港 | vmess | 54
-  - 🇭🇰 香港 | vmess | 131
-  - HK_speednode_0039
-  - 🇭🇰 香港 | vmess | 126
-  - HK_speednode_0048
-  - xx|9ed7|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 74
-  - 🇭🇰 香港 | vmess | 112
+  - 🇨🇳 CN 001 | ⬇️ 237.52MB/s
+  - 🇺🇸 US 001 | ⬇️ 185.84MB/s
+  - 🇨🇦 CA 001 | ⬇️ 183.94MB/s
+  - 🇺🇸 US 002 | ⬇️ 145.45MB/s
+  - 🇨🇦 CA 002 | ⬇️ 121.31MB/s
+  - 🇨🇦 CA 003 | ⬇️ 75.64MB/s
+  - 🇺🇸 US 003 | ⬇️ 43.45MB/s
+  - 🇬🇧 GB 001 | ⬇️ 39.59MB/s
+  - 🇬🇧 GB 002 | ⬇️ 39.48MB/s
+  - 🇬🇧 GB 003 | ⬇️ 39.16MB/s
+  - 🇳🇱 NL 001 | ⬇️ 35.42MB/s
+  - 🇳🇱 NL 002 | ⬇️ 35.08MB/s
+  - 🇳🇱 NL 003 | ⬇️ 33.95MB/s
+  - 🇳🇱 NL 004 | ⬇️ 33.35MB/s
+  - 🏳️ AL 001 | ⬇️ 33.05MB/s
+  - 🇳🇱 NL 005 | ⬇️ 32.55MB/s
+  - 🇳🇱 NL 006 | ⬇️ 32.40MB/s
+  - 🇬🇧 GB 004 | ⬇️ 31.91MB/s
+  - 🇬🇧 GB 005 | ⬇️ 31.40MB/s
+  - 🏳️ AL 002 | ⬇️ 29.60MB/s
+  - 🇩🇪 DE 001 | ⬇️ 29.15MB/s
+  - 🇳🇱 NL 007 | ⬇️ 28.97MB/s
+  - 🇩🇪 DE 002 | ⬇️ 28.48MB/s
+  - 🇳🇱 NL 008 | ⬇️ 26.96MB/s
+  - 🇦🇹 AT 001 | ⬇️ 25.94MB/s
+  - 🇵🇱 PL 001 | ⬇️ 25.74MB/s
+  - 🇨🇭 CH 001 | ⬇️ 25.74MB/s
+  - 🇬🇧 GB 006 | ⬇️ 25.67MB/s
+  - 🇨🇭 CH 002 | ⬇️ 25.59MB/s
+  - 🇬🇧 GB 007 | ⬇️ 25.42MB/s
+  - 🇬🇧 GB 008 | ⬇️ 25.37MB/s
+  - 🇬🇧 GB 009 | ⬇️ 25.26MB/s
+  - 🇬🇧 GB 010 | ⬇️ 25.15MB/s
+  - 🇬🇧 GB 011 | ⬇️ 24.91MB/s
+  - 🇬🇧 GB 012 | ⬇️ 24.87MB/s
+  - 🇬🇧 GB 013 | ⬇️ 24.79MB/s
+  - 🇬🇧 GB 014 | ⬇️ 24.65MB/s
+  - 🇬🇧 GB 015 | ⬇️ 23.82MB/s
+  - 🇧🇷 BR 001 | ⬇️ 23.73MB/s
+  - 🇬🇧 GB 016 | ⬇️ 23.53MB/s
+  - 🇬🇧 GB 017 | ⬇️ 23.23MB/s
+  - 🇬🇧 GB 018 | ⬇️ 23.09MB/s
+  - 🇨🇱 CL 001 | ⬇️ 22.68MB/s
+  - 🇳🇴 NO 001 | ⬇️ 22.12MB/s
+  - 🇬🇧 GB 019 | ⬇️ 21.58MB/s
   - 🇪🇸ES西班牙2
-  - HK_speednode_0050
-  - 🇭🇰 香港 | vmess | 118
-  - 🇳🇴 挪威 | trojan | 02
-  - 🇭🇰 香港 | vmess | 69
-  - HK_speednode_0057
-  - HK_speednode_0047
-  - 🇸🇪 瑞典 | trojan | 11
-  - 🇪🇪 爱沙尼亚 | trojan | 01
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_4693c526
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  - ⚪🏳️_github.com/Ruk1ng001_7c75986f
-  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_546e1e33
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_113e1074
-  - 🇨🇱 智利 | trojan | 02
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9886ca
+  - HK_speednode_0051
   - 🇷🇺 俄罗斯 | vmess | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
-  - xx|9d49|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 62
-  - cl|0640|puddincat07@Telegram
-  - 🇯🇵 日本3|@ripaojiedian
-  - za|dd62|puddincat07@Telegram
-  - 🇯🇵 日本 | trojan | 13
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Ti2Juczf
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_872cf8f4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
-  - 🇯🇵 日本 | trojan | 11
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_87f48738
+  - 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_a6c8ccc1
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_37b5e444
+  - 🔴🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_d5aa4dea
+  - 🇦🇷 阿根廷 | trojan | 02
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_8197ce59
+  - HK_speednode_0057
+  - 🇬🇧 英国 | vmess | 04
+  - 🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_1cbdc2d6
+  - 🟢🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001_2e41ab5f
+  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_99c3c7aa
   - 🇺🇦 乌克兰 | trojan | 03
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
-  - 🇯🇵 日本 | trojan | 07
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_baf40cf1
-  - 🇸🇬SG新加坡 1.0MB/s
-  - 🇯🇵 日本 | trojan | 04
-  - VN_speednode_0075
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
-  - 🇯🇵 日本 | trojan | 03
-  - 🔴🇺🇸[🎬🤖📺🎪]_github.com/Ruk1ng001_f342941c
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
-  - 🇯🇵 日本 | trojan | 09
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_2FyQs9Jd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b9bc956
-  - 🇬🇧GB英国 606.9KB/s
-  - 🇬🇧GB英国2 629.5KB/s
-  - 🇬🇧 英国 | trojan | 41
-  - 🇭🇰 香港 | trojan | 94
+  - 🔴🇸🇬[🎬🤖📺🎪]_github.com/Ruk1ng001_b371236e
+  - HK_speednode_0052
+  - 🔴🇮🇳[🎬🤖📺📦]_github.com/Ruk1ng001_c044864b
+  - 🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_133530ea
+  - 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_dc44f64c
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_17604b36
+  - HK_speednode_0050
+  - 🔴🇹🇼[🎬🤖📺🎪]_github.com/Ruk1ng001_b46e7b27
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_7f593a24
+  - 🇪🇪 爱沙尼亚 | trojan | 01
+  - 🇦🇱 阿尔巴尼亚 | trojan | 02
+  - 11,12|香港3|@ripaojiedian
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_f74c5c39
+  - 🇰🇷 韩国 | vmess | 22
+  - 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_636c07c2
   - 🇰🇿 哈萨克斯坦 | trojan | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_84613330
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_ae657804
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_JEYZeebo
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jvkOkCPM
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_581febf4
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
-  - 🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_3cdd96b3
-  - 🇭🇰 香港 | vmess | 119
-  - 🟢🇻🇳[🤖🎪📦]_github.com/Ruk1ng001_94cfe604
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c9edb6f2
-  - 🇸🇬 新加坡 | trojan | 24
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I61kwRit
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_7bf7c18e
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_ufmzIgW2
-  - ⚪🏳️_github.com/Ruk1ng001_5a3c5f90
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cf329640
-  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
-  - DE_speednode_0033
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_01aa8f8c
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_71f6feb9
+  - ⚪🏳️_github.com/Ruk1ng001_107846a4
+  - 🇭🇰 香港 | vmess | 127
+  - za|d73f|puddincat07@Telegram
+  - 🟢🇲🇴[🎬🤖📺🎭]_github.com/Ruk1ng001_9e3e295c
+  - 🇬🇧GB英国 606.9KB/s
+  - 🇬🇧 英国 | trojan | 41
+  - 🇬🇧GB英国2 629.5KB/s
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_48ad3a83
+  - 🟢🇰🇷[🤖📺🎭🎪]_github.com/Ruk1ng001_c08dab37
+  - ⚪🏳️_github.com/Ruk1ng001_5a3bda55
   - 🇳🇴 挪威 | trojan | 03
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_2728799d
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Fmo1co0P
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c92dea43
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a57b88c8
-  - hk|7b71|puddincat07@Telegram
-  - 🇯🇵 日本 | trojan | 14
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8c6fdbbb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
-  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_dd1a5baa
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_gGoeHr5U
-  - 🔴🇰🇷[🎬🤖📺📦]_github.com/Ruk1ng001_2b416a26
-  - 🇮🇳 印度 | trojan | 06
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1e11f7da
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0cce614
-  - 🇭🇰 香港 | vmess | 129
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
-  - VN_speednode_0074
-  - 🇮🇳 印度 | vmess | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
-  - TR_speednode_0064
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9ccf02db
-  - 14|AT_speednode_0001
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_106b5f08
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  - 🟢🇭🇰_github.com/Ruk1ng001_5fbfaf6a
+  - 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_5c2a0088
+  - 🇭🇰 香港 | vmess | 69
+  - HK_speednode_0039
+  - 🇯🇵 日本 | trojan | 13
+  - 🇸🇬SG新加坡 1.0MB/s
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_581febf4
+  - 🇯🇵 日本 | trojan | 07
+  - 🇯🇵 日本 | trojan | 11
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
+  - 🇯🇵 日本 | trojan | 04
+  - 🇯🇵 日本 | trojan | 03
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_37825361
-  - 🔴🇰🇷[📺🎭🎪✨]_github.com/Ruk1ng001_d80913da
-  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
-  - 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_8197ce59
-  - 🇿🇦 南非 | trojan | 04
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_623fb4e5
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_77a4049c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_612a660b
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_f54b155d
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e82164f4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e0358308
+  - 🟢🇻🇳[📺🎪✨]_github.com/Ruk1ng001_3UPXtKVH
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
+  - 🇸🇬 新加坡 | trojan | 46
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I3akHAo2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
+  - NL_speednode_0062
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_099a3cbe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  - 🇺🇸 美国 | vmess | 133
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4HLcYZjM
+  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_14b2d8d7
+  - 🇯🇵 日本 | trojan | 14
+  - 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_TK6aYZMy
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  - 🇯🇵 日本 | trojan | 09
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_p7erOl04
   - 🇦🇲 亚美尼亚 | trojan | 01
-  - 🇻🇳 VN 001 | ⬇️ 3.40MB/s
-  - 🇻🇳 VN 002 | ⬇️ 3.34MB/s
-  - 🇻🇳 VN 003 | ⬇️ 3.20MB/s
-  - 🇻🇳 VN 004 | ⬇️ 3.19MB/s
-  - 🇸🇪 SE 001 | ⬇️ 2.91MB/s
-  - 🇭🇰 HK 004 | ⬇️ 2.85MB/s
-  - 🇭🇰 HK 005 | ⬇️ 2.70MB/s
-  - 🇻🇳 VN 005 | ⬇️ 2.63MB/s
-  - 🇭🇰 HK 006 | ⬇️ 2.47MB/s
-  - 🇭🇰 HK 007 | ⬇️ 2.46MB/s
-  - 🇭🇰 HK 008 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 009 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 010 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 011 | ⬇️ 2.44MB/s
-  - 🇦🇷 AR 001 | ⬇️ 2.37MB/s
-  - 🇭🇰 HK 012 | ⬇️ 2.35MB/s
-  - 🇭🇰 HK 013 | ⬇️ 2.30MB/s
-  - 🇵🇱 PL 001 | ⬇️ 2.27MB/s
-  - 🇭🇰 HK 014 | ⬇️ 1.96MB/s
-  - 🇭🇰 HK 015 | ⬇️ 1.82MB/s
-  - 🇭🇰 HK 016 | ⬇️ 1.80MB/s
-  - 🇭🇰 HK 017 | ⬇️ 1.78MB/s
-  - 🇰🇷 KR 002 | ⬇️ 1.58MB/s
-  - 🇳🇱 NL 009 | ⬇️ 1.52MB/s
-  - 🇺🇸 US 009 | ⬇️ 1.51MB/s
-  - 🇮🇳 IN 001 | ⬇️ 1.40MB/s
-  - 🇬🇧 GB 012 | ⬇️ 1.22MB/s
-  - 🇬🇧 GB 013 | ⬇️ 0.95MB/s
-  - 🇺🇸 US 010 | ⬇️ 0.83MB/s
-  - 🇯🇵 JP 007 | ⬇️ 0.83MB/s
-  - 🇪🇪 EE 001 | ⬇️ 0.69MB/s
-  - 🇭🇰 HK 018 | ⬇️ 0.65MB/s
-  - 🇻🇳 VN 006 | ⬇️ 0.61MB/s
-  - 🇺🇸 US 011 | ⬇️ 0.39MB/s
-  - 🇺🇸 US 012 | ⬇️ 0.39MB/s
+  - 13|AT_speednode_0001
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bdcfa6a
+  - 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6hJkZwUo
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_18c69002
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
+  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_dcee8b24
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca685ba1
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_38bb1944
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
+  - 🇬🇧 英国 | trojan | 44
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_C6YA1BLt
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7O0BpZaP
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4e34f1cf
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_555751af
+  - 🇩🇪 德国 | vmess | 03
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pnyqVvES
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d2fa8027
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_51b98498
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
+  - 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  - xx|2d80|puddincat07@Telegram
+  - 🇮🇳 印度 | trojan | 06
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9886ca
+  - TR_speednode_0064
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3a97100b
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_57a93035
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_07335137
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_0iSLElcv
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_824b32e0
+  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_bdbfd591
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f4212ff6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_CU41Ruk7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d3bccd1c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_rSvEyBEt
+  - 🇸🇬 新加坡 | trojan | 24
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_2b416a26
+  - 🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_rT8TKIqy
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_d58e39ee
+  - 🇭🇰 香港 | vmess | 125
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
+  - 🇸🇪 瑞典 | trojan | 11
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d7306a09
+  - 🇭🇰 香港 | trojan | 94
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_w3nxUfL4
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_FJndkQtc
+  - 🇭🇰 香港 | vmess | 126
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
+  - VN_speednode_0074
+  - 🇺🇸US美国16 11.4MB/s
+  - 🇿🇦 南非 | trojan | 04
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xFuSnSbx
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7b62b77
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
+  - 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_4ccbbee6
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
+  - 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_5d811b07
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ninYLbxC
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_qQn5bPvw
+  - 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_3a8516c4
+  - 🇭🇰 香港 | vmess | 62
+  - 🇮🇳 印度 | vmess | 05
+  - WS-穿透
+  - 🇭🇰 香港 | vmess | 52
+  - 🇭🇰 香港 | vmess | 112
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  - 🇺🇸 美国 | vmess | 92
+  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
+  - 🔴🇳🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_d7242d73
+  - 🇭🇰 香港 | vmess | 47
+  - 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_8ee3e671
+  - 🇸🇪 瑞典 | trojan | 06
+  - 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_56a0aa62
+  - ⚡ TCP-高速
+  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_9c211d65
+  - hk|7b71|puddincat07@Telegram
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_79d5bbce
+  - WSS-隐蔽
+  - 🔴🇵🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_c20a7d27
+  - 🔴🇲🇾[🎬🤖📺🔍]_github.com/Ruk1ng001_6b0dd083
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
+  - 🇭🇰 香港 | vmess | 74
+  - nl|e333|puddincat07@Telegram
+  - 🔴🇹🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_8b0d80e0
+  - 🇭🇰 香港 | vmess | 54
+  - DE_speednode_0033
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_f2de12fe
+  - 🇭🇰 香港 | vmess | 124
+  - 🇭🇰 香港 | vmess | 119
+  - 🔴🇰🇷[📺🔍]_github.com/Ruk1ng001_48b81d1a
+  - 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_f76bf595
+  - 🇭🇰 香港 | vmess | 42
+  - 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_4da46655
+  - CH_speednode_0004
+  - 🇪🇪 爱沙尼亚 | trojan | 02
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_dc676fed
+  - 🇸🇬 SG 001 | ⬇️ 0.92MB/s
+  - 🇭🇰 HK 001 | ⬇️ 0.85MB/s
+  - 🇺🇸 US 004 | ⬇️ 0.81MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.75MB/s
+  - 🇺🇸 US 005 | ⬇️ 0.70MB/s
+  - 🇨🇳 CN 002 | ⬇️ 0.65MB/s
+  - 🇺🇸 US 006 | ⬇️ 0.57MB/s
+  - 🏳️ MA 001 | ⬇️ 0.44MB/s
 - name: 手动选择
   type: select
   proxies:
-  - 🇨🇦 CA 001 | ⬇️ 209.26MB/s
-  - 🇺🇸 US 001 | ⬇️ 205.04MB/s
-  - 🇺🇸 US 002 | ⬇️ 183.54MB/s
-  - 🇺🇸 US 003 | ⬇️ 157.39MB/s
-  - 🇺🇸 US 004 | ⬇️ 120.94MB/s
-  - 🇺🇸 US 005 | ⬇️ 100.40MB/s
-  - 🇺🇸 US 006 | ⬇️ 59.16MB/s
-  - 🇺🇸 US 007 | ⬇️ 46.48MB/s
-  - 🇺🇸 US 008 | ⬇️ 42.62MB/s
-  - 🇯🇵 JP 001 | ⬇️ 25.03MB/s
-  - 🇯🇵 JP 002 | ⬇️ 25.00MB/s
-  - 🇯🇵 JP 003 | ⬇️ 24.88MB/s
-  - 🇯🇵 JP 004 | ⬇️ 23.32MB/s
-  - 🇭🇰 HK 001 | ⬇️ 22.41MB/s
-  - 🇬🇧 GB 001 | ⬇️ 21.55MB/s
-  - 🇯🇵 JP 005 | ⬇️ 21.44MB/s
-  - 🇬🇧 GB 002 | ⬇️ 21.37MB/s
-  - 🇬🇧 GB 003 | ⬇️ 20.88MB/s
-  - 🇰🇷 KR 001 | ⬇️ 20.29MB/s
-  - 🇬🇧 GB 004 | ⬇️ 20.13MB/s
-  - 🇳🇱 NL 001 | ⬇️ 19.94MB/s
-  - 🇳🇱 NL 002 | ⬇️ 19.71MB/s
-  - 🏳️ AL 001 | ⬇️ 19.68MB/s
-  - 🇳🇱 NL 003 | ⬇️ 19.65MB/s
-  - 🇳🇱 NL 004 | ⬇️ 19.56MB/s
-  - 🇳🇱 NL 005 | ⬇️ 19.36MB/s
-  - 🇳🇱 NL 006 | ⬇️ 19.34MB/s
-  - 🇳🇱 NL 007 | ⬇️ 19.28MB/s
-  - 🇬🇧 GB 005 | ⬇️ 19.25MB/s
-  - 🇨🇳 TW 001 | ⬇️ 19.25MB/s
-  - 🇯🇵 JP 006 | ⬇️ 19.15MB/s
-  - 🇳🇱 NL 008 | ⬇️ 19.05MB/s
-  - 🇭🇰 HK 002 | ⬇️ 18.99MB/s
-  - 🇬🇧 GB 006 | ⬇️ 18.88MB/s
-  - 🏳️ AL 002 | ⬇️ 18.57MB/s
-  - 🏳️ AL 003 | ⬇️ 18.30MB/s
-  - 🇩🇪 DE 001 | ⬇️ 18.00MB/s
-  - 🇭🇰 HK 003 | ⬇️ 17.79MB/s
-  - 🇩🇪 DE 002 | ⬇️ 17.41MB/s
-  - 🇬🇧 GB 007 | ⬇️ 17.11MB/s
-  - 🇬🇧 GB 008 | ⬇️ 16.95MB/s
-  - 🇬🇧 GB 009 | ⬇️ 16.92MB/s
-  - 🇬🇧 GB 010 | ⬇️ 16.90MB/s
-  - 🇬🇧 GB 011 | ⬇️ 16.83MB/s
-  - 🇨🇭 CH 001 | ⬇️ 16.82MB/s
-  - HK_speednode_0040
-  - HK_speednode_0045
-  - HK_speednode_0044
-  - br|feba|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 125
-  - 🇷🇺 俄罗斯 | trojan | 11
-  - HK_speednode_0055
-  - 🇭🇰 香港 | vmess | 127
-  - 🇬🇧 英国 | vmess | 04
-  - 🇦🇹 奥地利 | trojan | 13
-  - 🇸🇬 新加坡 | trojan | 46
-  - 🇵🇱 波兰 | trojan | 07
-  - HK_speednode_0051
-  - HK_speednode_0041
-  - 🇨🇭 瑞士 | trojan | 05
-  - HK_speednode_0049
-  - HK_speednode_0052
-  - 🇭🇰 香港 | vmess | 124
-  - 🇭🇰 香港 | vmess | 54
-  - 🇭🇰 香港 | vmess | 131
-  - HK_speednode_0039
-  - 🇭🇰 香港 | vmess | 126
-  - HK_speednode_0048
-  - xx|9ed7|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 74
-  - 🇭🇰 香港 | vmess | 112
+  - 🇨🇳 CN 001 | ⬇️ 237.52MB/s
+  - 🇺🇸 US 001 | ⬇️ 185.84MB/s
+  - 🇨🇦 CA 001 | ⬇️ 183.94MB/s
+  - 🇺🇸 US 002 | ⬇️ 145.45MB/s
+  - 🇨🇦 CA 002 | ⬇️ 121.31MB/s
+  - 🇨🇦 CA 003 | ⬇️ 75.64MB/s
+  - 🇺🇸 US 003 | ⬇️ 43.45MB/s
+  - 🇬🇧 GB 001 | ⬇️ 39.59MB/s
+  - 🇬🇧 GB 002 | ⬇️ 39.48MB/s
+  - 🇬🇧 GB 003 | ⬇️ 39.16MB/s
+  - 🇳🇱 NL 001 | ⬇️ 35.42MB/s
+  - 🇳🇱 NL 002 | ⬇️ 35.08MB/s
+  - 🇳🇱 NL 003 | ⬇️ 33.95MB/s
+  - 🇳🇱 NL 004 | ⬇️ 33.35MB/s
+  - 🏳️ AL 001 | ⬇️ 33.05MB/s
+  - 🇳🇱 NL 005 | ⬇️ 32.55MB/s
+  - 🇳🇱 NL 006 | ⬇️ 32.40MB/s
+  - 🇬🇧 GB 004 | ⬇️ 31.91MB/s
+  - 🇬🇧 GB 005 | ⬇️ 31.40MB/s
+  - 🏳️ AL 002 | ⬇️ 29.60MB/s
+  - 🇩🇪 DE 001 | ⬇️ 29.15MB/s
+  - 🇳🇱 NL 007 | ⬇️ 28.97MB/s
+  - 🇩🇪 DE 002 | ⬇️ 28.48MB/s
+  - 🇳🇱 NL 008 | ⬇️ 26.96MB/s
+  - 🇦🇹 AT 001 | ⬇️ 25.94MB/s
+  - 🇵🇱 PL 001 | ⬇️ 25.74MB/s
+  - 🇨🇭 CH 001 | ⬇️ 25.74MB/s
+  - 🇬🇧 GB 006 | ⬇️ 25.67MB/s
+  - 🇨🇭 CH 002 | ⬇️ 25.59MB/s
+  - 🇬🇧 GB 007 | ⬇️ 25.42MB/s
+  - 🇬🇧 GB 008 | ⬇️ 25.37MB/s
+  - 🇬🇧 GB 009 | ⬇️ 25.26MB/s
+  - 🇬🇧 GB 010 | ⬇️ 25.15MB/s
+  - 🇬🇧 GB 011 | ⬇️ 24.91MB/s
+  - 🇬🇧 GB 012 | ⬇️ 24.87MB/s
+  - 🇬🇧 GB 013 | ⬇️ 24.79MB/s
+  - 🇬🇧 GB 014 | ⬇️ 24.65MB/s
+  - 🇬🇧 GB 015 | ⬇️ 23.82MB/s
+  - 🇧🇷 BR 001 | ⬇️ 23.73MB/s
+  - 🇬🇧 GB 016 | ⬇️ 23.53MB/s
+  - 🇬🇧 GB 017 | ⬇️ 23.23MB/s
+  - 🇬🇧 GB 018 | ⬇️ 23.09MB/s
+  - 🇨🇱 CL 001 | ⬇️ 22.68MB/s
+  - 🇳🇴 NO 001 | ⬇️ 22.12MB/s
+  - 🇬🇧 GB 019 | ⬇️ 21.58MB/s
   - 🇪🇸ES西班牙2
-  - HK_speednode_0050
-  - 🇭🇰 香港 | vmess | 118
-  - 🇳🇴 挪威 | trojan | 02
-  - 🇭🇰 香港 | vmess | 69
-  - HK_speednode_0057
-  - HK_speednode_0047
-  - 🇸🇪 瑞典 | trojan | 11
-  - 🇪🇪 爱沙尼亚 | trojan | 01
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_4693c526
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  - ⚪🏳️_github.com/Ruk1ng001_7c75986f
-  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_546e1e33
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_113e1074
-  - 🇨🇱 智利 | trojan | 02
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9886ca
+  - HK_speednode_0051
   - 🇷🇺 俄罗斯 | vmess | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
-  - xx|9d49|puddincat07@Telegram
-  - 🇭🇰 香港 | vmess | 62
-  - cl|0640|puddincat07@Telegram
-  - 🇯🇵 日本3|@ripaojiedian
-  - za|dd62|puddincat07@Telegram
-  - 🇯🇵 日本 | trojan | 13
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Ti2Juczf
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_872cf8f4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
-  - 🇯🇵 日本 | trojan | 11
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_87f48738
+  - 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_a6c8ccc1
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_37b5e444
+  - 🔴🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_d5aa4dea
+  - 🇦🇷 阿根廷 | trojan | 02
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_8197ce59
+  - HK_speednode_0057
+  - 🇬🇧 英国 | vmess | 04
+  - 🟢🇭🇰[🎬🧠📺🎭]_github.com/Ruk1ng001_1cbdc2d6
+  - 🟢🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001_2e41ab5f
+  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_99c3c7aa
   - 🇺🇦 乌克兰 | trojan | 03
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
-  - 🇯🇵 日本 | trojan | 07
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_baf40cf1
-  - 🇸🇬SG新加坡 1.0MB/s
-  - 🇯🇵 日本 | trojan | 04
-  - VN_speednode_0075
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
-  - 🇯🇵 日本 | trojan | 03
-  - 🔴🇺🇸[🎬🤖📺🎪]_github.com/Ruk1ng001_f342941c
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
-  - 🇯🇵 日本 | trojan | 09
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_2FyQs9Jd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b9bc956
-  - 🇬🇧GB英国 606.9KB/s
-  - 🇬🇧GB英国2 629.5KB/s
-  - 🇬🇧 英国 | trojan | 41
-  - 🇭🇰 香港 | trojan | 94
+  - 🔴🇸🇬[🎬🤖📺🎪]_github.com/Ruk1ng001_b371236e
+  - HK_speednode_0052
+  - 🔴🇮🇳[🎬🤖📺📦]_github.com/Ruk1ng001_c044864b
+  - 🔴🇹🇼[🎬📺🎭🎪]_github.com/Ruk1ng001_133530ea
+  - 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_dc44f64c
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🔴🇸🇬[🎬🤖📺🎭]_github.com/Ruk1ng001_17604b36
+  - HK_speednode_0050
+  - 🔴🇹🇼[🎬🤖📺🎪]_github.com/Ruk1ng001_b46e7b27
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_7f593a24
+  - 🇪🇪 爱沙尼亚 | trojan | 01
+  - 🇦🇱 阿尔巴尼亚 | trojan | 02
+  - 11,12|香港3|@ripaojiedian
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_f74c5c39
+  - 🇰🇷 韩国 | vmess | 22
+  - 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_636c07c2
   - 🇰🇿 哈萨克斯坦 | trojan | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_84613330
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_ae657804
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_JEYZeebo
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jvkOkCPM
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_581febf4
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
-  - 🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_3cdd96b3
-  - 🇭🇰 香港 | vmess | 119
-  - 🟢🇻🇳[🤖🎪📦]_github.com/Ruk1ng001_94cfe604
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c9edb6f2
-  - 🇸🇬 新加坡 | trojan | 24
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I61kwRit
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_7bf7c18e
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_ufmzIgW2
-  - ⚪🏳️_github.com/Ruk1ng001_5a3c5f90
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cf329640
-  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
-  - DE_speednode_0033
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_01aa8f8c
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_71f6feb9
+  - ⚪🏳️_github.com/Ruk1ng001_107846a4
+  - 🇭🇰 香港 | vmess | 127
+  - za|d73f|puddincat07@Telegram
+  - 🟢🇲🇴[🎬🤖📺🎭]_github.com/Ruk1ng001_9e3e295c
+  - 🇬🇧GB英国 606.9KB/s
+  - 🇬🇧 英国 | trojan | 41
+  - 🇬🇧GB英国2 629.5KB/s
+  - 🔴🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_48ad3a83
+  - 🟢🇰🇷[🤖📺🎭🎪]_github.com/Ruk1ng001_c08dab37
+  - ⚪🏳️_github.com/Ruk1ng001_5a3bda55
   - 🇳🇴 挪威 | trojan | 03
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_2728799d
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_Fmo1co0P
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c92dea43
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a57b88c8
-  - hk|7b71|puddincat07@Telegram
-  - 🇯🇵 日本 | trojan | 14
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8c6fdbbb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
-  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_dd1a5baa
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_gGoeHr5U
-  - 🔴🇰🇷[🎬🤖📺📦]_github.com/Ruk1ng001_2b416a26
-  - 🇮🇳 印度 | trojan | 06
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1e11f7da
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0cce614
-  - 🇭🇰 香港 | vmess | 129
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
-  - VN_speednode_0074
-  - 🇮🇳 印度 | vmess | 05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
-  - TR_speednode_0064
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9ccf02db
-  - 14|AT_speednode_0001
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_106b5f08
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  - 🟢🇭🇰_github.com/Ruk1ng001_5fbfaf6a
+  - 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_5c2a0088
+  - 🇭🇰 香港 | vmess | 69
+  - HK_speednode_0039
+  - 🇯🇵 日本 | trojan | 13
+  - 🇸🇬SG新加坡 1.0MB/s
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_581febf4
+  - 🇯🇵 日本 | trojan | 07
+  - 🇯🇵 日本 | trojan | 11
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_AF8vJJ1m
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca1dd012
+  - 🇯🇵 日本 | trojan | 04
+  - 🇯🇵 日本 | trojan | 03
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_37825361
-  - 🔴🇰🇷[📺🎭🎪✨]_github.com/Ruk1ng001_d80913da
-  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
-  - 🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_8197ce59
-  - 🇿🇦 南非 | trojan | 04
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_623fb4e5
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_77a4049c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_612a660b
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ec6b3263
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6ldDrB8T
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_f54b155d
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e82164f4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0Lvg9xOB
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_e0358308
+  - 🟢🇻🇳[📺🎪✨]_github.com/Ruk1ng001_3UPXtKVH
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
+  - 🇸🇬 新加坡 | trojan | 46
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_I3akHAo2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_eecb3d7d
+  - NL_speednode_0062
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_099a3cbe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  - 🇺🇸 美国 | vmess | 133
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4HLcYZjM
+  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_412853c3
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_14b2d8d7
+  - 🇯🇵 日本 | trojan | 14
+  - 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_TK6aYZMy
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  - 🇯🇵 日本 | trojan | 09
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_p7erOl04
   - 🇦🇲 亚美尼亚 | trojan | 01
-  - 🇻🇳 VN 001 | ⬇️ 3.40MB/s
-  - 🇻🇳 VN 002 | ⬇️ 3.34MB/s
-  - 🇻🇳 VN 003 | ⬇️ 3.20MB/s
-  - 🇻🇳 VN 004 | ⬇️ 3.19MB/s
-  - 🇸🇪 SE 001 | ⬇️ 2.91MB/s
-  - 🇭🇰 HK 004 | ⬇️ 2.85MB/s
-  - 🇭🇰 HK 005 | ⬇️ 2.70MB/s
-  - 🇻🇳 VN 005 | ⬇️ 2.63MB/s
-  - 🇭🇰 HK 006 | ⬇️ 2.47MB/s
-  - 🇭🇰 HK 007 | ⬇️ 2.46MB/s
-  - 🇭🇰 HK 008 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 009 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 010 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 011 | ⬇️ 2.44MB/s
-  - 🇦🇷 AR 001 | ⬇️ 2.37MB/s
-  - 🇭🇰 HK 012 | ⬇️ 2.35MB/s
-  - 🇭🇰 HK 013 | ⬇️ 2.30MB/s
-  - 🇵🇱 PL 001 | ⬇️ 2.27MB/s
-  - 🇭🇰 HK 014 | ⬇️ 1.96MB/s
-  - 🇭🇰 HK 015 | ⬇️ 1.82MB/s
-  - 🇭🇰 HK 016 | ⬇️ 1.80MB/s
-  - 🇭🇰 HK 017 | ⬇️ 1.78MB/s
-  - 🇰🇷 KR 002 | ⬇️ 1.58MB/s
-  - 🇳🇱 NL 009 | ⬇️ 1.52MB/s
-  - 🇺🇸 US 009 | ⬇️ 1.51MB/s
-  - 🇮🇳 IN 001 | ⬇️ 1.40MB/s
-  - 🇬🇧 GB 012 | ⬇️ 1.22MB/s
-  - 🇬🇧 GB 013 | ⬇️ 0.95MB/s
-  - 🇺🇸 US 010 | ⬇️ 0.83MB/s
-  - 🇯🇵 JP 007 | ⬇️ 0.83MB/s
-  - 🇪🇪 EE 001 | ⬇️ 0.69MB/s
-  - 🇭🇰 HK 018 | ⬇️ 0.65MB/s
-  - 🇻🇳 VN 006 | ⬇️ 0.61MB/s
-  - 🇺🇸 US 011 | ⬇️ 0.39MB/s
-  - 🇺🇸 US 012 | ⬇️ 0.39MB/s
+  - 13|AT_speednode_0001
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bdcfa6a
+  - 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6hJkZwUo
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_18c69002
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_A3mWd7qQ
+  - 🟢🇻🇳[🤖📺🎪🎞️]_github.com/Ruk1ng001_dcee8b24
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ca685ba1
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_38bb1944
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
+  - 🇬🇧 英国 | trojan | 44
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8b8e0bb7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_C6YA1BLt
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7O0BpZaP
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4e34f1cf
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_555751af
+  - 🇩🇪 德国 | vmess | 03
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_016436c4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pnyqVvES
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d2fa8027
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_51b98498
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
+  - 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  - xx|2d80|puddincat07@Telegram
+  - 🇮🇳 印度 | trojan | 06
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9886ca
+  - TR_speednode_0064
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3a97100b
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_57a93035
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_07335137
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_247b79fa
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_0iSLElcv
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_824b32e0
+  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_bdbfd591
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f4212ff6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_CU41Ruk7
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_HiYDPfSE
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6e2edf72
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d3bccd1c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_VbbrTTPl
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_rSvEyBEt
+  - 🇸🇬 新加坡 | trojan | 24
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
+  - 🔴🇰🇷[🎬🤖📺🎭]_github.com/Ruk1ng001_2b416a26
+  - 🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_rT8TKIqy
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_baaec2ab
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_d58e39ee
+  - 🇭🇰 香港 | vmess | 125
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_nKaxeHVV
+  - 🇸🇪 瑞典 | trojan | 11
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_284563eb
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d7306a09
+  - 🇭🇰 香港 | trojan | 94
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_w3nxUfL4
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_FJndkQtc
+  - 🇭🇰 香港 | vmess | 126
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be9fa0c0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5693ee99
+  - VN_speednode_0074
+  - 🇺🇸US美国16 11.4MB/s
+  - 🇿🇦 南非 | trojan | 04
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xFuSnSbx
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7b62b77
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_xGruStu0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9058d6d2
+  - 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_4ccbbee6
+  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_Vs43Y1Ph
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
+  - 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_5d811b07
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ninYLbxC
+  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_qQn5bPvw
+  - 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_3a8516c4
+  - 🇭🇰 香港 | vmess | 62
+  - 🇮🇳 印度 | vmess | 05
+  - WS-穿透
+  - 🇭🇰 香港 | vmess | 52
+  - 🇭🇰 香港 | vmess | 112
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_8089e69a
+  - 🇺🇸 美国 | vmess | 92
+  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
+  - 🔴🇳🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_d7242d73
+  - 🇭🇰 香港 | vmess | 47
+  - 🔴🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_8ee3e671
+  - 🇸🇪 瑞典 | trojan | 06
+  - 🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_56a0aa62
+  - ⚡ TCP-高速
+  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_9c211d65
+  - hk|7b71|puddincat07@Telegram
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_79d5bbce
+  - WSS-隐蔽
+  - 🔴🇵🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_c20a7d27
+  - 🔴🇲🇾[🎬🤖📺🔍]_github.com/Ruk1ng001_6b0dd083
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
+  - 🇭🇰 香港 | vmess | 74
+  - nl|e333|puddincat07@Telegram
+  - 🔴🇹🇭[🎬🤖📺🎭]_github.com/Ruk1ng001_8b0d80e0
+  - 🇭🇰 香港 | vmess | 54
+  - DE_speednode_0033
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_f2de12fe
+  - 🇭🇰 香港 | vmess | 124
+  - 🇭🇰 香港 | vmess | 119
+  - 🔴🇰🇷[📺🔍]_github.com/Ruk1ng001_48b81d1a
+  - 🟢🇭🇰[📺🎭🎪🎞️]_github.com/Ruk1ng001_f76bf595
+  - 🇭🇰 香港 | vmess | 42
+  - 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_4da46655
+  - CH_speednode_0004
+  - 🇪🇪 爱沙尼亚 | trojan | 02
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_dc676fed
+  - 🇸🇬 SG 001 | ⬇️ 0.92MB/s
+  - 🇭🇰 HK 001 | ⬇️ 0.85MB/s
+  - 🇺🇸 US 004 | ⬇️ 0.81MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.75MB/s
+  - 🇺🇸 US 005 | ⬇️ 0.70MB/s
+  - 🇨🇳 CN 002 | ⬇️ 0.65MB/s
+  - 🇺🇸 US 006 | ⬇️ 0.57MB/s
+  - 🏳️ MA 001 | ⬇️ 0.44MB/s
 - name: 香港
   type: select
   proxies:
-  - 🇭🇰 HK 001 | ⬇️ 22.41MB/s
-  - 🇭🇰 HK 002 | ⬇️ 18.99MB/s
-  - 🇭🇰 HK 003 | ⬇️ 17.79MB/s
-  - HK_speednode_0040
-  - HK_speednode_0045
-  - HK_speednode_0044
-  - 🇭🇰 香港 | vmess | 125
-  - HK_speednode_0055
-  - 🇭🇰 香港 | vmess | 127
   - HK_speednode_0051
-  - HK_speednode_0041
-  - HK_speednode_0049
-  - HK_speednode_0052
-  - 🇭🇰 香港 | vmess | 124
-  - 🇭🇰 香港 | vmess | 54
-  - 🇭🇰 香港 | vmess | 131
-  - HK_speednode_0039
-  - 🇭🇰 香港 | vmess | 126
-  - HK_speednode_0048
-  - 🇭🇰 香港 | vmess | 74
-  - 🇭🇰 香港 | vmess | 112
-  - HK_speednode_0050
-  - 🇭🇰 香港 | vmess | 118
-  - 🇭🇰 香港 | vmess | 69
   - HK_speednode_0057
-  - HK_speednode_0047
-  - 🇭🇰 香港 | vmess | 62
+  - HK_speednode_0052
+  - 🇭🇰 香港4|@ripaojiedian
+  - HK_speednode_0050
+  - 11,12|香港3|@ripaojiedian
+  - 🇭🇰 香港 | vmess | 127
+  - 🇭🇰 香港 | vmess | 69
+  - HK_speednode_0039
+  - 🇭🇰 香港 | vmess | 125
   - 🇭🇰 香港 | trojan | 94
+  - 🇭🇰 香港 | vmess | 126
+  - 🇭🇰 香港 | vmess | 62
+  - 🇭🇰 香港 | vmess | 52
+  - 🇭🇰 香港 | vmess | 112
+  - 🇭🇰 香港 | vmess | 47
+  - 🇭🇰 香港 | vmess | 74
+  - 🇭🇰 香港 | vmess | 54
+  - 🇭🇰 香港 | vmess | 124
   - 🇭🇰 香港 | vmess | 119
-  - 🇭🇰 香港 | vmess | 129
-  - 🇭🇰 HK 004 | ⬇️ 2.85MB/s
-  - 🇭🇰 HK 005 | ⬇️ 2.70MB/s
-  - 🇭🇰 HK 006 | ⬇️ 2.47MB/s
-  - 🇭🇰 HK 007 | ⬇️ 2.46MB/s
-  - 🇭🇰 HK 008 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 009 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 010 | ⬇️ 2.45MB/s
-  - 🇭🇰 HK 011 | ⬇️ 2.44MB/s
-  - 🇭🇰 HK 012 | ⬇️ 2.35MB/s
-  - 🇭🇰 HK 013 | ⬇️ 2.30MB/s
-  - 🇭🇰 HK 014 | ⬇️ 1.96MB/s
-  - 🇭🇰 HK 015 | ⬇️ 1.82MB/s
-  - 🇭🇰 HK 016 | ⬇️ 1.80MB/s
-  - 🇭🇰 HK 017 | ⬇️ 1.78MB/s
-  - 🇭🇰 HK 018 | ⬇️ 0.65MB/s
+  - 🇭🇰 香港 | vmess | 42
+  - 🇭🇰 HK 001 | ⬇️ 0.85MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.75MB/s
 - name: 日本
   type: select
   proxies:
-  - 🇯🇵 JP 001 | ⬇️ 25.03MB/s
-  - 🇯🇵 JP 002 | ⬇️ 25.00MB/s
-  - 🇯🇵 JP 003 | ⬇️ 24.88MB/s
-  - 🇯🇵 JP 004 | ⬇️ 23.32MB/s
-  - 🇯🇵 JP 005 | ⬇️ 21.44MB/s
-  - 🇯🇵 JP 006 | ⬇️ 19.15MB/s
-  - 🇯🇵 日本3|@ripaojiedian
   - 🇯🇵 日本 | trojan | 13
-  - 🇯🇵 日本 | trojan | 11
   - 🇯🇵 日本 | trojan | 07
+  - 🇯🇵 日本 | trojan | 11
   - 🇯🇵 日本 | trojan | 04
   - 🇯🇵 日本 | trojan | 03
-  - 🇯🇵 日本 | trojan | 09
   - 🇯🇵 日本 | trojan | 14
-  - 🇯🇵 JP 007 | ⬇️ 0.83MB/s
+  - 🇯🇵 日本 | trojan | 09
 - name: 美国
   type: select
   proxies:
-  - 🇺🇸 US 001 | ⬇️ 205.04MB/s
-  - 🇺🇸 US 002 | ⬇️ 183.54MB/s
-  - 🇺🇸 US 003 | ⬇️ 157.39MB/s
-  - 🇺🇸 US 004 | ⬇️ 120.94MB/s
-  - 🇺🇸 US 005 | ⬇️ 100.40MB/s
-  - 🇺🇸 US 006 | ⬇️ 59.16MB/s
-  - 🇺🇸 US 007 | ⬇️ 46.48MB/s
-  - 🇺🇸 US 008 | ⬇️ 42.62MB/s
-  - 🇺🇸 US 009 | ⬇️ 1.51MB/s
-  - 🇺🇸 US 010 | ⬇️ 0.83MB/s
-  - 🇺🇸 US 011 | ⬇️ 0.39MB/s
-  - 🇺🇸 US 012 | ⬇️ 0.39MB/s
+  - 🇺🇸 US 001 | ⬇️ 185.84MB/s
+  - 🇺🇸 US 002 | ⬇️ 145.45MB/s
+  - 🇺🇸 US 003 | ⬇️ 43.45MB/s
+  - 🇺🇸 美国 | vmess | 133
+  - 🇺🇸US美国16 11.4MB/s
+  - 🇺🇸 美国 | vmess | 92
+  - 🇺🇸 US 004 | ⬇️ 0.81MB/s
+  - 🇺🇸 US 005 | ⬇️ 0.70MB/s
+  - 🇺🇸 US 006 | ⬇️ 0.57MB/s
 - name: 新加坡
   type: select
   proxies:
-  - 🇸🇬 新加坡 | trojan | 46
   - 🇸🇬SG新加坡 1.0MB/s
+  - 🇸🇬 新加坡 | trojan | 46
   - 🇸🇬 新加坡 | trojan | 24
+  - 🇸🇬 SG 001 | ⬇️ 0.92MB/s
 - name: 台湾
   type: select
   proxies:
-  - 🇨🇳 TW 001 | ⬇️ 19.25MB/s
+  - DIRECT
 - name: 韩国
   type: select
   proxies:
-  - 🇰🇷 KR 001 | ⬇️ 20.29MB/s
-  - 🇰🇷 KR 002 | ⬇️ 1.58MB/s
+  - 🇰🇷 韩国 | vmess | 22
 - name: 色情
   type: select
   proxies:
