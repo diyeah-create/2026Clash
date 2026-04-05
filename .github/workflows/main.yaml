@@ -50,7 +50,7 @@ jobs:
             -timeout 5s \
             -concurrent 12 || echo "第一阶段失败，使用去重文件作为 fallback"
 
-          # 过滤低延迟节点（即使第一阶段失败也会 fallback）
+          # 过滤低延迟节点
           python3 filter_low_latency.py || echo "过滤脚本异常，使用全部去重节点"
 
           echo "=== 第二阶段：download 模式（仅对低延迟节点测下载速度）==="
