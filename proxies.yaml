@@ -29,7 +29,25 @@ dns:
 proxies:
 - client-fingerprint: chrome
   encryption: none
-  name: 🏳️ NZ 001 | ⬇️ 245.84MB/s
+  name: 🇪🇸 ES 001 | ⬇️ 225.62MB/s
+  network: ws
+  port: 2096
+  server: 185.251.81.138
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🏳️ NZ 001 | ⬇️ 223.88MB/s
   network: ws
   port: 2096
   server: 114.129.43.238
@@ -47,7 +65,7 @@ proxies:
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇨🇳 CN 001 | ⬇️ 215.63MB/s
+  name: 🇨🇳 CN 001 | ⬇️ 213.45MB/s
   network: ws
   port: 2096
   server: 77.105.163.138
@@ -63,38 +81,9 @@ proxies:
         Chrome/46.0.2490.71 Safari/537.36
     path: /?ed=2560&Telegram🇨🇳@WangCai2
   xudp: true
-- cipher: none
-  name: 🇺🇸 US 001 | ⬇️ 174.19MB/s
-  password: 3e96ef7d-8637-42c2-ac73-75182196e755
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: mfvpn.fuchen.indevs.in
-    mode: websocket
-    mux: false
-    path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
-    tls: true
-  port: 443
-  server: 199.181.197.38
-  type: ss
-  udp: true
-- name: 🇨🇦 CA 001 | ⬇️ 145.28MB/s
-  network: ws
-  port: 8080
-  server: 198.41.222.50
-  servername: 198.41.222.50
-  type: vless
-  udp: true
-  uuid: c9b45f2f-6cbe-4a86-b4d2-a327f4055a59
-  ws-opts:
-    headers:
-      Host: 001.electrocellco-cf-001.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /eyJqdW5rIjoiRzBvTDBuZEFVIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0=?ed=2560
-  xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇨🇦 CA 002 | ⬇️ 136.40MB/s
+  name: 🇨🇦 CA 001 | ⬇️ 210.94MB/s
   network: ws
   port: 443
   server: 104.17.106.12
@@ -110,54 +99,130 @@ proxies:
         like Gecko) Chrome/66.0.3359.117 Safari/537.36
     path: /pyip=proxyip.cmliussss.net
   xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇦 CA 003 | ⬇️ 101.49MB/s
-  network: ws
+- cipher: none
+  name: 🇺🇸 US 001 | ⬇️ 205.53MB/s
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: mfvpn.fuchen.indevs.in
+    mode: websocket
+    mux: false
+    path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+    tls: true
   port: 443
+  server: 199.181.197.38
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇨🇦 CA 002 | ⬇️ 194.04MB/s
+  network: ws
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  port: 443
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  skip-cert-verify: false
+  sni: _acme-challenge.sb.cloudns.biz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /
+- name: 🇨🇦 CA 003 | ⬇️ 147.96MB/s
+  network: ws
+  port: 80
   server: 104.17.156.229
-  servername: sss.yaml7.ggff.net
+  tls: false
+  type: vless
+  udp: true
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  ws-opts:
+    headers:
+      Host: vip.yaml7.ggff.net
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇨🇦 CA 004 | ⬇️ 87.54MB/s
+  network: ws
+  port: 8443
+  server: www.speedtest.net
+  servername: aged-sun-9128.danicng13.workers.dev
   tls: true
   type: vless
   udp: true
-  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
+  uuid: b2c47b38-23bf-4469-b477-e52206bbb8c1
   ws-opts:
     headers:
-      Host: sss.yaml7.ggff.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: /?ed=2048
+      Host: aged-sun-9128.danicng13.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+    path: /v9lthtdhp1hvnyc0/ynbilnlvdxnlzi5pc2vnyxjvlmnvbq==?ed=2560
   xudp: true
-- cipher: rc4-md5
-  name: 🇨🇦 CA 004 | ⬇️ 60.65MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 137.184.174.93
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 001 | ⬇️ 42.28MB/s
-  password: 1kVr0KATIJI7mwOF
-  port: 443
-  server: admin.c1.havij.co
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 002 | ⬇️ 41.65MB/s
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: admin.c1.webramz.co
-  type: ss
+- name: 🇨🇦 CA 005 | ⬇️ 64.74MB/s
+  network: ws
+  port: 2052
+  server: www.visa.com.sg
+  tls: false
+  type: vless
   udp: true
+  uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
+  ws-opts:
+    headers:
+      Host: winbiss-0tpka6-v1.winbiss.workers.dev
+    path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 🇺🇸 US 002 | ⬇️ 38.55MB/s
+  name: 🇺🇸 US 002 | ⬇️ 60.69MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
   udp: true
-- name: 🇬🇧 GB 003 | ⬇️ 36.87MB/s
+- name: 🇨🇦 CA 006 | ⬇️ 54.73MB/s
+  network: ws
+  port: 8080
+  server: 198.41.222.50
+  servername: 198.41.222.50
+  type: vless
+  udp: true
+  uuid: c9b45f2f-6cbe-4a86-b4d2-a327f4055a59
+  ws-opts:
+    headers:
+      Host: 001.electrocellco-cf-001.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
+        Gecko) Chrome/26.0.1410.64 Safari/537.31
+    path: /eyJqdW5rIjoiRzBvTDBuZEFVIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTg1LjIxMy4yMTEuMjkiLCIzMS40NC4yLjU3IiwiNzcuMjQ2LjEwOC4xMzAiXX0=?ed=2560
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇺🇸 US 003 | ⬇️ 38.37MB/s
+  network: tcp
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 001 | ⬇️ 25.22MB/s
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: admin.c1.webramz.co
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 002 | ⬇️ 25.07MB/s
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a2.samanehha.co
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- name: 🇬🇧 GB 003 | ⬇️ 23.59MB/s
   network: tcp
   port: 8443
   server: uk1.fromblancwithlove.com
@@ -165,26 +230,7 @@ proxies:
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 001 | ⬇️ 35.15MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 002 | ⬇️ 34.99MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.217
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 003 | ⬇️ 34.93MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.191
-  type: ss
-  udp: true
-- name: 🇳🇱 NL 004 | ⬇️ 34.06MB/s
+- name: 🇳🇱 NL 001 | ⬇️ 22.79MB/s
   network: ws
   port: 443
   server: 103.97.88.133
@@ -198,75 +244,34 @@ proxies:
     headers:
       Host: sni.111000.v6.navy
     path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 🇳🇱 NL 005 | ⬇️ 34.05MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 004 | ⬇️ 22.67MB/s
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  skip-cert-verify: true
+  tls: true
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇷🇺 RU 001 | ⬇️ 32.45MB/s
-  port: 443
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: 138.124.186.202
-  servername: www.fh-aachen.de
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
-- name: 🇵🇱 PL 001 | ⬇️ 29.50MB/s
-  network: tcp
-  port: 443
-  server: 144.31.4.127
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 7e0a9f75-b424-493b-b7e6-cebd7ea8642d
-- name: 🇸🇪 SE 001 | ⬇️ 29.13MB/s
-  network: tcp
-  port: 443
-  server: 144.31.130.37
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 7e0a9f75-b424-493b-b7e6-cebd7ea8642d
-- name: 🇩🇪 DE 001 | ⬇️ 28.14MB/s
-  network: ws
-  port: 2053
-  server: 188.241.241.33
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-- alterId: 0
-  name: 🇳🇴 NO 001 | ⬇️ 28.08MB/s
-  password: wp9IsiY82uQhcmgNC1eoBM
-  port: 12420
-  server: 80.173.231.254
-  skip-cert-verify: true
-  sni: www.semanticstaplegun.click
-  tls: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 002 | ⬇️ 21.99MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
   udp: true
 - alterId: 0
-  name: 🇧🇷 BR 001 | ⬇️ 26.53MB/s
-  password: BvzUvt45hON9We5X9wM6I9ZrxHRcYd46QK
-  port: 26593
-  server: 216.238.102.254
+  name: 🏳️ AL 001 | ⬇️ 21.79MB/s
+  password: MeaDiUmPlkWbZJ2BON8tz
+  port: 28259
+  server: 78.159.131.12
   skip-cert-verify: true
-  sni: sao2.cdn-graph.click
+  sni: ads.x5.ru
   tls: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇺🇸 US 003 | ⬇️ 24.39MB/s
+  name: 🇺🇸 US 004 | ⬇️ 21.58MB/s
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -278,51 +283,332 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇮 FI 001 | ⬇️ 21.36MB/s
+  password: yKVMoB3AwiTEznpnoq2FYR
+  port: 28687
+  server: 193.47.60.186
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 003 | ⬇️ 21.26MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇷🇺 RU 001 | ⬇️ 20.61MB/s
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: 138.124.186.202
+  servername: www.fh-aachen.de
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
 - alterId: 0
   cipher: auto
-  name: 🇬🇧 GB 004 | ⬇️ 17.37MB/s
+  name: 🇬🇧 GB 005 | ⬇️ 19.97MB/s
   port: 22324
   server: 66.163.117.58
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 🇸🇬 SG 001 | ⬇️ 14.50MB/s
+- name: 🇸🇪 SE 001 | ⬇️ 19.85MB/s
   network: tcp
   port: 443
-  server: 37.sahanwickramasinghevip.shop
+  server: 144.31.130.37
   skip-cert-verify: true
   tls: true
   type: vless
-  uuid: c4108e57-c74e-4480-b4e2-db56a517877b
-- alterId: 0
-  name: 🇩🇪 DE 002 | ⬇️ 14.10MB/s
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  port: 10369
-  server: 82.26.155.3
+  uuid: 7e0a9f75-b424-493b-b7e6-cebd7ea8642d
+- name: 🇵🇱 PL 001 | ⬇️ 19.80MB/s
+  network: tcp
+  port: 443
+  server: 144.31.4.127
   skip-cert-verify: true
-  sni: fra34.chasem2026sud.com
+  tls: true
+  type: vless
+  uuid: 7e0a9f75-b424-493b-b7e6-cebd7ea8642d
+- cipher: chacha20-ietf-poly1305
+  name: 🇱🇻 LV 001 | ⬇️ 19.56MB/s
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 46.183.217.204
+  type: ss
+- alterId: 0
+  name: 🇳🇴 NO 001 | ⬇️ 18.53MB/s
+  password: wp9IsiY82uQhcmgNC1eoBM
+  port: 12420
+  server: 80.173.231.254
+  skip-cert-verify: true
+  sni: www.semanticstaplegun.click
   tls: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇫🇷 FR 001 | ⬇️ 13.94MB/s
+- name: 🇭🇰 HK 001 | ⬇️ 17.84MB/s
   network: ws
-  port: 443
-  server: 173.212.207.89
+  password: trojan
+  port: 8025
+  server: 54.46.72.234
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: 🇰🇷 KR 001 | ⬇️ 17.63MB/s
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: test
+- name: 🇩🇪 DE 001 | ⬇️ 15.54MB/s
+  network: ws
+  port: 8443
+  server: 57.129.63.152
   servername: sni.111000.indevs.in
   tls: true
   type: vless
-  udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: /?ed=2560
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- cipher: aes-128-gcm
+  name: 🇬🇧 GB 006 | ⬇️ 14.77MB/s
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.182
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 001 | ⬇️ 12.51MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.63
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 002 | ⬇️ 12.07MB/s
+  network: ws
+  port: 80
+  server: 359c33d5-t8v340-tpftcp-13x18.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 002 | ⬇️ 11.93MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.210
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇯🇵 JP 001 | ⬇️ 11.28MB/s
+  network: tcp
+  port: 39975
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+    short-id: ''
+  server: 116.80.58.239
+  servername: cloudcircus.jp
+  tls: true
+  type: vless
+  udp: true
+  uuid: 15b84012-d261-4b4c-807a-061bb4a901fd
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 003 | ⬇️ 11.26MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.253
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 004 | ⬇️ 11.23MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.11
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇹🇷 TR 001 | ⬇️ 11.15MB/s
+  port: 39651
+  server: 45.89.52.207
+  type: vmess
+  udp: true
+  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 005 | ⬇️ 10.99MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.227
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 006 | ⬇️ 10.68MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.46
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 007 | ⬇️ 10.64MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.4
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 008 | ⬇️ 10.60MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.187
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 009 | ⬇️ 10.54MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.32
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 010 | ⬇️ 10.42MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.106
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0460451
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.47
+  type: ss
+- alterId: '2'
+  cipher: auto
+  name: 🇭🇰 HK 007 | ⚡ 1427.00ms
+  network: ws
+  port: 80
+  server: 95930bfa-t70f40-t83bw1-1f596.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 95930bfa-t70f40-t83bw1-1f596.hkt.gotochinatown.net
+    path: /
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_75770d8d
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.55
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b608cfb6
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.223
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_60a24915
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.108
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_XSgjyYDK
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.43
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.229
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_AwiYPLGu
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.202
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 001 | ⚡ 1218.00ms
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.120
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.29
+  type: ss
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_342ec4b0
+  network: ws
+  port: 80
+  server: 3aa6ac28-t8ysg0-tvb36r-1qwom.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.31
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.238
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.121
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.17
+  type: ss
+  udp: true
 - alpn:
   - ''
   alterId: '2'
   cipher: auto
-  name: 🇭🇰 HK 001 | ⬇️ 13.93MB/s
+  name: 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_e3667ebe
   network: ws
   port: 80
   server: d9ba656d-t66sg0-t7mzec-yjq0.hkt.gotochinatown.net
@@ -336,85 +622,28 @@ proxies:
       Host: d9ba656d-t66sg0-t7mzec-yjq0.hkt.gotochinatown.net
     path: /
   xudp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.46
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.181
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.215
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪 DE 003 | ⬇️ 13.09MB/s
-  network: ws
-  port: 2053
-  server: 162.19.243.8
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-  xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇿🇦 ZA 001 | ⬇️ 12.22MB/s
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  port: 16233
-  server: 102.133.165.160
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳 TW 001 | ⬇️ 11.92MB/s
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg007117fb8.cybervena.com
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 001 | ⬇️ 10.85MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.59
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 004 | ⬇️ 10.85MB/s
-  network: tcp
-  port: '180'
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 002 | ⬇️ 10.68MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.186
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 003 | ⬇️ 10.54MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.62
-  type: ss
-  udp: true
-- name: 🇫🇷 FR 002 | ⬇️ 10.46MB/s
-  network: ws
-  port: 2053
-  server: 188.130.207.158
-  servername: sni.111000.v6.navy
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /?ed=2560
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪 DE 004 | ⬇️ 10.31MB/s
+  name: ⚪🏳️_github.com/Ruk1ng001_5a3bda55
   network: ws
   port: 443
   server: 94.159.98.113
@@ -431,460 +660,49 @@ proxies:
         Safari/537.36
     path: /?ed=2560&Telegram🇨🇳@WangCai2
   xudp: true
-- name: 🇰🇷 KR 001 | ⬇️ 10.22MB/s
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🇭🇰 HK 002 | ⬇️ 10.16MB/s
-  network: ws
-  port: 80
-  server: a741d435-t9w4g0-tbao5v-gacy.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - cipher: aes-256-cfb
-  name: 🇻🇳 VN 004 | ⬇️ 10.07MB/s
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_du3jvkY7
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.42
+  server: 103.186.154.176
   type: ss
 - cipher: aes-256-cfb
-  name: 🇻🇳 VN 005 | ⬇️ 9.94MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.224
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 006 | ⬇️ 9.92MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.50
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇯🇵 JP 001 | ⬇️ 9.81MB/s
-  network: tcp
-  port: 39975
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-    short-id: ''
-  server: 116.80.58.239
-  servername: cloudcircus.jp
-  tls: true
-  type: vless
-  udp: true
-  uuid: 15b84012-d261-4b4c-807a-061bb4a901fd
-  xudp: true
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 007 | ⬇️ 9.80MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.207
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 008 | ⬇️ 9.66MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.187
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_d42806cd
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.4
-  type: ss
-- alterId: '2'
-  cipher: auto
-  name: 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_20023b43
-  network: ws
-  port: 80
-  server: 636073a9-t70f40-tighxj-12hj8.hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 636073a9-t70f40-tighxj-12hj8.hkt.gotochinatown.net
-    path: /
-  xudp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.15
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1417ed12
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.117
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_XSgjyYDK
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.43
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aff89e31
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.28
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_UEp7vuj2
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.63
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.229
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.47
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.225
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.219
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_a0dc70ff
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.225
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.242
-  type: ss
-- name: 🇦🇹 AT 001 | ⚡ 236.00ms
-  network: ws
-  password: trojan
-  port: 8888
-  server: 152.53.45.251
-  skip-cert-verify: false
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.233
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.29
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_0246eabb
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg007147vhp.cybervena.com
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.209
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.223
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.128
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.12
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.246
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_AwiYPLGu
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.202
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c7a6bfd9
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.210
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_03383596
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.54
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_7b94fd1e
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_405f71d3
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.57
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b841f10
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.30
+  server: 103.186.154.9
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_925eef3c
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.246
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b2a373d1
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.207
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9fdf5e
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.52
+  server: 103.186.154.174
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_65a41ab1
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_koilCd9S
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c33ca6cc
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.67
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.35
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_924bd38e
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.239
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_48ff31ba
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.37
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.69
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ntCloBAx
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.227
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8638beae
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.106
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.224
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8ad5a5ea
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.204
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.245
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b907cd9f
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.34
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_V6Y4eVc8
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.47
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_53bddfd7
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.111
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_NdzQVPr4
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.119
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.178
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_114f6acd
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.153
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.231
-  type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🟢🇭🇰[📺🎭📦🔍]_github.com/Ruk1ng001_19eb2cc4
-  network: ws
-  port: 80
-  server: f32429b1-t9sf40-ta00rd-1o8ak.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_Jdi6N2Ze
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.37
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_64zwoP6E
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.148
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.234
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.238
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US 001 | ⚡ 39.00ms
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.39
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.185
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.137
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5q3vGYiv
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.43
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ac267e4a
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.135
+  server: 103.186.154.51
   type: ss
 - cipher: aes-256-cfb
   name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
@@ -894,138 +712,54 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8a6eb984
+  name: 🇻🇳 越南 | ss | 85
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.235
+  server: 103.186.155.149
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_x2NLUPmZ
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_tP4AbImx
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.227
+  server: 103.186.155.103
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_kByIFcuS
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.116
+  server: 103.186.155.64
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_94c1b9d4
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.111
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.81
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 🇺🇸US美国
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 15.204.247.49
-  skip-cert-verify: true
-  tls: true
+  server: 103.186.155.226
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
+  name: 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_nHAms6fK
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.194
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.84
+  server: 103.186.155.107
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.17
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_1b68bd62
-  network: ws
-  port: 80
-  server: e6f07391-t8v340-tcfo40-17xo8.hkt.gotochinatown.net
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_09c09fa7
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.83
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_c47042cd
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.11
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.121
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.215
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.61
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.181
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_384d3907
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
   server: 103.186.154.240
   type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_c8dd74ad
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.114
-  type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8e63b374
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.57
-  type: ss
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_DFsSq1Pu
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.207
+  server: 103.186.155.144
   type: ss
 - client-fingerprint: chrome
   encryption: none
@@ -1046,10 +780,120 @@ proxies:
     path: /?ed=2560&Telegram🇨🇳@WangCai2
   xudp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.76
+  server: 103.186.155.84
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_PYxMrVLl
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.117
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_2gytU1qm
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.232
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_5b6da69e
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.201
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.12
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_E0UhipCE
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.50
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9vRLW2Oe
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.147
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3JmIG1UM
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.38
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8ad5a5ea
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.204
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_I3akHAo2
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.42
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cce56c1d
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.59
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_cItLfQK4
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.224
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b0aa46cc
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.248
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.57
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jRCKfCV8
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.139
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.15
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.39
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a9a87da9
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.78
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.223
   type: ss
 - cipher: aes-256-cfb
   name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
@@ -1058,67 +902,162 @@ proxies:
   server: 103.186.155.127
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_695908de
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_bM58gJ7e
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.38
+  server: 103.186.155.153
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be536570
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.31
+  server: 103.186.154.226
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ulZwH075
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.9
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d5be3d9b
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.226
+  server: 103.186.154.19
   type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 US 009 | ⚡ 113.00ms
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_2b639072
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.125
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_Jdi6N2Ze
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.37
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_64zwoP6E
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.148
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[📺✨📦]_github.com/Ruk1ng001_86f7f5c5
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.34
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_c8dd74ad
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.114
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d14e8fa5
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.101
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.185
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
+  encryption: none
+  name: 🇩🇪 DE 001 | ⚡ 253.00ms
   network: ws
-  port: 12126
-  server: 116.44.53.251
-  servername: sni.111000.dynv6.net
+  port: 2053
+  server: 162.19.243.8
+  servername: sni.111000.indevs.in
   tls: true
   type: vless
   udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: sni.111000.dynv6.net
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /?ed=2560&Telegram🇨🇳+@WangCai2
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
   xudp: true
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.221
+  server: 103.186.155.128
   type: ss
-- alterId: 0
+- alterId: '2'
   cipher: auto
-  name: 🇹🇷 TR 001 | ⚡ 221.00ms
-  port: 39651
-  server: 45.89.52.207
+  name: 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_806c2d2f
+  network: ws
+  port: 80
+  server: 5804d996-t70f40-tonrmx-8n27.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
   type: vmess
   udp: true
-  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
-- cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_73d567ee
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.253
-  type: ss
+  uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  ws-opts:
+    headers:
+      Host: 5804d996-t70f40-tonrmx-8n27.hkt.gotochinatown.net
+    path: /
+  xudp: true
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_8bf96da4
+  network: ws
+  port: 80
+  server: f7bd4688-t9zts0-tdh9w7-ahsb.hkt.gotochinatown.net
+  tls: false
+  type: vmess
   udp: true
+  uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.35
+  server: 103.186.154.52
   type: ss
+- alterId: '2'
+  cipher: auto
+  name: 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_2f32d765
+  network: ws
+  port: 80
+  server: 1705844e-t70f40-tcinla-hrtf.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 1705844e-t70f40-tcinla-hrtf.hkt.gotochinatown.net
+    path: /
+  xudp: true
 - cipher: aes-256-gcm
   name: 🇦🇺 澳大利亚 | ss | 03
   password: SL4vzcvhBHhTWivD
@@ -1126,127 +1065,36 @@ proxies:
   server: 154.26.155.172
   type: ss
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_32379c9b
+  name: 🇻🇳 越南 | ss | 100
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.9
+  server: 103.186.155.126
   type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_876798d7
+  name: 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_3a8c5b36
   network: ws
   port: 80
-  server: dc2d90a8-t9sf40-tar8u7-1fy29.hkt.gotochinatown.net
+  server: 87389bd8-t9xz40-tdfzix-fm2v.hkt.gotochinatown.net
   tls: false
   type: vmess
-  uuid: 500dd8cc-a21c-11ec-bd7c-f23c913c8d2b
+  udp: true
+  uuid: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: aes-256-cfb
-  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_rcsyJWK9
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.46
-  type: ss
-- name: 🟢🇯🇵[🎬🤖📺]_github.com/Ruk1ng001_1f81cdc0
-  password: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
-  port: 37292
-  server: 154.16.248.199
-  skip-cert-verify: true
-  sni: akjp.fe-9.top
-  tfo: true
-  type: hysteria2
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇺🇸 US 008 | ⚡ 181.00ms
-  network: tcp
-  port: 39567
-  server: 43.153.79.68
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 49f0b27d-a882-4a79-bad6-db9c87fb12a7
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 001 | ⚡ 140.00ms
-  port: 28384
-  server: 103.143.238.196
-  servername: www.cloudflare.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 003 | ⚡ 161.00ms
-  network: ws
-  port: 21879
-  server: 103.143.238.196
-  servername: www.cloudflare.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
-  ws-opts:
-    headers:
-      Host: www.cloudflare.com
-    path: /vmesswss
-- name: 🇳🇱 NL 006 | ⚡ 163.00ms
-  password: strong-secret-pass-777
-  port: 4443
-  server: 94.131.105.125
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼 台湾 | vmess | 02
-  port: 35034
-  server: 165.154.195.38
-  type: vmess
-  udp: true
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 002 | ⚡ 142.00ms
-  network: ws
-  port: 36548
-  server: 103.143.238.196
-  tls: false
-  type: vmess
-  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
-  ws-opts:
-    headers:
-      Host: www.cloudflare.com
-    path: /vmessws
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_f342941c
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 🇲🇽 MX 001 | ⚡ 123.00ms
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 147.78.1.230
+  server: 103.186.154.195
   type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001_5da7b0fe
+  name: 🇭🇰 HK 008 | ⚡ 1612.00ms
   network: ws
   port: 80
   server: f6d8c7bd-t9sf40-ts40sw-14g76.hkt.gotochinatown.net
@@ -1259,12 +1107,145 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - cipher: aes-256-cfb
-  name: hk|9296|puddincat07@Telegram
+  name: 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.35
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_f211b66c
+  network: ws
+  port: 80
+  server: ad206339-t70f40-teivih-1rz31.hkt.gotochinatown.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: ad206339-t70f40-teivih-1rz31.hkt.gotochinatown.net
+    path: /
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c837cc52
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.27
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.221
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7b5f3050
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.43
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳 TW 002 | ⚡ 226.00ms
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
+  udp: true
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- name: 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_6b8051fa
+  password: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
+  port: 43629
+  server: 45.196.219.119
+  skip-cert-verify: true
+  sni: acckhk.fe-9.top
+  tfo: true
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 001 | ⚡ 43.00ms
+  network: ws
+  port: 36548
+  server: 103.143.238.196
+  tls: false
+  type: vmess
+  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+  ws-opts:
+    headers:
+      Host: www.cloudflare.com
+    path: /vmessws
+- alterId: '0'
+  cipher: auto
+  name: 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_bbfd0dd0
+  network: ws
+  port: 80
+  server: abm96f00fby3.jkhkgj.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0f868002-5230-45fb-be23-0fd0ed9bbdc4
+  ws-opts:
+    headers:
+      Host: abm96f00fby3.jkhkgj.xyz
+    path: /market/jp1
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 002 | ⚡ 51.00ms
+  port: 28384
+  server: 103.143.238.196
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 003 | ⚡ 51.00ms
+  network: ws
+  port: 21879
+  server: 103.143.238.196
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
+  ws-opts:
+    headers:
+      Host: www.cloudflare.com
+    path: /vmesswss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 🇭🇰 HK 010 | ⚡ 4642.00ms
   password: qwerREWQ@@
   port: 41632
   server: 112.213.102.188
+  tfo: true
   type: ss
-- name: 🇺🇸 US 006 | ⚡ 152.00ms
+  udp: true
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BaZNXYoG
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.62
+  type: ss
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.32
+  type: ss
+- name: 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  password: mrwdfNTD8M79LCukCieldrqZWqs=
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: true
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 🇺🇸 US 002 | ⚡ 48.00ms
   password: gs4BXwT6SW
   port: 10988
   server: 154.26.192.123
@@ -1272,356 +1253,315 @@ proxies:
   tls: false
   type: http
   username: fQ67Dpe5dU
-- alterId: 0
-  name: 🇺🇸US美国3 848.8KB/s
-  password: UNWA6USASAb6=uAAZeZMFd+2uKB4.d5KOm
-  port: 26650
-  server: 166.88.197.60
+- name: 12|NL_speednode_0009
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
   skip-cert-verify: true
-  sni: sea9.firewallcontract.click
-  tls: true
   type: trojan
   udp: true
-- alterId: 0
-  name: 🇳🇴 NO 001 | ⚡ 211.00ms
-  password: hCjWaBe5vTkewfiljOL=9FS9DYg0c09c.t
-  port: 18390
-  server: 81.29.149.212
-  skip-cert-verify: true
-  sni: osl8.solidly.click
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇫🇷 FR 001 | ⚡ 153.00ms
-  network: ws
-  port: 8443
-  server: 188.130.207.92
-  servername: sni.111000.v6.navy
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.v6.navy
-    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6176d0bd
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.58
+  type: ss
 proxy-groups:
 - name: 自动选择
   type: url-test
   proxies:
-  - 🏳️ NZ 001 | ⬇️ 245.84MB/s
-  - 🇨🇳 CN 001 | ⬇️ 215.63MB/s
-  - 🇺🇸 US 001 | ⬇️ 174.19MB/s
-  - 🇨🇦 CA 001 | ⬇️ 145.28MB/s
-  - 🇨🇦 CA 002 | ⬇️ 136.40MB/s
-  - 🇨🇦 CA 003 | ⬇️ 101.49MB/s
-  - 🇨🇦 CA 004 | ⬇️ 60.65MB/s
-  - 🇬🇧 GB 001 | ⬇️ 42.28MB/s
-  - 🇬🇧 GB 002 | ⬇️ 41.65MB/s
-  - 🇺🇸 US 002 | ⬇️ 38.55MB/s
-  - 🇬🇧 GB 003 | ⬇️ 36.87MB/s
-  - 🇳🇱 NL 001 | ⬇️ 35.15MB/s
-  - 🇳🇱 NL 002 | ⬇️ 34.99MB/s
-  - 🇳🇱 NL 003 | ⬇️ 34.93MB/s
-  - 🇳🇱 NL 004 | ⬇️ 34.06MB/s
-  - 🇳🇱 NL 005 | ⬇️ 34.05MB/s
-  - 🇷🇺 RU 001 | ⬇️ 32.45MB/s
-  - 🇵🇱 PL 001 | ⬇️ 29.50MB/s
-  - 🇸🇪 SE 001 | ⬇️ 29.13MB/s
-  - 🇩🇪 DE 001 | ⬇️ 28.14MB/s
-  - 🇳🇴 NO 001 | ⬇️ 28.08MB/s
-  - 🇧🇷 BR 001 | ⬇️ 26.53MB/s
-  - 🇺🇸 US 003 | ⬇️ 24.39MB/s
-  - 🇬🇧 GB 004 | ⬇️ 17.37MB/s
-  - 🇸🇬 SG 001 | ⬇️ 14.50MB/s
-  - 🇩🇪 DE 002 | ⬇️ 14.10MB/s
-  - 🇫🇷 FR 001 | ⬇️ 13.94MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.93MB/s
-  - 🇩🇪 DE 003 | ⬇️ 13.09MB/s
-  - 🇿🇦 ZA 001 | ⬇️ 12.22MB/s
-  - 🇨🇳 TW 001 | ⬇️ 11.92MB/s
-  - 🇻🇳 VN 001 | ⬇️ 10.85MB/s
-  - 🇺🇸 US 004 | ⬇️ 10.85MB/s
-  - 🇻🇳 VN 002 | ⬇️ 10.68MB/s
-  - 🇻🇳 VN 003 | ⬇️ 10.54MB/s
-  - 🇫🇷 FR 002 | ⬇️ 10.46MB/s
-  - 🇩🇪 DE 004 | ⬇️ 10.31MB/s
-  - 🇰🇷 KR 001 | ⬇️ 10.22MB/s
-  - 🇭🇰 HK 002 | ⬇️ 10.16MB/s
-  - 🇻🇳 VN 004 | ⬇️ 10.07MB/s
-  - 🇻🇳 VN 005 | ⬇️ 9.94MB/s
-  - 🇻🇳 VN 006 | ⬇️ 9.92MB/s
-  - 🇯🇵 JP 001 | ⬇️ 9.81MB/s
-  - 🇻🇳 VN 007 | ⬇️ 9.80MB/s
-  - 🇻🇳 VN 008 | ⬇️ 9.66MB/s
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_d42806cd
-  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_20023b43
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1417ed12
+  - 🇪🇸 ES 001 | ⬇️ 225.62MB/s
+  - 🏳️ NZ 001 | ⬇️ 223.88MB/s
+  - 🇨🇳 CN 001 | ⬇️ 213.45MB/s
+  - 🇨🇦 CA 001 | ⬇️ 210.94MB/s
+  - 🇺🇸 US 001 | ⬇️ 205.53MB/s
+  - 🇨🇦 CA 002 | ⬇️ 194.04MB/s
+  - 🇨🇦 CA 003 | ⬇️ 147.96MB/s
+  - 🇨🇦 CA 004 | ⬇️ 87.54MB/s
+  - 🇨🇦 CA 005 | ⬇️ 64.74MB/s
+  - 🇺🇸 US 002 | ⬇️ 60.69MB/s
+  - 🇨🇦 CA 006 | ⬇️ 54.73MB/s
+  - 🇺🇸 US 003 | ⬇️ 38.37MB/s
+  - 🇬🇧 GB 001 | ⬇️ 25.22MB/s
+  - 🇬🇧 GB 002 | ⬇️ 25.07MB/s
+  - 🇬🇧 GB 003 | ⬇️ 23.59MB/s
+  - 🇳🇱 NL 001 | ⬇️ 22.79MB/s
+  - 🇬🇧 GB 004 | ⬇️ 22.67MB/s
+  - 🇳🇱 NL 002 | ⬇️ 21.99MB/s
+  - 🏳️ AL 001 | ⬇️ 21.79MB/s
+  - 🇺🇸 US 004 | ⬇️ 21.58MB/s
+  - 🇫🇮 FI 001 | ⬇️ 21.36MB/s
+  - 🇳🇱 NL 003 | ⬇️ 21.26MB/s
+  - 🇷🇺 RU 001 | ⬇️ 20.61MB/s
+  - 🇬🇧 GB 005 | ⬇️ 19.97MB/s
+  - 🇸🇪 SE 001 | ⬇️ 19.85MB/s
+  - 🇵🇱 PL 001 | ⬇️ 19.80MB/s
+  - 🇱🇻 LV 001 | ⬇️ 19.56MB/s
+  - 🇳🇴 NO 001 | ⬇️ 18.53MB/s
+  - 🇭🇰 HK 001 | ⬇️ 17.84MB/s
+  - 🇰🇷 KR 001 | ⬇️ 17.63MB/s
+  - 🇩🇪 DE 001 | ⬇️ 15.54MB/s
+  - 🇬🇧 GB 006 | ⬇️ 14.77MB/s
+  - 🇻🇳 VN 001 | ⬇️ 12.51MB/s
+  - 🇭🇰 HK 002 | ⬇️ 12.07MB/s
+  - 🇻🇳 VN 002 | ⬇️ 11.93MB/s
+  - 🇯🇵 JP 001 | ⬇️ 11.28MB/s
+  - 🇻🇳 VN 003 | ⬇️ 11.26MB/s
+  - 🇻🇳 VN 004 | ⬇️ 11.23MB/s
+  - 🇹🇷 TR 001 | ⬇️ 11.15MB/s
+  - 🇻🇳 VN 005 | ⬇️ 10.99MB/s
+  - 🇻🇳 VN 006 | ⬇️ 10.68MB/s
+  - 🇻🇳 VN 007 | ⬇️ 10.64MB/s
+  - 🇻🇳 VN 008 | ⬇️ 10.60MB/s
+  - 🇻🇳 VN 009 | ⬇️ 10.54MB/s
+  - 🇻🇳 VN 010 | ⬇️ 10.42MB/s
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0460451
+  - 🇭🇰 HK 007 | ⚡ 1427.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_75770d8d
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b608cfb6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_60a24915
   - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_XSgjyYDK
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aff89e31
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_UEp7vuj2
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_a0dc70ff
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  - 🇦🇹 AT 001 | ⚡ 236.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
-  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_0246eabb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
   - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_AwiYPLGu
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c7a6bfd9
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_03383596
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_7b94fd1e
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_65a41ab1
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c33ca6cc
-  - 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_924bd38e
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_48ff31ba
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ntCloBAx
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8638beae
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  - 🇻🇳 VN 001 | ⚡ 1218.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_342ec4b0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_e3667ebe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
+  - ⚪🏳️_github.com/Ruk1ng001_5a3bda55
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_du3jvkY7
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_405f71d3
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b841f10
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_925eef3c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b2a373d1
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9fdf5e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_koilCd9S
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
+  - 🇻🇳 越南 | ss | 85
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_tP4AbImx
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_kByIFcuS
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_94c1b9d4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_nHAms6fK
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_384d3907
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8e63b374
+  - ⚪🏳️_github.com/Ruk1ng001_8c64292c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_PYxMrVLl
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_2gytU1qm
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_5b6da69e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_E0UhipCE
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9vRLW2Oe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3JmIG1UM
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8ad5a5ea
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b907cd9f
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_V6Y4eVc8
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_53bddfd7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_NdzQVPr4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_114f6acd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
-  - 🟢🇭🇰[📺🎭📦🔍]_github.com/Ruk1ng001_19eb2cc4
+  - 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_I3akHAo2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cce56c1d
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_cItLfQK4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b0aa46cc
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jRCKfCV8
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a9a87da9
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_bM58gJ7e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be536570
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ulZwH075
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d5be3d9b
+  - 🇺🇸 US 009 | ⚡ 113.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_2b639072
   - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_Jdi6N2Ze
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_64zwoP6E
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
-  - 🇺🇸 US 001 | ⚡ 39.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5q3vGYiv
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ac267e4a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8a6eb984
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_x2NLUPmZ
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
-  - 🇺🇸US美国
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
-  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_1b68bd62
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_09c09fa7
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_c47042cd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  - 🟢🇻🇳[📺✨📦]_github.com/Ruk1ng001_86f7f5c5
   - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_c8dd74ad
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_DFsSq1Pu
-  - ⚪🏳️_github.com/Ruk1ng001_8c64292c
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_695908de
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
-  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
-  - 🇹🇷 TR 001 | ⚡ 221.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_73d567ee
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d14e8fa5
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  - 🇩🇪 DE 001 | ⚡ 253.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_806c2d2f
+  - 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_8bf96da4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
+  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_2f32d765
   - 🇦🇺 澳大利亚 | ss | 03
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_32379c9b
-  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_876798d7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
-  - 🟢🇯🇵[🎬🤖📺]_github.com/Ruk1ng001_1f81cdc0
-  - 🇺🇸 US 008 | ⚡ 181.00ms
-  - 🇭🇰 HK 001 | ⚡ 140.00ms
-  - 🇭🇰 HK 003 | ⚡ 161.00ms
-  - 🇳🇱 NL 006 | ⚡ 163.00ms
-  - 🇹🇼 台湾 | vmess | 02
-  - 🇭🇰 HK 002 | ⚡ 142.00ms
-  - 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_f342941c
-  - 🇲🇽 MX 001 | ⚡ 123.00ms
-  - 🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001_5da7b0fe
-  - hk|9296|puddincat07@Telegram
-  - 🇺🇸 US 006 | ⚡ 152.00ms
-  - 🇺🇸US美国3 848.8KB/s
-  - 🇳🇴 NO 001 | ⚡ 211.00ms
-  - 🇫🇷 FR 001 | ⚡ 153.00ms
+  - 🇻🇳 越南 | ss | 100
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_3a8c5b36
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_rcsyJWK9
+  - 🇭🇰 HK 008 | ⚡ 1612.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_f211b66c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c837cc52
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7b5f3050
+  - 🇨🇳 TW 002 | ⚡ 226.00ms
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_6b8051fa
+  - 🇭🇰 HK 001 | ⚡ 43.00ms
+  - 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_bbfd0dd0
+  - 🇭🇰 HK 002 | ⚡ 51.00ms
+  - 🇭🇰 HK 003 | ⚡ 51.00ms
+  - 🇭🇰 HK 010 | ⚡ 4642.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BaZNXYoG
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
+  - 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  - 🇺🇸 US 002 | ⚡ 48.00ms
+  - 12|NL_speednode_0009
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6176d0bd
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
 - name: 低延迟
   type: url-test
   proxies:
-  - 🏳️ NZ 001 | ⬇️ 245.84MB/s
-  - 🇨🇳 CN 001 | ⬇️ 215.63MB/s
-  - 🇺🇸 US 001 | ⬇️ 174.19MB/s
-  - 🇨🇦 CA 001 | ⬇️ 145.28MB/s
-  - 🇨🇦 CA 002 | ⬇️ 136.40MB/s
-  - 🇨🇦 CA 003 | ⬇️ 101.49MB/s
-  - 🇨🇦 CA 004 | ⬇️ 60.65MB/s
-  - 🇬🇧 GB 001 | ⬇️ 42.28MB/s
-  - 🇬🇧 GB 002 | ⬇️ 41.65MB/s
-  - 🇺🇸 US 002 | ⬇️ 38.55MB/s
-  - 🇬🇧 GB 003 | ⬇️ 36.87MB/s
-  - 🇳🇱 NL 001 | ⬇️ 35.15MB/s
-  - 🇳🇱 NL 002 | ⬇️ 34.99MB/s
-  - 🇳🇱 NL 003 | ⬇️ 34.93MB/s
-  - 🇳🇱 NL 004 | ⬇️ 34.06MB/s
-  - 🇳🇱 NL 005 | ⬇️ 34.05MB/s
-  - 🇷🇺 RU 001 | ⬇️ 32.45MB/s
-  - 🇵🇱 PL 001 | ⬇️ 29.50MB/s
-  - 🇸🇪 SE 001 | ⬇️ 29.13MB/s
-  - 🇩🇪 DE 001 | ⬇️ 28.14MB/s
-  - 🇳🇴 NO 001 | ⬇️ 28.08MB/s
-  - 🇧🇷 BR 001 | ⬇️ 26.53MB/s
-  - 🇺🇸 US 003 | ⬇️ 24.39MB/s
-  - 🇬🇧 GB 004 | ⬇️ 17.37MB/s
-  - 🇸🇬 SG 001 | ⬇️ 14.50MB/s
-  - 🇩🇪 DE 002 | ⬇️ 14.10MB/s
-  - 🇫🇷 FR 001 | ⬇️ 13.94MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.93MB/s
-  - 🇩🇪 DE 003 | ⬇️ 13.09MB/s
-  - 🇿🇦 ZA 001 | ⬇️ 12.22MB/s
-  - 🇨🇳 TW 001 | ⬇️ 11.92MB/s
-  - 🇻🇳 VN 001 | ⬇️ 10.85MB/s
-  - 🇺🇸 US 004 | ⬇️ 10.85MB/s
-  - 🇻🇳 VN 002 | ⬇️ 10.68MB/s
-  - 🇻🇳 VN 003 | ⬇️ 10.54MB/s
-  - 🇫🇷 FR 002 | ⬇️ 10.46MB/s
-  - 🇩🇪 DE 004 | ⬇️ 10.31MB/s
-  - 🇰🇷 KR 001 | ⬇️ 10.22MB/s
-  - 🇭🇰 HK 002 | ⬇️ 10.16MB/s
-  - 🇻🇳 VN 004 | ⬇️ 10.07MB/s
-  - 🇻🇳 VN 005 | ⬇️ 9.94MB/s
-  - 🇻🇳 VN 006 | ⬇️ 9.92MB/s
-  - 🇯🇵 JP 001 | ⬇️ 9.81MB/s
-  - 🇻🇳 VN 007 | ⬇️ 9.80MB/s
-  - 🇻🇳 VN 008 | ⬇️ 9.66MB/s
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_d42806cd
-  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_20023b43
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1417ed12
+  - 🇪🇸 ES 001 | ⬇️ 225.62MB/s
+  - 🏳️ NZ 001 | ⬇️ 223.88MB/s
+  - 🇨🇳 CN 001 | ⬇️ 213.45MB/s
+  - 🇨🇦 CA 001 | ⬇️ 210.94MB/s
+  - 🇺🇸 US 001 | ⬇️ 205.53MB/s
+  - 🇨🇦 CA 002 | ⬇️ 194.04MB/s
+  - 🇨🇦 CA 003 | ⬇️ 147.96MB/s
+  - 🇨🇦 CA 004 | ⬇️ 87.54MB/s
+  - 🇨🇦 CA 005 | ⬇️ 64.74MB/s
+  - 🇺🇸 US 002 | ⬇️ 60.69MB/s
+  - 🇨🇦 CA 006 | ⬇️ 54.73MB/s
+  - 🇺🇸 US 003 | ⬇️ 38.37MB/s
+  - 🇬🇧 GB 001 | ⬇️ 25.22MB/s
+  - 🇬🇧 GB 002 | ⬇️ 25.07MB/s
+  - 🇬🇧 GB 003 | ⬇️ 23.59MB/s
+  - 🇳🇱 NL 001 | ⬇️ 22.79MB/s
+  - 🇬🇧 GB 004 | ⬇️ 22.67MB/s
+  - 🇳🇱 NL 002 | ⬇️ 21.99MB/s
+  - 🏳️ AL 001 | ⬇️ 21.79MB/s
+  - 🇺🇸 US 004 | ⬇️ 21.58MB/s
+  - 🇫🇮 FI 001 | ⬇️ 21.36MB/s
+  - 🇳🇱 NL 003 | ⬇️ 21.26MB/s
+  - 🇷🇺 RU 001 | ⬇️ 20.61MB/s
+  - 🇬🇧 GB 005 | ⬇️ 19.97MB/s
+  - 🇸🇪 SE 001 | ⬇️ 19.85MB/s
+  - 🇵🇱 PL 001 | ⬇️ 19.80MB/s
+  - 🇱🇻 LV 001 | ⬇️ 19.56MB/s
+  - 🇳🇴 NO 001 | ⬇️ 18.53MB/s
+  - 🇭🇰 HK 001 | ⬇️ 17.84MB/s
+  - 🇰🇷 KR 001 | ⬇️ 17.63MB/s
+  - 🇩🇪 DE 001 | ⬇️ 15.54MB/s
+  - 🇬🇧 GB 006 | ⬇️ 14.77MB/s
+  - 🇻🇳 VN 001 | ⬇️ 12.51MB/s
+  - 🇭🇰 HK 002 | ⬇️ 12.07MB/s
+  - 🇻🇳 VN 002 | ⬇️ 11.93MB/s
+  - 🇯🇵 JP 001 | ⬇️ 11.28MB/s
+  - 🇻🇳 VN 003 | ⬇️ 11.26MB/s
+  - 🇻🇳 VN 004 | ⬇️ 11.23MB/s
+  - 🇹🇷 TR 001 | ⬇️ 11.15MB/s
+  - 🇻🇳 VN 005 | ⬇️ 10.99MB/s
+  - 🇻🇳 VN 006 | ⬇️ 10.68MB/s
+  - 🇻🇳 VN 007 | ⬇️ 10.64MB/s
+  - 🇻🇳 VN 008 | ⬇️ 10.60MB/s
+  - 🇻🇳 VN 009 | ⬇️ 10.54MB/s
+  - 🇻🇳 VN 010 | ⬇️ 10.42MB/s
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0460451
+  - 🇭🇰 HK 007 | ⚡ 1427.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_75770d8d
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b608cfb6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_60a24915
   - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_XSgjyYDK
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aff89e31
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_UEp7vuj2
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_a0dc70ff
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  - 🇦🇹 AT 001 | ⚡ 236.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
-  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_0246eabb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
   - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_AwiYPLGu
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c7a6bfd9
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_03383596
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_7b94fd1e
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_65a41ab1
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c33ca6cc
-  - 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_924bd38e
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_48ff31ba
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ntCloBAx
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8638beae
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  - 🇻🇳 VN 001 | ⚡ 1218.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_342ec4b0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_e3667ebe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
+  - ⚪🏳️_github.com/Ruk1ng001_5a3bda55
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_du3jvkY7
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_405f71d3
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b841f10
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_925eef3c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b2a373d1
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9fdf5e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_koilCd9S
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
+  - 🇻🇳 越南 | ss | 85
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_tP4AbImx
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_kByIFcuS
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_94c1b9d4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_nHAms6fK
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_384d3907
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8e63b374
+  - ⚪🏳️_github.com/Ruk1ng001_8c64292c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_PYxMrVLl
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_2gytU1qm
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_5b6da69e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_E0UhipCE
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9vRLW2Oe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3JmIG1UM
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8ad5a5ea
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b907cd9f
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_V6Y4eVc8
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_53bddfd7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_NdzQVPr4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_114f6acd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
-  - 🟢🇭🇰[📺🎭📦🔍]_github.com/Ruk1ng001_19eb2cc4
+  - 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_I3akHAo2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cce56c1d
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_cItLfQK4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b0aa46cc
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jRCKfCV8
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a9a87da9
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_bM58gJ7e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be536570
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ulZwH075
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d5be3d9b
+  - 🇺🇸 US 009 | ⚡ 113.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_2b639072
   - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_Jdi6N2Ze
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_64zwoP6E
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
-  - 🇺🇸 US 001 | ⚡ 39.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5q3vGYiv
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ac267e4a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8a6eb984
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_x2NLUPmZ
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
-  - 🇺🇸US美国
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
-  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_1b68bd62
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_09c09fa7
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_c47042cd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  - 🟢🇻🇳[📺✨📦]_github.com/Ruk1ng001_86f7f5c5
   - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_c8dd74ad
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_DFsSq1Pu
-  - ⚪🏳️_github.com/Ruk1ng001_8c64292c
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_695908de
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
-  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
-  - 🇹🇷 TR 001 | ⚡ 221.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_73d567ee
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d14e8fa5
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  - 🇩🇪 DE 001 | ⚡ 253.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_806c2d2f
+  - 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_8bf96da4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
+  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_2f32d765
   - 🇦🇺 澳大利亚 | ss | 03
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_32379c9b
-  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_876798d7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
-  - 🟢🇯🇵[🎬🤖📺]_github.com/Ruk1ng001_1f81cdc0
-  - 🇺🇸 US 008 | ⚡ 181.00ms
-  - 🇭🇰 HK 001 | ⚡ 140.00ms
-  - 🇭🇰 HK 003 | ⚡ 161.00ms
-  - 🇳🇱 NL 006 | ⚡ 163.00ms
-  - 🇹🇼 台湾 | vmess | 02
-  - 🇭🇰 HK 002 | ⚡ 142.00ms
-  - 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_f342941c
-  - 🇲🇽 MX 001 | ⚡ 123.00ms
-  - 🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001_5da7b0fe
-  - hk|9296|puddincat07@Telegram
-  - 🇺🇸 US 006 | ⚡ 152.00ms
-  - 🇺🇸US美国3 848.8KB/s
-  - 🇳🇴 NO 001 | ⚡ 211.00ms
-  - 🇫🇷 FR 001 | ⚡ 153.00ms
+  - 🇻🇳 越南 | ss | 100
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_3a8c5b36
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_rcsyJWK9
+  - 🇭🇰 HK 008 | ⚡ 1612.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_f211b66c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c837cc52
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7b5f3050
+  - 🇨🇳 TW 002 | ⚡ 226.00ms
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_6b8051fa
+  - 🇭🇰 HK 001 | ⚡ 43.00ms
+  - 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_bbfd0dd0
+  - 🇭🇰 HK 002 | ⚡ 51.00ms
+  - 🇭🇰 HK 003 | ⚡ 51.00ms
+  - 🇭🇰 HK 010 | ⚡ 4642.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BaZNXYoG
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
+  - 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  - 🇺🇸 US 002 | ⚡ 48.00ms
+  - 12|NL_speednode_0009
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6176d0bd
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 30
@@ -1629,159 +1569,149 @@ proxy-groups:
   type: load-balance
   strategy: consistent-hashing
   proxies:
-  - 🏳️ NZ 001 | ⬇️ 245.84MB/s
-  - 🇨🇳 CN 001 | ⬇️ 215.63MB/s
-  - 🇺🇸 US 001 | ⬇️ 174.19MB/s
-  - 🇨🇦 CA 001 | ⬇️ 145.28MB/s
-  - 🇨🇦 CA 002 | ⬇️ 136.40MB/s
-  - 🇨🇦 CA 003 | ⬇️ 101.49MB/s
-  - 🇨🇦 CA 004 | ⬇️ 60.65MB/s
-  - 🇬🇧 GB 001 | ⬇️ 42.28MB/s
-  - 🇬🇧 GB 002 | ⬇️ 41.65MB/s
-  - 🇺🇸 US 002 | ⬇️ 38.55MB/s
-  - 🇬🇧 GB 003 | ⬇️ 36.87MB/s
-  - 🇳🇱 NL 001 | ⬇️ 35.15MB/s
-  - 🇳🇱 NL 002 | ⬇️ 34.99MB/s
-  - 🇳🇱 NL 003 | ⬇️ 34.93MB/s
-  - 🇳🇱 NL 004 | ⬇️ 34.06MB/s
-  - 🇳🇱 NL 005 | ⬇️ 34.05MB/s
-  - 🇷🇺 RU 001 | ⬇️ 32.45MB/s
-  - 🇵🇱 PL 001 | ⬇️ 29.50MB/s
-  - 🇸🇪 SE 001 | ⬇️ 29.13MB/s
-  - 🇩🇪 DE 001 | ⬇️ 28.14MB/s
-  - 🇳🇴 NO 001 | ⬇️ 28.08MB/s
-  - 🇧🇷 BR 001 | ⬇️ 26.53MB/s
-  - 🇺🇸 US 003 | ⬇️ 24.39MB/s
-  - 🇬🇧 GB 004 | ⬇️ 17.37MB/s
-  - 🇸🇬 SG 001 | ⬇️ 14.50MB/s
-  - 🇩🇪 DE 002 | ⬇️ 14.10MB/s
-  - 🇫🇷 FR 001 | ⬇️ 13.94MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.93MB/s
-  - 🇩🇪 DE 003 | ⬇️ 13.09MB/s
-  - 🇿🇦 ZA 001 | ⬇️ 12.22MB/s
-  - 🇨🇳 TW 001 | ⬇️ 11.92MB/s
-  - 🇻🇳 VN 001 | ⬇️ 10.85MB/s
-  - 🇺🇸 US 004 | ⬇️ 10.85MB/s
-  - 🇻🇳 VN 002 | ⬇️ 10.68MB/s
-  - 🇻🇳 VN 003 | ⬇️ 10.54MB/s
-  - 🇫🇷 FR 002 | ⬇️ 10.46MB/s
-  - 🇩🇪 DE 004 | ⬇️ 10.31MB/s
-  - 🇰🇷 KR 001 | ⬇️ 10.22MB/s
-  - 🇭🇰 HK 002 | ⬇️ 10.16MB/s
-  - 🇻🇳 VN 004 | ⬇️ 10.07MB/s
-  - 🇻🇳 VN 005 | ⬇️ 9.94MB/s
-  - 🇻🇳 VN 006 | ⬇️ 9.92MB/s
-  - 🇯🇵 JP 001 | ⬇️ 9.81MB/s
-  - 🇻🇳 VN 007 | ⬇️ 9.80MB/s
-  - 🇻🇳 VN 008 | ⬇️ 9.66MB/s
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_d42806cd
-  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_20023b43
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1417ed12
+  - 🇪🇸 ES 001 | ⬇️ 225.62MB/s
+  - 🏳️ NZ 001 | ⬇️ 223.88MB/s
+  - 🇨🇳 CN 001 | ⬇️ 213.45MB/s
+  - 🇨🇦 CA 001 | ⬇️ 210.94MB/s
+  - 🇺🇸 US 001 | ⬇️ 205.53MB/s
+  - 🇨🇦 CA 002 | ⬇️ 194.04MB/s
+  - 🇨🇦 CA 003 | ⬇️ 147.96MB/s
+  - 🇨🇦 CA 004 | ⬇️ 87.54MB/s
+  - 🇨🇦 CA 005 | ⬇️ 64.74MB/s
+  - 🇺🇸 US 002 | ⬇️ 60.69MB/s
+  - 🇨🇦 CA 006 | ⬇️ 54.73MB/s
+  - 🇺🇸 US 003 | ⬇️ 38.37MB/s
+  - 🇬🇧 GB 001 | ⬇️ 25.22MB/s
+  - 🇬🇧 GB 002 | ⬇️ 25.07MB/s
+  - 🇬🇧 GB 003 | ⬇️ 23.59MB/s
+  - 🇳🇱 NL 001 | ⬇️ 22.79MB/s
+  - 🇬🇧 GB 004 | ⬇️ 22.67MB/s
+  - 🇳🇱 NL 002 | ⬇️ 21.99MB/s
+  - 🏳️ AL 001 | ⬇️ 21.79MB/s
+  - 🇺🇸 US 004 | ⬇️ 21.58MB/s
+  - 🇫🇮 FI 001 | ⬇️ 21.36MB/s
+  - 🇳🇱 NL 003 | ⬇️ 21.26MB/s
+  - 🇷🇺 RU 001 | ⬇️ 20.61MB/s
+  - 🇬🇧 GB 005 | ⬇️ 19.97MB/s
+  - 🇸🇪 SE 001 | ⬇️ 19.85MB/s
+  - 🇵🇱 PL 001 | ⬇️ 19.80MB/s
+  - 🇱🇻 LV 001 | ⬇️ 19.56MB/s
+  - 🇳🇴 NO 001 | ⬇️ 18.53MB/s
+  - 🇭🇰 HK 001 | ⬇️ 17.84MB/s
+  - 🇰🇷 KR 001 | ⬇️ 17.63MB/s
+  - 🇩🇪 DE 001 | ⬇️ 15.54MB/s
+  - 🇬🇧 GB 006 | ⬇️ 14.77MB/s
+  - 🇻🇳 VN 001 | ⬇️ 12.51MB/s
+  - 🇭🇰 HK 002 | ⬇️ 12.07MB/s
+  - 🇻🇳 VN 002 | ⬇️ 11.93MB/s
+  - 🇯🇵 JP 001 | ⬇️ 11.28MB/s
+  - 🇻🇳 VN 003 | ⬇️ 11.26MB/s
+  - 🇻🇳 VN 004 | ⬇️ 11.23MB/s
+  - 🇹🇷 TR 001 | ⬇️ 11.15MB/s
+  - 🇻🇳 VN 005 | ⬇️ 10.99MB/s
+  - 🇻🇳 VN 006 | ⬇️ 10.68MB/s
+  - 🇻🇳 VN 007 | ⬇️ 10.64MB/s
+  - 🇻🇳 VN 008 | ⬇️ 10.60MB/s
+  - 🇻🇳 VN 009 | ⬇️ 10.54MB/s
+  - 🇻🇳 VN 010 | ⬇️ 10.42MB/s
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0460451
+  - 🇭🇰 HK 007 | ⚡ 1427.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_75770d8d
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b608cfb6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_60a24915
   - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_XSgjyYDK
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aff89e31
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_UEp7vuj2
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_a0dc70ff
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  - 🇦🇹 AT 001 | ⚡ 236.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
-  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_0246eabb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
   - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_AwiYPLGu
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c7a6bfd9
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_03383596
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_7b94fd1e
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_65a41ab1
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c33ca6cc
-  - 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_924bd38e
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_48ff31ba
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ntCloBAx
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8638beae
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  - 🇻🇳 VN 001 | ⚡ 1218.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_342ec4b0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_e3667ebe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
+  - ⚪🏳️_github.com/Ruk1ng001_5a3bda55
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_du3jvkY7
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_405f71d3
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b841f10
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_925eef3c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b2a373d1
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9fdf5e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_koilCd9S
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
+  - 🇻🇳 越南 | ss | 85
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_tP4AbImx
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_kByIFcuS
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_94c1b9d4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_nHAms6fK
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_384d3907
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8e63b374
+  - ⚪🏳️_github.com/Ruk1ng001_8c64292c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_PYxMrVLl
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_2gytU1qm
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_5b6da69e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_E0UhipCE
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9vRLW2Oe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3JmIG1UM
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8ad5a5ea
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b907cd9f
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_V6Y4eVc8
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_53bddfd7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_NdzQVPr4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_114f6acd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
-  - 🟢🇭🇰[📺🎭📦🔍]_github.com/Ruk1ng001_19eb2cc4
+  - 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_I3akHAo2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cce56c1d
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_cItLfQK4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b0aa46cc
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jRCKfCV8
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a9a87da9
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_bM58gJ7e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be536570
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ulZwH075
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d5be3d9b
+  - 🇺🇸 US 009 | ⚡ 113.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_2b639072
   - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_Jdi6N2Ze
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_64zwoP6E
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
-  - 🇺🇸 US 001 | ⚡ 39.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5q3vGYiv
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ac267e4a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8a6eb984
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_x2NLUPmZ
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
-  - 🇺🇸US美国
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
-  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_1b68bd62
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_09c09fa7
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_c47042cd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  - 🟢🇻🇳[📺✨📦]_github.com/Ruk1ng001_86f7f5c5
   - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_c8dd74ad
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_DFsSq1Pu
-  - ⚪🏳️_github.com/Ruk1ng001_8c64292c
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_695908de
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
-  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
-  - 🇹🇷 TR 001 | ⚡ 221.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_73d567ee
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d14e8fa5
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  - 🇩🇪 DE 001 | ⚡ 253.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_806c2d2f
+  - 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_8bf96da4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
+  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_2f32d765
   - 🇦🇺 澳大利亚 | ss | 03
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_32379c9b
-  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_876798d7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
-  - 🟢🇯🇵[🎬🤖📺]_github.com/Ruk1ng001_1f81cdc0
-  - 🇺🇸 US 008 | ⚡ 181.00ms
-  - 🇭🇰 HK 001 | ⚡ 140.00ms
-  - 🇭🇰 HK 003 | ⚡ 161.00ms
-  - 🇳🇱 NL 006 | ⚡ 163.00ms
-  - 🇹🇼 台湾 | vmess | 02
-  - 🇭🇰 HK 002 | ⚡ 142.00ms
-  - 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_f342941c
-  - 🇲🇽 MX 001 | ⚡ 123.00ms
-  - 🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001_5da7b0fe
-  - hk|9296|puddincat07@Telegram
-  - 🇺🇸 US 006 | ⚡ 152.00ms
-  - 🇺🇸US美国3 848.8KB/s
-  - 🇳🇴 NO 001 | ⚡ 211.00ms
-  - 🇫🇷 FR 001 | ⚡ 153.00ms
+  - 🇻🇳 越南 | ss | 100
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_3a8c5b36
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_rcsyJWK9
+  - 🇭🇰 HK 008 | ⚡ 1612.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_f211b66c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c837cc52
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7b5f3050
+  - 🇨🇳 TW 002 | ⚡ 226.00ms
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_6b8051fa
+  - 🇭🇰 HK 001 | ⚡ 43.00ms
+  - 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_bbfd0dd0
+  - 🇭🇰 HK 002 | ⚡ 51.00ms
+  - 🇭🇰 HK 003 | ⚡ 51.00ms
+  - 🇭🇰 HK 010 | ⚡ 4642.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BaZNXYoG
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
+  - 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  - 🇺🇸 US 002 | ⚡ 48.00ms
+  - 12|NL_speednode_0009
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6176d0bd
 - name: 故障转移
   type: fallback
   proxies:
@@ -1791,196 +1721,185 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - 🏳️ NZ 001 | ⬇️ 245.84MB/s
-  - 🇨🇳 CN 001 | ⬇️ 215.63MB/s
-  - 🇺🇸 US 001 | ⬇️ 174.19MB/s
-  - 🇨🇦 CA 001 | ⬇️ 145.28MB/s
-  - 🇨🇦 CA 002 | ⬇️ 136.40MB/s
-  - 🇨🇦 CA 003 | ⬇️ 101.49MB/s
-  - 🇨🇦 CA 004 | ⬇️ 60.65MB/s
-  - 🇬🇧 GB 001 | ⬇️ 42.28MB/s
-  - 🇬🇧 GB 002 | ⬇️ 41.65MB/s
-  - 🇺🇸 US 002 | ⬇️ 38.55MB/s
-  - 🇬🇧 GB 003 | ⬇️ 36.87MB/s
-  - 🇳🇱 NL 001 | ⬇️ 35.15MB/s
-  - 🇳🇱 NL 002 | ⬇️ 34.99MB/s
-  - 🇳🇱 NL 003 | ⬇️ 34.93MB/s
-  - 🇳🇱 NL 004 | ⬇️ 34.06MB/s
-  - 🇳🇱 NL 005 | ⬇️ 34.05MB/s
-  - 🇷🇺 RU 001 | ⬇️ 32.45MB/s
-  - 🇵🇱 PL 001 | ⬇️ 29.50MB/s
-  - 🇸🇪 SE 001 | ⬇️ 29.13MB/s
-  - 🇩🇪 DE 001 | ⬇️ 28.14MB/s
-  - 🇳🇴 NO 001 | ⬇️ 28.08MB/s
-  - 🇧🇷 BR 001 | ⬇️ 26.53MB/s
-  - 🇺🇸 US 003 | ⬇️ 24.39MB/s
-  - 🇬🇧 GB 004 | ⬇️ 17.37MB/s
-  - 🇸🇬 SG 001 | ⬇️ 14.50MB/s
-  - 🇩🇪 DE 002 | ⬇️ 14.10MB/s
-  - 🇫🇷 FR 001 | ⬇️ 13.94MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.93MB/s
-  - 🇩🇪 DE 003 | ⬇️ 13.09MB/s
-  - 🇿🇦 ZA 001 | ⬇️ 12.22MB/s
-  - 🇨🇳 TW 001 | ⬇️ 11.92MB/s
-  - 🇻🇳 VN 001 | ⬇️ 10.85MB/s
-  - 🇺🇸 US 004 | ⬇️ 10.85MB/s
-  - 🇻🇳 VN 002 | ⬇️ 10.68MB/s
-  - 🇻🇳 VN 003 | ⬇️ 10.54MB/s
-  - 🇫🇷 FR 002 | ⬇️ 10.46MB/s
-  - 🇩🇪 DE 004 | ⬇️ 10.31MB/s
-  - 🇰🇷 KR 001 | ⬇️ 10.22MB/s
-  - 🇭🇰 HK 002 | ⬇️ 10.16MB/s
-  - 🇻🇳 VN 004 | ⬇️ 10.07MB/s
-  - 🇻🇳 VN 005 | ⬇️ 9.94MB/s
-  - 🇻🇳 VN 006 | ⬇️ 9.92MB/s
-  - 🇯🇵 JP 001 | ⬇️ 9.81MB/s
-  - 🇻🇳 VN 007 | ⬇️ 9.80MB/s
-  - 🇻🇳 VN 008 | ⬇️ 9.66MB/s
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_d42806cd
-  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_20023b43
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_1417ed12
+  - 🇪🇸 ES 001 | ⬇️ 225.62MB/s
+  - 🏳️ NZ 001 | ⬇️ 223.88MB/s
+  - 🇨🇳 CN 001 | ⬇️ 213.45MB/s
+  - 🇨🇦 CA 001 | ⬇️ 210.94MB/s
+  - 🇺🇸 US 001 | ⬇️ 205.53MB/s
+  - 🇨🇦 CA 002 | ⬇️ 194.04MB/s
+  - 🇨🇦 CA 003 | ⬇️ 147.96MB/s
+  - 🇨🇦 CA 004 | ⬇️ 87.54MB/s
+  - 🇨🇦 CA 005 | ⬇️ 64.74MB/s
+  - 🇺🇸 US 002 | ⬇️ 60.69MB/s
+  - 🇨🇦 CA 006 | ⬇️ 54.73MB/s
+  - 🇺🇸 US 003 | ⬇️ 38.37MB/s
+  - 🇬🇧 GB 001 | ⬇️ 25.22MB/s
+  - 🇬🇧 GB 002 | ⬇️ 25.07MB/s
+  - 🇬🇧 GB 003 | ⬇️ 23.59MB/s
+  - 🇳🇱 NL 001 | ⬇️ 22.79MB/s
+  - 🇬🇧 GB 004 | ⬇️ 22.67MB/s
+  - 🇳🇱 NL 002 | ⬇️ 21.99MB/s
+  - 🏳️ AL 001 | ⬇️ 21.79MB/s
+  - 🇺🇸 US 004 | ⬇️ 21.58MB/s
+  - 🇫🇮 FI 001 | ⬇️ 21.36MB/s
+  - 🇳🇱 NL 003 | ⬇️ 21.26MB/s
+  - 🇷🇺 RU 001 | ⬇️ 20.61MB/s
+  - 🇬🇧 GB 005 | ⬇️ 19.97MB/s
+  - 🇸🇪 SE 001 | ⬇️ 19.85MB/s
+  - 🇵🇱 PL 001 | ⬇️ 19.80MB/s
+  - 🇱🇻 LV 001 | ⬇️ 19.56MB/s
+  - 🇳🇴 NO 001 | ⬇️ 18.53MB/s
+  - 🇭🇰 HK 001 | ⬇️ 17.84MB/s
+  - 🇰🇷 KR 001 | ⬇️ 17.63MB/s
+  - 🇩🇪 DE 001 | ⬇️ 15.54MB/s
+  - 🇬🇧 GB 006 | ⬇️ 14.77MB/s
+  - 🇻🇳 VN 001 | ⬇️ 12.51MB/s
+  - 🇭🇰 HK 002 | ⬇️ 12.07MB/s
+  - 🇻🇳 VN 002 | ⬇️ 11.93MB/s
+  - 🇯🇵 JP 001 | ⬇️ 11.28MB/s
+  - 🇻🇳 VN 003 | ⬇️ 11.26MB/s
+  - 🇻🇳 VN 004 | ⬇️ 11.23MB/s
+  - 🇹🇷 TR 001 | ⬇️ 11.15MB/s
+  - 🇻🇳 VN 005 | ⬇️ 10.99MB/s
+  - 🇻🇳 VN 006 | ⬇️ 10.68MB/s
+  - 🇻🇳 VN 007 | ⬇️ 10.64MB/s
+  - 🇻🇳 VN 008 | ⬇️ 10.60MB/s
+  - 🇻🇳 VN 009 | ⬇️ 10.54MB/s
+  - 🇻🇳 VN 010 | ⬇️ 10.42MB/s
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a0460451
+  - 🇭🇰 HK 007 | ⚡ 1427.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_75770d8d
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b608cfb6
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_60a24915
   - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_XSgjyYDK
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aff89e31
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_UEp7vuj2
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8d022fc4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WtVFmsbl
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_79f69b77
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_OQ7TuJJl
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_a0dc70ff
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_jCpJMemN
-  - 🇦🇹 AT 001 | ⚡ 236.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ufmzIgW2
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
-  - 🟢🇹🇼[🎬🤖📺🎭]_github.com/Ruk1ng001_0246eabb
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8bb94c4a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3cc9bb42
   - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_AwiYPLGu
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c7a6bfd9
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_03383596
-  - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_7b94fd1e
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_85221ad4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_65a41ab1
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c33ca6cc
-  - 🟢🇻🇳[📺🎪✨🔍]_github.com/Ruk1ng001_pa6Z9nE7
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_924bd38e
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_48ff31ba
-  - 🟢🇻🇳[🎬🤖📺🔍]_github.com/Ruk1ng001_828e5756
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ntCloBAx
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8638beae
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f2bc5045
+  - 🇻🇳 VN 001 | ⚡ 1218.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_zByaQUKk
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_342ec4b0
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_e3667ebe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
+  - ⚪🏳️_github.com/Ruk1ng001_5a3bda55
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_du3jvkY7
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_405f71d3
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6b841f10
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_925eef3c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b2a373d1
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_0c9fdf5e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_koilCd9S
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
+  - 🇻🇳 越南 | ss | 85
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_tP4AbImx
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_kByIFcuS
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_94c1b9d4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
+  - 🟢🇻🇳[🎬🤖📺📦]_github.com/Ruk1ng001_nHAms6fK
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_384d3907
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8e63b374
+  - ⚪🏳️_github.com/Ruk1ng001_8c64292c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_PYxMrVLl
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_2gytU1qm
+  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_5b6da69e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5dcf2239
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_E0UhipCE
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9vRLW2Oe
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_3JmIG1UM
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8ad5a5ea
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_f7L3O6ZH
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b907cd9f
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_V6Y4eVc8
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_53bddfd7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_NdzQVPr4
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_17bb18c6
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_114f6acd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_uIdENq9V
-  - 🟢🇭🇰[📺🎭📦🔍]_github.com/Ruk1ng001_19eb2cc4
+  - 🟢🇻🇳[📺🎪✨📦]_github.com/Ruk1ng001_I3akHAo2
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cce56c1d
+  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_cItLfQK4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_b0aa46cc
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jRCKfCV8
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_4c1e0f37
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_a9a87da9
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_mx24iGHo
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_bM58gJ7e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_be536570
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ulZwH075
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d5be3d9b
+  - 🇺🇸 US 009 | ⚡ 113.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_2b639072
   - 🟢🇻🇳[🤖📺✨🎞️]_github.com/Ruk1ng001_Jdi6N2Ze
   - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_64zwoP6E
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_3e622fce
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_WuvYiI0n
-  - 🇺🇸 US 001 | ⚡ 39.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BtkTAMMz
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_021392f7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_5q3vGYiv
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ac267e4a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80ef8445
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_8a6eb984
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_x2NLUPmZ
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_883b4ab6
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_20a988ec
-  - 🇺🇸US美国
-  - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_7334ca05
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bzwabkzX
-  - 🟢🇻🇳[🤖📺🎪✨]_github.com/Ruk1ng001_bc930762
-  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_1b68bd62
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_09c09fa7
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_c47042cd
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_423aa034
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_244a2a3a
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_lJyxNs4Q
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_9bc686fa
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7VP5FfKQ
+  - 🟢🇻🇳[📺✨📦]_github.com/Ruk1ng001_86f7f5c5
   - 🟢🇻🇳[🎬📺🎪✨]_github.com/Ruk1ng001_c8dd74ad
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_jP0yLrnc
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_DFsSq1Pu
-  - ⚪🏳️_github.com/Ruk1ng001_8c64292c
-  - 🟢🇻🇳[📺🎪✨🎞️]_github.com/Ruk1ng001_6baaf45c
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_ninYLbxC
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_695908de
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_80114851
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_ymoFkrFo
-  - 🔴🇭🇰_github.com/Ruk1ng001_727fcd33
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
-  - 🇹🇷 TR 001 | ⚡ 221.00ms
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_73d567ee
-  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_d14e8fa5
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_dd49e382
+  - 🇩🇪 DE 001 | ⚡ 253.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_bPB1jZXj
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_806c2d2f
+  - 🟢🇭🇰[🎬📺🎭🎞️]_github.com/Ruk1ng001_8bf96da4
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6049d3a7
+  - 🟢🇭🇰[🤖📺🎭🎪]_github.com/Ruk1ng001_2f32d765
   - 🇦🇺 澳大利亚 | ss | 03
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_32379c9b
-  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_876798d7
-  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_pdGaTMiz
-  - 🟢🇯🇵[🎬🤖📺]_github.com/Ruk1ng001_1f81cdc0
-  - 🇺🇸 US 008 | ⚡ 181.00ms
-  - 🇭🇰 HK 001 | ⚡ 140.00ms
-  - 🇭🇰 HK 003 | ⚡ 161.00ms
-  - 🇳🇱 NL 006 | ⚡ 163.00ms
-  - 🇹🇼 台湾 | vmess | 02
-  - 🇭🇰 HK 002 | ⚡ 142.00ms
-  - 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_f342941c
-  - 🇲🇽 MX 001 | ⚡ 123.00ms
-  - 🟢🇭🇰[🎬📺🎭📦]_github.com/Ruk1ng001_5da7b0fe
-  - hk|9296|puddincat07@Telegram
-  - 🇺🇸 US 006 | ⚡ 152.00ms
-  - 🇺🇸US美国3 848.8KB/s
-  - 🇳🇴 NO 001 | ⚡ 211.00ms
-  - 🇫🇷 FR 001 | ⚡ 153.00ms
+  - 🇻🇳 越南 | ss | 100
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_3a8c5b36
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_rcsyJWK9
+  - 🇭🇰 HK 008 | ⚡ 1612.00ms
+  - 🟢🇻🇳[🎬🤖📺✨]_github.com/Ruk1ng001_RLgU3t8a
+  - 🟢🇭🇰[🎬📺🎭🎪]_github.com/Ruk1ng001_f211b66c
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_c837cc52
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_cddd732e
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_7b5f3050
+  - 🇨🇳 TW 002 | ⚡ 226.00ms
+  - 🟢🇭🇰[🎬🤖📺🎭]_github.com/Ruk1ng001_6b8051fa
+  - 🇭🇰 HK 001 | ⚡ 43.00ms
+  - 🔴🇯🇵[🎬🤖📺🎭]_github.com/Ruk1ng001_bbfd0dd0
+  - 🇭🇰 HK 002 | ⚡ 51.00ms
+  - 🇭🇰 HK 003 | ⚡ 51.00ms
+  - 🇭🇰 HK 010 | ⚡ 4642.00ms
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_BaZNXYoG
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_aec265af
+  - 🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_e14bcb52
+  - 🇺🇸 US 002 | ⚡ 48.00ms
+  - 12|NL_speednode_0009
+  - 🟢🇻🇳[🎬🤖📺🎪]_github.com/Ruk1ng001_6176d0bd
 - name: 香港
   type: select
   proxies:
-  - 🇭🇰 HK 001 | ⬇️ 13.93MB/s
-  - 🇭🇰 HK 002 | ⬇️ 10.16MB/s
-  - 🇭🇰 HK 001 | ⚡ 140.00ms
-  - 🇭🇰 HK 003 | ⚡ 161.00ms
-  - 🇭🇰 HK 002 | ⚡ 142.00ms
+  - 🇭🇰 HK 001 | ⬇️ 17.84MB/s
+  - 🇭🇰 HK 002 | ⬇️ 12.07MB/s
+  - 🇭🇰 HK 007 | ⚡ 1427.00ms
+  - 🇭🇰 HK 008 | ⚡ 1612.00ms
+  - 🇭🇰 HK 001 | ⚡ 43.00ms
+  - 🇭🇰 HK 002 | ⚡ 51.00ms
+  - 🇭🇰 HK 003 | ⚡ 51.00ms
+  - 🇭🇰 HK 010 | ⚡ 4642.00ms
 - name: 日本
   type: select
   proxies:
-  - 🇯🇵 JP 001 | ⬇️ 9.81MB/s
+  - 🇯🇵 JP 001 | ⬇️ 11.28MB/s
 - name: 美国
   type: select
   proxies:
-  - 🇺🇸 US 001 | ⬇️ 174.19MB/s
-  - 🇺🇸 US 002 | ⬇️ 38.55MB/s
-  - 🇺🇸 US 003 | ⬇️ 24.39MB/s
-  - 🇺🇸 US 004 | ⬇️ 10.85MB/s
-  - 🇺🇸 US 001 | ⚡ 39.00ms
-  - 🇺🇸US美国
-  - 🇺🇸 US 008 | ⚡ 181.00ms
-  - 🇺🇸 US 006 | ⚡ 152.00ms
-  - 🇺🇸US美国3 848.8KB/s
+  - 🇺🇸 US 001 | ⬇️ 205.53MB/s
+  - 🇺🇸 US 002 | ⬇️ 60.69MB/s
+  - 🇺🇸 US 003 | ⬇️ 38.37MB/s
+  - 🇺🇸 US 004 | ⬇️ 21.58MB/s
+  - 🇺🇸 US 009 | ⚡ 113.00ms
+  - 🇺🇸 US 002 | ⚡ 48.00ms
 - name: 新加坡
   type: select
   proxies:
-  - 🇸🇬 SG 001 | ⬇️ 14.50MB/s
+  - DIRECT
 - name: 台湾
   type: select
   proxies:
-  - 🇨🇳 TW 001 | ⬇️ 11.92MB/s
-  - 🇹🇼 台湾 | vmess | 02
+  - 🇨🇳 TW 002 | ⚡ 226.00ms
 - name: 韩国
   type: select
   proxies:
-  - 🇰🇷 KR 001 | ⬇️ 10.22MB/s
+  - 🇰🇷 KR 001 | ⬇️ 17.63MB/s
 - name: 色情
   type: select
   proxies:
