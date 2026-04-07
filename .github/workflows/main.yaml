@@ -39,18 +39,19 @@ jobs:
           path: clash-speedtest
           key: clash-speedtest-linux-x86_64-latest
 
-      - name: Strict Clash Speed Test（极致缓存 + 双阶段 + <5000ms 严格低延迟 + 保留全部节点）
+      - name: Strict Clash Speed Test（极致高并发20 + 双阶段 + <5000ms 严格低延迟）
+        timeout-minutes: 360   # 防止整个 step 超时
         run: |
-          # 如果缓存未命中才下载
+          # 使用缓存加速
           if [ ! -f clash-speedtest ]; then
-            echo "首次下载 clash-speedtest 二进制..."
+            echo "首次下载 clash-speedtest..."
             curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
             chmod +x clash-speedtest
           else
-            echo "✅ 使用缓存的 clash-speedtest 二进制（极快）"
+            echo "✅ 使用缓存二进制（秒启动）"
           fi
 
-          echo "=== 第一阶段：fast 模式（全节点只测延迟）==="
+          echo "=== 第一阶段：fast 模式（全节点只测延迟 · 高并发20）==="
           ./clash-speedtest \
             -c proxies_dedup.yaml \
             -output proxies_tested.yaml \
@@ -60,9 +61,9 @@ jobs:
             -max-latency 15000ms \
             -max-packet-loss 60 \
             -timeout 4s \
-            -concurrent 15 || echo "第一阶段失败，使用去重文件"
+            -concurrent 20 || echo "第一阶段失败，使用去重文件"
 
-          # 严格过滤 <5000ms 节点（符合你要求）
+          # 严格 <5000ms 过滤
           python3 filter_low_latency.py || echo "过滤异常，使用全部节点"
 
           echo "=== 第二阶段：download 模式（仅对 <5000ms 节点测下载速度）==="
@@ -75,12 +76,12 @@ jobs:
             -min-download-speed 0.3 \
             -max-packet-loss 40 \
             -timeout 6s \
-            -concurrent 10 || echo "第二阶段失败，使用第一阶段结果"
+            -concurrent 12 || echo "第二阶段失败，使用第一阶段结果"
 
-          # 健壮判断
+          # 最终判断
           if [ -f proxies_tested.yaml ] && [ "$(grep -c "server:" proxies_tested.yaml 2>/dev/null || echo 0)" -gt 10 ]; then
             cp proxies_tested.yaml proxies.yaml
-            echo "✅ 测速完成！保留全部优质节点（<5000ms + 下载合格）"
+            echo "✅ 高并发测速完成！保留全部优质节点（<5000ms + 下载合格）"
           else
             cp proxies_dedup.yaml proxies.yaml
             echo "⚠️ 测速后优质节点不足，使用去重文件"
