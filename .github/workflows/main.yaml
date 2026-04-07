@@ -12,7 +12,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
 
-    # ==================== 8 Job 并行测速配置 ====================
+    # 8 Job 并行测速配置
     strategy:
       fail-fast: false
       matrix:
@@ -29,7 +29,7 @@ jobs:
       - name: Install Python dependencies
         run: pip install pyyaml requests
 
-      # ==================== 下载订阅 ====================
+      # ==================== 下载多订阅 + 全格式支持 ====================
       - name: Download raw proxies & stars（多订阅全格式）
         env:
           PROXIES_URLS: ${{ secrets.PROXIES_URLS }}
@@ -37,19 +37,21 @@ jobs:
           timeout 10 curl -f "https://api.star-history.com/svg?repos=cxddgtb/2026Clash&type=Date" > stars.svg || true
           python3 fetch_proxies.py
 
+      # ==================== 严格去重 ====================
       - name: Deduplicate + 防重名
         run: python3 dedup.py
 
-      # ==================== 并行 fast 测速 ====================
-      - name: Cache clash-speedtest
+      # ==================== 缓存二进制 ====================
+      - name: Cache clash-speedtest binary
         uses: actions/cache@v4
         with:
           path: clash-speedtest
           key: clash-speedtest-linux-x86_64-latest
 
-      - name: Split proxies into shards
+      - name: Split proxies into 8 shards
         run: python3 split_proxies.py
 
+      # ==================== 8 Job 并行 fast 测速 ====================
       - name: Fast Speed Test - Shard ${{ matrix.shard }}
         timeout-minutes: 180
         run: |
@@ -58,7 +60,7 @@ jobs:
             chmod +x clash-speedtest
           fi
 
-          echo "=== 并行 fast 测速分片 ${{ matrix.shard }} ==="
+          echo "=== 并行 fast 测速分片 ${{ matrix.shard }}（高并发20）==="
           ./clash-speedtest \
             -c proxies_chunk_${{ matrix.shard }}.yaml \
             -output proxies_tested_chunk_${{ matrix.shard }}.yaml \
@@ -93,21 +95,25 @@ jobs:
             -timeout 6s \
             -concurrent 12 || echo "第二阶段失败，使用第一阶段结果"
 
-      - name: Enhance Node Names
+      # ==================== 后续处理 ====================
+      - name: Enhance Node Names（添加延迟显示）
         run: python3 enhance_names.py
 
       - name: Generate Node Statistics
         run: python3 generate_stats.py
 
-      - name: Build Full Config
+      - name: Build Full Config（超级策略 + 色情规则）
         run: python3 build_full_config.py
 
-      - name: Commit changes
+      # ==================== 提交更新（强制推送） ====================
+      - name: Commit & Force Push
         run: |
           git add proxies.yaml clash.yaml nodes_stats.md stars.svg raw_proxies.yaml proxies_dedup.yaml || true
+          
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes detected, skipping commit"
           else
             git commit -m "🚀 8 Job 并行 + <5000ms 过滤 + 下载测速 ($(date '+%Y-%m-%d %H:%M:%S'))"
-            git push
+            git push --force-with-lease
+            echo "✅ 成功强制推送更新"
           fi
