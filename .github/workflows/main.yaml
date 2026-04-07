@@ -70,18 +70,7 @@ jobs:
 
       # ==================== 合并 + <5000ms 过滤 + 下载测速 ====================
       - name: Merge all fast chunks
-        run: |
-          python3 -c '
-import yaml, glob
-all_proxies = []
-for f in glob.glob("proxies_tested_chunk_*.yaml"):
-    with open(f, encoding="utf-8") as fp:
-        data = yaml.safe_load(fp) or {}
-        all_proxies.extend(data.get("proxies", []))
-with open("proxies_tested.yaml", "w", encoding="utf-8") as f:
-    yaml.dump({"proxies": all_proxies}, f, allow_unicode=True, sort_keys=False)
-print(f"✅ 8 个 fast 分片合并完成！共 {len(all_proxies)} 个节点")
-          '
+        run: python3 merge_chunks.py
 
       - name: Filter <5000ms + Second Download Speed Test
         run: |
