@@ -1,6 +1,6 @@
-name: Fetch & Strict Google + Download Speed Test (Ultimate Parallel + <5000ms)
+name: Fetch & Strict Google + Download Speed Test (8 Job Parallel + Merge)
 
-# 强制使用 Node.js 24，消除弃用警告
+# 强制 Node.js 24（消除弃用警告）
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -13,10 +13,9 @@ permissions:
   contents: write
 
 jobs:
-  update:
+  # ==================== 8 Job 并行 fast 测速 ====================
+  test:
     runs-on: ubuntu-latest
-
-    # 8 Job 并行测速配置
     strategy:
       fail-fast: false
       matrix:
@@ -30,32 +29,18 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
 
-      - name: Install Python dependencies
+      - name: Install Python
         run: pip install pyyaml requests
 
-      # ==================== 下载多订阅 + 全格式支持 ====================
-      - name: Download raw proxies & stars（多订阅全格式）
-        env:
-          PROXIES_URLS: ${{ secrets.PROXIES_URLS }}
-        run: |
-          timeout 10 curl -f "https://api.star-history.com/svg?repos=cxddgtb/2026Clash&type=Date" > stars.svg || true
-          python3 fetch_proxies.py
-
-      # ==================== 严格去重 ====================
-      - name: Deduplicate + 防重名
-        run: python3 dedup.py
-
-      # ==================== 缓存二进制 ====================
-      - name: Cache clash-speedtest binary
+      - name: Cache clash-speedtest
         uses: actions/cache@v4
         with:
           path: clash-speedtest
           key: clash-speedtest-linux-x86_64-latest
 
-      - name: Split proxies into 8 shards
+      - name: Split proxies into shards
         run: python3 split_proxies.py
 
-      # ==================== 8 Job 并行 fast 测速 ====================
       - name: Fast Speed Test - Shard ${{ matrix.shard }}
         timeout-minutes: 180
         run: |
@@ -63,8 +48,7 @@ jobs:
             curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
             chmod +x clash-speedtest
           fi
-
-          echo "=== 并行 fast 测速分片 ${{ matrix.shard }}（高并发20）==="
+          echo "=== 并行 fast 测速分片 ${{ matrix.shard }} ==="
           ./clash-speedtest \
             -c proxies_chunk_${{ matrix.shard }}.yaml \
             -output proxies_tested_chunk_${{ matrix.shard }}.yaml \
@@ -75,8 +59,23 @@ jobs:
             -timeout 4s \
             -concurrent 20
 
-      # ==================== 合并 + <5000ms 过滤 + 下载测速 ====================
-      - name: Merge all fast chunks
+  # ==================== 合并 + 过滤 + 下载测速 + 最终构建 ====================
+  merge-and-build:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Config Git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: Install Python
+        run: pip install pyyaml requests
+
+      - name: Merge all 8 fast chunks
         run: python3 merge_chunks.py
 
       - name: Filter <5000ms + Download Speed Test
@@ -99,25 +98,22 @@ jobs:
             -timeout 6s \
             -concurrent 12 || echo "第二阶段失败，使用第一阶段结果"
 
-      # ==================== 后续处理 ====================
-      - name: Enhance Node Names（添加延迟显示）
+      - name: Enhance Node Names
         run: python3 enhance_names.py
 
       - name: Generate Node Statistics
         run: python3 generate_stats.py
 
-      - name: Build Full Config（超级策略 + 色情规则）
+      - name: Build Full Config
         run: python3 build_full_config.py
 
-      # ==================== 提交更新（强制推送） ====================
       - name: Commit & Force Push
         run: |
           git add proxies.yaml clash.yaml nodes_stats.md stars.svg raw_proxies.yaml proxies_dedup.yaml || true
-          
           if git diff --cached --quiet; then
-            echo "No changes detected, skipping commit"
+            echo "No changes detected"
           else
-            git commit -m "🚀 8 Job 并行 + <5000ms 过滤 + 下载测速 ($(date '+%Y-%m-%d %H:%M:%S'))"
-            git push --force-with-lease
-            echo "✅ 成功强制推送更新"
+            git commit -m "🚀 8 Job 并行测速 + <5000ms 过滤 + 下载测速 ($(date '+%Y-%m-%d %H:%M:%S'))"
+            git push --force
+            echo "✅ 强制推送成功"
           fi
