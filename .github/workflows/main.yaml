@@ -1,4 +1,4 @@
-name: Fetch & Strict Google + Download Speed Test (8 Job Parallel + Artifact Merge)
+name: Fetch & Strict Google + Download Speed Test (8 Job Parallel + <5000ms)
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -66,6 +66,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Config Git（必须在这里）
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
 
       - name: Download all 8 chunks
         uses: actions/download-artifact@v4
