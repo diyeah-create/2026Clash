@@ -23,8 +23,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Config Git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
       - name: Install Python
         run: pip install pyyaml requests
+
+      # ==================== 【新增】下载订阅（关键！） ====================
+      - name: Download raw proxies（多订阅全格式）
+        env:
+          PROXIES_URLS: ${{ secrets.PROXIES_URLS }}
+        run: |
+          timeout 10 curl -f "https://api.star-history.com/svg?repos=cxddgtb/2026Clash&type=Date" > stars.svg || true
+          python3 fetch_proxies.py
+
+      - name: Deduplicate + 防重名
+        run: python3 dedup.py
 
       - name: Cache clash-speedtest
         uses: actions/cache@v4
@@ -59,7 +75,7 @@ jobs:
           path: proxies_tested_chunk_${{ matrix.shard }}.yaml
           retention-days: 1
 
-  # ==================== 合并 + 过滤 + 下载测速 + 最终构建 ====================
+  # ==================== 合并 + 后续处理 ====================
   merge-and-build:
     needs: test
     runs-on: ubuntu-latest
@@ -67,7 +83,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Config Git（必须在这里）
+      - name: Config Git
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
