@@ -129,10 +129,6 @@ jobs:
       - name: Commit & Force Push
         run: |
           git add proxies.yaml clash.yaml nodes_stats.md stars.svg raw_proxies.yaml proxies_dedup.yaml || true
-          if git diff --cached --quiet; then
-            echo "No changes detected"
-          else
-            git commit -m "🚀 8 Job 并行 + <5000ms 过滤 + 下载测速 ($(date '+%Y-%m-%d %H:%M:%S'))"
-            git push --force
-            echo "✅ 强制推送成功"
-          fi
+          git commit -m "🚀 8 Job 并行 + <5000ms 过滤 + 下载测速 ($(date '+%Y-%m-%d %H:%M:%S'))" --allow-empty || true
+          git push --force
+          echo "✅ 强制推送成功（即使内容无差异也提交）"
