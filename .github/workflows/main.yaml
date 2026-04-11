@@ -117,6 +117,15 @@ jobs:
             -timeout 6s \
             -concurrent 12 || echo "第二阶段失败，使用第一阶段结果"
 
+      - name: Prepare final proxies.yaml（关键修复）
+        run: |
+          if [ -f proxies_tested.yaml ] && [ -s proxies_tested.yaml ]; then
+            cp proxies_tested.yaml proxies.yaml
+            echo "✅ 第二阶段成功，使用 download 测速结果作为 proxies.yaml"
+          else
+            cp low_latency.yaml proxies.yaml
+            echo "✅ 第二阶段失败，使用第一阶段 low_latency.yaml（281 个节点）作为 proxies.yaml"
+          fi
       - name: Enhance Node Names
         run: python3 enhance_names.py
 
