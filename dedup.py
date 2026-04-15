@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 dedup.py - 智能去重器（2026 优化）
-✅ 基于「核心指纹」去重，保留参数最全的节点
-✅ 不误删：同一服务器多配置（如不同 SNI）视为不同节点
-✅ 名称防冲突：自动添加 #1 #2 后缀
+✅ 基于核心指纹去重 | ✅ 保留参数最全节点 | ✅ 名称自动防冲突
+✅ 不误删：同一服务器多配置视为不同节点
 """
 
 import yaml
@@ -13,20 +12,21 @@ from collections import defaultdict
 
 def generate_fingerprint(proxy: dict) -> str:
     """生成节点核心指纹（关键参数哈希）"""
-    # 只比对真正影响连接的参数
     key_parts = [
         proxy.get("type", ""),
         proxy.get("server", ""),
         str(proxy.get("port", "")),
-        proxy.get("uuid", proxy.get("password", "")),  # VLESS/Trojan 用 uuid/password
-        proxy.get("alterId", ""),  # VMess 特有
-        proxy.get("cipher", ""),   # SS 特有
+        proxy.get("uuid", proxy.get("password", "")),
+        proxy.get("alterId", ""),
+        proxy.get("cipher", ""),
         proxy.get("network", "tcp"),
-        proxy.get("servername", proxy.get("sni", "")),  # SNI 不同视为不同节点
-        proxy.get("flow", ""),     # VLESS flow 不同视为不同节点
-        str(proxy.get("reality-opts", {})),  # Reality 配置
+        proxy.get("servername", proxy.get("sni", "")),
+        proxy.get("flow", ""),
+        str(proxy.get("reality-opts", {})),
+        str(proxy.get("ws-opts", {})),
+        str(proxy.get("grpc-opts", {})),
     ]
-    raw = "|".join(str(p) for p in key_parts)
+    raw = "|".join(str(p) for p in key_parts if p)
     return hashlib.md5(raw.encode()).hexdigest()[:12]
 
 def main():
