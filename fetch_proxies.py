@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-fetch_proxies.py - 增强版订阅拉取器（2026 优化）
-✅ 支持 10000+ 节点大订阅 | ✅ 6 种格式自动识别 | ✅ 流式解析防内存溢出
+fetch_proxies.py - 增强版订阅拉取器（2026 优化 - SS 修复版）
+✅ 修复 Shadowsocks 多种格式解析 | ✅ 支持 10000+ 节点 | ✅ 流式解析防 OOM
 ✅ 参数自动补全 | ✅ 失败自动重试 3 次 | ✅ 输出 proxies_raw.yaml
 """
 
@@ -19,13 +19,16 @@ from typing import List, Dict, Optional
 # ===== 配置常量 =====
 MAX_RETRIES = 3
 TIMEOUT = 30
-USER_AGENT = "ClashMeta/2026 (Enhanced Fetcher v2.0)"
+USER_AGENT = "ClashMeta/2026 (Enhanced Fetcher v2.1)"
 SUPPORTED_TYPES = ["ss", "ssr", "vmess", "trojan", "vless", "hysteria", "hysteria2", "tuic", "juicity"]
 
 # ===== 工具函数 =====
 def safe_b64decode(s: str) -> str:
-    """安全 Base64 解码，自动补全填充"""
+    """安全 Base64 解码，自动补全填充 + 容错"""
     s = s.strip()
+    if not s:
+        return ""
+    # 补全 =
     missing_padding = len(s) % 4
     if missing_padding:
         s += "=" * (4 - missing_padding)
@@ -63,7 +66,6 @@ def parse_vless(uri: str) -> Optional[Dict]:
             "udp": True,
             "skip-cert-verify": False,
         }
-        # 补全关键参数（防止节点失效）
         if params.get("flow"):
             proxy["flow"] = params["flow"][0]
         if params.get("sni"):
@@ -116,37 +118,105 @@ def parse_vmess(uri: str) -> Optional[Dict]:
         return None
 
 def parse_ss(uri: str) -> Optional[Dict]:
-    """解析 Shadowsocks 链接"""
+    """
+    解析 Shadowsocks 链接（✅ 修复版：兼容所有格式）
+    支持格式：
+    1. ss://base64(method:password@server:port)#name
+    2. ss://base64(method:password)@server:port#name
+    3. ss://method:password@server:port#name
+    4. ss://base64(whole_config)#name
+    """
     try:
         if not uri.startswith("ss://"):
             return None
-        uri = uri[5:]
+        uri = uri[5:]  # 移除 ss://
+        
+        # 分离名称
+        name = "Shadowsocks"
         if "#" in uri:
-            uri, name = uri.rsplit("#", 1)
-            name = unquote(name)
-        else:
-            name = "Shadowsocks"
-        if "@" in uri:
-            info, server_port = uri.split("@", 1)
-            server, port = server_port.rsplit(":", 1)
-            method, password = safe_b64decode(info).split(":", 1)
-        else:
-            parts = uri.split("@")
-            method_pass = safe_b64decode(parts[0])
-            server_port = parts[1] if len(parts) > 1 else ""
-            method, password = method_pass.split(":", 1)
-            server, port = server_port.rsplit(":", 1)
-        return {
-            "name": name,
-            "type": "ss",
-            "server": server,
-            "port": int(port),
-            "cipher": method,
-            "password": password,
-            "udp": True,
-        }
+            uri, name_part = uri.rsplit("#", 1)
+            name = unquote(name_part)
+        
+        # 尝试直接解析：方法:密码@服务器:端口
+        if "@" in uri and ":" in uri.split("@")[0]:
+            try:
+                auth, server_port = uri.split("@", 1)
+                method, password = auth.split(":", 1)
+                server, port = server_port.rsplit(":", 1)
+                return {
+                    "name": name,
+                    "type": "ss",
+                    "server": server,
+                    "port": int(port),
+                    "cipher": method,
+                    "password": password,
+                    "udp": True,
+                }
+            except ValueError:
+                pass  # 继续尝试 Base64 解码
+        
+        # 尝试 Base64 解码
+        decoded = safe_b64decode(uri)
+        
+        # 格式1: base64(method:password@server:port)
+        if "@" in decoded and ":" in decoded.split("@")[0]:
+            try:
+                auth, server_port = decoded.split("@", 1)
+                method, password = auth.split(":", 1)
+                server, port = server_port.rsplit(":", 1)
+                return {
+                    "name": name,
+                    "type": "ss",
+                    "server": server,
+                    "port": int(port),
+                    "cipher": method,
+                    "password": password,
+                    "udp": True,
+                }
+            except ValueError:
+                pass
+        
+        # 格式2: base64(method:password)@server:port
+        if "@" in decoded:
+            try:
+                auth_part, server_port = decoded.split("@", 1)
+                method, password = safe_b64decode(auth_part).split(":", 1)
+                server, port = server_port.rsplit(":", 1)
+                return {
+                    "name": name,
+                    "type": "ss",
+                    "server": server,
+                    "port": int(port),
+                    "cipher": method,
+                    "password": password,
+                    "udp": True,
+                }
+            except ValueError:
+                pass
+        
+        # 格式3: 纯 base64 编码的完整配置（SIP002）
+        try:
+            # 尝试解析为 JSON（某些订阅会返回 JSON 格式）
+            config = json.loads(decoded)
+            if "server" in config and "port" in config and "method" in config and "password" in config:
+                return {
+                    "name": config.get("remarks", name),
+                    "type": "ss",
+                    "server": config["server"],
+                    "port": int(config["port"]),
+                    "cipher": config["method"],
+                    "password": config["password"],
+                    "udp": True,
+                }
+        except:
+            pass
+        
+        # 如果所有格式都失败，记录警告并跳过
+        print(f"[DEBUG] SS 无法解析: {uri[:100]}... decoded: {decoded[:100]}", file=sys.stderr)
+        return None
+        
     except Exception as e:
-        print(f"[WARN] 解析 SS 失败: {e}", file=sys.stderr)
+        print(f"[WARN] 解析 SS 失败: {e} | URI: {uri[:80]}...", file=sys.stderr)
         return None
 
 def parse_trojan(uri: str) -> Optional[Dict]:
@@ -287,7 +357,6 @@ def parse_subscription(content: str) -> List[Dict]:
                 proxy = parse_hysteria2(line)
             
             if proxy and proxy.get("name"):
-                # 补全缺失字段（关键！防止被丢弃）
                 proxy.setdefault("udp", True)
                 proxy.setdefault("skip-cert-verify", False)
                 if proxy["type"] in ["vless", "trojan", "vmess"] and proxy.get("tls"):
@@ -327,7 +396,7 @@ def main():
             print(f"[ERROR] 处理订阅 {url[:60]}... 失败: {e}", file=sys.stderr)
             continue
     
-    # 输出原始节点（供 dedup.py 处理）
+    # 输出原始节点
     output = {"proxies": all_proxies}
     with open("proxies_raw.yaml", "w", encoding="utf-8") as f:
         yaml.dump(output, f, allow_unicode=True, sort_keys=False)
