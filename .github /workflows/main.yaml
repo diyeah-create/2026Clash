@@ -1,0 +1,143 @@
+name: Fetch & Strict Google + Download Speed Test (8 Job Parallel + <5000ms)
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  schedule:
+    - cron: "0 */5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  # ==================== 8 Job 并行 fast 测速 ====================
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Config Git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: Install Python
+        run: pip install pyyaml requests
+
+      # ==================== 【新增】下载订阅（关键！） ====================
+      - name: Download raw proxies（多订阅全格式）
+        env:
+          PROXIES_URLS: ${{ secrets.PROXIES_URLS }}
+        run: |
+          timeout 10 curl -f "https://api.star-history.com/svg?repos=cxddgtb/2026Clash&type=Date" > stars.svg || true
+          python3 fetch_proxies.py
+
+      - name: Deduplicate + 防重名
+        run: python3 dedup.py
+
+      - name: Cache clash-speedtest
+        uses: actions/cache@v4
+        with:
+          path: clash-speedtest
+          key: clash-speedtest-linux-x86_64-latest
+
+      - name: Split proxies into shards
+        run: python3 split_proxies.py
+
+      - name: Fast Speed Test - Shard ${{ matrix.shard }}
+        timeout-minutes: 180
+        run: |
+          if [ ! -f clash-speedtest ]; then
+            curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
+            chmod +x clash-speedtest
+          fi
+          ./clash-speedtest \
+            -c proxies_chunk_${{ matrix.shard }}.yaml \
+            -output proxies_tested_chunk_${{ matrix.shard }}.yaml \
+            -rename \
+            -speed-mode fast \
+            -max-latency 15000ms \
+            -max-packet-loss 60 \
+            -timeout 4s \
+            -concurrent 20
+
+      - name: Upload chunk result
+        uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.shard }}
+          path: proxies_tested_chunk_${{ matrix.shard }}.yaml
+          retention-days: 1
+
+  # ==================== 合并 + 后续处理 ====================
+  merge-and-build:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Config Git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: Download all 8 chunks
+        uses: actions/download-artifact@v4
+        with:
+          path: ./chunks
+          merge-multiple: true
+
+      - name: Merge all fast chunks
+        run: python3 merge_chunks.py
+
+      - name: Filter <5000ms + Download Speed Test
+        run: |
+          python3 filter_low_latency.py || echo "过滤异常，使用全部节点"
+
+          echo "=== 第二阶段：仅对 <5000ms 节点进行 download 测速 ==="
+          if [ ! -f clash-speedtest ]; then
+            curl -sL https://github.com/faceair/clash-speedtest/releases/latest/download/clash-speedtest_Linux_x86_64.tar.gz | tar xz
+            chmod +x clash-speedtest
+          fi
+
+          ./clash-speedtest \
+            -c low_latency.yaml \
+            -output proxies_tested.yaml \
+            -rename \
+            -speed-mode download \
+            -min-download-speed 0.3 \
+            -max-packet-loss 40 \
+            -timeout 6s \
+            -concurrent 12 || echo "第二阶段失败，使用第一阶段结果"
+
+      - name: Prepare final proxies.yaml（关键修复）
+        run: |
+          if [ -f proxies_tested.yaml ] && [ -s proxies_tested.yaml ]; then
+            cp proxies_tested.yaml proxies.yaml
+            echo "✅ 第二阶段成功，使用 download 测速结果作为 proxies.yaml"
+          else
+            cp low_latency.yaml proxies.yaml
+            echo "✅ 第二阶段失败，使用第一阶段 low_latency.yaml（281 个节点）作为 proxies.yaml"
+          fi
+      - name: Enhance Node Names
+        run: python3 enhance_names.py
+
+      - name: Generate Node Statistics
+        run: python3 generate_stats.py
+
+      - name: Build Full Config
+        run: python3 build_full_config.py
+
+      - name: Commit & Force Push
+        run: |
+          git add proxies.yaml clash.yaml nodes_stats.md stars.svg raw_proxies.yaml proxies_dedup.yaml || true
+          git commit -m "🚀 8 Job 并行 + <5000ms 过滤 + 下载测速 ($(date '+%Y-%m-%d %H:%M:%S'))" --allow-empty || true
+          git push --force
+          echo "✅ 强制推送成功（即使内容无差异也提交）"
