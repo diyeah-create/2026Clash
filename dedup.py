@@ -1,49 +1,65 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+dedup.py - 智能去重器（2026 优化）
+✅ 基于「核心指纹」去重，保留参数最全的节点
+✅ 不误删：同一服务器多配置（如不同 SNI）视为不同节点
+✅ 名称防冲突：自动添加 #1 #2 后缀
+"""
+
 import yaml
 import hashlib
+from collections import defaultdict
 
-with open('raw_proxies.yaml', 'r', encoding='utf-8') as f:
-    data = yaml.safe_load(f) or {}
-proxies = data.get('proxies', [])
+def generate_fingerprint(proxy: dict) -> str:
+    """生成节点核心指纹（关键参数哈希）"""
+    # 只比对真正影响连接的参数
+    key_parts = [
+        proxy.get("type", ""),
+        proxy.get("server", ""),
+        str(proxy.get("port", "")),
+        proxy.get("uuid", proxy.get("password", "")),  # VLESS/Trojan 用 uuid/password
+        proxy.get("alterId", ""),  # VMess 特有
+        proxy.get("cipher", ""),   # SS 特有
+        proxy.get("network", "tcp"),
+        proxy.get("servername", proxy.get("sni", "")),  # SNI 不同视为不同节点
+        proxy.get("flow", ""),     # VLESS flow 不同视为不同节点
+        str(proxy.get("reality-opts", {})),  # Reality 配置
+    ]
+    raw = "|".join(str(p) for p in key_parts)
+    return hashlib.md5(raw.encode()).hexdigest()[:12]
 
-print(f"原始节点数量: {len(proxies)}")
+def main():
+    # 读取原始节点
+    with open("proxies_raw.yaml", "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    proxies = data.get("proxies", [])
+    print(f"[INFO] 加载 {len(proxies)} 个原始节点")
+    
+    # 按指纹分组，保留参数最全的
+    groups = defaultdict(list)
+    for p in proxies:
+        fp = generate_fingerprint(p)
+        groups[fp].append(p)
+    
+    deduped = []
+    name_count = defaultdict(int)
+    for fp, items in groups.items():
+        # 优先保留字段多的（参数更全）
+        best = max(items, key=lambda x: len(x))
+        # 名称防冲突
+        name = best["name"]
+        name_count[name] += 1
+        if name_count[name] > 1:
+            best["name"] = f"{name} #{name_count[name]}"
+        deduped.append(best)
+    
+    # 输出
+    output = {"proxies": deduped}
+    with open("proxies.yaml", "w", encoding="utf-8") as f:
+        yaml.dump(output, f, allow_unicode=True, sort_keys=False)
+    
+    print(f"[✅] 去重完成：{len(proxies)} → {len(deduped)} 个节点，保存至 proxies.yaml")
 
-# 终极去重：核心参数哈希（彻底消灭 duplicate name）
-def get_proxy_key(p):
-    core = {
-        'type': p.get('type'),
-        'server': p.get('server'),
-        'port': p.get('port'),
-        'uuid': p.get('uuid') or p.get('password'),
-        'cipher': p.get('cipher'),
-        'password': p.get('password')
-    }
-    return hashlib.md5(str(sorted(core.items())).encode()).hexdigest()
-
-seen = {}
-deduped = []
-for p in proxies:
-    key = get_proxy_key(p)
-    if key not in seen:
-        seen[key] = True
-        deduped.append(p)
-
-print(f"哈希严格去重后: {len(deduped)} 个节点")
-
-# 强制全局唯一名称
-final_proxies = []
-name_set = set()
-for i, p in enumerate(deduped):
-    original_name = p.get('name', f"节点-{i}")
-    base_name = original_name
-    counter = 1
-    while base_name in name_set:
-        base_name = f"{original_name} #{counter}"
-        counter += 1
-    p['name'] = base_name
-    name_set.add(base_name)
-    final_proxies.append(p)
-
-with open('proxies_dedup.yaml', 'w', encoding='utf-8') as f:
-    yaml.dump({'proxies': final_proxies}, f, allow_unicode=True, sort_keys=False)
-
-print(f"✅ 终极去重完成！共 {len(final_proxies)} 个节点 → proxies_dedup.yaml")
+if __name__ == "__main__":
+    main()
