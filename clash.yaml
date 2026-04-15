@@ -1,0 +1,478 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+tcp-concurrent: true
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  use-system-hosts: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  - https://dns.google/dns-query
+  - 8.8.8.8
+  - 1.1.1.1
+  fallback:
+  - 8.8.8.8
+  - 1.1.1.1
+  fallback-filter:
+    geoip: true
+    ipcidr:
+    - 10.0.0.0/8
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇲🇽 MX 001 | ⬇️ 48.86MB/s
+  port: 34460
+  server: 216.238.86.158
+  type: vmess
+  udp: true
+  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷 FR 001 | ⬇️ 37.88MB/s
+  port: 22324
+  server: 45.80.215.80
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 🇬🇧 GB 001 | ⬇️ 37.41MB/s
+  network: tcp
+  port: 8443
+  server: uk1.fromblancwithlove.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+- alterId: 0
+  cipher: auto
+  name: 🇫🇷 FR 002 | ⬇️ 36.98MB/s
+  port: 45653
+  server: 94.232.247.165
+  type: vmess
+  udp: true
+  uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+- name: 🇳🇱 NL 001 | ⬇️ 33.00MB/s
+  network: tcp
+  port: 1443
+  server: 93.185.166.71
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 0cf4a308-1fe7-42e2-bc41-f1b5877f489e
+- alterId: 0
+  cipher: auto
+  name: 🇹🇷 TR 001 | ⬇️ 23.04MB/s
+  port: 39651
+  server: 45.89.52.207
+  type: vmess
+  udp: true
+  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
+- alterId: 1
+  cipher: auto
+  name: 🇺🇸 US 001 | ⬇️ 21.58MB/s
+  port: 22324
+  server: 45.82.161.225
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 🇹🇷 TR 002 | ⬇️ 19.50MB/s
+  password: tunnel-ljlcf
+  port: 8441
+  server: tr-1.stunnel.cc
+  type: trojan
+- alterId: 1
+  cipher: auto
+  name: 🇯🇵 JP 001 | ⬇️ 19.40MB/s
+  port: 22324
+  server: 172.104.80.66
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 GB 002 | ⬇️ 18.62MB/s
+  port: 22324
+  server: 66.163.117.58
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 002 | ⬇️ 17.68MB/s
+  port: 10086
+  server: 107.172.75.141
+  type: vmess
+  udp: true
+  uuid: e02c67a8-d769-4d73-833a-ab6acdb86e6e
+- name: 🇸🇬 SG 001 | ⬇️ 14.55MB/s
+  network: tcp
+  port: 22539
+  server: node1.nanonet.host
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 001 | ⬇️ 12.97MB/s
+  port: 22324
+  server: 213.156.141.52
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 003 | ⬇️ 10.11MB/s
+  port: 180
+  server: 82.198.246.46
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 001 | ⬇️ 9.33MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.126
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 002 | ⬇️ 8.37MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.149
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 003 | ⬇️ 7.09MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.52
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 004 | ⬇️ 6.60MB/s
+  port: 180
+  server: 82.198.246.250
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 004 | ⬇️ 5.30MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.23
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇮🇩 ID 001 | ⬇️ 4.06MB/s
+  port: 30812
+  server: v12.hdacd.com
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳 TW 001 | ⬇️ 2.78MB/s
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
+  udp: true
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 005 | ⬇️ 2.30MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.74
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 005 | ⬇️ 1.91MB/s
+  port: 1443
+  server: us02.bctuo.top
+  type: vmess
+  udp: true
+  uuid: 31801968-9877-4ef5-be87-56503c34a69d
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 006 | ⬇️ 1.60MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.64
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 002 | ⬇️ 0.40MB/s
+  port: 7754
+  server: vm51544542.dns8656815.com
+  type: vmess
+  udp: true
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+proxy-groups:
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 🇲🇽 MX 001 | ⬇️ 48.86MB/s
+  - 🇫🇷 FR 001 | ⬇️ 37.88MB/s
+  - 🇬🇧 GB 001 | ⬇️ 37.41MB/s
+  - 🇫🇷 FR 002 | ⬇️ 36.98MB/s
+  - 🇳🇱 NL 001 | ⬇️ 33.00MB/s
+  - 🇹🇷 TR 001 | ⬇️ 23.04MB/s
+  - 🇺🇸 US 001 | ⬇️ 21.58MB/s
+  - 🇹🇷 TR 002 | ⬇️ 19.50MB/s
+  - 🇯🇵 JP 001 | ⬇️ 19.40MB/s
+  - 🇬🇧 GB 002 | ⬇️ 18.62MB/s
+  - 🇺🇸 US 002 | ⬇️ 17.68MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.55MB/s
+  - 🇭🇰 HK 001 | ⬇️ 12.97MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.11MB/s
+  - 🇻🇳 VN 001 | ⬇️ 9.33MB/s
+  - 🇻🇳 VN 002 | ⬇️ 8.37MB/s
+  - 🇻🇳 VN 003 | ⬇️ 7.09MB/s
+  - 🇺🇸 US 004 | ⬇️ 6.60MB/s
+  - 🇻🇳 VN 004 | ⬇️ 5.30MB/s
+  - 🇮🇩 ID 001 | ⬇️ 4.06MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.78MB/s
+  - 🇻🇳 VN 005 | ⬇️ 2.30MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.91MB/s
+  - 🇻🇳 VN 006 | ⬇️ 1.60MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.40MB/s
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 低延迟
+  type: url-test
+  proxies:
+  - 🇲🇽 MX 001 | ⬇️ 48.86MB/s
+  - 🇫🇷 FR 001 | ⬇️ 37.88MB/s
+  - 🇬🇧 GB 001 | ⬇️ 37.41MB/s
+  - 🇫🇷 FR 002 | ⬇️ 36.98MB/s
+  - 🇳🇱 NL 001 | ⬇️ 33.00MB/s
+  - 🇹🇷 TR 001 | ⬇️ 23.04MB/s
+  - 🇺🇸 US 001 | ⬇️ 21.58MB/s
+  - 🇹🇷 TR 002 | ⬇️ 19.50MB/s
+  - 🇯🇵 JP 001 | ⬇️ 19.40MB/s
+  - 🇬🇧 GB 002 | ⬇️ 18.62MB/s
+  - 🇺🇸 US 002 | ⬇️ 17.68MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.55MB/s
+  - 🇭🇰 HK 001 | ⬇️ 12.97MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.11MB/s
+  - 🇻🇳 VN 001 | ⬇️ 9.33MB/s
+  - 🇻🇳 VN 002 | ⬇️ 8.37MB/s
+  - 🇻🇳 VN 003 | ⬇️ 7.09MB/s
+  - 🇺🇸 US 004 | ⬇️ 6.60MB/s
+  - 🇻🇳 VN 004 | ⬇️ 5.30MB/s
+  - 🇮🇩 ID 001 | ⬇️ 4.06MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.78MB/s
+  - 🇻🇳 VN 005 | ⬇️ 2.30MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.91MB/s
+  - 🇻🇳 VN 006 | ⬇️ 1.60MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.40MB/s
+  url: http://www.gstatic.com/generate_204
+  interval: 180
+  tolerance: 30
+- name: 负载均衡
+  type: load-balance
+  strategy: consistent-hashing
+  proxies:
+  - 🇲🇽 MX 001 | ⬇️ 48.86MB/s
+  - 🇫🇷 FR 001 | ⬇️ 37.88MB/s
+  - 🇬🇧 GB 001 | ⬇️ 37.41MB/s
+  - 🇫🇷 FR 002 | ⬇️ 36.98MB/s
+  - 🇳🇱 NL 001 | ⬇️ 33.00MB/s
+  - 🇹🇷 TR 001 | ⬇️ 23.04MB/s
+  - 🇺🇸 US 001 | ⬇️ 21.58MB/s
+  - 🇹🇷 TR 002 | ⬇️ 19.50MB/s
+  - 🇯🇵 JP 001 | ⬇️ 19.40MB/s
+  - 🇬🇧 GB 002 | ⬇️ 18.62MB/s
+  - 🇺🇸 US 002 | ⬇️ 17.68MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.55MB/s
+  - 🇭🇰 HK 001 | ⬇️ 12.97MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.11MB/s
+  - 🇻🇳 VN 001 | ⬇️ 9.33MB/s
+  - 🇻🇳 VN 002 | ⬇️ 8.37MB/s
+  - 🇻🇳 VN 003 | ⬇️ 7.09MB/s
+  - 🇺🇸 US 004 | ⬇️ 6.60MB/s
+  - 🇻🇳 VN 004 | ⬇️ 5.30MB/s
+  - 🇮🇩 ID 001 | ⬇️ 4.06MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.78MB/s
+  - 🇻🇳 VN 005 | ⬇️ 2.30MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.91MB/s
+  - 🇻🇳 VN 006 | ⬇️ 1.60MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.40MB/s
+- name: 故障转移
+  type: fallback
+  proxies:
+  - 自动选择
+  - 低延迟
+  - 负载均衡
+- name: 手动选择
+  type: select
+  proxies:
+  - 🇲🇽 MX 001 | ⬇️ 48.86MB/s
+  - 🇫🇷 FR 001 | ⬇️ 37.88MB/s
+  - 🇬🇧 GB 001 | ⬇️ 37.41MB/s
+  - 🇫🇷 FR 002 | ⬇️ 36.98MB/s
+  - 🇳🇱 NL 001 | ⬇️ 33.00MB/s
+  - 🇹🇷 TR 001 | ⬇️ 23.04MB/s
+  - 🇺🇸 US 001 | ⬇️ 21.58MB/s
+  - 🇹🇷 TR 002 | ⬇️ 19.50MB/s
+  - 🇯🇵 JP 001 | ⬇️ 19.40MB/s
+  - 🇬🇧 GB 002 | ⬇️ 18.62MB/s
+  - 🇺🇸 US 002 | ⬇️ 17.68MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.55MB/s
+  - 🇭🇰 HK 001 | ⬇️ 12.97MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.11MB/s
+  - 🇻🇳 VN 001 | ⬇️ 9.33MB/s
+  - 🇻🇳 VN 002 | ⬇️ 8.37MB/s
+  - 🇻🇳 VN 003 | ⬇️ 7.09MB/s
+  - 🇺🇸 US 004 | ⬇️ 6.60MB/s
+  - 🇻🇳 VN 004 | ⬇️ 5.30MB/s
+  - 🇮🇩 ID 001 | ⬇️ 4.06MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.78MB/s
+  - 🇻🇳 VN 005 | ⬇️ 2.30MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.91MB/s
+  - 🇻🇳 VN 006 | ⬇️ 1.60MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.40MB/s
+- name: 香港
+  type: select
+  proxies:
+  - 🇭🇰 HK 001 | ⬇️ 12.97MB/s
+  - 🇭🇰 HK 002 | ⬇️ 0.40MB/s
+- name: 日本
+  type: select
+  proxies:
+  - 🇯🇵 JP 001 | ⬇️ 19.40MB/s
+- name: 美国
+  type: select
+  proxies:
+  - 🇺🇸 US 001 | ⬇️ 21.58MB/s
+  - 🇺🇸 US 002 | ⬇️ 17.68MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.11MB/s
+  - 🇺🇸 US 004 | ⬇️ 6.60MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.91MB/s
+- name: 新加坡
+  type: select
+  proxies:
+  - 🇸🇬 SG 001 | ⬇️ 14.55MB/s
+- name: 台湾
+  type: select
+  proxies:
+  - 🇨🇳 TW 001 | ⬇️ 2.78MB/s
+- name: 韩国
+  type: select
+  proxies:
+  - DIRECT
+- name: 色情
+  type: select
+  proxies:
+  - 自动选择
+  - 低延迟
+  - 手动选择
+- name: PROXY
+  type: select
+  proxies:
+  - 自动选择
+  - 低延迟
+  - 负载均衡
+  - 故障转移
+  - 手动选择
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  private:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt
+    path: ./ruleset/private.yaml
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt
+    path: ./ruleset/applications.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  gfw:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+    path: ./ruleset/direct.yaml
+    interval: 86400
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+  porn:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NSFW/NSFW.txt
+    path: ./ruleset/porn.yaml
+    interval: 86400
+rules:
+- RULE-SET,reject,REJECT
+- RULE-SET,private,DIRECT
+- RULE-SET,cncidr,DIRECT
+- RULE-SET,lancidr,DIRECT
+- RULE-SET,applications,DIRECT
+- RULE-SET,apple,DIRECT
+- RULE-SET,icloud,DIRECT
+- RULE-SET,porn,色情
+- RULE-SET,gfw,PROXY
+- RULE-SET,proxy,PROXY
+- RULE-SET,direct,DIRECT
+- RULE-SET,tld-not-cn,PROXY
+- RULE-SET,telegramcidr,PROXY
+- GEOIP,CN,DIRECT
+- MATCH,PROXY
