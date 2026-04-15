@@ -1,0 +1,1363 @@
+proxies:
+- name: 🇯🇵 日本 | trojan | 10
+  type: trojan
+  server: 160.16.124.17
+  port: 4674
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+- name: 🇯🇵 日本 | trojan | 11
+  type: trojan
+  server: 160.16.85.33
+  port: 4380
+  password: 9f7d5cb76d1645101994d9b25891e3b7
+- name: 🇯🇵 日本 | vmess | 23
+  type: vmess
+  server: 161.129.34.126
+  port: 443
+  uuid: a0b1fb66-ed41-4077-86a9-a61c143d3777
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇰🇷 韩国 | trojan | 09
+  type: trojan
+  server: 114.207.99.233
+  port: 11434
+  password: trojan
+- name: 🇰🇷 韩国 | trojan | 16
+  type: trojan
+  server: official.seoulcitygovernment.com.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇰🇷 韩国 | trojan | 17
+  type: trojan
+  server: official.seoulcityhall.com.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇰🇷 韩国 | vmess | 20
+  type: vmess
+  server: fullaccesstokoreannetsubnode1.azurewebsites.net
+  port: 443
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇰🇷 韩国 | vmess | 22
+  type: vmess
+  server: chuncheon03.zgjok.com
+  port: 443
+  uuid: 81d5cac4-d039-4874-9a20-c391f580012d
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 | vless | 01
+  type: vless
+  server: 194.76.18.25
+  port: 443
+  uuid: e65a5cbc-5663-4f7d-ad7d-800e86ba487d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇰🇿 哈萨克斯坦 | vless | 02
+  type: vless
+  server: 83.222.23.81
+  port: 38065
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇰🇿 哈萨克斯坦 | vless | 03
+  type: vless
+  server: 178.236.16.98
+  port: 35728
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇰🇿 哈萨克斯坦 | vmess | 04
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇰🇿 哈萨克斯坦 | vless | 05
+  type: vless
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇰🇿 哈萨克斯坦 | trojan | 06
+  type: trojan
+  server: 149.33.0.109
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇰🇿 哈萨克斯坦 | vless | 07
+  type: vless
+  server: 94.131.86.204
+  port: 443
+  uuid: 41808414-6496-4d3c-89d6-9442f76a155a
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇹 立陶宛 | trojan | 02
+  type: trojan
+  server: 195.66.25.251
+  port: 443
+  password: q2GRUM1-odJBWq_KV6xv2fuNvu8ed-
+- name: 🇱🇹 立陶宛 | trojan | 03
+  type: trojan
+  server: 194.87.106.31
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇱🇹 立陶宛 | trojan | 04
+  type: trojan
+  server: 8443.golden-cards.me
+  port: 443
+  password: q2GRUM1-odJBWq_KV6xv2fuNvu8ed-
+- name: 🇱🇻 拉脱维亚 | vless | 01
+  type: vless
+  server: 185.72.86.38
+  port: 59999
+  uuid: a2b431d9-d5d3-41c8-ad5b-8f95aa5a6712
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 02
+  type: vless
+  server: 83.222.20.64
+  port: 17910
+  uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 03
+  type: vless
+  server: 90.156.255.198
+  port: 51114
+  uuid: 8b575b35-3c7c-42b0-ac80-2aa6b0d7717c
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 06
+  type: vless
+  server: deu196.unboundaccess.org
+  port: 443
+  uuid: f788e136-b245-4617-9d41-b505c7f41ef9
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 08
+  type: vless
+  server: 195.135.255.177
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 09
+  type: vless
+  server: 45.43.76.184
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 10
+  type: vless
+  server: 5.34.209.231
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 11
+  type: vless
+  server: 185.82.126.185
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 12
+  type: vless
+  server: 31.128.32.98
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇱🇻 拉脱维亚 | vless | 14
+  type: vless
+  server: 90.156.254.74
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇲🇩 摩尔多瓦 | vless | 01
+  type: vless
+  server: 94.232.247.168
+  port: 41360
+  uuid: e16a35ea-6715-4e75-9845-d20358bd0876
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇲🇩 摩尔多瓦 | vless | 03
+  type: vless
+  server: 91.242.229.129
+  port: 4443
+  uuid: bbd4e4e9-b56f-4b0d-a85b-9eb5aa65644c
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇲🇩 摩尔多瓦 | trojan | 05
+  type: trojan
+  server: 103.231.73.181
+  port: 4443
+  password: strong-secret-pass-777
+- name: 🇲🇩 摩尔多瓦 | vmess | 06
+  type: vmess
+  server: 94.131.10.5
+  port: 443
+  uuid: 88d476c1-48f7-4d3d-a0e6-acccbff02db6
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇲🇩 摩尔多瓦 | vless | 07
+  type: vless
+  server: 91.132.142.10
+  port: 443
+  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇲🇩 摩尔多瓦 | trojan | 08
+  type: trojan
+  server: 194.246.114.54
+  port: 443
+  password: e299faed-cb72-4c62-bb2e-f0a218aed72a
+- name: 🇲🇩 摩尔多瓦 | vless | 09
+  type: vless
+  server: 3.cdnconn.com
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇲🇩 摩尔多瓦 | vless | 10
+  type: vless
+  server: fin5.frostbot.ru
+  port: 443
+  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇲🇽 墨西哥 | ss | 02
+  type: ss
+  server: 147.78.1.230
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇲🇾 马来西亚 | vmess | 01
+  type: vmess
+  server: 47.250.45.234
+  port: 43063
+  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇲🇾 马来西亚 | vmess | 02
+  type: vmess
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇲🇾 马来西亚 | vmess | 04
+  type: vmess
+  server: gtm1.ktmwan.net
+  port: 12883
+  uuid: 9207a3fc-18cc-4af7-ab1c-1c0000e57e37
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇳🇱 荷兰 | vless | 01
+  type: vless
+  server: 138.226.240.199
+  port: 4433
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 02
+  type: vless
+  server: 51.158.206.19
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vmess | 03
+  type: vmess
+  server: 51.15.19.206
+  port: 80
+  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇳🇱 荷兰 | vless | 06
+  type: vless
+  server: 45.15.128.183
+  port: 603
+  uuid: 4484eae9-e195-4adf-b2b5-ad0b9132162b
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 07
+  type: vless
+  server: 51.158.206.97
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 08
+  type: vless
+  server: 5.255.100.32
+  port: 8080
+  uuid: 19a1e5b1-6289-4fe6-9aad-be285510942d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 09
+  type: vless
+  server: 51.158.206.96
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 10
+  type: vless
+  server: 51.158.206.8
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 11
+  type: vless
+  server: 51.158.206.34
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 12
+  type: vless
+  server: 51.158.206.86
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 13
+  type: vless
+  server: 51.158.206.80
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 16
+  type: vless
+  server: 144.31.233.146
+  port: 43361
+  uuid: bf432795-1383-46e5-8823-d638b956cabe
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 19
+  type: vless
+  server: 51.158.206.12
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 26
+  type: vless
+  server: 51.158.206.103
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | trojan | 33
+  type: trojan
+  server: 152.53.60.198
+  port: 8444
+  password: trojan
+- name: 🇳🇱 荷兰 | vless | 34
+  type: vless
+  server: 176.124.203.183
+  port: 8082
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 35
+  type: vless
+  server: 146.103.102.82
+  port: 80
+  uuid: e08f1ad7-0c60-446d-baec-08b3b69bb3d0
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 36
+  type: vless
+  server: 51.158.206.98
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 37
+  type: vless
+  server: 51.158.206.87
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 38
+  type: vless
+  server: 51.158.206.93
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 39
+  type: vless
+  server: 51.158.206.29
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 40
+  type: vless
+  server: 51.158.206.26
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 41
+  type: vless
+  server: 51.158.206.25
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 42
+  type: vless
+  server: 51.158.206.20
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 43
+  type: vless
+  server: 212.34.142.191
+  port: 8443
+  uuid: a5e746f7-328f-4b65-a65f-e2e2a4a5b1a9
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | trojan | 44
+  type: trojan
+  server: 51.158.146.183
+  port: 443
+  password: f6a0a650-306e-11ee-b692-1239d0255272
+- name: 🇳🇱 荷兰 | vless | 45
+  type: vless
+  server: 72.56.75.169
+  port: 8443
+  uuid: 1c61a6c0-9bc7-4cb8-9188-6d86d5989388
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 47
+  type: vless
+  server: 45.91.202.224
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 48
+  type: vless
+  server: 91.84.99.166
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vmess | 50
+  type: vmess
+  server: 51.15.19.206
+  port: 2083
+  uuid: d8d8b6c0-2ec6-11ee-b836-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇳🇱 荷兰 | vless | 51
+  type: vless
+  server: 212.34.152.234
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 52
+  type: vless
+  server: 195.181.173.199
+  port: 8443
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 54
+  type: vless
+  server: 176.222.54.157
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 55
+  type: vless
+  server: 85.158.110.62
+  port: 8443
+  uuid: 46c4bca1-3899-496c-9fd5-358fc5b08d01
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 56
+  type: vless
+  server: 95.85.248.200
+  port: 443
+  uuid: cec4d434-0578-483e-a5cb-d6a11ea67e27
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 57
+  type: vless
+  server: 150.251.145.244
+  port: 8443
+  uuid: f3a1017d-1ebf-11f1-8cae-c3845d39d2de
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 59
+  type: vless
+  server: 150.251.145.242
+  port: 8443
+  uuid: 4b056394-2f40-11f1-bffe-46c4782ac1a7
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | trojan | 60
+  type: trojan
+  server: nl-4.tr202512.com
+  port: 443
+  password: M08tvzYWtUEJNtbpHp
+- name: 🇳🇱 荷兰 | vless | 61
+  type: vless
+  server: 46.17.97.207
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 62
+  type: vless
+  server: 194.124.250.51
+  port: 443
+  uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 63
+  type: vless
+  server: 5.180.52.53
+  port: 443
+  uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 64
+  type: vless
+  server: 95.179.138.190
+  port: 443
+  uuid: telegram-id-qeshmserver
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 65
+  type: vless
+  server: 45.15.128.75
+  port: 8443
+  uuid: fad2b7e0-d80c-4b7b-a84f-d86e0e49f627
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 66
+  type: vless
+  server: av.nexconnx.com
+  port: 8080
+  uuid: 19a1e5b1-6289-4fe6-9aad-be285510942d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 67
+  type: vless
+  server: ll0ll.vip
+  port: 8443
+  uuid: b9dbc1ff-6364-4826-a973-71c0584116c4
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 68
+  type: vless
+  server: 89.124.77.162
+  port: 443
+  uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 70
+  type: vless
+  server: nl9.404-it.ru
+  port: 5443
+  uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 71
+  type: vless
+  server: v315470.hosted-by-vdsina.com
+  port: 25998
+  uuid: f3bf8732-4040-4132-b68a-2c137b75bbf3
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 72
+  type: vless
+  server: nl6.404-it.ru
+  port: 8443
+  uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 73
+  type: vless
+  server: nl-90w-c.southnetworks.cloud
+  port: 80
+  uuid: e08f1ad7-0c60-446d-baec-08b3b69bb3d0
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 74
+  type: vless
+  server: s502.okgg.top
+  port: 443
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 75
+  type: vless
+  server: s503.okgg.top
+  port: 443
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vmess | 76
+  type: vmess
+  server: cloudflare.xrenblog.com
+  port: 443
+  uuid: 6c175d1a-a57f-4881-a471-173eb139694b
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇳🇱 荷兰 | vless | 77
+  type: vless
+  server: s677.ccgfw.top
+  port: 443
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | trojan | 78
+  type: trojan
+  server: nl-4.tr202507.com
+  port: 443
+  password: uThbm8eGmXZ7GKqnWy
+- name: 🇳🇱 荷兰 | vless | 79
+  type: vless
+  server: dns.dressforida.monster
+  port: 443
+  uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 80
+  type: vless
+  server: s504.okgg.top
+  port: 443
+  uuid: 872624ac-aa40-39b1-8232-f7270812c234
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇱 荷兰 | vless | 81
+  type: vless
+  server: nl10.404-it.ru
+  port: 443
+  uuid: 6d0e9ded-d23d-4ffb-b165-7bc757be84d3
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇳🇴 挪威 | trojan | 01
+  type: trojan
+  server: 80.173.230.196
+  port: 26279
+  password: a5inYFE=JGV89+hjxIqgDp1tcWBd6
+- name: 🇳🇴 挪威 | trojan | 04
+  type: trojan
+  server: 148.135.195.95
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇵🇰 巴基斯坦 | vless | 01
+  type: vless
+  server: 103.175.79.10
+  port: 443
+  uuid: 49ed01ad-3bb4-204f-b0ff-a58f658fd618
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇵🇱 波兰 | trojan | 05
+  type: trojan
+  server: 51.83.186.142
+  port: 80
+  password: 555034c8-6420-45d0-893c-905c02342150
+- name: 🇵🇱 波兰 | trojan | 07
+  type: trojan
+  server: 144.31.5.132
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇵🇱 波兰 | vless | 08
+  type: vless
+  server: 144.31.3.35
+  port: 443
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇵🇱 波兰 | vless | 09
+  type: vless
+  server: 144.31.4.127
+  port: 443
+  uuid: 7e0a9f75-b424-493b-b7e6-cebd7ea8642d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇵🇱 波兰 | vless | 10
+  type: vless
+  server: 82.26.91.244
+  port: 443
+  uuid: 6f99ed2f-9879-40e3-b5b4-5590c60f8e4a
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇵🇱 波兰 | vless | 11
+  type: vless
+  server: 144.31.3.30
+  port: 443
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇴 罗马尼亚 | vless | 01
+  type: vless
+  server: 188.241.241.33
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇴 罗马尼亚 | vless | 03
+  type: vless
+  server: 188.241.241.29
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇸 塞尔维亚 | trojan | 01
+  type: trojan
+  server: 38.180.101.136
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇷🇸 塞尔维亚 | vless | 02
+  type: vless
+  server: 38.180.101.136
+  port: 443
+  uuid: c8d1c6d3-388f-48fc-a8f0-ed90d955d096
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇺 俄罗斯 | vless | 01
+  type: vless
+  server: 45.67.215.233
+  port: 443
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇺 俄罗斯 | vless | 02
+  type: vless
+  server: 5.181.171.2
+  port: 443
+  uuid: a87bf8a2-17a4-3054-b51e-876b5f1d0f24
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇺 俄罗斯 | vmess | 04
+  type: vmess
+  server: 45.89.52.207
+  port: 39651
+  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇷🇺 俄罗斯 | vless | 05
+  type: vless
+  server: 185.147.26.21
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇺 俄罗斯 | trojan | 08
+  type: trojan
+  server: 145.249.115.115
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇷🇺 俄罗斯 | trojan | 09
+  type: trojan
+  server: 5.182.84.244
+  port: 443
+  password: Aimer
+- name: 🇷🇺 俄罗斯 | vless | 10
+  type: vless
+  server: 193.233.127.219
+  port: 443
+  uuid: 6fd9f786-d974-49d0-b5c4-397678de69a2
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇺 俄罗斯 | vless | 11
+  type: vless
+  server: 46.149.68.27
+  port: 2083
+  uuid: e11ca047-3e50-469b-aa1a-beb9be0256b2
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇺 俄罗斯 | vless | 12
+  type: vless
+  server: 46.149.71.197
+  port: 2083
+  uuid: 40600c8a-730a-411c-b72b-c3bca115dcf7
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇺 俄罗斯 | vless | 13
+  type: vless
+  server: mci.buzzmuzzpanel.online
+  port: 443
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇷🇺 俄罗斯 | vless | 14
+  type: vless
+  server: whtk.mooo.com
+  port: 15521
+  uuid: cdcd0159-bb13-4994-bdbb-982d854a72a6
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇸🇨 塞舌尔 | vless | 07
+  type: vless
+  server: direct.illusion-vpn.ru
+  port: 52000
+  uuid: bf263367-bb63-4663-b4a1-34946107a72e
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇸🇨 塞舌尔 | vmess | 08
+  type: vmess
+  server: n1672318788.lyqrdde.cn
+  port: 443
+  uuid: 0aec6047-2839-4a7d-a296-605d5c256350
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇪 瑞典 | vless | 01
+  type: vless
+  server: 144.31.130.37
+  port: 443
+  uuid: 7e0a9f75-b424-493b-b7e6-cebd7ea8642d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇸🇪 瑞典 | trojan | 02
+  type: trojan
+  server: 188.126.76.159
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇸🇪 瑞典 | vless | 03
+  type: vless
+  server: 16.170.148.222
+  port: 443
+  uuid: fd2c95b1-f48e-4d44-9b53-f5560f2eaae4
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇸🇪 瑞典 | trojan | 07
+  type: trojan
+  server: 194.87.30.69
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇸🇪 瑞典 | vless | 08
+  type: vless
+  server: dd.openaccessnode.com
+  port: 2197
+  uuid: 75193bef-8d8f-e823-41e0-2dd083dc1399
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇸🇬 新加坡 | vmess | 01
+  type: vmess
+  server: 206.238.236.36
+  port: 2052
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | vmess | 02
+  type: vmess
+  server: 15.235.147.186
+  port: 80
+  uuid: 6fea1649-425b-4092-bf53-29792152c925
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | vmess | 03
+  type: vmess
+  server: 143.198.219.182
+  port: 80
+  uuid: e9c4ce52-9a78-4381-b6f8-23350bc4d606
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | trojan | 07
+  type: trojan
+  server: 15.235.197.4
+  port: 80
+  password: 16bcc187-a1a0-4b8a-8b69-627f38b7cc0d
+- name: 🇸🇬 新加坡 | vmess | 08
+  type: vmess
+  server: 15.235.184.36
+  port: 80
+  uuid: 7ce525f5-3a9b-4627-ae0e-3ca0b57519e3
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | vmess | 09
+  type: vmess
+  server: 146.190.82.241
+  port: 80
+  uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | vmess | 10
+  type: vmess
+  server: 15.235.192.196
+  port: 80
+  uuid: 3701ded3-09ba-4154-970d-a9f4a090a382
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | vmess | 11
+  type: vmess
+  server: 8.219.123.35
+  port: 80
+  uuid: 7e7f8398-bd39-49d8-9ce6-e48ffef463dd
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | vmess | 14
+  type: vmess
+  server: 109.123.237.41
+  port: 80
+  uuid: 03a77360-808d-11ed-b736-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | vmess | 17
+  type: vmess
+  server: 118.107.46.173
+  port: 443
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | trojan | 19
+  type: trojan
+  server: 86.38.247.203
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇸🇬 新加坡 | vmess | 20
+  type: vmess
+  server: 146.190.82.241
+  port: 443
+  uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | trojan | 23
+  type: trojan
+  server: uk01.trojanyyds.xyz
+  port: 443
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+- name: 🇸🇬 新加坡 | trojan | 29
+  type: trojan
+  server: 194.87.10.31
+  port: 23357
+  password: fQmMJwOLMlqHednu2SVED8gi-+H-db9kbg
+- name: 🇸🇬 新加坡 | vmess | 31
+  type: vmess
+  server: 202.79.172.53
+  port: 443
+  uuid: 30216206-14b7-40e7-995d-61c1219ba584
+  alterId: 64
+  cipher: auto
+  udp: true
+- name: 🇸🇬 新加坡 | trojan | 32
+  type: trojan
+  server: sg02.trojanyyds.xyz
+  port: 443
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+- name: 🇸🇬 新加坡 | trojan | 33
+  type: trojan
+  server: in01.trojanyyds.xyz
+  port: 443
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+- name: 🇸🇬 新加坡 | trojan | 34
+  type: trojan
+  server: jp01.trojanyyds.xyz
+  port: 443
+  password: cd41b9d7-df15-46ad-a778-257b0851525a
+- name: 🇸🇮 斯洛文尼亚 | vless | 02
+  type: vless
+  server: 92.60.78.221
+  port: 443
+  uuid: 6897c181-24b1-4880-8660-e6c5c7ee13c7
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇹🇷 土耳其 | vmess | 02
+  type: vmess
+  server: 185.104.189.38
+  port: 80
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇹🇷 土耳其 | vmess | 03
+  type: vmess
+  server: 45.94.169.142
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇹🇷 土耳其 | vless | 04
+  type: vless
+  server: 185.39.204.27
+  port: 443
+  uuid: 7d51e3fe-a49a-4245-83b6-98a0346cdd09
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇹🇷 土耳其 | vless | 06
+  type: vless
+  server: tr2.vpnjantit.com
+  port: 10004
+  uuid: 77ea8d6c-1a96-11f1-be1f-1744d2a6f511
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇹🇷 土耳其 | vless | 07
+  type: vless
+  server: tr2.vpnjantit.com
+  port: 10002
+  uuid: 77ea8d6c-1a96-11f1-be1f-1744d2a6f511
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇹🇼 台湾 | vmess | 02
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇹🇼 台湾 | vmess | 05
+  type: vmess
+  server: 103.229.124.3
+  port: 20521
+  uuid: 292e9c90-25b3-4ff5-b98a-9ef5877714ab
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇹🇼 台湾 | trojan | 07
+  type: trojan
+  server: official.taipeicitygovernment.chernovtsy.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 08
+  type: trojan
+  server: official.taipeicitygovernment.dp.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 09
+  type: trojan
+  server: official.taipeicitygovernment.net.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 10
+  type: trojan
+  server: official.taipeicitygovernment.co.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 11
+  type: trojan
+  server: official.taipeicitygovernment.com.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 13
+  type: trojan
+  server: official.taipeicitygovernment.cn.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 14
+  type: trojan
+  server: official.taipeicitygovernment.kyiv.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 15
+  type: trojan
+  server: official.taipeicitygovernment.biz.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 16
+  type: trojan
+  server: official.taipeicitygovernment.kiev.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇹🇼 台湾 | trojan | 23
+  type: trojan
+  server: official.taipeicitygovernment.if.ua
+  port: 8443
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+- name: 🇺🇦 乌克兰 | trojan | 01
+  type: trojan
+  server: 130.0.234.160
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+- name: 🇺🇸 美国 | vmess | 01
+  type: vmess
+  server: 147.135.112.248
+  port: 80
+  uuid: 973c2639-c9c2-484d-ae9b-3d68b2f30d9e
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | trojan | 02
+  type: trojan
+  server: 15.204.210.176
+  port: 80
+  password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f
+- name: 🇺🇸 美国 | trojan | 04
+  type: trojan
+  server: 135.148.148.4
+  port: 80
+  password: 800eb26c-cd0c-4269-aae7-e63d75de4edd
+- name: 🇺🇸 美国 | vmess | 07
+  type: vmess
+  server: 47.253.55.72
+  port: 443
+  uuid: aa482fd0-21fc-4f24-974a-987a6c75a05d
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vmess | 10
+  type: vmess
+  server: 0218tw02.fans8.xyz
+  port: 80
+  uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vless | 13
+  type: vless
+  server: 69.84.182.20
+  port: 443
+  uuid: 2f466a3b-5093-4556-8759-c87c8511c753
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇺🇸 美国 | vless | 14
+  type: vless
+  server: 152.53.80.40
+  port: 443
+  uuid: e6567a1e-260f-4b0e-8de3-e2e12f90e854
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇺🇸 美国 | vless | 15
+  type: vless
+  server: 135.84.74.118
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇺🇸 美国 | vless | 16
+  type: vless
+  server: 135.84.64.222
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇺🇸 美国 | vmess | 17
+  type: vmess
+  server: 331tw.fans8.xyz
+  port: 80
+  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vmess | 19
+  type: vmess
+  server: 69.84.182.16
+  port: 443
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vmess | 20
+  type: vmess
+  server: free-russian01-cdn.xiaohouzi.club
+  port: 80
+  uuid: 3d31728e-064d-42b8-b945-f79c008f73fc
+  alterId: 233
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vless | 21
+  type: vless
+  server: 199.107.164.217
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇺🇸 美国 | vmess | 22
+  type: vmess
+  server: 216.24.57.57
+  port: 443
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vless | 23
+  type: vless
+  server: 192.0.54.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇺🇸 美国 | vmess | 24
+  type: vmess
+  server: mycfwork.herokuapp.com
+  port: 443
+  uuid: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+  alterId: 4
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vmess | 25
+  type: vmess
+  server: ac2088.herokuapp.com
+  port: 443
+  uuid: d1babe08-f8ac-490b-b66f-9be27467f3cc
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vless | 26
+  type: vless
+  server: 192.200.160.20
+  port: 443
+  uuid: 92b82d0f-d2f8-4f6f-b177-08f681a337e6
+  tls: true
+  skip-cert-verify: true
+  network: tcp
+- name: 🇺🇸 美国 | vmess | 27
+  type: vmess
+  server: 38.99.82.253
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vmess | 28
+  type: vmess
+  server: 527hk1.fans8.xyz
+  port: 80
+  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇺🇸 美国 | vless | 31
+  type: vless
+  server: 208.103.161.110
+  port: 443
+  uuid: 9ccd06a2-5616-47e3-9763-f9696959d7ad
+  tls: true
+  skip-cert-verify: true
+  network: tcp
