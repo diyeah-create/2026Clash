@@ -29,7 +29,7 @@ dns:
 proxies:
 - alterId: 0
   cipher: auto
-  name: 🇲🇽 MX 001 | ⬇️ 56.68MB/s
+  name: 🇲🇽 MX 001 | ⬇️ 56.35MB/s
   port: 34460
   server: 216.238.86.158
   type: vmess
@@ -37,21 +37,13 @@ proxies:
   uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 001 | ⬇️ 47.81MB/s
-  port: 180
-  server: 82.198.246.250
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 🇫🇷 FR 001 | ⬇️ 36.68MB/s
+  name: 🇫🇷 FR 001 | ⬇️ 38.40MB/s
   port: 22324
   server: 45.80.215.80
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 🇬🇧 GB 001 | ⬇️ 36.33MB/s
+- name: 🇬🇧 GB 001 | ⬇️ 38.32MB/s
   network: tcp
   port: 8443
   server: uk1.fromblancwithlove.com
@@ -59,68 +51,7 @@ proxies:
   tls: true
   type: vless
   uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- alterId: 1
-  cipher: auto
-  name: 🇺🇸 US 002 | ⬇️ 20.97MB/s
-  port: 22324
-  server: 45.82.161.225
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 🇹🇷 TR 001 | ⬇️ 20.46MB/s
-  password: tunnel-ljlcf
-  port: 8441
-  server: tr-1.stunnel.cc
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇬🇧 GB 002 | ⬇️ 18.57MB/s
-  port: 22324
-  server: 66.163.117.58
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 1
-  cipher: auto
-  name: 🇯🇵 JP 001 | ⬇️ 18.20MB/s
-  port: 22324
-  server: 172.104.80.66
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 003 | ⬇️ 17.66MB/s
-  port: 10086
-  server: 107.172.75.141
-  type: vmess
-  udp: true
-  uuid: e02c67a8-d769-4d73-833a-ab6acdb86e6e
-- name: 🇸🇬 SG 001 | ⬇️ 13.93MB/s
-  network: tcp
-  port: 22539
-  server: node1.nanonet.host
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 001 | ⬇️ 13.74MB/s
-  port: 22324
-  server: 213.156.141.52
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 002 | ⬇️ 13.65MB/s
-  port: 7754
-  server: efan.dnsefan04881.com
-  type: vmess
-  udp: true
-  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
-- name: 🇳🇱 NL 001 | ⬇️ 9.45MB/s
+- name: 🇳🇱 NL 001 | ⬇️ 34.59MB/s
   network: tcp
   port: 1443
   server: 93.185.166.71
@@ -130,13 +61,102 @@ proxies:
   uuid: 0cf4a308-1fe7-42e2-bc41-f1b5877f489e
 - alterId: 0
   cipher: auto
-  name: 🇺🇸 US 004 | ⬇️ 8.55MB/s
+  name: 🇺🇸 US 001 | ⬇️ 26.29MB/s
+  port: 10086
+  server: 107.172.75.141
+  type: vmess
+  udp: true
+  uuid: e02c67a8-d769-4d73-833a-ab6acdb86e6e
+- alterId: 1
+  cipher: auto
+  name: 🇹🇷 TR 001 | ⬇️ 24.85MB/s
+  port: 22324
+  server: 5.188.190.252
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 1
+  cipher: auto
+  name: 🇺🇸 US 002 | ⬇️ 22.00MB/s
+  port: 22324
+  server: 45.82.161.225
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 1
+  cipher: auto
+  name: 🇯🇵 JP 001 | ⬇️ 20.33MB/s
+  port: 22324
+  server: 172.104.80.66
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 GB 002 | ⬇️ 17.76MB/s
+  port: 22324
+  server: 66.163.117.58
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 🇯🇵 JP 002 | ⬇️ 17.59MB/s
+  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  port: 24534
+  server: jp2-8sb.6121999.dpdns.org
+  type: trojan
+- name: 🇸🇬 SG 001 | ⬇️ 14.22MB/s
+  network: tcp
+  port: 22539
+  server: node1.nanonet.host
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 001 | ⬇️ 13.61MB/s
+  port: 22324
+  server: 213.156.141.52
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 003 | ⬇️ 10.75MB/s
   port: 180
   server: 82.198.246.46
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 🇭🇰 HK 003 | ⬇️ 2.86MB/s
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 004 | ⬇️ 9.37MB/s
+  port: 180
+  server: 82.198.246.250
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 001 | ⬇️ 9.19MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.23
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 HK 002 | ⬇️ 7.86MB/s
+  port: 7754
+  server: efan.dnsefan04881.com
+  type: vmess
+  udp: true
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+- cipher: aes-256-cfb
+  name: 🇻🇳 VN 002 | ⬇️ 3.21MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.64
+  type: ss
+- name: 🇭🇰 HK 003 | ⬇️ 2.95MB/s
   network: tcp
   port: 22761
   server: 103.143.238.196
@@ -146,29 +166,15 @@ proxies:
   uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
 - alterId: 0
   cipher: auto
-  name: 🇨🇳 TW 001 | ⬇️ 2.24MB/s
+  name: 🇨🇳 TW 001 | ⬇️ 2.47MB/s
   port: 35034
   server: 165.154.195.38
   type: vmess
   udp: true
   uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 001 | ⬇️ 2.15MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.64
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇲🇾 MY 001 | ⬇️ 2.05MB/s
-  port: 30812
-  server: v12.hdacd.com
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 005 | ⬇️ 2.00MB/s
+  name: 🇺🇸 US 005 | ⬇️ 1.73MB/s
   port: 1443
   server: us02.bctuo.top
   type: vmess
@@ -178,50 +184,52 @@ proxy-groups:
 - name: 自动选择
   type: url-test
   proxies:
-  - 🇲🇽 MX 001 | ⬇️ 56.68MB/s
-  - 🇺🇸 US 001 | ⬇️ 47.81MB/s
-  - 🇫🇷 FR 001 | ⬇️ 36.68MB/s
-  - 🇬🇧 GB 001 | ⬇️ 36.33MB/s
-  - 🇺🇸 US 002 | ⬇️ 20.97MB/s
-  - 🇹🇷 TR 001 | ⬇️ 20.46MB/s
-  - 🇬🇧 GB 002 | ⬇️ 18.57MB/s
-  - 🇯🇵 JP 001 | ⬇️ 18.20MB/s
-  - 🇺🇸 US 003 | ⬇️ 17.66MB/s
-  - 🇸🇬 SG 001 | ⬇️ 13.93MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.74MB/s
-  - 🇭🇰 HK 002 | ⬇️ 13.65MB/s
-  - 🇳🇱 NL 001 | ⬇️ 9.45MB/s
-  - 🇺🇸 US 004 | ⬇️ 8.55MB/s
-  - 🇭🇰 HK 003 | ⬇️ 2.86MB/s
-  - 🇨🇳 TW 001 | ⬇️ 2.24MB/s
-  - 🇻🇳 VN 001 | ⬇️ 2.15MB/s
-  - 🇲🇾 MY 001 | ⬇️ 2.05MB/s
-  - 🇺🇸 US 005 | ⬇️ 2.00MB/s
+  - 🇲🇽 MX 001 | ⬇️ 56.35MB/s
+  - 🇫🇷 FR 001 | ⬇️ 38.40MB/s
+  - 🇬🇧 GB 001 | ⬇️ 38.32MB/s
+  - 🇳🇱 NL 001 | ⬇️ 34.59MB/s
+  - 🇺🇸 US 001 | ⬇️ 26.29MB/s
+  - 🇹🇷 TR 001 | ⬇️ 24.85MB/s
+  - 🇺🇸 US 002 | ⬇️ 22.00MB/s
+  - 🇯🇵 JP 001 | ⬇️ 20.33MB/s
+  - 🇬🇧 GB 002 | ⬇️ 17.76MB/s
+  - 🇯🇵 JP 002 | ⬇️ 17.59MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.22MB/s
+  - 🇭🇰 HK 001 | ⬇️ 13.61MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.75MB/s
+  - 🇺🇸 US 004 | ⬇️ 9.37MB/s
+  - 🇻🇳 VN 001 | ⬇️ 9.19MB/s
+  - 🇭🇰 HK 002 | ⬇️ 7.86MB/s
+  - 🇻🇳 VN 002 | ⬇️ 3.21MB/s
+  - 🇭🇰 HK 003 | ⬇️ 2.95MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.47MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.73MB/s
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
 - name: 低延迟
   type: url-test
   proxies:
-  - 🇲🇽 MX 001 | ⬇️ 56.68MB/s
-  - 🇺🇸 US 001 | ⬇️ 47.81MB/s
-  - 🇫🇷 FR 001 | ⬇️ 36.68MB/s
-  - 🇬🇧 GB 001 | ⬇️ 36.33MB/s
-  - 🇺🇸 US 002 | ⬇️ 20.97MB/s
-  - 🇹🇷 TR 001 | ⬇️ 20.46MB/s
-  - 🇬🇧 GB 002 | ⬇️ 18.57MB/s
-  - 🇯🇵 JP 001 | ⬇️ 18.20MB/s
-  - 🇺🇸 US 003 | ⬇️ 17.66MB/s
-  - 🇸🇬 SG 001 | ⬇️ 13.93MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.74MB/s
-  - 🇭🇰 HK 002 | ⬇️ 13.65MB/s
-  - 🇳🇱 NL 001 | ⬇️ 9.45MB/s
-  - 🇺🇸 US 004 | ⬇️ 8.55MB/s
-  - 🇭🇰 HK 003 | ⬇️ 2.86MB/s
-  - 🇨🇳 TW 001 | ⬇️ 2.24MB/s
-  - 🇻🇳 VN 001 | ⬇️ 2.15MB/s
-  - 🇲🇾 MY 001 | ⬇️ 2.05MB/s
-  - 🇺🇸 US 005 | ⬇️ 2.00MB/s
+  - 🇲🇽 MX 001 | ⬇️ 56.35MB/s
+  - 🇫🇷 FR 001 | ⬇️ 38.40MB/s
+  - 🇬🇧 GB 001 | ⬇️ 38.32MB/s
+  - 🇳🇱 NL 001 | ⬇️ 34.59MB/s
+  - 🇺🇸 US 001 | ⬇️ 26.29MB/s
+  - 🇹🇷 TR 001 | ⬇️ 24.85MB/s
+  - 🇺🇸 US 002 | ⬇️ 22.00MB/s
+  - 🇯🇵 JP 001 | ⬇️ 20.33MB/s
+  - 🇬🇧 GB 002 | ⬇️ 17.76MB/s
+  - 🇯🇵 JP 002 | ⬇️ 17.59MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.22MB/s
+  - 🇭🇰 HK 001 | ⬇️ 13.61MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.75MB/s
+  - 🇺🇸 US 004 | ⬇️ 9.37MB/s
+  - 🇻🇳 VN 001 | ⬇️ 9.19MB/s
+  - 🇭🇰 HK 002 | ⬇️ 7.86MB/s
+  - 🇻🇳 VN 002 | ⬇️ 3.21MB/s
+  - 🇭🇰 HK 003 | ⬇️ 2.95MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.47MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.73MB/s
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 30
@@ -229,25 +237,26 @@ proxy-groups:
   type: load-balance
   strategy: consistent-hashing
   proxies:
-  - 🇲🇽 MX 001 | ⬇️ 56.68MB/s
-  - 🇺🇸 US 001 | ⬇️ 47.81MB/s
-  - 🇫🇷 FR 001 | ⬇️ 36.68MB/s
-  - 🇬🇧 GB 001 | ⬇️ 36.33MB/s
-  - 🇺🇸 US 002 | ⬇️ 20.97MB/s
-  - 🇹🇷 TR 001 | ⬇️ 20.46MB/s
-  - 🇬🇧 GB 002 | ⬇️ 18.57MB/s
-  - 🇯🇵 JP 001 | ⬇️ 18.20MB/s
-  - 🇺🇸 US 003 | ⬇️ 17.66MB/s
-  - 🇸🇬 SG 001 | ⬇️ 13.93MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.74MB/s
-  - 🇭🇰 HK 002 | ⬇️ 13.65MB/s
-  - 🇳🇱 NL 001 | ⬇️ 9.45MB/s
-  - 🇺🇸 US 004 | ⬇️ 8.55MB/s
-  - 🇭🇰 HK 003 | ⬇️ 2.86MB/s
-  - 🇨🇳 TW 001 | ⬇️ 2.24MB/s
-  - 🇻🇳 VN 001 | ⬇️ 2.15MB/s
-  - 🇲🇾 MY 001 | ⬇️ 2.05MB/s
-  - 🇺🇸 US 005 | ⬇️ 2.00MB/s
+  - 🇲🇽 MX 001 | ⬇️ 56.35MB/s
+  - 🇫🇷 FR 001 | ⬇️ 38.40MB/s
+  - 🇬🇧 GB 001 | ⬇️ 38.32MB/s
+  - 🇳🇱 NL 001 | ⬇️ 34.59MB/s
+  - 🇺🇸 US 001 | ⬇️ 26.29MB/s
+  - 🇹🇷 TR 001 | ⬇️ 24.85MB/s
+  - 🇺🇸 US 002 | ⬇️ 22.00MB/s
+  - 🇯🇵 JP 001 | ⬇️ 20.33MB/s
+  - 🇬🇧 GB 002 | ⬇️ 17.76MB/s
+  - 🇯🇵 JP 002 | ⬇️ 17.59MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.22MB/s
+  - 🇭🇰 HK 001 | ⬇️ 13.61MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.75MB/s
+  - 🇺🇸 US 004 | ⬇️ 9.37MB/s
+  - 🇻🇳 VN 001 | ⬇️ 9.19MB/s
+  - 🇭🇰 HK 002 | ⬇️ 7.86MB/s
+  - 🇻🇳 VN 002 | ⬇️ 3.21MB/s
+  - 🇭🇰 HK 003 | ⬇️ 2.95MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.47MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.73MB/s
 - name: 故障转移
   type: fallback
   proxies:
@@ -257,51 +266,53 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - 🇲🇽 MX 001 | ⬇️ 56.68MB/s
-  - 🇺🇸 US 001 | ⬇️ 47.81MB/s
-  - 🇫🇷 FR 001 | ⬇️ 36.68MB/s
-  - 🇬🇧 GB 001 | ⬇️ 36.33MB/s
-  - 🇺🇸 US 002 | ⬇️ 20.97MB/s
-  - 🇹🇷 TR 001 | ⬇️ 20.46MB/s
-  - 🇬🇧 GB 002 | ⬇️ 18.57MB/s
-  - 🇯🇵 JP 001 | ⬇️ 18.20MB/s
-  - 🇺🇸 US 003 | ⬇️ 17.66MB/s
-  - 🇸🇬 SG 001 | ⬇️ 13.93MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.74MB/s
-  - 🇭🇰 HK 002 | ⬇️ 13.65MB/s
-  - 🇳🇱 NL 001 | ⬇️ 9.45MB/s
-  - 🇺🇸 US 004 | ⬇️ 8.55MB/s
-  - 🇭🇰 HK 003 | ⬇️ 2.86MB/s
-  - 🇨🇳 TW 001 | ⬇️ 2.24MB/s
-  - 🇻🇳 VN 001 | ⬇️ 2.15MB/s
-  - 🇲🇾 MY 001 | ⬇️ 2.05MB/s
-  - 🇺🇸 US 005 | ⬇️ 2.00MB/s
+  - 🇲🇽 MX 001 | ⬇️ 56.35MB/s
+  - 🇫🇷 FR 001 | ⬇️ 38.40MB/s
+  - 🇬🇧 GB 001 | ⬇️ 38.32MB/s
+  - 🇳🇱 NL 001 | ⬇️ 34.59MB/s
+  - 🇺🇸 US 001 | ⬇️ 26.29MB/s
+  - 🇹🇷 TR 001 | ⬇️ 24.85MB/s
+  - 🇺🇸 US 002 | ⬇️ 22.00MB/s
+  - 🇯🇵 JP 001 | ⬇️ 20.33MB/s
+  - 🇬🇧 GB 002 | ⬇️ 17.76MB/s
+  - 🇯🇵 JP 002 | ⬇️ 17.59MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.22MB/s
+  - 🇭🇰 HK 001 | ⬇️ 13.61MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.75MB/s
+  - 🇺🇸 US 004 | ⬇️ 9.37MB/s
+  - 🇻🇳 VN 001 | ⬇️ 9.19MB/s
+  - 🇭🇰 HK 002 | ⬇️ 7.86MB/s
+  - 🇻🇳 VN 002 | ⬇️ 3.21MB/s
+  - 🇭🇰 HK 003 | ⬇️ 2.95MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.47MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.73MB/s
 - name: 香港
   type: select
   proxies:
-  - 🇭🇰 HK 001 | ⬇️ 13.74MB/s
-  - 🇭🇰 HK 002 | ⬇️ 13.65MB/s
-  - 🇭🇰 HK 003 | ⬇️ 2.86MB/s
+  - 🇭🇰 HK 001 | ⬇️ 13.61MB/s
+  - 🇭🇰 HK 002 | ⬇️ 7.86MB/s
+  - 🇭🇰 HK 003 | ⬇️ 2.95MB/s
 - name: 日本
   type: select
   proxies:
-  - 🇯🇵 JP 001 | ⬇️ 18.20MB/s
+  - 🇯🇵 JP 001 | ⬇️ 20.33MB/s
+  - 🇯🇵 JP 002 | ⬇️ 17.59MB/s
 - name: 美国
   type: select
   proxies:
-  - 🇺🇸 US 001 | ⬇️ 47.81MB/s
-  - 🇺🇸 US 002 | ⬇️ 20.97MB/s
-  - 🇺🇸 US 003 | ⬇️ 17.66MB/s
-  - 🇺🇸 US 004 | ⬇️ 8.55MB/s
-  - 🇺🇸 US 005 | ⬇️ 2.00MB/s
+  - 🇺🇸 US 001 | ⬇️ 26.29MB/s
+  - 🇺🇸 US 002 | ⬇️ 22.00MB/s
+  - 🇺🇸 US 003 | ⬇️ 10.75MB/s
+  - 🇺🇸 US 004 | ⬇️ 9.37MB/s
+  - 🇺🇸 US 005 | ⬇️ 1.73MB/s
 - name: 新加坡
   type: select
   proxies:
-  - 🇸🇬 SG 001 | ⬇️ 13.93MB/s
+  - 🇸🇬 SG 001 | ⬇️ 14.22MB/s
 - name: 台湾
   type: select
   proxies:
-  - 🇨🇳 TW 001 | ⬇️ 2.24MB/s
+  - 🇨🇳 TW 001 | ⬇️ 2.47MB/s
 - name: 韩国
   type: select
   proxies:
