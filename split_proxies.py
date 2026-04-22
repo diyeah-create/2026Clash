@@ -2,7 +2,7 @@ import yaml
 import sys
 import math
 
-SHARDS = 12   # ← 这里改成你想要的数量（推荐 8，最大建议 10）
+SHARDS = 20   # ← 这里改成你想要的数量（推荐 8，最大建议 10）
 
 with open('proxies_dedup.yaml', 'r', encoding='utf-8') as f:
     data = yaml.safe_load(f) or {}
