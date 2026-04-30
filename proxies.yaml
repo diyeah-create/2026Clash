@@ -28,395 +28,336 @@ dns:
     - 192.168.0.0/16
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇦 CA 001 | ⬇️ 178.52MB/s
+  name: 🇨🇦 CA 001 | ⬇️ 72.42MB/s
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 79.127.200.169
   type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸 US 001 | ⬇️ 122.10MB/s
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.236
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸 US 002 | ⬇️ 120.62MB/s
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.244
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US 003 | ⬇️ 119.84MB/s
-  password: GyZ5Xo0ht41vYmW3H4
-  port: 816
-  server: 149.28.255.6
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 US 004 | ⬇️ 86.62MB/s
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 173.234.29.2
-  type: ss
 - cipher: rc4-md5
-  name: 🇨🇦 CA 002 | ⬇️ 82.34MB/s
+  name: 🇨🇦 CA 002 | ⬇️ 63.47MB/s
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 137.184.174.93
   type: ss
 - cipher: aes-128-gcm
-  name: 🇺🇸 US 005 | ⬇️ 60.82MB/s
+  name: 🇺🇸 US 001 | ⬇️ 57.38MB/s
   password: shadowsocks
   port: 443
-  server: 173.244.56.6
+  server: 37.19.198.236
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇨🇦 CA 003 | ⬇️ 53.14MB/s
-  port: 18000
-  server: 23.162.200.198
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 006 | ⬇️ 46.07MB/s
-  port: 18000
-  server: 67.220.95.3
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 007 | ⬇️ 41.13MB/s
-  port: 180
-  server: 82.198.246.37
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 008 | ⬇️ 37.42MB/s
-  port: 18000
-  server: 38.91.107.49
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 009 | ⬇️ 37.04MB/s
-  port: 180
-  server: 82.198.246.46
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 001 | ⬇️ 35.03MB/s
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: admin.c1.webramz.co
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 002 | ⬇️ 34.17MB/s
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a1.samanehha.co
-  type: ss
-- cipher: aes-128-cfb
-  name: 🇳🇱 NL 001 | ⬇️ 33.61MB/s
+- cipher: aes-128-gcm
+  name: 🇺🇸 US 002 | ⬇️ 56.75MB/s
   password: shadowsocks
   port: 443
-  server: 109.201.152.181
-  type: ss
-- cipher: rc4-md5
-  name: 🇬🇧 GB 003 | ⬇️ 32.36MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.61.37
+  server: 37.19.198.244
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 002 | ⬇️ 31.24MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.194
+  name: 🇺🇸 US 003 | ⬇️ 53.89MB/s
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 173.234.29.2
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 003 | ⬇️ 31.18MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.251
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 004 | ⬇️ 31.11MB/s
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 193.29.139.206
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 005 | ⬇️ 31.06MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.217
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 006 | ⬇️ 31.06MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.148
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 007 | ⬇️ 31.02MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.205
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 008 | ⬇️ 30.99MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.146
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 009 | ⬇️ 30.95MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.66
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 010 | ⬇️ 30.92MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.208
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 011 | ⬇️ 30.92MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.82
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 012 | ⬇️ 30.88MB/s
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 193.29.139.217
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 013 | ⬇️ 30.85MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.101
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 014 | ⬇️ 30.80MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.210
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 015 | ⬇️ 30.79MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 016 | ⬇️ 30.78MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.35
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 017 | ⬇️ 30.78MB/s
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 193.29.139.157
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 018 | ⬇️ 30.74MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.69
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 019 | ⬇️ 30.73MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 020 | ⬇️ 30.72MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.218
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 021 | ⬇️ 30.70MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.141
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 022 | ⬇️ 30.67MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.62
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 023 | ⬇️ 30.64MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.122
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇪🇨 EC 001 | ⬇️ 30.56MB/s
+  name: 🇪🇨 EC 001 | ⬇️ 28.58MB/s
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 38.165.231.25
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 024 | ⬇️ 30.55MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 025 | ⬇️ 30.41MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.89
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 026 | ⬇️ 30.40MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.191
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 027 | ⬇️ 30.23MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.235
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 028 | ⬇️ 30.15MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.124
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇦 PA 001 | ⬇️ 29.98MB/s
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 138.186.142.81
-  type: ss
-- name: 🇳🇱 NL 029 | ⬇️ 29.93MB/s
-  password: GZOof2R1ej4yML1NxajR2frGQ
-  port: 443
-  server: hl-freedom-1.undef.network
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇵🇦 PA 002 | ⬇️ 29.14MB/s
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 138.186.142.80
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 030 | ⬇️ 28.47MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.189
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇳🇱 NL 031 | ⬇️ 27.90MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.166
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 DE 001 | ⬇️ 27.23MB/s
-  password: PWpjPo3tqhPN4yRZ
-  port: 20001
-  server: 8.209.74.72
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇲🇹 MT 001 | ⬇️ 23.04MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 171.22.254.17
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇮 FI 001 | ⬇️ 22.81MB/s
-  password: yKVMoB3AwiTEznpnoq2FYR
-  port: 28687
-  server: 193.47.60.186
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵 JP 001 | ⬇️ 22.69MB/s
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
 - alterId: 1
   cipher: auto
-  name: 🇺🇸 US 010 | ⬇️ 22.15MB/s
+  name: 🇺🇸 US 004 | ⬇️ 28.40MB/s
   port: 22324
   server: 67.220.72.237
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - cipher: chacha20-ietf-poly1305
-  name: 🇦🇷 AR 001 | ⬇️ 21.74MB/s
+  name: 🇬🇧 GB 001 | ⬇️ 28.23MB/s
+  password: 1kVr0KATIJI7mwOF
+  port: 443
+  server: admin.c1.havij.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 002 | ⬇️ 28.17MB/s
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a2.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 003 | ⬇️ 28.09MB/s
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 004 | ⬇️ 27.29MB/s
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: admin.c1.webramz.co
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧 GB 005 | ⬇️ 25.78MB/s
+  password: idMvoewrSyLLvEvP03k9zR
+  port: 46576
+  server: 138.68.153.223
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇦 PA 001 | ⬇️ 25.60MB/s
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
-  server: 190.103.176.32
+  server: 138.186.142.81
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇵🇦 PA 002 | ⬇️ 25.49MB/s
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 138.186.142.80
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇪🇸 ES 001 | ⬇️ 21.55MB/s
+  name: 🇪🇸 ES 001 | ⬇️ 24.64MB/s
   port: 22324
   server: 85.90.217.42
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 DE 002 | ⬇️ 21.39MB/s
+  name: 🇳🇱 NL 001 | ⬇️ 24.48MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.35
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 002 | ⬇️ 24.44MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.176
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 003 | ⬇️ 24.44MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.235
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 004 | ⬇️ 24.39MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.69
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 005 | ⬇️ 24.36MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 006 | ⬇️ 24.36MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.194
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇯🇵 JP 001 | ⬇️ 24.22MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 007 | ⬇️ 24.17MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 008 | ⬇️ 24.10MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.122
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 009 | ⬇️ 24.09MB/s
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 010 | ⬇️ 24.00MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 011 | ⬇️ 23.99MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 012 | ⬇️ 23.88MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.251
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 013 | ⬇️ 23.84MB/s
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.217
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 014 | ⬇️ 23.73MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 015 | ⬇️ 23.63MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 016 | ⬇️ 23.63MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.148
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 017 | ⬇️ 23.48MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.141
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 018 | ⬇️ 23.47MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.124
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 019 | ⬇️ 23.44MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.101
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇳🇱 NL 020 | ⬇️ 23.25MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.166
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 021 | ⬇️ 23.14MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 DE 001 | ⬇️ 23.05MB/s
+  password: PWpjPo3tqhPN4yRZ
+  port: 20001
+  server: 8.209.74.72
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 022 | ⬇️ 22.82MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 023 | ⬇️ 22.79MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.210
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪 DE 002 | ⬇️ 22.64MB/s
   password: Q7cjiVD0oKNE2o9sUnZKQg
   port: 23243
   server: 46.101.196.138
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧 GB 004 | ⬇️ 21.33MB/s
-  password: idMvoewrSyLLvEvP03k9zR
-  port: 46576
-  server: 138.68.153.223
+  name: 🇫🇮 FI 001 | ⬇️ 21.18MB/s
+  password: yKVMoB3AwiTEznpnoq2FYR
+  port: 28687
+  server: 193.47.60.186
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇬🇧 GB 005 | ⬇️ 20.25MB/s
+  name: 🇬🇧 GB 006 | ⬇️ 19.92MB/s
   port: 22324
   server: 66.163.117.58
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 🇧🇷 BR 001 | ⬇️ 19.72MB/s
+  port: 22324
+  server: 172.233.17.76
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 032 | ⬇️ 19.73MB/s
-  password: WC0GbiCk67K8nHDaDHmYIX
-  port: 19582
-  server: 159.223.236.36
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧 GB 006 | ⬇️ 19.61MB/s
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇱🇻 LV 001 | ⬇️ 19.07MB/s
+  name: 🇱🇻 LV 001 | ⬇️ 19.36MB/s
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 46.183.217.204
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇦🇷 AR 001 | ⬇️ 18.83MB/s
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 190.103.176.32
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇲🇹 MT 001 | ⬇️ 18.73MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 171.22.254.17
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇹🇷 TR 001 | ⬇️ 18.32MB/s
+  name: 🇮🇹 IT 001 | ⬇️ 18.19MB/s
+  port: 22324
+  server: 45.92.70.236
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 🇸🇬 SG 001 | ⬇️ 17.81MB/s
+  network: tcp
+  port: 443
+  server: 178.128.16.189
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: 6a0e628b-e689-4c00-8a6e-e039ac7db08d
+- name: 🇸🇬 SG 002 | ⬇️ 17.21MB/s
+  network: tcp
+  port: 22539
+  server: node1.nanonet.host
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
+- cipher: aes-128-gcm
+  name: 🇬🇧 GB 007 | ⬇️ 17.00MB/s
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.182
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇹🇷 TR 001 | ⬇️ 16.23MB/s
+  port: 39651
+  server: 45.89.52.207
+  type: vmess
+  udp: true
+  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
+- alterId: 0
+  cipher: auto
+  name: 🇹🇷 TR 002 | ⬇️ 15.40MB/s
   network: ws
   port: 443
   server: 94.131.108.36
@@ -426,262 +367,119 @@ proxies:
   uuid: 9855f1f0-a800-40d4-8b38-c7d3eb79302d
   ws-opts:
     path: /
-- name: 🇯🇵 JP 002 | ⬇️ 17.29MB/s
-  password: f8af73ed-363a-4dfb-b99f-65bd8ad1a329
-  port: 6533
-  server: jpaws.ccwink.photos
-  skip-cert-verify: true
-  tls: true
-  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 🇮🇹 IT 001 | ⬇️ 17.05MB/s
-  port: 22324
-  server: 45.92.70.236
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- cipher: aes-128-gcm
-  name: 🇬🇧 GB 007 | ⬇️ 16.64MB/s
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.182
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇲🇽 MX 001 | ⬇️ 16.38MB/s
-  port: 34460
-  server: 216.238.86.158
-  type: vmess
-  udp: true
-  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
-- name: 🇸🇬 SG 001 | ⬇️ 16.05MB/s
-  network: tcp
-  port: 443
-  server: 178.128.16.189
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: 6a0e628b-e689-4c00-8a6e-e039ac7db08d
-- name: 🇸🇬 SG 002 | ⬇️ 15.62MB/s
-  network: tcp
-  port: 22539
-  server: node1.nanonet.host
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 011 | ⬇️ 15.17MB/s
-  port: 180
-  server: 82.198.246.97
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: 🇧🇷 BR 001 | ⬇️ 14.36MB/s
-  port: 22324
-  server: 172.233.17.76
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 HK 001 | ⬇️ 13.72MB/s
+  name: 🇭🇰 HK 001 | ⬇️ 15.22MB/s
   port: 22324
   server: 213.156.141.52
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇪 AE 001 | ⬇️ 13.48MB/s
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 147.78.0.182
+- cipher: aes-128-gcm
+  name: 🇬🇧 GB 008 | ⬇️ 13.56MB/s
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
   type: ss
-- name: 🇯🇵 JP 003 | ⬇️ 13.14MB/s
-  password: f8af73ed-363a-4dfb-b99f-65bd8ad1a329
-  port: 52348
-  server: jpaws.ccwink.photos
-  skip-cert-verify: true
-  tls: true
-  type: hysteria2
-- name: 🇯🇵 JP 004 | ⬇️ 12.81MB/s
-  password: f8af73ed-363a-4dfb-b99f-65bd8ad1a329
-  port: 52348
-  server: hkaws.ccwink.photos
-  skip-cert-verify: true
-  tls: true
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 012 | ⬇️ 12.61MB/s
-  port: 180
-  server: 82.198.246.250
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - cipher: chacha20-ietf-poly1305
-  name: 🇿🇦 ZA 001 | ⬇️ 11.40MB/s
+  name: 🇨🇳 TW 001 | ⬇️ 12.80MB/s
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg0011499tl.cybervena.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦 ZA 001 | ⬇️ 10.32MB/s
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   port: 16233
   server: 102.133.165.160
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇳 TW 001 | ⬇️ 10.72MB/s
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg0011499tl.cybervena.com
+  name: 🇿🇦 ZA 002 | ⬇️ 9.94MB/s
+  password: aduB9HGxQHjA2SBMRjkHX6
+  port: 443
+  server: 102.37.156.224
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 JP 005 | ⬇️ 9.87MB/s
+  name: 🇯🇵 JP 002 | ⬇️ 9.93MB/s
   port: 49803
   server: 153.121.73.175
   type: vmess
   udp: true
   uuid: cd3dacbc-2b7b-4718-83ad-ab870f87e12e
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 001 | ⬇️ 9.86MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.225
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇯🇵 JP 006 | ⬇️ 9.79MB/s
+  name: 🇯🇵 JP 003 | ⬇️ 9.89MB/s
   port: 32221
   server: 153.121.73.175
   type: vmess
   udp: true
   uuid: b06054ae-f249-438e-998a-8e67bd8df653
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 002 | ⬇️ 9.32MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.28
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 003 | ⬇️ 9.11MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.230
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 US 013 | ⬇️ 9.07MB/s
-  port: 180
-  server: 82.198.246.214
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 004 | ⬇️ 9.01MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.183
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇳 TW 002 | ⬇️ 8.47MB/s
+  name: 🇨🇳 TW 002 | ⬇️ 9.27MB/s
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg001286ek2.cybervena.com
   type: ss
 - cipher: aes-256-cfb
-  name: 🇻🇳 VN 005 | ⬇️ 8.47MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.204
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 006 | ⬇️ 8.10MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.69
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 007 | ⬇️ 7.88MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.136
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇻🇳 VN 008 | ⬇️ 7.82MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.35
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇪🇸 ES 002 | ⬇️ 7.75MB/s
+  name: 🇪🇸 ES 002 | ⬇️ 8.40MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 45.154.206.192
   type: ss
 - cipher: aes-256-cfb
-  name: 🇻🇳 VN 009 | ⬇️ 7.72MB/s
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.137
+  name: 🇳🇱 NL 024 | ⬇️ 7.83MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
   type: ss
 - cipher: aes-256-cfb
-  name: 🇰🇷 KR 001 | ⬇️ 7.68MB/s
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
+  name: 🇻🇳 VN 001 | ⬇️ 7.66MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.136
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇳 TW 003 | ⬇️ 7.57MB/s
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg007117fb8.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬 SG 003 | ⬇️ 7.26MB/s
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 38.89.142.56
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 033 | ⬇️ 7.02MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.176
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇳 TW 004 | ⬇️ 6.46MB/s
+  name: 🇨🇳 TW 003 | ⬇️ 7.40MB/s
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg00129437x.cybervena.com
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 005 | ⬇️ 6.23MB/s
+  port: 18000
+  server: 67.220.95.3
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - cipher: chacha20-ietf-poly1305
-  name: 🇨🇳 TW 005 | ⬇️ 6.42MB/s
+  name: 🇨🇳 TW 004 | ⬇️ 5.98MB/s
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: nbmrcg0034686rw.cybervena.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 034 | ⬇️ 5.22MB/s
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇦🇺 AU 001 | ⬇️ 4.72MB/s
-  password: SL4vzcvhBHhTWivD
-  port: 80
-  server: 154.26.155.172
-  type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇳 TW 006 | ⬇️ 4.17MB/s
+  name: 🇨🇳 TW 005 | ⬇️ 5.92MB/s
   password: qwerREWQ@@
   port: 41632
   server: 185.189.160.105
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇳 TW 006 | ⬇️ 4.89MB/s
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: 61.231.19.71
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇦🇺 AU 001 | ⬇️ 4.79MB/s
+  password: SL4vzcvhBHhTWivD
+  port: 80
+  server: 154.26.155.172
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇰🇷 KR 002 | ⬇️ 4.13MB/s
+  name: 🇰🇷 KR 001 | ⬇️ 4.64MB/s
   network: ws
   port: 443
   server: 152.67.218.38
@@ -693,29 +491,43 @@ proxies:
     headers:
       Host: 152.67.218.38
     path: /
+- alterId: 0
+  cipher: auto
+  name: 🇨🇦 CA 003 | ⬇️ 3.88MB/s
+  port: 18000
+  server: 23.162.200.198
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- cipher: aes-256-cfb
+  name: 🇳🇱 NL 025 | ⬇️ 3.56MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.227.53
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇧🇬 BG 001 | ⬇️ 4.08MB/s
+  name: 🇳🇱 NL 026 | ⬇️ 3.49MB/s
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 193.29.139.206
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 027 | ⬇️ 3.11MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.179
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇰 DK 001 | ⬇️ 2.72MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.36.27.94
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇧🇬 BG 001 | ⬇️ 2.69MB/s
   password: zDLmeWRsfcFdKT1Tpy02xodEToqCldTxvZcRoPIZZtBdnIEL
   port: 31348
   server: 89.44.197.181
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇱🇻 LV 002 | ⬇️ 3.89MB/s
-  password: MholStyHL7DhrewKbpQa20
-  port: 24637
-  server: 185.176.221.72
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 035 | ⬇️ 3.59MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷 KR 003 | ⬇️ 2.56MB/s
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
   type: ss
 - cipher: aes-256-cfb
   name: 🇵🇾 PY 001 | ⬇️ 2.50MB/s
@@ -723,45 +535,7 @@ proxies:
   port: 989
   server: 38.165.233.93
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 036 | ⬇️ 2.49MB/s
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.179
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇨🇳 TW 007 | ⬇️ 2.46MB/s
-  port: 35034
-  server: 165.154.195.38
-  type: vmess
-  udp: true
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- cipher: aes-256-cfb
-  name: 🇳🇱 NL 037 | ⬇️ 2.44MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.227.53
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 038 | ⬇️ 2.35MB/s
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.199
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 039 | ⬇️ 2.34MB/s
-  password: VpKABcOpNNA0l5G2AVOmw8
-  port: 62685
-  server: 213.109.147.242
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇰 DK 001 | ⬇️ 2.15MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.36.27.94
-  type: ss
-- name: 🇭🇰 HK 002 | ⬇️ 1.76MB/s
+- name: 🇭🇰 HK 002 | ⬇️ 2.49MB/s
   network: tcp
   port: 22761
   server: 103.143.238.196
@@ -769,400 +543,379 @@ proxies:
   tls: true
   type: vless
   uuid: 1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa
-- cipher: aes-256-cfb
-  name: 🇭🇷 HR 001 | ⬇️ 1.04MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.184.60
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳 TW 007 | ⬇️ 2.27MB/s
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
+  udp: true
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 028 | ⬇️ 2.16MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.199
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸 US 006 | ⬇️ 1.85MB/s
+  port: 18000
+  server: 38.91.107.49
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 024 | ⚡ 166.00ms
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.184
   type: ss
 - cipher: aes-256-cfb
-  name: 🇷🇺 RU 001 | ⬇️ 0.91MB/s
+  name: 🇻🇳 VN 002 | ⬇️ 1.37MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 38.60.223.8
+  server: 103.163.218.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 NL 007 | ⚡ 159.00ms
+  password: VpKABcOpNNA0l5G2AVOmw8
+  port: 62685
+  server: 213.109.147.242
   type: ss
 - cipher: aes-256-cfb
-  name: 🇰🇷 KR 004 | ⬇️ 0.84MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇰🇷 KR 005 | ⬇️ 0.81MB/s
+  name: 🇰🇷 KR 002 | ⚡ 335.00ms
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇲🇽 MX 002 | ⬇️ 0.79MB/s
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 147.78.1.230
+  name: 🇱🇻 LV 002 | ⬇️ 1.08MB/s
+  password: MholStyHL7DhrewKbpQa20
+  port: 24637
+  server: 185.176.221.72
   type: ss
 - cipher: aes-256-cfb
-  name: 🇧🇪 BE 001 | ⚡ 143.00ms
+  name: 🇭🇷 HR 001 | ⬇️ 0.94MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 192.71.249.78
+  server: 46.183.184.60
   type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷 KR 001 | ⚡ 332.00ms
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇵🇪 PE 002 | ⚡ 251.00ms
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 138.186.143.32
+  type: ss
+- name: 🇯🇵 JP 004 | ⬇️ 0.79MB/s
+  password: f8af73ed-363a-4dfb-b99f-65bd8ad1a329
+  port: 6533
+  server: jpaws.ccwink.photos
+  skip-cert-verify: true
+  tls: true
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 NL 040 | ⬇️ 0.77MB/s
+  name: 🇳🇱 NL 014 | ⚡ 163.00ms
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.188
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇵🇪 PE 001 | ⚡ 212.00ms
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 138.186.143.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇵🇪 PE 001 | ⬇️ 0.73MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 138.186.143.32
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇧🇷 BR 002 | ⬇️ 0.73MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇭🇰 HK 003 | ⬇️ 0.72MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 203.23.128.33
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇹 IT 002 | ⬇️ 0.70MB/s
+  name: 🇮🇹 IT 002 | ⬇️ 0.73MB/s
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
   server: 176.126.83.158
   type: ss
 - cipher: aes-256-cfb
-  name: 🇨🇴 CO 001 | ⚡ 160.00ms
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇮🇩 ID 002 | ⚡ 2107.00ms
-  port: 30809
-  server: v9.hdacd.com
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇲🇽 MX 001 | ⚡ 116.00ms
+  name: 🇲🇽 MX 001 | ⬇️ 0.70MB/s
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 147.78.1.230
   type: ss
 - cipher: aes-256-cfb
-  name: 🏳️ MK 001 | ⬇️ 0.54MB/s
+  name: 🇷🇺 RU 001 | ⬇️ 0.66MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.60.223.8
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇧🇷 BR 001 | ⚡ 285.00ms
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.54.57.90
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇲🇽 MX 002 | ⬇️ 0.63MB/s
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 147.78.1.230
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇭🇰 HK 001 | ⚡ 334.00ms
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 203.23.128.33
+  type: ss
+- cipher: aes-256-cfb
+  name: 🏳️ MK 001 | ⚡ 261.00ms
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.185.37
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇲🇾 MY 001 | ⬇️ 0.42MB/s
-  port: 30836
-  server: v36.hdacd.com
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 🇸🇮 SI 001 | ⚡ 208.00ms
+  name: 🇨🇴 CO 001 | ⚡ 209.00ms
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 192.71.244.150
+  server: 154.223.16.212
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 DE 003 | ⬇️ 0.35MB/s
+  name: 🇵🇪 PE 001 | ⚡ 227.00ms
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   port: 990
-  server: 38.60.250.107
+  server: 138.186.143.32
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇧🇪 BE 001 | ⚡ 227.00ms
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.249.78
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ MA 003 | ⚡ 1109.00ms
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  port: 990
+  server: 154.70.207.97
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇮🇳 IN 001 | ⚡ 492.00ms
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 134.209.147.198
   type: ss
 proxy-groups:
 - name: 自动选择
   type: url-test
   proxies:
-  - 🇨🇦 CA 001 | ⬇️ 178.52MB/s
-  - 🇺🇸 US 001 | ⬇️ 122.10MB/s
-  - 🇺🇸 US 002 | ⬇️ 120.62MB/s
-  - 🇺🇸 US 003 | ⬇️ 119.84MB/s
-  - 🇺🇸 US 004 | ⬇️ 86.62MB/s
-  - 🇨🇦 CA 002 | ⬇️ 82.34MB/s
-  - 🇺🇸 US 005 | ⬇️ 60.82MB/s
-  - 🇨🇦 CA 003 | ⬇️ 53.14MB/s
-  - 🇺🇸 US 006 | ⬇️ 46.07MB/s
-  - 🇺🇸 US 007 | ⬇️ 41.13MB/s
-  - 🇺🇸 US 008 | ⬇️ 37.42MB/s
-  - 🇺🇸 US 009 | ⬇️ 37.04MB/s
-  - 🇬🇧 GB 001 | ⬇️ 35.03MB/s
-  - 🇬🇧 GB 002 | ⬇️ 34.17MB/s
-  - 🇳🇱 NL 001 | ⬇️ 33.61MB/s
-  - 🇬🇧 GB 003 | ⬇️ 32.36MB/s
-  - 🇳🇱 NL 002 | ⬇️ 31.24MB/s
-  - 🇳🇱 NL 003 | ⬇️ 31.18MB/s
-  - 🇳🇱 NL 004 | ⬇️ 31.11MB/s
-  - 🇳🇱 NL 005 | ⬇️ 31.06MB/s
-  - 🇳🇱 NL 006 | ⬇️ 31.06MB/s
-  - 🇳🇱 NL 007 | ⬇️ 31.02MB/s
-  - 🇳🇱 NL 008 | ⬇️ 30.99MB/s
-  - 🇳🇱 NL 009 | ⬇️ 30.95MB/s
-  - 🇳🇱 NL 010 | ⬇️ 30.92MB/s
-  - 🇳🇱 NL 011 | ⬇️ 30.92MB/s
-  - 🇳🇱 NL 012 | ⬇️ 30.88MB/s
-  - 🇳🇱 NL 013 | ⬇️ 30.85MB/s
-  - 🇳🇱 NL 014 | ⬇️ 30.80MB/s
-  - 🇳🇱 NL 015 | ⬇️ 30.79MB/s
-  - 🇳🇱 NL 016 | ⬇️ 30.78MB/s
-  - 🇳🇱 NL 017 | ⬇️ 30.78MB/s
-  - 🇳🇱 NL 018 | ⬇️ 30.74MB/s
-  - 🇳🇱 NL 019 | ⬇️ 30.73MB/s
-  - 🇳🇱 NL 020 | ⬇️ 30.72MB/s
-  - 🇳🇱 NL 021 | ⬇️ 30.70MB/s
-  - 🇳🇱 NL 022 | ⬇️ 30.67MB/s
-  - 🇳🇱 NL 023 | ⬇️ 30.64MB/s
-  - 🇪🇨 EC 001 | ⬇️ 30.56MB/s
-  - 🇳🇱 NL 024 | ⬇️ 30.55MB/s
-  - 🇳🇱 NL 025 | ⬇️ 30.41MB/s
-  - 🇳🇱 NL 026 | ⬇️ 30.40MB/s
-  - 🇳🇱 NL 027 | ⬇️ 30.23MB/s
-  - 🇳🇱 NL 028 | ⬇️ 30.15MB/s
-  - 🇵🇦 PA 001 | ⬇️ 29.98MB/s
-  - 🇳🇱 NL 029 | ⬇️ 29.93MB/s
-  - 🇵🇦 PA 002 | ⬇️ 29.14MB/s
-  - 🇳🇱 NL 030 | ⬇️ 28.47MB/s
-  - 🇳🇱 NL 031 | ⬇️ 27.90MB/s
-  - 🇩🇪 DE 001 | ⬇️ 27.23MB/s
-  - 🇲🇹 MT 001 | ⬇️ 23.04MB/s
-  - 🇫🇮 FI 001 | ⬇️ 22.81MB/s
-  - 🇯🇵 JP 001 | ⬇️ 22.69MB/s
-  - 🇺🇸 US 010 | ⬇️ 22.15MB/s
-  - 🇦🇷 AR 001 | ⬇️ 21.74MB/s
-  - 🇪🇸 ES 001 | ⬇️ 21.55MB/s
-  - 🇩🇪 DE 002 | ⬇️ 21.39MB/s
-  - 🇬🇧 GB 004 | ⬇️ 21.33MB/s
-  - 🇬🇧 GB 005 | ⬇️ 20.25MB/s
-  - 🇳🇱 NL 032 | ⬇️ 19.73MB/s
-  - 🇬🇧 GB 006 | ⬇️ 19.61MB/s
-  - 🇱🇻 LV 001 | ⬇️ 19.07MB/s
-  - 🇹🇷 TR 001 | ⬇️ 18.32MB/s
-  - 🇯🇵 JP 002 | ⬇️ 17.29MB/s
-  - 🇮🇹 IT 001 | ⬇️ 17.05MB/s
-  - 🇬🇧 GB 007 | ⬇️ 16.64MB/s
-  - 🇲🇽 MX 001 | ⬇️ 16.38MB/s
-  - 🇸🇬 SG 001 | ⬇️ 16.05MB/s
-  - 🇸🇬 SG 002 | ⬇️ 15.62MB/s
-  - 🇺🇸 US 011 | ⬇️ 15.17MB/s
-  - 🇧🇷 BR 001 | ⬇️ 14.36MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.72MB/s
-  - 🇦🇪 AE 001 | ⬇️ 13.48MB/s
-  - 🇯🇵 JP 003 | ⬇️ 13.14MB/s
-  - 🇯🇵 JP 004 | ⬇️ 12.81MB/s
-  - 🇺🇸 US 012 | ⬇️ 12.61MB/s
-  - 🇿🇦 ZA 001 | ⬇️ 11.40MB/s
-  - 🇨🇳 TW 001 | ⬇️ 10.72MB/s
-  - 🇯🇵 JP 005 | ⬇️ 9.87MB/s
-  - 🇻🇳 VN 001 | ⬇️ 9.86MB/s
-  - 🇯🇵 JP 006 | ⬇️ 9.79MB/s
-  - 🇻🇳 VN 002 | ⬇️ 9.32MB/s
-  - 🇻🇳 VN 003 | ⬇️ 9.11MB/s
-  - 🇺🇸 US 013 | ⬇️ 9.07MB/s
-  - 🇻🇳 VN 004 | ⬇️ 9.01MB/s
-  - 🇨🇳 TW 002 | ⬇️ 8.47MB/s
-  - 🇻🇳 VN 005 | ⬇️ 8.47MB/s
-  - 🇻🇳 VN 006 | ⬇️ 8.10MB/s
-  - 🇻🇳 VN 007 | ⬇️ 7.88MB/s
-  - 🇻🇳 VN 008 | ⬇️ 7.82MB/s
-  - 🇪🇸 ES 002 | ⬇️ 7.75MB/s
-  - 🇻🇳 VN 009 | ⬇️ 7.72MB/s
-  - 🇰🇷 KR 001 | ⬇️ 7.68MB/s
-  - 🇨🇳 TW 003 | ⬇️ 7.57MB/s
-  - 🇸🇬 SG 003 | ⬇️ 7.26MB/s
-  - 🇳🇱 NL 033 | ⬇️ 7.02MB/s
-  - 🇨🇳 TW 004 | ⬇️ 6.46MB/s
-  - 🇨🇳 TW 005 | ⬇️ 6.42MB/s
-  - 🇳🇱 NL 034 | ⬇️ 5.22MB/s
-  - 🇦🇺 AU 001 | ⬇️ 4.72MB/s
-  - 🇨🇳 TW 006 | ⬇️ 4.17MB/s
-  - 🇰🇷 KR 002 | ⬇️ 4.13MB/s
-  - 🇧🇬 BG 001 | ⬇️ 4.08MB/s
-  - 🇱🇻 LV 002 | ⬇️ 3.89MB/s
-  - 🇳🇱 NL 035 | ⬇️ 3.59MB/s
-  - 🇰🇷 KR 003 | ⬇️ 2.56MB/s
+  - 🇨🇦 CA 001 | ⬇️ 72.42MB/s
+  - 🇨🇦 CA 002 | ⬇️ 63.47MB/s
+  - 🇺🇸 US 001 | ⬇️ 57.38MB/s
+  - 🇺🇸 US 002 | ⬇️ 56.75MB/s
+  - 🇺🇸 US 003 | ⬇️ 53.89MB/s
+  - 🇪🇨 EC 001 | ⬇️ 28.58MB/s
+  - 🇺🇸 US 004 | ⬇️ 28.40MB/s
+  - 🇬🇧 GB 001 | ⬇️ 28.23MB/s
+  - 🇬🇧 GB 002 | ⬇️ 28.17MB/s
+  - 🇬🇧 GB 003 | ⬇️ 28.09MB/s
+  - 🇬🇧 GB 004 | ⬇️ 27.29MB/s
+  - 🇬🇧 GB 005 | ⬇️ 25.78MB/s
+  - 🇵🇦 PA 001 | ⬇️ 25.60MB/s
+  - 🇵🇦 PA 002 | ⬇️ 25.49MB/s
+  - 🇪🇸 ES 001 | ⬇️ 24.64MB/s
+  - 🇳🇱 NL 001 | ⬇️ 24.48MB/s
+  - 🇳🇱 NL 002 | ⬇️ 24.44MB/s
+  - 🇳🇱 NL 003 | ⬇️ 24.44MB/s
+  - 🇳🇱 NL 004 | ⬇️ 24.39MB/s
+  - 🇳🇱 NL 005 | ⬇️ 24.36MB/s
+  - 🇳🇱 NL 006 | ⬇️ 24.36MB/s
+  - 🇯🇵 JP 001 | ⬇️ 24.22MB/s
+  - 🇳🇱 NL 007 | ⬇️ 24.17MB/s
+  - 🇳🇱 NL 008 | ⬇️ 24.10MB/s
+  - 🇳🇱 NL 009 | ⬇️ 24.09MB/s
+  - 🇳🇱 NL 010 | ⬇️ 24.00MB/s
+  - 🇳🇱 NL 011 | ⬇️ 23.99MB/s
+  - 🇳🇱 NL 012 | ⬇️ 23.88MB/s
+  - 🇳🇱 NL 013 | ⬇️ 23.84MB/s
+  - 🇳🇱 NL 014 | ⬇️ 23.73MB/s
+  - 🇳🇱 NL 015 | ⬇️ 23.63MB/s
+  - 🇳🇱 NL 016 | ⬇️ 23.63MB/s
+  - 🇳🇱 NL 017 | ⬇️ 23.48MB/s
+  - 🇳🇱 NL 018 | ⬇️ 23.47MB/s
+  - 🇳🇱 NL 019 | ⬇️ 23.44MB/s
+  - 🇳🇱 NL 020 | ⬇️ 23.25MB/s
+  - 🇳🇱 NL 021 | ⬇️ 23.14MB/s
+  - 🇩🇪 DE 001 | ⬇️ 23.05MB/s
+  - 🇳🇱 NL 022 | ⬇️ 22.82MB/s
+  - 🇳🇱 NL 023 | ⬇️ 22.79MB/s
+  - 🇩🇪 DE 002 | ⬇️ 22.64MB/s
+  - 🇫🇮 FI 001 | ⬇️ 21.18MB/s
+  - 🇬🇧 GB 006 | ⬇️ 19.92MB/s
+  - 🇧🇷 BR 001 | ⬇️ 19.72MB/s
+  - 🇱🇻 LV 001 | ⬇️ 19.36MB/s
+  - 🇦🇷 AR 001 | ⬇️ 18.83MB/s
+  - 🇲🇹 MT 001 | ⬇️ 18.73MB/s
+  - 🇮🇹 IT 001 | ⬇️ 18.19MB/s
+  - 🇸🇬 SG 001 | ⬇️ 17.81MB/s
+  - 🇸🇬 SG 002 | ⬇️ 17.21MB/s
+  - 🇬🇧 GB 007 | ⬇️ 17.00MB/s
+  - 🇹🇷 TR 001 | ⬇️ 16.23MB/s
+  - 🇹🇷 TR 002 | ⬇️ 15.40MB/s
+  - 🇭🇰 HK 001 | ⬇️ 15.22MB/s
+  - 🇬🇧 GB 008 | ⬇️ 13.56MB/s
+  - 🇨🇳 TW 001 | ⬇️ 12.80MB/s
+  - 🇿🇦 ZA 001 | ⬇️ 10.32MB/s
+  - 🇿🇦 ZA 002 | ⬇️ 9.94MB/s
+  - 🇯🇵 JP 002 | ⬇️ 9.93MB/s
+  - 🇯🇵 JP 003 | ⬇️ 9.89MB/s
+  - 🇨🇳 TW 002 | ⬇️ 9.27MB/s
+  - 🇪🇸 ES 002 | ⬇️ 8.40MB/s
+  - 🇳🇱 NL 024 | ⬇️ 7.83MB/s
+  - 🇻🇳 VN 001 | ⬇️ 7.66MB/s
+  - 🇨🇳 TW 003 | ⬇️ 7.40MB/s
+  - 🇺🇸 US 005 | ⬇️ 6.23MB/s
+  - 🇨🇳 TW 004 | ⬇️ 5.98MB/s
+  - 🇨🇳 TW 005 | ⬇️ 5.92MB/s
+  - 🇨🇳 TW 006 | ⬇️ 4.89MB/s
+  - 🇦🇺 AU 001 | ⬇️ 4.79MB/s
+  - 🇰🇷 KR 001 | ⬇️ 4.64MB/s
+  - 🇨🇦 CA 003 | ⬇️ 3.88MB/s
+  - 🇳🇱 NL 025 | ⬇️ 3.56MB/s
+  - 🇳🇱 NL 026 | ⬇️ 3.49MB/s
+  - 🇳🇱 NL 027 | ⬇️ 3.11MB/s
+  - 🇩🇰 DK 001 | ⬇️ 2.72MB/s
+  - 🇧🇬 BG 001 | ⬇️ 2.69MB/s
   - 🇵🇾 PY 001 | ⬇️ 2.50MB/s
-  - 🇳🇱 NL 036 | ⬇️ 2.49MB/s
-  - 🇨🇳 TW 007 | ⬇️ 2.46MB/s
-  - 🇳🇱 NL 037 | ⬇️ 2.44MB/s
-  - 🇳🇱 NL 038 | ⬇️ 2.35MB/s
-  - 🇳🇱 NL 039 | ⬇️ 2.34MB/s
-  - 🇩🇰 DK 001 | ⬇️ 2.15MB/s
-  - 🇭🇰 HK 002 | ⬇️ 1.76MB/s
-  - 🇭🇷 HR 001 | ⬇️ 1.04MB/s
-  - 🇷🇺 RU 001 | ⬇️ 0.91MB/s
-  - 🇰🇷 KR 004 | ⬇️ 0.84MB/s
-  - 🇰🇷 KR 005 | ⬇️ 0.81MB/s
-  - 🇲🇽 MX 002 | ⬇️ 0.79MB/s
-  - 🇧🇪 BE 001 | ⚡ 143.00ms
-  - 🇳🇱 NL 040 | ⬇️ 0.77MB/s
-  - 🇵🇪 PE 001 | ⚡ 212.00ms
-  - 🇵🇪 PE 001 | ⬇️ 0.73MB/s
-  - 🇧🇷 BR 002 | ⬇️ 0.73MB/s
-  - 🇭🇰 HK 003 | ⬇️ 0.72MB/s
-  - 🇮🇹 IT 002 | ⬇️ 0.70MB/s
-  - 🇨🇴 CO 001 | ⚡ 160.00ms
-  - 🇮🇩 ID 002 | ⚡ 2107.00ms
-  - 🇲🇽 MX 001 | ⚡ 116.00ms
-  - 🏳️ MK 001 | ⬇️ 0.54MB/s
-  - 🇲🇾 MY 001 | ⬇️ 0.42MB/s
-  - 🇸🇮 SI 001 | ⚡ 208.00ms
-  - 🇩🇪 DE 003 | ⬇️ 0.35MB/s
+  - 🇭🇰 HK 002 | ⬇️ 2.49MB/s
+  - 🇨🇳 TW 007 | ⬇️ 2.27MB/s
+  - 🇳🇱 NL 028 | ⬇️ 2.16MB/s
+  - 🇺🇸 US 006 | ⬇️ 1.85MB/s
+  - 🇳🇱 NL 024 | ⚡ 166.00ms
+  - 🇻🇳 VN 002 | ⬇️ 1.37MB/s
+  - 🇳🇱 NL 007 | ⚡ 159.00ms
+  - 🇰🇷 KR 002 | ⚡ 335.00ms
+  - 🇱🇻 LV 002 | ⬇️ 1.08MB/s
+  - 🇭🇷 HR 001 | ⬇️ 0.94MB/s
+  - 🇰🇷 KR 001 | ⚡ 332.00ms
+  - 🇵🇪 PE 002 | ⚡ 251.00ms
+  - 🇯🇵 JP 004 | ⬇️ 0.79MB/s
+  - 🇳🇱 NL 014 | ⚡ 163.00ms
+  - 🇮🇹 IT 002 | ⬇️ 0.73MB/s
+  - 🇲🇽 MX 001 | ⬇️ 0.70MB/s
+  - 🇷🇺 RU 001 | ⬇️ 0.66MB/s
+  - 🇧🇷 BR 001 | ⚡ 285.00ms
+  - 🇲🇽 MX 002 | ⬇️ 0.63MB/s
+  - 🇭🇰 HK 001 | ⚡ 334.00ms
+  - 🏳️ MK 001 | ⚡ 261.00ms
+  - 🇨🇴 CO 001 | ⚡ 209.00ms
+  - 🇵🇪 PE 001 | ⚡ 227.00ms
+  - 🇧🇪 BE 001 | ⚡ 227.00ms
+  - 🏳️ MA 003 | ⚡ 1109.00ms
+  - 🇮🇳 IN 001 | ⚡ 492.00ms
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
 - name: 低延迟
   type: url-test
   proxies:
-  - 🇨🇦 CA 001 | ⬇️ 178.52MB/s
-  - 🇺🇸 US 001 | ⬇️ 122.10MB/s
-  - 🇺🇸 US 002 | ⬇️ 120.62MB/s
-  - 🇺🇸 US 003 | ⬇️ 119.84MB/s
-  - 🇺🇸 US 004 | ⬇️ 86.62MB/s
-  - 🇨🇦 CA 002 | ⬇️ 82.34MB/s
-  - 🇺🇸 US 005 | ⬇️ 60.82MB/s
-  - 🇨🇦 CA 003 | ⬇️ 53.14MB/s
-  - 🇺🇸 US 006 | ⬇️ 46.07MB/s
-  - 🇺🇸 US 007 | ⬇️ 41.13MB/s
-  - 🇺🇸 US 008 | ⬇️ 37.42MB/s
-  - 🇺🇸 US 009 | ⬇️ 37.04MB/s
-  - 🇬🇧 GB 001 | ⬇️ 35.03MB/s
-  - 🇬🇧 GB 002 | ⬇️ 34.17MB/s
-  - 🇳🇱 NL 001 | ⬇️ 33.61MB/s
-  - 🇬🇧 GB 003 | ⬇️ 32.36MB/s
-  - 🇳🇱 NL 002 | ⬇️ 31.24MB/s
-  - 🇳🇱 NL 003 | ⬇️ 31.18MB/s
-  - 🇳🇱 NL 004 | ⬇️ 31.11MB/s
-  - 🇳🇱 NL 005 | ⬇️ 31.06MB/s
-  - 🇳🇱 NL 006 | ⬇️ 31.06MB/s
-  - 🇳🇱 NL 007 | ⬇️ 31.02MB/s
-  - 🇳🇱 NL 008 | ⬇️ 30.99MB/s
-  - 🇳🇱 NL 009 | ⬇️ 30.95MB/s
-  - 🇳🇱 NL 010 | ⬇️ 30.92MB/s
-  - 🇳🇱 NL 011 | ⬇️ 30.92MB/s
-  - 🇳🇱 NL 012 | ⬇️ 30.88MB/s
-  - 🇳🇱 NL 013 | ⬇️ 30.85MB/s
-  - 🇳🇱 NL 014 | ⬇️ 30.80MB/s
-  - 🇳🇱 NL 015 | ⬇️ 30.79MB/s
-  - 🇳🇱 NL 016 | ⬇️ 30.78MB/s
-  - 🇳🇱 NL 017 | ⬇️ 30.78MB/s
-  - 🇳🇱 NL 018 | ⬇️ 30.74MB/s
-  - 🇳🇱 NL 019 | ⬇️ 30.73MB/s
-  - 🇳🇱 NL 020 | ⬇️ 30.72MB/s
-  - 🇳🇱 NL 021 | ⬇️ 30.70MB/s
-  - 🇳🇱 NL 022 | ⬇️ 30.67MB/s
-  - 🇳🇱 NL 023 | ⬇️ 30.64MB/s
-  - 🇪🇨 EC 001 | ⬇️ 30.56MB/s
-  - 🇳🇱 NL 024 | ⬇️ 30.55MB/s
-  - 🇳🇱 NL 025 | ⬇️ 30.41MB/s
-  - 🇳🇱 NL 026 | ⬇️ 30.40MB/s
-  - 🇳🇱 NL 027 | ⬇️ 30.23MB/s
-  - 🇳🇱 NL 028 | ⬇️ 30.15MB/s
-  - 🇵🇦 PA 001 | ⬇️ 29.98MB/s
-  - 🇳🇱 NL 029 | ⬇️ 29.93MB/s
-  - 🇵🇦 PA 002 | ⬇️ 29.14MB/s
-  - 🇳🇱 NL 030 | ⬇️ 28.47MB/s
-  - 🇳🇱 NL 031 | ⬇️ 27.90MB/s
-  - 🇩🇪 DE 001 | ⬇️ 27.23MB/s
-  - 🇲🇹 MT 001 | ⬇️ 23.04MB/s
-  - 🇫🇮 FI 001 | ⬇️ 22.81MB/s
-  - 🇯🇵 JP 001 | ⬇️ 22.69MB/s
-  - 🇺🇸 US 010 | ⬇️ 22.15MB/s
-  - 🇦🇷 AR 001 | ⬇️ 21.74MB/s
-  - 🇪🇸 ES 001 | ⬇️ 21.55MB/s
-  - 🇩🇪 DE 002 | ⬇️ 21.39MB/s
-  - 🇬🇧 GB 004 | ⬇️ 21.33MB/s
-  - 🇬🇧 GB 005 | ⬇️ 20.25MB/s
-  - 🇳🇱 NL 032 | ⬇️ 19.73MB/s
-  - 🇬🇧 GB 006 | ⬇️ 19.61MB/s
-  - 🇱🇻 LV 001 | ⬇️ 19.07MB/s
-  - 🇹🇷 TR 001 | ⬇️ 18.32MB/s
-  - 🇯🇵 JP 002 | ⬇️ 17.29MB/s
-  - 🇮🇹 IT 001 | ⬇️ 17.05MB/s
-  - 🇬🇧 GB 007 | ⬇️ 16.64MB/s
-  - 🇲🇽 MX 001 | ⬇️ 16.38MB/s
-  - 🇸🇬 SG 001 | ⬇️ 16.05MB/s
-  - 🇸🇬 SG 002 | ⬇️ 15.62MB/s
-  - 🇺🇸 US 011 | ⬇️ 15.17MB/s
-  - 🇧🇷 BR 001 | ⬇️ 14.36MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.72MB/s
-  - 🇦🇪 AE 001 | ⬇️ 13.48MB/s
-  - 🇯🇵 JP 003 | ⬇️ 13.14MB/s
-  - 🇯🇵 JP 004 | ⬇️ 12.81MB/s
-  - 🇺🇸 US 012 | ⬇️ 12.61MB/s
-  - 🇿🇦 ZA 001 | ⬇️ 11.40MB/s
-  - 🇨🇳 TW 001 | ⬇️ 10.72MB/s
-  - 🇯🇵 JP 005 | ⬇️ 9.87MB/s
-  - 🇻🇳 VN 001 | ⬇️ 9.86MB/s
-  - 🇯🇵 JP 006 | ⬇️ 9.79MB/s
-  - 🇻🇳 VN 002 | ⬇️ 9.32MB/s
-  - 🇻🇳 VN 003 | ⬇️ 9.11MB/s
-  - 🇺🇸 US 013 | ⬇️ 9.07MB/s
-  - 🇻🇳 VN 004 | ⬇️ 9.01MB/s
-  - 🇨🇳 TW 002 | ⬇️ 8.47MB/s
-  - 🇻🇳 VN 005 | ⬇️ 8.47MB/s
-  - 🇻🇳 VN 006 | ⬇️ 8.10MB/s
-  - 🇻🇳 VN 007 | ⬇️ 7.88MB/s
-  - 🇻🇳 VN 008 | ⬇️ 7.82MB/s
-  - 🇪🇸 ES 002 | ⬇️ 7.75MB/s
-  - 🇻🇳 VN 009 | ⬇️ 7.72MB/s
-  - 🇰🇷 KR 001 | ⬇️ 7.68MB/s
-  - 🇨🇳 TW 003 | ⬇️ 7.57MB/s
-  - 🇸🇬 SG 003 | ⬇️ 7.26MB/s
-  - 🇳🇱 NL 033 | ⬇️ 7.02MB/s
-  - 🇨🇳 TW 004 | ⬇️ 6.46MB/s
-  - 🇨🇳 TW 005 | ⬇️ 6.42MB/s
-  - 🇳🇱 NL 034 | ⬇️ 5.22MB/s
-  - 🇦🇺 AU 001 | ⬇️ 4.72MB/s
-  - 🇨🇳 TW 006 | ⬇️ 4.17MB/s
-  - 🇰🇷 KR 002 | ⬇️ 4.13MB/s
-  - 🇧🇬 BG 001 | ⬇️ 4.08MB/s
-  - 🇱🇻 LV 002 | ⬇️ 3.89MB/s
-  - 🇳🇱 NL 035 | ⬇️ 3.59MB/s
-  - 🇰🇷 KR 003 | ⬇️ 2.56MB/s
+  - 🇨🇦 CA 001 | ⬇️ 72.42MB/s
+  - 🇨🇦 CA 002 | ⬇️ 63.47MB/s
+  - 🇺🇸 US 001 | ⬇️ 57.38MB/s
+  - 🇺🇸 US 002 | ⬇️ 56.75MB/s
+  - 🇺🇸 US 003 | ⬇️ 53.89MB/s
+  - 🇪🇨 EC 001 | ⬇️ 28.58MB/s
+  - 🇺🇸 US 004 | ⬇️ 28.40MB/s
+  - 🇬🇧 GB 001 | ⬇️ 28.23MB/s
+  - 🇬🇧 GB 002 | ⬇️ 28.17MB/s
+  - 🇬🇧 GB 003 | ⬇️ 28.09MB/s
+  - 🇬🇧 GB 004 | ⬇️ 27.29MB/s
+  - 🇬🇧 GB 005 | ⬇️ 25.78MB/s
+  - 🇵🇦 PA 001 | ⬇️ 25.60MB/s
+  - 🇵🇦 PA 002 | ⬇️ 25.49MB/s
+  - 🇪🇸 ES 001 | ⬇️ 24.64MB/s
+  - 🇳🇱 NL 001 | ⬇️ 24.48MB/s
+  - 🇳🇱 NL 002 | ⬇️ 24.44MB/s
+  - 🇳🇱 NL 003 | ⬇️ 24.44MB/s
+  - 🇳🇱 NL 004 | ⬇️ 24.39MB/s
+  - 🇳🇱 NL 005 | ⬇️ 24.36MB/s
+  - 🇳🇱 NL 006 | ⬇️ 24.36MB/s
+  - 🇯🇵 JP 001 | ⬇️ 24.22MB/s
+  - 🇳🇱 NL 007 | ⬇️ 24.17MB/s
+  - 🇳🇱 NL 008 | ⬇️ 24.10MB/s
+  - 🇳🇱 NL 009 | ⬇️ 24.09MB/s
+  - 🇳🇱 NL 010 | ⬇️ 24.00MB/s
+  - 🇳🇱 NL 011 | ⬇️ 23.99MB/s
+  - 🇳🇱 NL 012 | ⬇️ 23.88MB/s
+  - 🇳🇱 NL 013 | ⬇️ 23.84MB/s
+  - 🇳🇱 NL 014 | ⬇️ 23.73MB/s
+  - 🇳🇱 NL 015 | ⬇️ 23.63MB/s
+  - 🇳🇱 NL 016 | ⬇️ 23.63MB/s
+  - 🇳🇱 NL 017 | ⬇️ 23.48MB/s
+  - 🇳🇱 NL 018 | ⬇️ 23.47MB/s
+  - 🇳🇱 NL 019 | ⬇️ 23.44MB/s
+  - 🇳🇱 NL 020 | ⬇️ 23.25MB/s
+  - 🇳🇱 NL 021 | ⬇️ 23.14MB/s
+  - 🇩🇪 DE 001 | ⬇️ 23.05MB/s
+  - 🇳🇱 NL 022 | ⬇️ 22.82MB/s
+  - 🇳🇱 NL 023 | ⬇️ 22.79MB/s
+  - 🇩🇪 DE 002 | ⬇️ 22.64MB/s
+  - 🇫🇮 FI 001 | ⬇️ 21.18MB/s
+  - 🇬🇧 GB 006 | ⬇️ 19.92MB/s
+  - 🇧🇷 BR 001 | ⬇️ 19.72MB/s
+  - 🇱🇻 LV 001 | ⬇️ 19.36MB/s
+  - 🇦🇷 AR 001 | ⬇️ 18.83MB/s
+  - 🇲🇹 MT 001 | ⬇️ 18.73MB/s
+  - 🇮🇹 IT 001 | ⬇️ 18.19MB/s
+  - 🇸🇬 SG 001 | ⬇️ 17.81MB/s
+  - 🇸🇬 SG 002 | ⬇️ 17.21MB/s
+  - 🇬🇧 GB 007 | ⬇️ 17.00MB/s
+  - 🇹🇷 TR 001 | ⬇️ 16.23MB/s
+  - 🇹🇷 TR 002 | ⬇️ 15.40MB/s
+  - 🇭🇰 HK 001 | ⬇️ 15.22MB/s
+  - 🇬🇧 GB 008 | ⬇️ 13.56MB/s
+  - 🇨🇳 TW 001 | ⬇️ 12.80MB/s
+  - 🇿🇦 ZA 001 | ⬇️ 10.32MB/s
+  - 🇿🇦 ZA 002 | ⬇️ 9.94MB/s
+  - 🇯🇵 JP 002 | ⬇️ 9.93MB/s
+  - 🇯🇵 JP 003 | ⬇️ 9.89MB/s
+  - 🇨🇳 TW 002 | ⬇️ 9.27MB/s
+  - 🇪🇸 ES 002 | ⬇️ 8.40MB/s
+  - 🇳🇱 NL 024 | ⬇️ 7.83MB/s
+  - 🇻🇳 VN 001 | ⬇️ 7.66MB/s
+  - 🇨🇳 TW 003 | ⬇️ 7.40MB/s
+  - 🇺🇸 US 005 | ⬇️ 6.23MB/s
+  - 🇨🇳 TW 004 | ⬇️ 5.98MB/s
+  - 🇨🇳 TW 005 | ⬇️ 5.92MB/s
+  - 🇨🇳 TW 006 | ⬇️ 4.89MB/s
+  - 🇦🇺 AU 001 | ⬇️ 4.79MB/s
+  - 🇰🇷 KR 001 | ⬇️ 4.64MB/s
+  - 🇨🇦 CA 003 | ⬇️ 3.88MB/s
+  - 🇳🇱 NL 025 | ⬇️ 3.56MB/s
+  - 🇳🇱 NL 026 | ⬇️ 3.49MB/s
+  - 🇳🇱 NL 027 | ⬇️ 3.11MB/s
+  - 🇩🇰 DK 001 | ⬇️ 2.72MB/s
+  - 🇧🇬 BG 001 | ⬇️ 2.69MB/s
   - 🇵🇾 PY 001 | ⬇️ 2.50MB/s
-  - 🇳🇱 NL 036 | ⬇️ 2.49MB/s
-  - 🇨🇳 TW 007 | ⬇️ 2.46MB/s
-  - 🇳🇱 NL 037 | ⬇️ 2.44MB/s
-  - 🇳🇱 NL 038 | ⬇️ 2.35MB/s
-  - 🇳🇱 NL 039 | ⬇️ 2.34MB/s
-  - 🇩🇰 DK 001 | ⬇️ 2.15MB/s
-  - 🇭🇰 HK 002 | ⬇️ 1.76MB/s
-  - 🇭🇷 HR 001 | ⬇️ 1.04MB/s
-  - 🇷🇺 RU 001 | ⬇️ 0.91MB/s
-  - 🇰🇷 KR 004 | ⬇️ 0.84MB/s
-  - 🇰🇷 KR 005 | ⬇️ 0.81MB/s
-  - 🇲🇽 MX 002 | ⬇️ 0.79MB/s
-  - 🇧🇪 BE 001 | ⚡ 143.00ms
-  - 🇳🇱 NL 040 | ⬇️ 0.77MB/s
-  - 🇵🇪 PE 001 | ⚡ 212.00ms
-  - 🇵🇪 PE 001 | ⬇️ 0.73MB/s
-  - 🇧🇷 BR 002 | ⬇️ 0.73MB/s
-  - 🇭🇰 HK 003 | ⬇️ 0.72MB/s
-  - 🇮🇹 IT 002 | ⬇️ 0.70MB/s
-  - 🇨🇴 CO 001 | ⚡ 160.00ms
-  - 🇮🇩 ID 002 | ⚡ 2107.00ms
-  - 🇲🇽 MX 001 | ⚡ 116.00ms
-  - 🏳️ MK 001 | ⬇️ 0.54MB/s
-  - 🇲🇾 MY 001 | ⬇️ 0.42MB/s
-  - 🇸🇮 SI 001 | ⚡ 208.00ms
-  - 🇩🇪 DE 003 | ⬇️ 0.35MB/s
+  - 🇭🇰 HK 002 | ⬇️ 2.49MB/s
+  - 🇨🇳 TW 007 | ⬇️ 2.27MB/s
+  - 🇳🇱 NL 028 | ⬇️ 2.16MB/s
+  - 🇺🇸 US 006 | ⬇️ 1.85MB/s
+  - 🇳🇱 NL 024 | ⚡ 166.00ms
+  - 🇻🇳 VN 002 | ⬇️ 1.37MB/s
+  - 🇳🇱 NL 007 | ⚡ 159.00ms
+  - 🇰🇷 KR 002 | ⚡ 335.00ms
+  - 🇱🇻 LV 002 | ⬇️ 1.08MB/s
+  - 🇭🇷 HR 001 | ⬇️ 0.94MB/s
+  - 🇰🇷 KR 001 | ⚡ 332.00ms
+  - 🇵🇪 PE 002 | ⚡ 251.00ms
+  - 🇯🇵 JP 004 | ⬇️ 0.79MB/s
+  - 🇳🇱 NL 014 | ⚡ 163.00ms
+  - 🇮🇹 IT 002 | ⬇️ 0.73MB/s
+  - 🇲🇽 MX 001 | ⬇️ 0.70MB/s
+  - 🇷🇺 RU 001 | ⬇️ 0.66MB/s
+  - 🇧🇷 BR 001 | ⚡ 285.00ms
+  - 🇲🇽 MX 002 | ⬇️ 0.63MB/s
+  - 🇭🇰 HK 001 | ⚡ 334.00ms
+  - 🏳️ MK 001 | ⚡ 261.00ms
+  - 🇨🇴 CO 001 | ⚡ 209.00ms
+  - 🇵🇪 PE 001 | ⚡ 227.00ms
+  - 🇧🇪 BE 001 | ⚡ 227.00ms
+  - 🏳️ MA 003 | ⚡ 1109.00ms
+  - 🇮🇳 IN 001 | ⚡ 492.00ms
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 30
@@ -1170,139 +923,110 @@ proxy-groups:
   type: load-balance
   strategy: consistent-hashing
   proxies:
-  - 🇨🇦 CA 001 | ⬇️ 178.52MB/s
-  - 🇺🇸 US 001 | ⬇️ 122.10MB/s
-  - 🇺🇸 US 002 | ⬇️ 120.62MB/s
-  - 🇺🇸 US 003 | ⬇️ 119.84MB/s
-  - 🇺🇸 US 004 | ⬇️ 86.62MB/s
-  - 🇨🇦 CA 002 | ⬇️ 82.34MB/s
-  - 🇺🇸 US 005 | ⬇️ 60.82MB/s
-  - 🇨🇦 CA 003 | ⬇️ 53.14MB/s
-  - 🇺🇸 US 006 | ⬇️ 46.07MB/s
-  - 🇺🇸 US 007 | ⬇️ 41.13MB/s
-  - 🇺🇸 US 008 | ⬇️ 37.42MB/s
-  - 🇺🇸 US 009 | ⬇️ 37.04MB/s
-  - 🇬🇧 GB 001 | ⬇️ 35.03MB/s
-  - 🇬🇧 GB 002 | ⬇️ 34.17MB/s
-  - 🇳🇱 NL 001 | ⬇️ 33.61MB/s
-  - 🇬🇧 GB 003 | ⬇️ 32.36MB/s
-  - 🇳🇱 NL 002 | ⬇️ 31.24MB/s
-  - 🇳🇱 NL 003 | ⬇️ 31.18MB/s
-  - 🇳🇱 NL 004 | ⬇️ 31.11MB/s
-  - 🇳🇱 NL 005 | ⬇️ 31.06MB/s
-  - 🇳🇱 NL 006 | ⬇️ 31.06MB/s
-  - 🇳🇱 NL 007 | ⬇️ 31.02MB/s
-  - 🇳🇱 NL 008 | ⬇️ 30.99MB/s
-  - 🇳🇱 NL 009 | ⬇️ 30.95MB/s
-  - 🇳🇱 NL 010 | ⬇️ 30.92MB/s
-  - 🇳🇱 NL 011 | ⬇️ 30.92MB/s
-  - 🇳🇱 NL 012 | ⬇️ 30.88MB/s
-  - 🇳🇱 NL 013 | ⬇️ 30.85MB/s
-  - 🇳🇱 NL 014 | ⬇️ 30.80MB/s
-  - 🇳🇱 NL 015 | ⬇️ 30.79MB/s
-  - 🇳🇱 NL 016 | ⬇️ 30.78MB/s
-  - 🇳🇱 NL 017 | ⬇️ 30.78MB/s
-  - 🇳🇱 NL 018 | ⬇️ 30.74MB/s
-  - 🇳🇱 NL 019 | ⬇️ 30.73MB/s
-  - 🇳🇱 NL 020 | ⬇️ 30.72MB/s
-  - 🇳🇱 NL 021 | ⬇️ 30.70MB/s
-  - 🇳🇱 NL 022 | ⬇️ 30.67MB/s
-  - 🇳🇱 NL 023 | ⬇️ 30.64MB/s
-  - 🇪🇨 EC 001 | ⬇️ 30.56MB/s
-  - 🇳🇱 NL 024 | ⬇️ 30.55MB/s
-  - 🇳🇱 NL 025 | ⬇️ 30.41MB/s
-  - 🇳🇱 NL 026 | ⬇️ 30.40MB/s
-  - 🇳🇱 NL 027 | ⬇️ 30.23MB/s
-  - 🇳🇱 NL 028 | ⬇️ 30.15MB/s
-  - 🇵🇦 PA 001 | ⬇️ 29.98MB/s
-  - 🇳🇱 NL 029 | ⬇️ 29.93MB/s
-  - 🇵🇦 PA 002 | ⬇️ 29.14MB/s
-  - 🇳🇱 NL 030 | ⬇️ 28.47MB/s
-  - 🇳🇱 NL 031 | ⬇️ 27.90MB/s
-  - 🇩🇪 DE 001 | ⬇️ 27.23MB/s
-  - 🇲🇹 MT 001 | ⬇️ 23.04MB/s
-  - 🇫🇮 FI 001 | ⬇️ 22.81MB/s
-  - 🇯🇵 JP 001 | ⬇️ 22.69MB/s
-  - 🇺🇸 US 010 | ⬇️ 22.15MB/s
-  - 🇦🇷 AR 001 | ⬇️ 21.74MB/s
-  - 🇪🇸 ES 001 | ⬇️ 21.55MB/s
-  - 🇩🇪 DE 002 | ⬇️ 21.39MB/s
-  - 🇬🇧 GB 004 | ⬇️ 21.33MB/s
-  - 🇬🇧 GB 005 | ⬇️ 20.25MB/s
-  - 🇳🇱 NL 032 | ⬇️ 19.73MB/s
-  - 🇬🇧 GB 006 | ⬇️ 19.61MB/s
-  - 🇱🇻 LV 001 | ⬇️ 19.07MB/s
-  - 🇹🇷 TR 001 | ⬇️ 18.32MB/s
-  - 🇯🇵 JP 002 | ⬇️ 17.29MB/s
-  - 🇮🇹 IT 001 | ⬇️ 17.05MB/s
-  - 🇬🇧 GB 007 | ⬇️ 16.64MB/s
-  - 🇲🇽 MX 001 | ⬇️ 16.38MB/s
-  - 🇸🇬 SG 001 | ⬇️ 16.05MB/s
-  - 🇸🇬 SG 002 | ⬇️ 15.62MB/s
-  - 🇺🇸 US 011 | ⬇️ 15.17MB/s
-  - 🇧🇷 BR 001 | ⬇️ 14.36MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.72MB/s
-  - 🇦🇪 AE 001 | ⬇️ 13.48MB/s
-  - 🇯🇵 JP 003 | ⬇️ 13.14MB/s
-  - 🇯🇵 JP 004 | ⬇️ 12.81MB/s
-  - 🇺🇸 US 012 | ⬇️ 12.61MB/s
-  - 🇿🇦 ZA 001 | ⬇️ 11.40MB/s
-  - 🇨🇳 TW 001 | ⬇️ 10.72MB/s
-  - 🇯🇵 JP 005 | ⬇️ 9.87MB/s
-  - 🇻🇳 VN 001 | ⬇️ 9.86MB/s
-  - 🇯🇵 JP 006 | ⬇️ 9.79MB/s
-  - 🇻🇳 VN 002 | ⬇️ 9.32MB/s
-  - 🇻🇳 VN 003 | ⬇️ 9.11MB/s
-  - 🇺🇸 US 013 | ⬇️ 9.07MB/s
-  - 🇻🇳 VN 004 | ⬇️ 9.01MB/s
-  - 🇨🇳 TW 002 | ⬇️ 8.47MB/s
-  - 🇻🇳 VN 005 | ⬇️ 8.47MB/s
-  - 🇻🇳 VN 006 | ⬇️ 8.10MB/s
-  - 🇻🇳 VN 007 | ⬇️ 7.88MB/s
-  - 🇻🇳 VN 008 | ⬇️ 7.82MB/s
-  - 🇪🇸 ES 002 | ⬇️ 7.75MB/s
-  - 🇻🇳 VN 009 | ⬇️ 7.72MB/s
-  - 🇰🇷 KR 001 | ⬇️ 7.68MB/s
-  - 🇨🇳 TW 003 | ⬇️ 7.57MB/s
-  - 🇸🇬 SG 003 | ⬇️ 7.26MB/s
-  - 🇳🇱 NL 033 | ⬇️ 7.02MB/s
-  - 🇨🇳 TW 004 | ⬇️ 6.46MB/s
-  - 🇨🇳 TW 005 | ⬇️ 6.42MB/s
-  - 🇳🇱 NL 034 | ⬇️ 5.22MB/s
-  - 🇦🇺 AU 001 | ⬇️ 4.72MB/s
-  - 🇨🇳 TW 006 | ⬇️ 4.17MB/s
-  - 🇰🇷 KR 002 | ⬇️ 4.13MB/s
-  - 🇧🇬 BG 001 | ⬇️ 4.08MB/s
-  - 🇱🇻 LV 002 | ⬇️ 3.89MB/s
-  - 🇳🇱 NL 035 | ⬇️ 3.59MB/s
-  - 🇰🇷 KR 003 | ⬇️ 2.56MB/s
+  - 🇨🇦 CA 001 | ⬇️ 72.42MB/s
+  - 🇨🇦 CA 002 | ⬇️ 63.47MB/s
+  - 🇺🇸 US 001 | ⬇️ 57.38MB/s
+  - 🇺🇸 US 002 | ⬇️ 56.75MB/s
+  - 🇺🇸 US 003 | ⬇️ 53.89MB/s
+  - 🇪🇨 EC 001 | ⬇️ 28.58MB/s
+  - 🇺🇸 US 004 | ⬇️ 28.40MB/s
+  - 🇬🇧 GB 001 | ⬇️ 28.23MB/s
+  - 🇬🇧 GB 002 | ⬇️ 28.17MB/s
+  - 🇬🇧 GB 003 | ⬇️ 28.09MB/s
+  - 🇬🇧 GB 004 | ⬇️ 27.29MB/s
+  - 🇬🇧 GB 005 | ⬇️ 25.78MB/s
+  - 🇵🇦 PA 001 | ⬇️ 25.60MB/s
+  - 🇵🇦 PA 002 | ⬇️ 25.49MB/s
+  - 🇪🇸 ES 001 | ⬇️ 24.64MB/s
+  - 🇳🇱 NL 001 | ⬇️ 24.48MB/s
+  - 🇳🇱 NL 002 | ⬇️ 24.44MB/s
+  - 🇳🇱 NL 003 | ⬇️ 24.44MB/s
+  - 🇳🇱 NL 004 | ⬇️ 24.39MB/s
+  - 🇳🇱 NL 005 | ⬇️ 24.36MB/s
+  - 🇳🇱 NL 006 | ⬇️ 24.36MB/s
+  - 🇯🇵 JP 001 | ⬇️ 24.22MB/s
+  - 🇳🇱 NL 007 | ⬇️ 24.17MB/s
+  - 🇳🇱 NL 008 | ⬇️ 24.10MB/s
+  - 🇳🇱 NL 009 | ⬇️ 24.09MB/s
+  - 🇳🇱 NL 010 | ⬇️ 24.00MB/s
+  - 🇳🇱 NL 011 | ⬇️ 23.99MB/s
+  - 🇳🇱 NL 012 | ⬇️ 23.88MB/s
+  - 🇳🇱 NL 013 | ⬇️ 23.84MB/s
+  - 🇳🇱 NL 014 | ⬇️ 23.73MB/s
+  - 🇳🇱 NL 015 | ⬇️ 23.63MB/s
+  - 🇳🇱 NL 016 | ⬇️ 23.63MB/s
+  - 🇳🇱 NL 017 | ⬇️ 23.48MB/s
+  - 🇳🇱 NL 018 | ⬇️ 23.47MB/s
+  - 🇳🇱 NL 019 | ⬇️ 23.44MB/s
+  - 🇳🇱 NL 020 | ⬇️ 23.25MB/s
+  - 🇳🇱 NL 021 | ⬇️ 23.14MB/s
+  - 🇩🇪 DE 001 | ⬇️ 23.05MB/s
+  - 🇳🇱 NL 022 | ⬇️ 22.82MB/s
+  - 🇳🇱 NL 023 | ⬇️ 22.79MB/s
+  - 🇩🇪 DE 002 | ⬇️ 22.64MB/s
+  - 🇫🇮 FI 001 | ⬇️ 21.18MB/s
+  - 🇬🇧 GB 006 | ⬇️ 19.92MB/s
+  - 🇧🇷 BR 001 | ⬇️ 19.72MB/s
+  - 🇱🇻 LV 001 | ⬇️ 19.36MB/s
+  - 🇦🇷 AR 001 | ⬇️ 18.83MB/s
+  - 🇲🇹 MT 001 | ⬇️ 18.73MB/s
+  - 🇮🇹 IT 001 | ⬇️ 18.19MB/s
+  - 🇸🇬 SG 001 | ⬇️ 17.81MB/s
+  - 🇸🇬 SG 002 | ⬇️ 17.21MB/s
+  - 🇬🇧 GB 007 | ⬇️ 17.00MB/s
+  - 🇹🇷 TR 001 | ⬇️ 16.23MB/s
+  - 🇹🇷 TR 002 | ⬇️ 15.40MB/s
+  - 🇭🇰 HK 001 | ⬇️ 15.22MB/s
+  - 🇬🇧 GB 008 | ⬇️ 13.56MB/s
+  - 🇨🇳 TW 001 | ⬇️ 12.80MB/s
+  - 🇿🇦 ZA 001 | ⬇️ 10.32MB/s
+  - 🇿🇦 ZA 002 | ⬇️ 9.94MB/s
+  - 🇯🇵 JP 002 | ⬇️ 9.93MB/s
+  - 🇯🇵 JP 003 | ⬇️ 9.89MB/s
+  - 🇨🇳 TW 002 | ⬇️ 9.27MB/s
+  - 🇪🇸 ES 002 | ⬇️ 8.40MB/s
+  - 🇳🇱 NL 024 | ⬇️ 7.83MB/s
+  - 🇻🇳 VN 001 | ⬇️ 7.66MB/s
+  - 🇨🇳 TW 003 | ⬇️ 7.40MB/s
+  - 🇺🇸 US 005 | ⬇️ 6.23MB/s
+  - 🇨🇳 TW 004 | ⬇️ 5.98MB/s
+  - 🇨🇳 TW 005 | ⬇️ 5.92MB/s
+  - 🇨🇳 TW 006 | ⬇️ 4.89MB/s
+  - 🇦🇺 AU 001 | ⬇️ 4.79MB/s
+  - 🇰🇷 KR 001 | ⬇️ 4.64MB/s
+  - 🇨🇦 CA 003 | ⬇️ 3.88MB/s
+  - 🇳🇱 NL 025 | ⬇️ 3.56MB/s
+  - 🇳🇱 NL 026 | ⬇️ 3.49MB/s
+  - 🇳🇱 NL 027 | ⬇️ 3.11MB/s
+  - 🇩🇰 DK 001 | ⬇️ 2.72MB/s
+  - 🇧🇬 BG 001 | ⬇️ 2.69MB/s
   - 🇵🇾 PY 001 | ⬇️ 2.50MB/s
-  - 🇳🇱 NL 036 | ⬇️ 2.49MB/s
-  - 🇨🇳 TW 007 | ⬇️ 2.46MB/s
-  - 🇳🇱 NL 037 | ⬇️ 2.44MB/s
-  - 🇳🇱 NL 038 | ⬇️ 2.35MB/s
-  - 🇳🇱 NL 039 | ⬇️ 2.34MB/s
-  - 🇩🇰 DK 001 | ⬇️ 2.15MB/s
-  - 🇭🇰 HK 002 | ⬇️ 1.76MB/s
-  - 🇭🇷 HR 001 | ⬇️ 1.04MB/s
-  - 🇷🇺 RU 001 | ⬇️ 0.91MB/s
-  - 🇰🇷 KR 004 | ⬇️ 0.84MB/s
-  - 🇰🇷 KR 005 | ⬇️ 0.81MB/s
-  - 🇲🇽 MX 002 | ⬇️ 0.79MB/s
-  - 🇧🇪 BE 001 | ⚡ 143.00ms
-  - 🇳🇱 NL 040 | ⬇️ 0.77MB/s
-  - 🇵🇪 PE 001 | ⚡ 212.00ms
-  - 🇵🇪 PE 001 | ⬇️ 0.73MB/s
-  - 🇧🇷 BR 002 | ⬇️ 0.73MB/s
-  - 🇭🇰 HK 003 | ⬇️ 0.72MB/s
-  - 🇮🇹 IT 002 | ⬇️ 0.70MB/s
-  - 🇨🇴 CO 001 | ⚡ 160.00ms
-  - 🇮🇩 ID 002 | ⚡ 2107.00ms
-  - 🇲🇽 MX 001 | ⚡ 116.00ms
-  - 🏳️ MK 001 | ⬇️ 0.54MB/s
-  - 🇲🇾 MY 001 | ⬇️ 0.42MB/s
-  - 🇸🇮 SI 001 | ⚡ 208.00ms
-  - 🇩🇪 DE 003 | ⬇️ 0.35MB/s
+  - 🇭🇰 HK 002 | ⬇️ 2.49MB/s
+  - 🇨🇳 TW 007 | ⬇️ 2.27MB/s
+  - 🇳🇱 NL 028 | ⬇️ 2.16MB/s
+  - 🇺🇸 US 006 | ⬇️ 1.85MB/s
+  - 🇳🇱 NL 024 | ⚡ 166.00ms
+  - 🇻🇳 VN 002 | ⬇️ 1.37MB/s
+  - 🇳🇱 NL 007 | ⚡ 159.00ms
+  - 🇰🇷 KR 002 | ⚡ 335.00ms
+  - 🇱🇻 LV 002 | ⬇️ 1.08MB/s
+  - 🇭🇷 HR 001 | ⬇️ 0.94MB/s
+  - 🇰🇷 KR 001 | ⚡ 332.00ms
+  - 🇵🇪 PE 002 | ⚡ 251.00ms
+  - 🇯🇵 JP 004 | ⬇️ 0.79MB/s
+  - 🇳🇱 NL 014 | ⚡ 163.00ms
+  - 🇮🇹 IT 002 | ⬇️ 0.73MB/s
+  - 🇲🇽 MX 001 | ⬇️ 0.70MB/s
+  - 🇷🇺 RU 001 | ⬇️ 0.66MB/s
+  - 🇧🇷 BR 001 | ⚡ 285.00ms
+  - 🇲🇽 MX 002 | ⬇️ 0.63MB/s
+  - 🇭🇰 HK 001 | ⚡ 334.00ms
+  - 🏳️ MK 001 | ⚡ 261.00ms
+  - 🇨🇴 CO 001 | ⚡ 209.00ms
+  - 🇵🇪 PE 001 | ⚡ 227.00ms
+  - 🇧🇪 BE 001 | ⚡ 227.00ms
+  - 🏳️ MA 003 | ⚡ 1109.00ms
+  - 🇮🇳 IN 001 | ⚡ 492.00ms
 - name: 故障转移
   type: fallback
   proxies:
@@ -1312,194 +1036,153 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - 🇨🇦 CA 001 | ⬇️ 178.52MB/s
-  - 🇺🇸 US 001 | ⬇️ 122.10MB/s
-  - 🇺🇸 US 002 | ⬇️ 120.62MB/s
-  - 🇺🇸 US 003 | ⬇️ 119.84MB/s
-  - 🇺🇸 US 004 | ⬇️ 86.62MB/s
-  - 🇨🇦 CA 002 | ⬇️ 82.34MB/s
-  - 🇺🇸 US 005 | ⬇️ 60.82MB/s
-  - 🇨🇦 CA 003 | ⬇️ 53.14MB/s
-  - 🇺🇸 US 006 | ⬇️ 46.07MB/s
-  - 🇺🇸 US 007 | ⬇️ 41.13MB/s
-  - 🇺🇸 US 008 | ⬇️ 37.42MB/s
-  - 🇺🇸 US 009 | ⬇️ 37.04MB/s
-  - 🇬🇧 GB 001 | ⬇️ 35.03MB/s
-  - 🇬🇧 GB 002 | ⬇️ 34.17MB/s
-  - 🇳🇱 NL 001 | ⬇️ 33.61MB/s
-  - 🇬🇧 GB 003 | ⬇️ 32.36MB/s
-  - 🇳🇱 NL 002 | ⬇️ 31.24MB/s
-  - 🇳🇱 NL 003 | ⬇️ 31.18MB/s
-  - 🇳🇱 NL 004 | ⬇️ 31.11MB/s
-  - 🇳🇱 NL 005 | ⬇️ 31.06MB/s
-  - 🇳🇱 NL 006 | ⬇️ 31.06MB/s
-  - 🇳🇱 NL 007 | ⬇️ 31.02MB/s
-  - 🇳🇱 NL 008 | ⬇️ 30.99MB/s
-  - 🇳🇱 NL 009 | ⬇️ 30.95MB/s
-  - 🇳🇱 NL 010 | ⬇️ 30.92MB/s
-  - 🇳🇱 NL 011 | ⬇️ 30.92MB/s
-  - 🇳🇱 NL 012 | ⬇️ 30.88MB/s
-  - 🇳🇱 NL 013 | ⬇️ 30.85MB/s
-  - 🇳🇱 NL 014 | ⬇️ 30.80MB/s
-  - 🇳🇱 NL 015 | ⬇️ 30.79MB/s
-  - 🇳🇱 NL 016 | ⬇️ 30.78MB/s
-  - 🇳🇱 NL 017 | ⬇️ 30.78MB/s
-  - 🇳🇱 NL 018 | ⬇️ 30.74MB/s
-  - 🇳🇱 NL 019 | ⬇️ 30.73MB/s
-  - 🇳🇱 NL 020 | ⬇️ 30.72MB/s
-  - 🇳🇱 NL 021 | ⬇️ 30.70MB/s
-  - 🇳🇱 NL 022 | ⬇️ 30.67MB/s
-  - 🇳🇱 NL 023 | ⬇️ 30.64MB/s
-  - 🇪🇨 EC 001 | ⬇️ 30.56MB/s
-  - 🇳🇱 NL 024 | ⬇️ 30.55MB/s
-  - 🇳🇱 NL 025 | ⬇️ 30.41MB/s
-  - 🇳🇱 NL 026 | ⬇️ 30.40MB/s
-  - 🇳🇱 NL 027 | ⬇️ 30.23MB/s
-  - 🇳🇱 NL 028 | ⬇️ 30.15MB/s
-  - 🇵🇦 PA 001 | ⬇️ 29.98MB/s
-  - 🇳🇱 NL 029 | ⬇️ 29.93MB/s
-  - 🇵🇦 PA 002 | ⬇️ 29.14MB/s
-  - 🇳🇱 NL 030 | ⬇️ 28.47MB/s
-  - 🇳🇱 NL 031 | ⬇️ 27.90MB/s
-  - 🇩🇪 DE 001 | ⬇️ 27.23MB/s
-  - 🇲🇹 MT 001 | ⬇️ 23.04MB/s
-  - 🇫🇮 FI 001 | ⬇️ 22.81MB/s
-  - 🇯🇵 JP 001 | ⬇️ 22.69MB/s
-  - 🇺🇸 US 010 | ⬇️ 22.15MB/s
-  - 🇦🇷 AR 001 | ⬇️ 21.74MB/s
-  - 🇪🇸 ES 001 | ⬇️ 21.55MB/s
-  - 🇩🇪 DE 002 | ⬇️ 21.39MB/s
-  - 🇬🇧 GB 004 | ⬇️ 21.33MB/s
-  - 🇬🇧 GB 005 | ⬇️ 20.25MB/s
-  - 🇳🇱 NL 032 | ⬇️ 19.73MB/s
-  - 🇬🇧 GB 006 | ⬇️ 19.61MB/s
-  - 🇱🇻 LV 001 | ⬇️ 19.07MB/s
-  - 🇹🇷 TR 001 | ⬇️ 18.32MB/s
-  - 🇯🇵 JP 002 | ⬇️ 17.29MB/s
-  - 🇮🇹 IT 001 | ⬇️ 17.05MB/s
-  - 🇬🇧 GB 007 | ⬇️ 16.64MB/s
-  - 🇲🇽 MX 001 | ⬇️ 16.38MB/s
-  - 🇸🇬 SG 001 | ⬇️ 16.05MB/s
-  - 🇸🇬 SG 002 | ⬇️ 15.62MB/s
-  - 🇺🇸 US 011 | ⬇️ 15.17MB/s
-  - 🇧🇷 BR 001 | ⬇️ 14.36MB/s
-  - 🇭🇰 HK 001 | ⬇️ 13.72MB/s
-  - 🇦🇪 AE 001 | ⬇️ 13.48MB/s
-  - 🇯🇵 JP 003 | ⬇️ 13.14MB/s
-  - 🇯🇵 JP 004 | ⬇️ 12.81MB/s
-  - 🇺🇸 US 012 | ⬇️ 12.61MB/s
-  - 🇿🇦 ZA 001 | ⬇️ 11.40MB/s
-  - 🇨🇳 TW 001 | ⬇️ 10.72MB/s
-  - 🇯🇵 JP 005 | ⬇️ 9.87MB/s
-  - 🇻🇳 VN 001 | ⬇️ 9.86MB/s
-  - 🇯🇵 JP 006 | ⬇️ 9.79MB/s
-  - 🇻🇳 VN 002 | ⬇️ 9.32MB/s
-  - 🇻🇳 VN 003 | ⬇️ 9.11MB/s
-  - 🇺🇸 US 013 | ⬇️ 9.07MB/s
-  - 🇻🇳 VN 004 | ⬇️ 9.01MB/s
-  - 🇨🇳 TW 002 | ⬇️ 8.47MB/s
-  - 🇻🇳 VN 005 | ⬇️ 8.47MB/s
-  - 🇻🇳 VN 006 | ⬇️ 8.10MB/s
-  - 🇻🇳 VN 007 | ⬇️ 7.88MB/s
-  - 🇻🇳 VN 008 | ⬇️ 7.82MB/s
-  - 🇪🇸 ES 002 | ⬇️ 7.75MB/s
-  - 🇻🇳 VN 009 | ⬇️ 7.72MB/s
-  - 🇰🇷 KR 001 | ⬇️ 7.68MB/s
-  - 🇨🇳 TW 003 | ⬇️ 7.57MB/s
-  - 🇸🇬 SG 003 | ⬇️ 7.26MB/s
-  - 🇳🇱 NL 033 | ⬇️ 7.02MB/s
-  - 🇨🇳 TW 004 | ⬇️ 6.46MB/s
-  - 🇨🇳 TW 005 | ⬇️ 6.42MB/s
-  - 🇳🇱 NL 034 | ⬇️ 5.22MB/s
-  - 🇦🇺 AU 001 | ⬇️ 4.72MB/s
-  - 🇨🇳 TW 006 | ⬇️ 4.17MB/s
-  - 🇰🇷 KR 002 | ⬇️ 4.13MB/s
-  - 🇧🇬 BG 001 | ⬇️ 4.08MB/s
-  - 🇱🇻 LV 002 | ⬇️ 3.89MB/s
-  - 🇳🇱 NL 035 | ⬇️ 3.59MB/s
-  - 🇰🇷 KR 003 | ⬇️ 2.56MB/s
+  - 🇨🇦 CA 001 | ⬇️ 72.42MB/s
+  - 🇨🇦 CA 002 | ⬇️ 63.47MB/s
+  - 🇺🇸 US 001 | ⬇️ 57.38MB/s
+  - 🇺🇸 US 002 | ⬇️ 56.75MB/s
+  - 🇺🇸 US 003 | ⬇️ 53.89MB/s
+  - 🇪🇨 EC 001 | ⬇️ 28.58MB/s
+  - 🇺🇸 US 004 | ⬇️ 28.40MB/s
+  - 🇬🇧 GB 001 | ⬇️ 28.23MB/s
+  - 🇬🇧 GB 002 | ⬇️ 28.17MB/s
+  - 🇬🇧 GB 003 | ⬇️ 28.09MB/s
+  - 🇬🇧 GB 004 | ⬇️ 27.29MB/s
+  - 🇬🇧 GB 005 | ⬇️ 25.78MB/s
+  - 🇵🇦 PA 001 | ⬇️ 25.60MB/s
+  - 🇵🇦 PA 002 | ⬇️ 25.49MB/s
+  - 🇪🇸 ES 001 | ⬇️ 24.64MB/s
+  - 🇳🇱 NL 001 | ⬇️ 24.48MB/s
+  - 🇳🇱 NL 002 | ⬇️ 24.44MB/s
+  - 🇳🇱 NL 003 | ⬇️ 24.44MB/s
+  - 🇳🇱 NL 004 | ⬇️ 24.39MB/s
+  - 🇳🇱 NL 005 | ⬇️ 24.36MB/s
+  - 🇳🇱 NL 006 | ⬇️ 24.36MB/s
+  - 🇯🇵 JP 001 | ⬇️ 24.22MB/s
+  - 🇳🇱 NL 007 | ⬇️ 24.17MB/s
+  - 🇳🇱 NL 008 | ⬇️ 24.10MB/s
+  - 🇳🇱 NL 009 | ⬇️ 24.09MB/s
+  - 🇳🇱 NL 010 | ⬇️ 24.00MB/s
+  - 🇳🇱 NL 011 | ⬇️ 23.99MB/s
+  - 🇳🇱 NL 012 | ⬇️ 23.88MB/s
+  - 🇳🇱 NL 013 | ⬇️ 23.84MB/s
+  - 🇳🇱 NL 014 | ⬇️ 23.73MB/s
+  - 🇳🇱 NL 015 | ⬇️ 23.63MB/s
+  - 🇳🇱 NL 016 | ⬇️ 23.63MB/s
+  - 🇳🇱 NL 017 | ⬇️ 23.48MB/s
+  - 🇳🇱 NL 018 | ⬇️ 23.47MB/s
+  - 🇳🇱 NL 019 | ⬇️ 23.44MB/s
+  - 🇳🇱 NL 020 | ⬇️ 23.25MB/s
+  - 🇳🇱 NL 021 | ⬇️ 23.14MB/s
+  - 🇩🇪 DE 001 | ⬇️ 23.05MB/s
+  - 🇳🇱 NL 022 | ⬇️ 22.82MB/s
+  - 🇳🇱 NL 023 | ⬇️ 22.79MB/s
+  - 🇩🇪 DE 002 | ⬇️ 22.64MB/s
+  - 🇫🇮 FI 001 | ⬇️ 21.18MB/s
+  - 🇬🇧 GB 006 | ⬇️ 19.92MB/s
+  - 🇧🇷 BR 001 | ⬇️ 19.72MB/s
+  - 🇱🇻 LV 001 | ⬇️ 19.36MB/s
+  - 🇦🇷 AR 001 | ⬇️ 18.83MB/s
+  - 🇲🇹 MT 001 | ⬇️ 18.73MB/s
+  - 🇮🇹 IT 001 | ⬇️ 18.19MB/s
+  - 🇸🇬 SG 001 | ⬇️ 17.81MB/s
+  - 🇸🇬 SG 002 | ⬇️ 17.21MB/s
+  - 🇬🇧 GB 007 | ⬇️ 17.00MB/s
+  - 🇹🇷 TR 001 | ⬇️ 16.23MB/s
+  - 🇹🇷 TR 002 | ⬇️ 15.40MB/s
+  - 🇭🇰 HK 001 | ⬇️ 15.22MB/s
+  - 🇬🇧 GB 008 | ⬇️ 13.56MB/s
+  - 🇨🇳 TW 001 | ⬇️ 12.80MB/s
+  - 🇿🇦 ZA 001 | ⬇️ 10.32MB/s
+  - 🇿🇦 ZA 002 | ⬇️ 9.94MB/s
+  - 🇯🇵 JP 002 | ⬇️ 9.93MB/s
+  - 🇯🇵 JP 003 | ⬇️ 9.89MB/s
+  - 🇨🇳 TW 002 | ⬇️ 9.27MB/s
+  - 🇪🇸 ES 002 | ⬇️ 8.40MB/s
+  - 🇳🇱 NL 024 | ⬇️ 7.83MB/s
+  - 🇻🇳 VN 001 | ⬇️ 7.66MB/s
+  - 🇨🇳 TW 003 | ⬇️ 7.40MB/s
+  - 🇺🇸 US 005 | ⬇️ 6.23MB/s
+  - 🇨🇳 TW 004 | ⬇️ 5.98MB/s
+  - 🇨🇳 TW 005 | ⬇️ 5.92MB/s
+  - 🇨🇳 TW 006 | ⬇️ 4.89MB/s
+  - 🇦🇺 AU 001 | ⬇️ 4.79MB/s
+  - 🇰🇷 KR 001 | ⬇️ 4.64MB/s
+  - 🇨🇦 CA 003 | ⬇️ 3.88MB/s
+  - 🇳🇱 NL 025 | ⬇️ 3.56MB/s
+  - 🇳🇱 NL 026 | ⬇️ 3.49MB/s
+  - 🇳🇱 NL 027 | ⬇️ 3.11MB/s
+  - 🇩🇰 DK 001 | ⬇️ 2.72MB/s
+  - 🇧🇬 BG 001 | ⬇️ 2.69MB/s
   - 🇵🇾 PY 001 | ⬇️ 2.50MB/s
-  - 🇳🇱 NL 036 | ⬇️ 2.49MB/s
-  - 🇨🇳 TW 007 | ⬇️ 2.46MB/s
-  - 🇳🇱 NL 037 | ⬇️ 2.44MB/s
-  - 🇳🇱 NL 038 | ⬇️ 2.35MB/s
-  - 🇳🇱 NL 039 | ⬇️ 2.34MB/s
-  - 🇩🇰 DK 001 | ⬇️ 2.15MB/s
-  - 🇭🇰 HK 002 | ⬇️ 1.76MB/s
-  - 🇭🇷 HR 001 | ⬇️ 1.04MB/s
-  - 🇷🇺 RU 001 | ⬇️ 0.91MB/s
-  - 🇰🇷 KR 004 | ⬇️ 0.84MB/s
-  - 🇰🇷 KR 005 | ⬇️ 0.81MB/s
-  - 🇲🇽 MX 002 | ⬇️ 0.79MB/s
-  - 🇧🇪 BE 001 | ⚡ 143.00ms
-  - 🇳🇱 NL 040 | ⬇️ 0.77MB/s
-  - 🇵🇪 PE 001 | ⚡ 212.00ms
-  - 🇵🇪 PE 001 | ⬇️ 0.73MB/s
-  - 🇧🇷 BR 002 | ⬇️ 0.73MB/s
-  - 🇭🇰 HK 003 | ⬇️ 0.72MB/s
-  - 🇮🇹 IT 002 | ⬇️ 0.70MB/s
-  - 🇨🇴 CO 001 | ⚡ 160.00ms
-  - 🇮🇩 ID 002 | ⚡ 2107.00ms
-  - 🇲🇽 MX 001 | ⚡ 116.00ms
-  - 🏳️ MK 001 | ⬇️ 0.54MB/s
-  - 🇲🇾 MY 001 | ⬇️ 0.42MB/s
-  - 🇸🇮 SI 001 | ⚡ 208.00ms
-  - 🇩🇪 DE 003 | ⬇️ 0.35MB/s
+  - 🇭🇰 HK 002 | ⬇️ 2.49MB/s
+  - 🇨🇳 TW 007 | ⬇️ 2.27MB/s
+  - 🇳🇱 NL 028 | ⬇️ 2.16MB/s
+  - 🇺🇸 US 006 | ⬇️ 1.85MB/s
+  - 🇳🇱 NL 024 | ⚡ 166.00ms
+  - 🇻🇳 VN 002 | ⬇️ 1.37MB/s
+  - 🇳🇱 NL 007 | ⚡ 159.00ms
+  - 🇰🇷 KR 002 | ⚡ 335.00ms
+  - 🇱🇻 LV 002 | ⬇️ 1.08MB/s
+  - 🇭🇷 HR 001 | ⬇️ 0.94MB/s
+  - 🇰🇷 KR 001 | ⚡ 332.00ms
+  - 🇵🇪 PE 002 | ⚡ 251.00ms
+  - 🇯🇵 JP 004 | ⬇️ 0.79MB/s
+  - 🇳🇱 NL 014 | ⚡ 163.00ms
+  - 🇮🇹 IT 002 | ⬇️ 0.73MB/s
+  - 🇲🇽 MX 001 | ⬇️ 0.70MB/s
+  - 🇷🇺 RU 001 | ⬇️ 0.66MB/s
+  - 🇧🇷 BR 001 | ⚡ 285.00ms
+  - 🇲🇽 MX 002 | ⬇️ 0.63MB/s
+  - 🇭🇰 HK 001 | ⚡ 334.00ms
+  - 🏳️ MK 001 | ⚡ 261.00ms
+  - 🇨🇴 CO 001 | ⚡ 209.00ms
+  - 🇵🇪 PE 001 | ⚡ 227.00ms
+  - 🇧🇪 BE 001 | ⚡ 227.00ms
+  - 🏳️ MA 003 | ⚡ 1109.00ms
+  - 🇮🇳 IN 001 | ⚡ 492.00ms
 - name: 香港
   type: select
   proxies:
-  - 🇭🇰 HK 001 | ⬇️ 13.72MB/s
-  - 🇭🇰 HK 002 | ⬇️ 1.76MB/s
-  - 🇭🇰 HK 003 | ⬇️ 0.72MB/s
+  - 🇭🇰 HK 001 | ⬇️ 15.22MB/s
+  - 🇭🇰 HK 002 | ⬇️ 2.49MB/s
+  - 🇭🇰 HK 001 | ⚡ 334.00ms
 - name: 日本
   type: select
   proxies:
-  - 🇯🇵 JP 001 | ⬇️ 22.69MB/s
-  - 🇯🇵 JP 002 | ⬇️ 17.29MB/s
-  - 🇯🇵 JP 003 | ⬇️ 13.14MB/s
-  - 🇯🇵 JP 004 | ⬇️ 12.81MB/s
-  - 🇯🇵 JP 005 | ⬇️ 9.87MB/s
-  - 🇯🇵 JP 006 | ⬇️ 9.79MB/s
+  - 🇯🇵 JP 001 | ⬇️ 24.22MB/s
+  - 🇯🇵 JP 002 | ⬇️ 9.93MB/s
+  - 🇯🇵 JP 003 | ⬇️ 9.89MB/s
+  - 🇯🇵 JP 004 | ⬇️ 0.79MB/s
 - name: 美国
   type: select
   proxies:
-  - 🇺🇸 US 001 | ⬇️ 122.10MB/s
-  - 🇺🇸 US 002 | ⬇️ 120.62MB/s
-  - 🇺🇸 US 003 | ⬇️ 119.84MB/s
-  - 🇺🇸 US 004 | ⬇️ 86.62MB/s
-  - 🇺🇸 US 005 | ⬇️ 60.82MB/s
-  - 🇺🇸 US 006 | ⬇️ 46.07MB/s
-  - 🇺🇸 US 007 | ⬇️ 41.13MB/s
-  - 🇺🇸 US 008 | ⬇️ 37.42MB/s
-  - 🇺🇸 US 009 | ⬇️ 37.04MB/s
-  - 🇺🇸 US 010 | ⬇️ 22.15MB/s
-  - 🇺🇸 US 011 | ⬇️ 15.17MB/s
-  - 🇺🇸 US 012 | ⬇️ 12.61MB/s
-  - 🇺🇸 US 013 | ⬇️ 9.07MB/s
+  - 🇺🇸 US 001 | ⬇️ 57.38MB/s
+  - 🇺🇸 US 002 | ⬇️ 56.75MB/s
+  - 🇺🇸 US 003 | ⬇️ 53.89MB/s
+  - 🇺🇸 US 004 | ⬇️ 28.40MB/s
+  - 🇺🇸 US 005 | ⬇️ 6.23MB/s
+  - 🇺🇸 US 006 | ⬇️ 1.85MB/s
 - name: 新加坡
   type: select
   proxies:
-  - 🇸🇬 SG 001 | ⬇️ 16.05MB/s
-  - 🇸🇬 SG 002 | ⬇️ 15.62MB/s
-  - 🇸🇬 SG 003 | ⬇️ 7.26MB/s
+  - 🇸🇬 SG 001 | ⬇️ 17.81MB/s
+  - 🇸🇬 SG 002 | ⬇️ 17.21MB/s
 - name: 台湾
   type: select
   proxies:
-  - 🇨🇳 TW 001 | ⬇️ 10.72MB/s
-  - 🇨🇳 TW 002 | ⬇️ 8.47MB/s
-  - 🇨🇳 TW 003 | ⬇️ 7.57MB/s
-  - 🇨🇳 TW 004 | ⬇️ 6.46MB/s
-  - 🇨🇳 TW 005 | ⬇️ 6.42MB/s
-  - 🇨🇳 TW 006 | ⬇️ 4.17MB/s
-  - 🇨🇳 TW 007 | ⬇️ 2.46MB/s
+  - 🇨🇳 TW 001 | ⬇️ 12.80MB/s
+  - 🇨🇳 TW 002 | ⬇️ 9.27MB/s
+  - 🇨🇳 TW 003 | ⬇️ 7.40MB/s
+  - 🇨🇳 TW 004 | ⬇️ 5.98MB/s
+  - 🇨🇳 TW 005 | ⬇️ 5.92MB/s
+  - 🇨🇳 TW 006 | ⬇️ 4.89MB/s
+  - 🇨🇳 TW 007 | ⬇️ 2.27MB/s
 - name: 韩国
   type: select
   proxies:
-  - 🇰🇷 KR 001 | ⬇️ 7.68MB/s
-  - 🇰🇷 KR 002 | ⬇️ 4.13MB/s
-  - 🇰🇷 KR 003 | ⬇️ 2.56MB/s
-  - 🇰🇷 KR 004 | ⬇️ 0.84MB/s
-  - 🇰🇷 KR 005 | ⬇️ 0.81MB/s
+  - 🇰🇷 KR 001 | ⬇️ 4.64MB/s
+  - 🇰🇷 KR 002 | ⚡ 335.00ms
+  - 🇰🇷 KR 001 | ⚡ 332.00ms
 - name: 色情
   type: select
   proxies:
